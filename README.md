@@ -51,9 +51,10 @@ componenti:
 | File | Contenuto |
 |------|-----------|
 | [`profili.json`](src/data/profili.json) | Flavio e David: nome, principi nutrizionali, colore, note di sicurezza |
-| [`colazioni.json`](src/data/colazioni.json) | Le 4 settimane × 7 giorni × 2 profili (titolo, ingredienti, bevanda, note) |
+| [`colazioni.json`](src/data/colazioni.json) | Le 4 settimane × 7 giorni × 2 profili. Ogni ingrediente ha **nome, grammi (`g`) e `prodotto`**; per David il campo `sicurezza` compare solo nei giorni con cibi a rischio |
+| [`prodotti.json`](src/data/prodotti.json) | Anagrafica prodotti: fornitore, confezione, scadenza, parole chiave di ricerca. Alimenta la **spesa settimanale** (somma dei grammi +10%, arrotondata alle confezioni) |
 | [`stagione.json`](src/data/stagione.json) | Etichetta stagione, frutta/verdura di stagione, **`inizioCiclo`** (data da cui parte la rotazione 1→4) |
-| [`spesa.json`](src/data/spesa.json) | Fornitori (Montagnola, Specialità di Parma, Mezza Rosetta) e prodotti online |
+| [`spesa.json`](src/data/spesa.json) | Testo del «giro unico» e nomi dei fornitori. Le quantità della spesa sono **calcolate** dai grammi delle colazioni |
 
 La **settimana del ciclo (1–4)** viene calcolata automaticamente a rotazione a partire da
 `inizioCiclo` in `stagione.json`.

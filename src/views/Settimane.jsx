@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { TriangleAlert } from 'lucide-react'
 import profili from '../data/profili.json'
 import colazioni from '../data/colazioni.json'
+import VideoColazione from '../components/VideoColazione.jsx'
 import { ordineGiorni, nomeGiorno, settimanaDelCiclo, chiaveGiorno } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
@@ -87,11 +89,16 @@ export default function Settimane() {
                         <>
                           <p className="font-bold text-stone-800 leading-snug">{c.titolo}</p>
                           <p className="text-stone-600 text-sm mt-0.5">
-                            {c.ingredienti.join(' · ')}
+                            {c.ingredienti.map((ing) => `${ing.nome} ${ing.g} g`).join(' · ')}
                           </p>
-                          <p className="text-stone-400 text-xs font-semibold mt-1.5">
-                            {c.bevanda}
-                          </p>
+                          <p className="text-stone-400 text-xs font-semibold mt-1.5">{c.bevanda}</p>
+                          {c.sicurezza ? (
+                            <p className="text-red-600 text-xs font-semibold mt-1 flex items-start gap-1">
+                              <TriangleAlert size={13} className="mt-0.5 shrink-0" />
+                              <span>{c.sicurezza}</span>
+                            </p>
+                          ) : null}
+                          <VideoColazione titolo={c.titolo} compact />
                         </>
                       ) : (
                         <p className="text-stone-400 text-sm">—</p>

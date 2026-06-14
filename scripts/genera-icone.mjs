@@ -10,23 +10,27 @@ const outDir = resolve(__dirname, '../public/icons')
 
 const BG = '#7C9A6B' // verde salvia
 const FG = '#FBF7F0' // crema
+const TERRA = '#C97B4A' // terracotta (ciliegina)
 
 // rx e scala sono espressi in coordinate viewBox (0..512)
 function svgIcona({ size, rx, scala }) {
   const cx = 256
   const cy = 256
-  const foglia = `
+  const dolce = `
     <g transform="translate(${cx} ${cy}) scale(${scala}) translate(${-cx} ${-cy})">
-      <path d="M256 88 C 152 156, 152 356, 256 424 C 360 356, 360 156, 256 88 Z" fill="${FG}"/>
-      <path d="M256 124 L256 400" stroke="${BG}" stroke-width="14" stroke-linecap="round"/>
-      <path d="M256 206 C 222 216, 202 234, 190 264" stroke="${BG}" stroke-width="12" stroke-linecap="round" fill="none"/>
-      <path d="M256 206 C 290 216, 310 234, 322 264" stroke="${BG}" stroke-width="12" stroke-linecap="round" fill="none"/>
-      <path d="M256 274 C 226 284, 208 300, 198 326" stroke="${BG}" stroke-width="12" stroke-linecap="round" fill="none"/>
-      <path d="M256 274 C 286 284, 304 300, 314 326" stroke="${BG}" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M150 300 Q150 200 256 200 Q362 200 362 300 Z" fill="${FG}"/>
+      <path d="M182 300 L330 300 L312 430 Q310 442 298 442 L214 442 Q202 442 200 430 Z" fill="${FG}"/>
+      <path d="M150 300 H362" stroke="${BG}" stroke-width="10" stroke-linecap="round"/>
+      <g stroke="${BG}" stroke-width="8" stroke-linecap="round" fill="none">
+        <path d="M222 312 L222 428"/>
+        <path d="M256 312 L256 430"/>
+        <path d="M290 312 L290 428"/>
+      </g>
+      <circle cx="256" cy="184" r="22" fill="${TERRA}"/>
     </g>`
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 512 512">
     <rect width="512" height="512" rx="${rx}" fill="${BG}"/>
-    ${foglia}
+    ${dolce}
   </svg>`
 }
 

@@ -3,199 +3,314 @@
     "lun": {
       "flavio": {
         "titolo": "Albumi strapazzati con avena",
-        "ingredienti": ["Albumi strapazzati", "Avena cotta in acqua", "Fragole", "Mandorle"],
-        "bevanda": "Acqua · caffè d'orzo",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi strapazzati", "g": 120, "prodotto": "albume" },
+          { "nome": "Fiocchi d'avena (cotti in acqua)", "g": 40, "prodotto": "avena" },
+          { "nome": "Fragole", "g": 100, "prodotto": "fragole" },
+          { "nome": "Mandorle", "g": 15, "prodotto": "mandorle" }
+        ],
+        "bevanda": "Acqua · caffè d'orzo"
       },
       "david": {
-        "titolo": "Porridge nel latte intero con pesca",
-        "ingredienti": ["Porridge d'avena nel latte intero", "Pesca a pezzetti", "1 cucchiaino di crema di mandorle liscia"],
-        "bevanda": "Latte · acqua",
-        "note": "Pesca a pezzetti piccoli."
+        "titolo": "Crema d'avena nel latte con pesca",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 25, "prodotto": "avena" },
+          { "nome": "Latte intero", "g": 120, "prodotto": "latte_intero" },
+          { "nome": "Pesca", "g": 60, "prodotto": "pesche" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" }
+        ],
+        "bevanda": "Acqua",
+        "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
         "titolo": "Frullato fragole-lamponi e albumi sodi",
-        "ingredienti": ["Frullato di fragole e lamponi", "Yogurt greco", "Semi di chia", "Albumi sodi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Fragole", "g": 80, "prodotto": "fragole" },
+          { "nome": "Lamponi", "g": 60, "prodotto": "lamponi" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con pane",
-        "ingredienti": ["Uovo intero strapazzato", "Pomodoro e cetriolo a cubetti piccoli", "Pane integrale"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pomodoro", "g": 30, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 25, "prodotto": "cetriolo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" }
+        ],
         "bevanda": "Latte",
-        "note": "Pomodoro e cetriolo a cubetti piccoli."
+        "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
       }
     },
     "mer": {
       "flavio": {
         "titolo": "Albumi con pomodoro e cetriolo",
-        "ingredienti": ["Albumi", "Pomodoro", "Cetriolo", "Olio EVO", "Origano"],
-        "bevanda": "Acqua · tè verde",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi", "g": 120, "prodotto": "albume" },
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Olio extravergine d'oliva", "g": 10, "prodotto": "olio_evo" },
+          { "nome": "Origano", "g": 2, "prodotto": "origano" }
+        ],
+        "bevanda": "Acqua · tè verde"
       },
       "david": {
         "titolo": "Yogurt intero con fragole",
-        "ingredienti": ["Yogurt intero bianco", "Fragole schiacciate", "Avena", "Semi di lino"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero bianco", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Fragole schiacciate", "g": 60, "prodotto": "fragole" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" },
+          { "nome": "Semi di lino", "g": 5, "prodotto": "lino" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Porridge d'avena con albicocche",
-        "ingredienti": ["Porridge d'avena", "Albicocche", "Semi di lino macinati"],
-        "bevanda": "Soia non zuccherata",
-        "note": ""
+        "titolo": "Crema d'avena con albicocche",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
+          { "nome": "Albicocche", "g": 100, "prodotto": "albicocche" },
+          { "nome": "Semi di lino macinati", "g": 10, "prodotto": "lino" }
+        ],
+        "bevanda": "Soia non zuccherata"
       },
       "david": {
         "titolo": "Frullato di yogurt intero e frutta",
-        "ingredienti": ["Yogurt intero", "Albicocca", "Banana", "Avena"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Albicocca", "g": 60, "prodotto": "albicocche" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "ven": {
       "flavio": {
         "titolo": "Yogurt greco con pesca",
-        "ingredienti": ["Yogurt greco", "Pesca", "Noci", "Semi di chia"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt greco", "g": 150, "prodotto": "yogurt_greco" },
+          { "nome": "Pesca", "g": 100, "prodotto": "pesche" },
+          { "nome": "Noci", "g": 20, "prodotto": "noci" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo strapazzato con melone",
-        "ingredienti": ["Uovo strapazzato", "Pane integrale", "Melone a cubetti piccoli"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" },
+          { "nome": "Melone", "g": 60, "prodotto": "melone" }
+        ],
         "bevanda": "Latte",
-        "note": "Melone a cubetti piccoli."
+        "sicurezza": "Melone a cubetti piccoli."
       }
     },
     "sab": {
       "flavio": {
         "titolo": "Insalata con albumi e lamponi",
-        "ingredienti": ["Insalata di pomodoro e cetriolo", "Uova (solo albume)", "Lamponi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" },
+          { "nome": "Lamponi", "g": 80, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
-        "titolo": "Pancake di avena e banana",
-        "ingredienti": ["Pancake di avena, uovo e banana", "Lamponi schiacciati"],
-        "bevanda": "Latte",
-        "note": ""
+        "titolo": "Frittelle di avena e banana",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 30, "prodotto": "avena" },
+          { "nome": "Uovo intero", "g": 50, "prodotto": "uovo" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Lamponi schiacciati", "g": 50, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Latte"
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Overnight oats con ciliegie",
-        "ingredienti": ["Overnight oats", "Yogurt greco", "Ciliegie snocciolate"],
-        "bevanda": "Frullato",
-        "note": ""
+        "titolo": "Avena ammollata con ciliegie",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena (ammollati)", "g": 40, "prodotto": "avena" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Ciliegie snocciolate", "g": 100, "prodotto": "ciliegie" }
+        ],
+        "bevanda": "Frullato"
       },
       "david": {
         "titolo": "Yogurt intero con ciliegie",
-        "ingredienti": ["Yogurt intero", "Ciliegie snocciolate e tagliate", "Crema di mandorle liscia", "Avena"],
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Ciliegie snocciolate e tagliate", "g": 60, "prodotto": "ciliegie" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
         "bevanda": "Acqua",
-        "note": "Ciliegie snocciolate e tagliate."
+        "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
   "2": {
     "lun": {
       "flavio": {
-        "titolo": "Omelette di albumi con spinaci",
-        "ingredienti": ["Omelette di albumi", "Spinaci", "Avena cotta in acqua", "Lamponi"],
-        "bevanda": "Acqua · caffè d'orzo",
-        "note": ""
+        "titolo": "Frittata di albumi con spinaci",
+        "ingredienti": [
+          { "nome": "Albumi", "g": 120, "prodotto": "albume" },
+          { "nome": "Spinaci", "g": 60, "prodotto": "spinaci" },
+          { "nome": "Fiocchi d'avena (cotti in acqua)", "g": 40, "prodotto": "avena" },
+          { "nome": "Lamponi", "g": 100, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Acqua · caffè d'orzo"
       },
       "david": {
-        "titolo": "Porridge nel latte intero con albicocca",
-        "ingredienti": ["Porridge d'avena nel latte intero", "Albicocca a pezzetti", "1 cucchiaino di crema di mandorle liscia"],
-        "bevanda": "Latte · acqua",
-        "note": "Albicocca a pezzetti piccoli."
+        "titolo": "Crema d'avena nel latte con albicocca",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 25, "prodotto": "avena" },
+          { "nome": "Latte intero", "g": 120, "prodotto": "latte_intero" },
+          { "nome": "Albicocca", "g": 60, "prodotto": "albicocche" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" }
+        ],
+        "bevanda": "Acqua",
+        "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
         "titolo": "Yogurt greco con albicocche",
-        "ingredienti": ["Yogurt greco", "Albicocche", "Mandorle", "Semi di chia"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt greco", "g": 150, "prodotto": "yogurt_greco" },
+          { "nome": "Albicocche", "g": 100, "prodotto": "albicocche" },
+          { "nome": "Mandorle", "g": 15, "prodotto": "mandorle" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con melone",
-        "ingredienti": ["Uovo intero strapazzato", "Pane integrale", "Melone a cubetti piccoli"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" },
+          { "nome": "Melone", "g": 60, "prodotto": "melone" }
+        ],
         "bevanda": "Latte",
-        "note": "Melone a cubetti piccoli."
+        "sicurezza": "Melone a cubetti piccoli."
       }
     },
     "mer": {
       "flavio": {
         "titolo": "Albumi sodi con insalata",
-        "ingredienti": ["Albumi sodi", "Insalata di pomodoro e cetriolo", "Olio EVO"],
-        "bevanda": "Acqua · tè verde",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" },
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Olio extravergine d'oliva", "g": 10, "prodotto": "olio_evo" }
+        ],
+        "bevanda": "Acqua · tè verde"
       },
       "david": {
         "titolo": "Yogurt intero con lamponi",
-        "ingredienti": ["Yogurt intero bianco", "Lamponi schiacciati", "Avena", "Semi di lino"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero bianco", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Lamponi schiacciati", "g": 60, "prodotto": "lamponi" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" },
+          { "nome": "Semi di lino", "g": 5, "prodotto": "lino" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Porridge d'avena con pesca",
-        "ingredienti": ["Porridge d'avena", "Pesca", "Semi di lino macinati"],
-        "bevanda": "Soia non zuccherata",
-        "note": ""
+        "titolo": "Crema d'avena con pesca",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
+          { "nome": "Pesca", "g": 100, "prodotto": "pesche" },
+          { "nome": "Semi di lino macinati", "g": 10, "prodotto": "lino" }
+        ],
+        "bevanda": "Soia non zuccherata"
       },
       "david": {
         "titolo": "Frullato di yogurt intero e pesca",
-        "ingredienti": ["Yogurt intero", "Pesca", "Banana", "Avena"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Pesca", "g": 60, "prodotto": "pesche" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "ven": {
       "flavio": {
         "titolo": "Frullato al melone con albumi sodi",
-        "ingredienti": ["Frullato di melone", "Yogurt greco", "Semi di chia", "Albumi sodi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Melone", "g": 150, "prodotto": "melone" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo strapazzato con verdure",
-        "ingredienti": ["Uovo strapazzato", "Pomodoro e cetriolo a cubetti piccoli", "Pane integrale"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pomodoro", "g": 30, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 25, "prodotto": "cetriolo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" }
+        ],
         "bevanda": "Latte",
-        "note": "Pomodoro e cetriolo a cubetti piccoli."
+        "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
       }
     },
     "sab": {
       "flavio": {
         "titolo": "Albumi strapazzati con ciliegie",
-        "ingredienti": ["Albumi strapazzati", "Ciliegie snocciolate", "Noci"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi strapazzati", "g": 120, "prodotto": "albume" },
+          { "nome": "Ciliegie snocciolate", "g": 100, "prodotto": "ciliegie" },
+          { "nome": "Noci", "g": 20, "prodotto": "noci" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
-        "titolo": "Pancake di avena e banana",
-        "ingredienti": ["Pancake di avena, uovo e banana", "Fragole schiacciate"],
-        "bevanda": "Latte",
-        "note": ""
+        "titolo": "Frittelle di avena e banana",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 30, "prodotto": "avena" },
+          { "nome": "Uovo intero", "g": 50, "prodotto": "uovo" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Fragole schiacciate", "g": 50, "prodotto": "fragole" }
+        ],
+        "bevanda": "Latte"
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Overnight oats con susine",
-        "ingredienti": ["Overnight oats", "Yogurt greco", "Susine a pezzetti"],
-        "bevanda": "Frullato",
-        "note": ""
+        "titolo": "Avena ammollata con susine",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena (ammollati)", "g": 40, "prodotto": "avena" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Susine", "g": 100, "prodotto": "susine" }
+        ],
+        "bevanda": "Frullato"
       },
       "david": {
         "titolo": "Yogurt intero con ciliegie",
-        "ingredienti": ["Yogurt intero", "Ciliegie snocciolate e tagliate", "Crema di mandorle liscia", "Avena"],
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Ciliegie snocciolate e tagliate", "g": 60, "prodotto": "ciliegie" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
         "bevanda": "Acqua",
-        "note": "Ciliegie snocciolate e tagliate."
+        "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
@@ -203,199 +318,314 @@
     "lun": {
       "flavio": {
         "titolo": "Albumi strapazzati con erba cipollina",
-        "ingredienti": ["Albumi strapazzati", "Erba cipollina", "Avena cotta in acqua", "Fragole"],
-        "bevanda": "Acqua · caffè d'orzo",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi strapazzati", "g": 120, "prodotto": "albume" },
+          { "nome": "Erba cipollina", "g": 3, "prodotto": "erba_cipollina" },
+          { "nome": "Fiocchi d'avena (cotti in acqua)", "g": 40, "prodotto": "avena" },
+          { "nome": "Fragole", "g": 100, "prodotto": "fragole" }
+        ],
+        "bevanda": "Acqua · caffè d'orzo"
       },
       "david": {
-        "titolo": "Porridge nel latte intero con fragole",
-        "ingredienti": ["Porridge d'avena nel latte intero", "Fragole schiacciate", "1 cucchiaino di crema di mandorle liscia"],
-        "bevanda": "Latte · acqua",
-        "note": ""
+        "titolo": "Crema d'avena nel latte con fragole",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 25, "prodotto": "avena" },
+          { "nome": "Latte intero", "g": 120, "prodotto": "latte_intero" },
+          { "nome": "Fragole schiacciate", "g": 60, "prodotto": "fragole" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "mar": {
       "flavio": {
         "titolo": "Frullato lamponi-melone e albumi sodi",
-        "ingredienti": ["Frullato di lamponi e melone", "Yogurt greco", "Semi di chia", "Albumi sodi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Lamponi", "g": 80, "prodotto": "lamponi" },
+          { "nome": "Melone", "g": 80, "prodotto": "melone" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con pesca",
-        "ingredienti": ["Uovo intero strapazzato", "Pane integrale", "Pesca a pezzetti"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" },
+          { "nome": "Pesca", "g": 60, "prodotto": "pesche" }
+        ],
         "bevanda": "Latte",
-        "note": "Pesca a pezzetti piccoli."
+        "sicurezza": "Pesca a pezzetti piccoli."
       }
     },
     "mer": {
       "flavio": {
         "titolo": "Albumi con pomodoro e basilico",
-        "ingredienti": ["Albumi", "Pomodoro", "Cetriolo", "Olio EVO", "Basilico"],
-        "bevanda": "Acqua · tè verde",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi", "g": 120, "prodotto": "albume" },
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Olio extravergine d'oliva", "g": 10, "prodotto": "olio_evo" },
+          { "nome": "Basilico", "g": 2, "prodotto": "basilico" }
+        ],
+        "bevanda": "Acqua · tè verde"
       },
       "david": {
         "titolo": "Yogurt intero con albicocca",
-        "ingredienti": ["Yogurt intero bianco", "Albicocca a pezzetti", "Avena", "Semi di lino"],
+        "ingredienti": [
+          { "nome": "Yogurt intero bianco", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Albicocca", "g": 60, "prodotto": "albicocche" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" },
+          { "nome": "Semi di lino", "g": 5, "prodotto": "lino" }
+        ],
         "bevanda": "Acqua",
-        "note": "Albicocca a pezzetti piccoli."
+        "sicurezza": "Albicocca a pezzetti piccoli."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Porridge d'avena con susine",
-        "ingredienti": ["Porridge d'avena", "Susine", "Semi di lino macinati"],
-        "bevanda": "Soia non zuccherata",
-        "note": ""
+        "titolo": "Crema d'avena con susine",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
+          { "nome": "Susine", "g": 100, "prodotto": "susine" },
+          { "nome": "Semi di lino macinati", "g": 10, "prodotto": "lino" }
+        ],
+        "bevanda": "Soia non zuccherata"
       },
       "david": {
         "titolo": "Frullato di yogurt intero e melone",
-        "ingredienti": ["Yogurt intero", "Melone", "Banana", "Avena"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Melone", "g": 60, "prodotto": "melone" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "ven": {
       "flavio": {
         "titolo": "Yogurt greco con albicocche",
-        "ingredienti": ["Yogurt greco", "Albicocche", "Mandorle", "Semi di chia"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt greco", "g": 150, "prodotto": "yogurt_greco" },
+          { "nome": "Albicocche", "g": 100, "prodotto": "albicocche" },
+          { "nome": "Mandorle", "g": 15, "prodotto": "mandorle" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro",
-        "ingredienti": ["Uovo strapazzato", "Pomodoro a cubetti piccoli", "Pane integrale"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pomodoro", "g": 40, "prodotto": "pomodoro" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" }
+        ],
         "bevanda": "Latte",
-        "note": "Pomodoro a cubetti piccoli."
+        "sicurezza": "Pomodoro a cubetti piccoli."
       }
     },
     "sab": {
       "flavio": {
         "titolo": "Insalata con albumi sodi e lamponi",
-        "ingredienti": ["Insalata di pomodoro e cetriolo", "Albumi sodi", "Lamponi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" },
+          { "nome": "Lamponi", "g": 80, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
-        "titolo": "Pancake di avena e banana",
-        "ingredienti": ["Pancake di avena, uovo e banana", "Lamponi schiacciati"],
-        "bevanda": "Latte",
-        "note": ""
+        "titolo": "Frittelle di avena e banana",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 30, "prodotto": "avena" },
+          { "nome": "Uovo intero", "g": 50, "prodotto": "uovo" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Lamponi schiacciati", "g": 50, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Latte"
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Overnight oats con pesca",
-        "ingredienti": ["Overnight oats", "Yogurt greco", "Pesca a fette"],
-        "bevanda": "Frullato",
-        "note": ""
+        "titolo": "Avena ammollata con pesca",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena (ammollati)", "g": 40, "prodotto": "avena" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Pesca a fette", "g": 100, "prodotto": "pesche" }
+        ],
+        "bevanda": "Frullato"
       },
       "david": {
         "titolo": "Yogurt intero con susine",
-        "ingredienti": ["Yogurt intero", "Susine snocciolate e tagliate", "Crema di mandorle liscia", "Avena"],
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Susine snocciolate e tagliate", "g": 60, "prodotto": "susine" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
         "bevanda": "Acqua",
-        "note": "Susine snocciolate e tagliate."
+        "sicurezza": "Susine snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
   "4": {
     "lun": {
       "flavio": {
-        "titolo": "Omelette di albumi con zucchine",
-        "ingredienti": ["Omelette di albumi", "Zucchine", "Avena cotta in acqua", "Ciliegie snocciolate"],
-        "bevanda": "Acqua · caffè d'orzo",
-        "note": ""
+        "titolo": "Frittata di albumi con zucchine",
+        "ingredienti": [
+          { "nome": "Albumi", "g": 120, "prodotto": "albume" },
+          { "nome": "Zucchine", "g": 80, "prodotto": "zucchine" },
+          { "nome": "Fiocchi d'avena (cotti in acqua)", "g": 40, "prodotto": "avena" },
+          { "nome": "Ciliegie snocciolate", "g": 100, "prodotto": "ciliegie" }
+        ],
+        "bevanda": "Acqua · caffè d'orzo"
       },
       "david": {
-        "titolo": "Porridge nel latte intero con melone",
-        "ingredienti": ["Porridge d'avena nel latte intero", "Melone a cubetti piccoli", "1 cucchiaino di crema di mandorle liscia"],
-        "bevanda": "Latte · acqua",
-        "note": "Melone a cubetti piccoli."
+        "titolo": "Crema d'avena nel latte con melone",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 25, "prodotto": "avena" },
+          { "nome": "Latte intero", "g": 120, "prodotto": "latte_intero" },
+          { "nome": "Melone", "g": 60, "prodotto": "melone" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" }
+        ],
+        "bevanda": "Acqua",
+        "sicurezza": "Melone a cubetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
         "titolo": "Yogurt greco con fragole",
-        "ingredienti": ["Yogurt greco", "Fragole", "Noci", "Semi di lino"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt greco", "g": 150, "prodotto": "yogurt_greco" },
+          { "nome": "Fragole", "g": 100, "prodotto": "fragole" },
+          { "nome": "Noci", "g": 20, "prodotto": "noci" },
+          { "nome": "Semi di lino", "g": 10, "prodotto": "lino" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con lamponi",
-        "ingredienti": ["Uovo intero strapazzato", "Pane integrale", "Lamponi schiacciati"],
-        "bevanda": "Latte",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" },
+          { "nome": "Lamponi schiacciati", "g": 50, "prodotto": "lamponi" }
+        ],
+        "bevanda": "Latte"
       }
     },
     "mer": {
       "flavio": {
         "titolo": "Albumi con pomodoro e cetriolo",
-        "ingredienti": ["Albumi", "Pomodoro", "Cetriolo", "Olio EVO", "Origano"],
-        "bevanda": "Acqua · tè verde",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi", "g": 120, "prodotto": "albume" },
+          { "nome": "Pomodoro", "g": 100, "prodotto": "pomodoro" },
+          { "nome": "Cetriolo", "g": 80, "prodotto": "cetriolo" },
+          { "nome": "Olio extravergine d'oliva", "g": 10, "prodotto": "olio_evo" },
+          { "nome": "Origano", "g": 2, "prodotto": "origano" }
+        ],
+        "bevanda": "Acqua · tè verde"
       },
       "david": {
         "titolo": "Yogurt intero con pesca",
-        "ingredienti": ["Yogurt intero bianco", "Pesca a pezzetti", "Avena", "Semi di lino"],
+        "ingredienti": [
+          { "nome": "Yogurt intero bianco", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Pesca", "g": 60, "prodotto": "pesche" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" },
+          { "nome": "Semi di lino", "g": 5, "prodotto": "lino" }
+        ],
         "bevanda": "Acqua",
-        "note": "Pesca a pezzetti piccoli."
+        "sicurezza": "Pesca a pezzetti piccoli."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Porridge d'avena con lamponi",
-        "ingredienti": ["Porridge d'avena", "Lamponi", "Semi di chia"],
-        "bevanda": "Soia non zuccherata",
-        "note": ""
+        "titolo": "Crema d'avena con lamponi",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
+          { "nome": "Lamponi", "g": 100, "prodotto": "lamponi" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" }
+        ],
+        "bevanda": "Soia non zuccherata"
       },
       "david": {
         "titolo": "Frullato di yogurt intero e fragole",
-        "ingredienti": ["Yogurt intero", "Fragole", "Banana", "Avena"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Fragole", "g": 60, "prodotto": "fragole" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
+        "bevanda": "Acqua"
       }
     },
     "ven": {
       "flavio": {
         "titolo": "Frullato pesca-albicocca e albumi sodi",
-        "ingredienti": ["Frullato di pesca e albicocca", "Yogurt greco", "Semi di chia", "Albumi sodi"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Pesca", "g": 80, "prodotto": "pesche" },
+          { "nome": "Albicocca", "g": 80, "prodotto": "albicocche" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Semi di chia", "g": 10, "prodotto": "chia" },
+          { "nome": "Albumi sodi", "g": 120, "prodotto": "albume" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
         "titolo": "Uovo strapazzato con cetriolo",
-        "ingredienti": ["Uovo strapazzato", "Cetriolo a cubetti piccoli", "Pane integrale"],
+        "ingredienti": [
+          { "nome": "Uovo intero strapazzato", "g": 50, "prodotto": "uovo" },
+          { "nome": "Cetriolo", "g": 40, "prodotto": "cetriolo" },
+          { "nome": "Pane integrale", "g": 30, "prodotto": "pane_integrale" }
+        ],
         "bevanda": "Latte",
-        "note": "Cetriolo a cubetti piccoli."
+        "sicurezza": "Cetriolo a cubetti piccoli."
       }
     },
     "sab": {
       "flavio": {
         "titolo": "Albumi strapazzati con melone",
-        "ingredienti": ["Albumi strapazzati", "Melone", "Mandorle"],
-        "bevanda": "Acqua",
-        "note": ""
+        "ingredienti": [
+          { "nome": "Albumi strapazzati", "g": 120, "prodotto": "albume" },
+          { "nome": "Melone", "g": 100, "prodotto": "melone" },
+          { "nome": "Mandorle", "g": 15, "prodotto": "mandorle" }
+        ],
+        "bevanda": "Acqua"
       },
       "david": {
-        "titolo": "Pancake di avena e banana",
-        "ingredienti": ["Pancake di avena, uovo e banana", "Albicocca schiacciata"],
-        "bevanda": "Latte",
-        "note": ""
+        "titolo": "Frittelle di avena e banana con albicocca",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena", "g": 30, "prodotto": "avena" },
+          { "nome": "Uovo intero", "g": 50, "prodotto": "uovo" },
+          { "nome": "Banana", "g": 50, "prodotto": "banana" },
+          { "nome": "Albicocca schiacciata", "g": 50, "prodotto": "albicocche" }
+        ],
+        "bevanda": "Latte"
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Overnight oats con susine",
-        "ingredienti": ["Overnight oats", "Yogurt greco", "Susine snocciolate"],
-        "bevanda": "Frullato",
-        "note": ""
+        "titolo": "Avena ammollata con susine",
+        "ingredienti": [
+          { "nome": "Fiocchi d'avena (ammollati)", "g": 40, "prodotto": "avena" },
+          { "nome": "Yogurt greco", "g": 100, "prodotto": "yogurt_greco" },
+          { "nome": "Susine snocciolate", "g": 100, "prodotto": "susine" }
+        ],
+        "bevanda": "Frullato"
       },
       "david": {
         "titolo": "Yogurt intero con ciliegie",
-        "ingredienti": ["Yogurt intero", "Ciliegie snocciolate e tagliate", "Crema di mandorle liscia", "Avena"],
+        "ingredienti": [
+          { "nome": "Yogurt intero", "g": 110, "prodotto": "yogurt_intero" },
+          { "nome": "Ciliegie snocciolate e tagliate", "g": 60, "prodotto": "ciliegie" },
+          { "nome": "Crema di mandorle liscia", "g": 10, "prodotto": "crema_mandorle" },
+          { "nome": "Fiocchi d'avena", "g": 15, "prodotto": "avena" }
+        ],
         "bevanda": "Acqua",
-        "note": "Ciliegie snocciolate e tagliate."
+        "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
   }
