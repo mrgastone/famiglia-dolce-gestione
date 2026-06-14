@@ -1,0 +1,28 @@
+[
+  {
+    "id": "flavio",
+    "nome": "Flavio",
+    "tipo": "Adulto",
+    "eta": "Adulto",
+    "colore": "#C97B4A",
+    "principi": [
+      "Basso indice glicemico",
+      "Proteine dall'albume",
+      "Pochi grassi"
+    ]
+  },
+  {
+    "id": "david",
+    "nome": "David",
+    "tipo": "Bambino",
+    "eta": "3 anni e mezzo",
+    "colore": "#4A90C9",
+    "principi": [
+      "Uovo INTERO",
+      "Latte e yogurt INTERI",
+      "Niente zuccheri aggiunti",
+      "Nessuna restrizione glicemica"
+    ],
+    "sicurezza": "Frutta secca solo in crema liscia, mai a pezzi. Pomodorini e ciliegie tagliati; ciliegie e susine snocciolate. Acini d'uva tagliati a metà."
+  }
+]

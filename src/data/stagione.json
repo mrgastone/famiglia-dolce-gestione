@@ -1,0 +1,23 @@
+{
+  "etichetta": "Giugno 2026 · Roma",
+  "inizioCiclo": "2026-06-01",
+  "scadenza": "2026-06-30",
+  "fruttaDiStagione": [
+    "Ciliegie",
+    "Fragole",
+    "Albicocche",
+    "Pesche",
+    "Susine",
+    "Lamponi",
+    "Melone"
+  ],
+  "verduraDiStagione": [
+    "Pomodori",
+    "Cetrioli",
+    "Zucchine",
+    "Fagiolini",
+    "Spinaci",
+    "Lattuga",
+    "Basilico"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "giroUnico": {
+    "titolo": "Giro unico — zona Montagnola",
+    "descrizione": "Con un'unica uscita a piedi prendi tutto il fresco: mercato per frutta e verdura, Specialità di Parma per le uova, forno Mezza Rosetta per il pane.",
+    "tappe": [
+      {
+        "nome": "Mercato della Montagnola",
+        "cosa": "Frutta e verdura di stagione"
+      },
+      {
+        "nome": "Specialità di Parma",
+        "cosa": "Uova fresche"
+      },
+      {
+        "nome": "Forno Mezza Rosetta",
+        "cosa": "Pane integrale"
+      }
+    ]
+  },
+  "montagnola": {
+    "nome": "Mercato della Montagnola",
+    "tipo": "Frutta e verdura fresca",
+    "modalita": "Di persona o su messaggio",
+    "messaggioWhatsapp": true,
+    "messaggioTesto": "Buongiorno! Per la famiglia vorrei ordinare:\n- [frutta e quantità]\n- [verdura e quantità]\nPasso a ritirare in mattinata, grazie! 🌿\n\n(messaggio segnaposto — da completare con le quantità)",
+    "articoli": [
+      "Ciliegie",
+      "Fragole",
+      "Albicocche",
+      "Pesche",
+      "Susine",
+      "Lamponi",
+      "Melone",
+      "Pomodori",
+      "Cetrioli",
+      "Zucchine",
+      "Spinaci",
+      "Banane"
+    ]
+  },
+  "specialita_di_parma": {
+    "nome": "Specialità di Parma",
+    "tipo": "Uova fresche",
+    "modalita": "Di persona",
+    "messaggioWhatsapp": false,
+    "articoli": [
+      "Uova fresche — per gli albumi di Flavio e le uova intere di David"
+    ]
+  },
+  "mezza_rosetta": {
+    "nome": "Forno Mezza Rosetta",
+    "tipo": "Pane",
+    "modalita": "Di persona",
+    "messaggioWhatsapp": false,
+    "articoli": [
+      "Pane integrale"
+    ]
+  },
+  "online": [
+    {
+      "nome": "Fiocchi d'avena integrali",
+      "marca": "[marca segnaposto]",
+      "fornitore": "Amazon Fresh",
+      "link": "#",
+      "immagine": "",
+      "zuccheri": "0,9 g / 100 g",
+      "energia": "370 kcal / 100 g",
+      "note": "Base per porridge e overnight oats. Esempio segnaposto da sostituire."
+    },
+    {
+      "nome": "Yogurt greco intero bianco",
+      "marca": "[marca segnaposto]",
+      "fornitore": "Esselunga",
+      "link": "#",
+      "immagine": "",
+      "zuccheri": "4 g / 100 g",
+      "energia": "120 kcal / 100 g",
+      "note": "Per Flavio (greco) e base proteica. Esempio segnaposto da sostituire."
+    },
+    {
+      "nome": "Crema di mandorle 100%",
+      "marca": "[marca segnaposto]",
+      "fornitore": "Amazon Fresh",
+      "link": "#",
+      "immagine": "",
+      "zuccheri": "5 g / 100 g",
+      "energia": "640 kcal / 100 g",
+      "note": "Solo crema liscia per David, mai mandorle a pezzi. Esempio segnaposto da sostituire."
+    }
+  ]
+}

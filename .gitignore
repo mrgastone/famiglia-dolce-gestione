@@ -1,0 +1,28 @@
+# Dipendenze
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+dev-dist/
+
+# Log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# File locali di Claude Code
+.claude/
+
+# Variabili d'ambiente
+.env
+.env.local
+.env.*.local

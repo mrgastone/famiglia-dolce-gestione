@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-crema text-stone-800 font-sans antialiased;
+    /* Evita il "rimbalzo" dello scroll su iPad in modalità standalone */
+    overscroll-behavior-y: none;
+  }
+}
+
+@layer utilities {
+  /* Aree sicure iOS (notch / barra home) quando l'app è a schermo intero */
+  .safe-bottom {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 0.25rem);
+  }
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+}
