@@ -41,7 +41,7 @@ export default function ProfiloColazione({ profilo, colazione }) {
                     <span>{ing.nome}</span>
                   </span>
                   <span className="text-stone-500 font-bold whitespace-nowrap pt-0.5">
-                    {ing.g} g
+                    {ing.n != null ? `N°${ing.n}` : `${ing.g} g`}
                   </span>
                 </li>
               ))}
@@ -66,7 +66,7 @@ export default function ProfiloColazione({ profilo, colazione }) {
             ) : null}
 
             <div className="mt-auto pt-1">
-              <VideoColazione titolo={colazione.titolo} />
+              <VideoColazione preparazioni={colazione.preparazioni} colore={colore} />
             </div>
           </>
         ) : (

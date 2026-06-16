@@ -1,6 +1,6 @@
 {
-  "albume": { "nome": "Albume d'uovo (liquido)", "fornitore": "online", "confezione": 1000, "unita": "g", "scadenza": "Frigo · consuma entro pochi giorni dall'apertura", "ricerca": "albume uovo liquido pastorizzato" },
-  "uovo": { "nome": "Uova fresche", "fornitore": "specialita_di_parma", "confezione": 6, "unita": "uova", "gPerUnita": 50, "scadenza": "Frigo · ~3–4 settimane", "ricerca": "uova fresche" },
+  "albume": { "nome": "Uova per gli albumi (da separare)", "fornitore": "specialita_di_parma", "confezione": 6, "unita": "uova", "scadenza": "Frigo · ~3–4 settimane", "ricerca": "uova fresche" },
+  "uovo": { "nome": "Uova intere", "fornitore": "specialita_di_parma", "confezione": 6, "unita": "uova", "scadenza": "Frigo · ~3–4 settimane", "ricerca": "uova fresche" },
   "avena": { "nome": "Fiocchi d'avena integrali", "fornitore": "online", "confezione": 500, "unita": "g", "scadenza": "Dispensa · lunga conservazione", "ricerca": "fiocchi avena integrali" },
   "yogurt_greco": { "nome": "Yogurt greco intero bianco", "fornitore": "online", "confezione": 500, "unita": "g", "scadenza": "Frigo · controlla la scadenza", "ricerca": "yogurt greco intero bianco" },
   "yogurt_intero": { "nome": "Yogurt bianco intero", "fornitore": "online", "confezione": 500, "unita": "g", "scadenza": "Frigo · controlla la scadenza", "ricerca": "yogurt bianco intero naturale" },

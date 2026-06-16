@@ -89,7 +89,9 @@ export default function Settimane() {
                         <>
                           <p className="font-bold text-stone-800 leading-snug">{c.titolo}</p>
                           <p className="text-stone-600 text-sm mt-0.5">
-                            {c.ingredienti.map((ing) => `${ing.nome} ${ing.g} g`).join(' · ')}
+                            {c.ingredienti
+                              .map((ing) => `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}`)
+                              .join(' · ')}
                           </p>
                           <p className="text-stone-400 text-xs font-semibold mt-1.5">{c.bevanda}</p>
                           {c.sicurezza ? (
@@ -98,7 +100,7 @@ export default function Settimane() {
                               <span>{c.sicurezza}</span>
                             </p>
                           ) : null}
-                          <VideoColazione titolo={c.titolo} compact />
+                          <VideoColazione preparazioni={c.preparazioni} colore={p.colore} compact />
                         </>
                       ) : (
                         <p className="text-stone-400 text-sm">—</p>

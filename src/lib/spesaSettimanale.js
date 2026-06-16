@@ -1,19 +1,56 @@
 import colazioni from '../data/colazioni.json'
 import prodotti from '../data/prodotti.json'
 
-// Margine di sicurezza sulle quantità: +10% per non rischiare che non bastino.
-export const MARGINE = 1.1
+// Margine di sicurezza sulle quantità: +20%, perché lo stesso cibo viene usato
+// anche durante il giorno o per altre preparazioni.
+export const MARGINE_PERCENTO = 20
 
-// Somma i grammi usati per ogni prodotto in una settimana
-// (entrambi i profili, tutti i 7 giorni).
-export function totaliSettimana(settimana) {
-  const giorni = colazioni[String(settimana)] ?? {}
+// Si va al mercato il MARTEDÌ e il VENERDÌ. Ogni settimana → due liste della spesa.
+// - Spesa del Martedì: copre le colazioni di mercoledì, giovedì e venerdì.
+// - Spesa del Venerdì: copre le colazioni di sabato, domenica, lunedì e martedì.
+export const SPESE = ['martedi', 'venerdi']
+
+const INFO_SPESA = {
+  martedi: {
+    giorno: 'Martedì',
+    giorni: ['mer', 'gio', 'ven'],
+    copre: 'mercoledì, giovedì e venerdì',
+  },
+  venerdi: {
+    giorno: 'Venerdì',
+    giorni: ['sab', 'dom', 'lun', 'mar'],
+    copre: 'sabato, domenica, lunedì e martedì',
+  },
+}
+
+export function infoSpesa(spesaKey) {
+  return INFO_SPESA[spesaKey]
+}
+
+// Ordine e intestazioni dei fornitori
+export const ORDINE_FORNITORI = ['montagnola', 'specialita_di_parma', 'mezza_rosetta', 'online']
+
+const ETICHETTA_FORNITORE = {
+  montagnola: '🥬 Mercato della Montagnola',
+  specialita_di_parma: '🥚 Specialità di Parma',
+  mezza_rosetta: '🥖 Forno Mezza Rosetta',
+  online: '🛍️ Online (Amazon Fresh / Esselunga)',
+}
+
+// Somma le quantità usate per prodotto, nei giorni indicati, per entrambi i profili.
+// Gli ingredienti contati a numero usano `n` (uova/albumi), gli altri i grammi `g`.
+function totaliPerGiorni(settimana, giorni) {
+  const dati = colazioni[String(settimana)] ?? {}
   const somma = {}
-  for (const giorno of Object.values(giorni)) {
+  for (const g of giorni) {
+    const giorno = dati[g]
+    if (!giorno) continue
     for (const profilo of Object.values(giorno)) {
       for (const ing of profilo.ingredienti ?? []) {
-        if (!ing.prodotto || !ing.g) continue
-        somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + ing.g
+        if (!ing.prodotto) continue
+        const q = ing.g ?? ing.n
+        if (!q) continue
+        somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q
       }
     }
   }
@@ -35,9 +72,12 @@ function linkEsselunga(query) {
   return `https://www.esselunga.it/it/cms/ricerca.html?q=${encodeURIComponent(query)}`
 }
 
-// Riga della lista della spesa per un prodotto, con quantità da acquistare
-// (grammi usati + 10%) arrotondata alle confezioni.
-function rigaProdotto(key, gUsati) {
+// +20% con aritmetica intera (evita imprecisioni tipo 100*1.2 = 120.00000000000001)
+function conMargine(q) {
+  return Math.ceil((q * (100 + MARGINE_PERCENTO)) / 100)
+}
+
+function rigaProdotto(key, qUsata) {
   const p = prodotti[key] ?? {
     nome: key,
     fornitore: 'online',
@@ -46,21 +86,20 @@ function rigaProdotto(key, gUsati) {
     scadenza: '',
     ricerca: key,
   }
-  // +10% con aritmetica intera, per evitare imprecisioni in virgola mobile
-  // (es. 100 * 1.1 = 110.00000000000001 in JavaScript)
-  const gConMargine = Math.ceil((gUsati * 11) / 10)
+  const qConMargine = conMargine(qUsata)
+  const aNumero = p.unita === 'uova' || p.unita === 'pezzi'
 
   let quantita
-  let confezioni = null
-  if (p.unita === 'uova') {
-    const uova = Math.ceil(gConMargine / (p.gPerUnita ?? 50))
-    confezioni = Math.max(1, Math.ceil(uova / (p.confezione ?? 6)))
-    quantita = `${uova} uova · ${confezioni} confezione${confezioni > 1 ? 'i' : ''} da ${p.confezione}`
+  if (aNumero) {
+    const confezioni = p.confezione ? Math.max(1, Math.ceil(qConMargine / p.confezione)) : null
+    quantita = confezioni
+      ? `N°${qConMargine} · ${confezioni} confezione${confezioni > 1 ? 'i' : ''} da ${p.confezione}`
+      : `N°${qConMargine}`
   } else if (p.confezione) {
-    confezioni = Math.max(1, Math.ceil(gConMargine / p.confezione))
-    quantita = `${confezioni} × ${formattaMisura(p.confezione, p.unita)} (servono ~${formattaMisura(gConMargine, p.unita)})`
+    const confezioni = Math.max(1, Math.ceil(qConMargine / p.confezione))
+    quantita = `${confezioni} × ${formattaMisura(p.confezione, p.unita)} (servono ~${formattaMisura(qConMargine, p.unita)})`
   } else {
-    quantita = formattaMisura(gConMargine, p.unita)
+    quantita = formattaMisura(qConMargine, p.unita)
   }
 
   return {
@@ -69,38 +108,47 @@ function rigaProdotto(key, gUsati) {
     fornitore: p.fornitore,
     scadenza: p.scadenza,
     unita: p.unita,
-    gUsati,
-    gAcquisto: gConMargine,
-    usatoLeggibile: formattaMisura(gUsati, p.unita),
+    aNumero,
     quantita,
-    confezioni,
     amazon: linkAmazon(p.ricerca ?? p.nome),
     esselunga: linkEsselunga(p.ricerca ?? p.nome),
   }
 }
 
-// Lista completa della spesa di una settimana, ordinata.
-export function listaSpesaSettimana(settimana) {
-  const somma = totaliSettimana(settimana)
+// Righe della spesa per una settimana + un giro (martedì/venerdì), ordinate.
+export function listaSpesa(settimana, spesaKey) {
+  const giorni = INFO_SPESA[spesaKey]?.giorni ?? []
+  const somma = totaliPerGiorni(settimana, giorni)
   return Object.entries(somma)
-    .map(([key, g]) => rigaProdotto(key, g))
+    .map(([key, q]) => rigaProdotto(key, q))
     .sort((a, b) => a.nome.localeCompare(b.nome, 'it'))
 }
 
-// La stessa lista, raggruppata per fornitore.
-export function spesaRaggruppata(settimana) {
+// Le stesse righe raggruppate per fornitore (nell'ordine ORDINE_FORNITORI).
+export function spesaRaggruppata(settimana, spesaKey) {
   const gruppi = { montagnola: [], specialita_di_parma: [], mezza_rosetta: [], online: [] }
-  for (const riga of listaSpesaSettimana(settimana)) {
+  for (const riga of listaSpesa(settimana, spesaKey)) {
     ;(gruppi[riga.fornitore] ??= []).push(riga)
   }
   return gruppi
 }
 
-// Messaggio (WhatsApp) per la Montagnola, costruito dai prodotti freschi
-// effettivamente necessari nella settimana.
-export function messaggioMontagnola(settimana) {
-  const righe = spesaRaggruppata(settimana).montagnola
-  if (!righe.length) return ''
-  const elenco = righe.map((r) => `- ${r.nome}: ${r.quantita}`).join('\n')
-  return `Buongiorno! Per la settimana ${settimana} vorrei ordinare (frutta e verdura freschi):\n${elenco}\nPasso a ritirare in mattinata, grazie! 🍒`
+// Testo pronto da copiare e inviare su WhatsApp alla persona del mercato.
+export function testoWhatsapp(settimana, spesaKey) {
+  const info = INFO_SPESA[spesaKey]
+  const gruppi = spesaRaggruppata(settimana, spesaKey)
+  const righe = [
+    `🛒 Spesa di ${info.giorno} — Settimana ${settimana}`,
+    `(Serve per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)`,
+    '',
+  ]
+  for (const fornitore of ORDINE_FORNITORI) {
+    const items = gruppi[fornitore]
+    if (!items || items.length === 0) continue
+    righe.push(ETICHETTA_FORNITORE[fornitore])
+    for (const it of items) righe.push(`- ${it.nome}: ${it.quantita}`)
+    righe.push('')
+  }
+  righe.push('Grazie! 🙂')
+  return righe.join('\n')
 }
