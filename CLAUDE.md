@@ -77,8 +77,8 @@ Regole:
   prepara/preparano {etichetta}" (un video **alla fine di ogni** preparazione, allineato a sinistra).
 - **Uova e albumi → a NUMERO** (`"n"`), NON in grammi. Tutto il resto **in grammi** (`"g"`).
 - `prodotto` = chiave di `prodotti.json` (serve per la spesa).
-- **Bevande/liquidi**: indica la quantità nel testo (es. `Acqua (1 bicchiere)`, David
-  `(1/2 bicchiere)`, `tè verde (1 tazza)`, `caffè d'orzo (1 tazzina)`).
+- **Bevande/liquidi**: indica la quantità nel testo (es. `Acqua naturale (1 bicchiere)`, David
+  `(1/2 bicchiere)`, `tè verde (1 tazza)`, `caffè d'orzo (1 tazzina)`). L'acqua è **naturale**.
 - Titoli e nomi **sempre in italiano**.
 
 ### `prodotti.json` — anagrafica prodotti (alimenta la spesa)
@@ -114,12 +114,16 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
     `Mozzarella di bufala (solo al bisogno)`.
 - **Olio EVO**: NON si compra, è **già in cantina** (lo compriamo tutto l'anno) →
   `giaDisponibile: true` in `prodotti.json`.
-- **Link prodotto**: Amazon `amazon.it/s?k=`; Esselunga via ricerca mirata
-  `google.com/search?q=… site:esselunga.it` (la ricerca interna di Esselunga porta a una pagina generica).
+- **Link prodotto** (3 per ogni prodotto online): Amazon `amazon.it/s?k=`; Amazon Fresh
+  `amazon.it/s?k=…&i=amazonfresh`; Esselunga via ricerca mirata `google.com/search?q=… site:esselunga.it`
+  (la ricerca interna di Esselunga porta a una pagina generica).
 - **Copia WhatsApp**: solo la lista del **mercato (Montagnola)**, posizionata **sotto** quella lista.
   Online / Specialità di Parma / Mezza Rosetta NON hanno copia.
 - Riquadro **"Consigli per la spesa online"** (verde diverso) sotto il giro unico: tempi medi
   (Amazon Fresh ~1 giorno, Esselunga ~2–3 giorni) → ordinare prima i prodotti a scadenza lunga.
+  Include la nota fissa: «Questa lista non contiene gli ingredienti per pranzo e cena».
+- **Tutte le pagine devono restare mobile-adaptive** (iPhone ~375px e iPad): niente overflow
+  orizzontale, testi/bottoni che vanno a capo.
 
 ---
 

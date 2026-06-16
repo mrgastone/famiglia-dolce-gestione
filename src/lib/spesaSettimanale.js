@@ -60,6 +60,11 @@ function linkAmazon(query) {
   return `https://www.amazon.it/s?k=${encodeURIComponent(query)}`
 }
 
+// Ricerca limitata al reparto Amazon Fresh
+function linkAmazonFresh(query) {
+  return `https://www.amazon.it/s?k=${encodeURIComponent(query)}&i=amazonfresh`
+}
+
 // La ricerca interna di Esselunga rimanda a una pagina generica; per avere
 // risultati mirati al prodotto usiamo una ricerca sul loro sito via motore.
 function linkEsselunga(query) {
@@ -92,6 +97,7 @@ function rigaProdotto(key, qUsata) {
       quantita: 'Già in cantina',
       giaDisponibile: true,
       amazon: null,
+      amazonFresh: null,
       esselunga: null,
     }
   }
@@ -121,6 +127,7 @@ function rigaProdotto(key, qUsata) {
     quantita,
     giaDisponibile: false,
     amazon: linkAmazon(p.ricerca ?? p.nome),
+    amazonFresh: linkAmazonFresh(p.ricerca ?? p.nome),
     esselunga: linkEsselunga(p.ricerca ?? p.nome),
   }
 }

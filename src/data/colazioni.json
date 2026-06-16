@@ -18,7 +18,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · caffè d'orzo (1 tazzina)"
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
         "titolo": "Crema d'avena nel latte con pesca",
@@ -33,7 +33,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
@@ -56,7 +56,7 @@
             "ingredienti": [{ "nome": "Albumi sodi", "n": 2, "prodotto": "albume" }]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con pane",
@@ -91,7 +91,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · tè verde (1 tazza)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Yogurt intero con fragole",
@@ -106,7 +106,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "gio": {
@@ -137,7 +137,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "ven": {
@@ -154,7 +154,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo strapazzato con melone",
@@ -190,7 +190,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Frittelle di avena e banana",
@@ -237,7 +237,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
@@ -262,7 +262,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · caffè d'orzo (1 tazzina)"
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
         "titolo": "Crema d'avena nel latte con albicocca",
@@ -277,7 +277,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
@@ -295,7 +295,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con melone",
@@ -331,7 +331,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · tè verde (1 tazza)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Yogurt intero con lamponi",
@@ -346,7 +346,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "gio": {
@@ -377,7 +377,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "ven": {
@@ -398,7 +398,7 @@
             "ingredienti": [{ "nome": "Albumi sodi", "n": 2, "prodotto": "albume" }]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo strapazzato con verdure",
@@ -434,7 +434,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Frittelle di avena e banana",
@@ -481,7 +481,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
@@ -507,7 +507,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · caffè d'orzo (1 tazzina)"
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
         "titolo": "Crema d'avena nel latte con fragole",
@@ -522,7 +522,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "mar": {
@@ -544,7 +544,7 @@
             "ingredienti": [{ "nome": "Albumi sodi", "n": 2, "prodotto": "albume" }]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con pesca",
@@ -578,7 +578,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · tè verde (1 tazza)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Yogurt intero con albicocca",
@@ -593,7 +593,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Albicocca a pezzetti piccoli."
       }
     },
@@ -625,7 +625,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "ven": {
@@ -642,7 +642,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro",
@@ -678,7 +678,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Frittelle di avena e banana",
@@ -725,7 +725,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Susine snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }
@@ -750,7 +750,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · caffè d'orzo (1 tazzina)"
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
         "titolo": "Crema d'avena nel latte con melone",
@@ -765,7 +765,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Melone a cubetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
@@ -783,7 +783,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo intero strapazzato con lamponi",
@@ -816,7 +816,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere) · tè verde (1 tazza)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Yogurt intero con pesca",
@@ -831,7 +831,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Pesca a pezzetti piccoli."
       }
     },
@@ -863,7 +863,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)"
+        "bevanda": "Acqua naturale (1/2 bicchiere)"
       }
     },
     "ven": {
@@ -885,7 +885,7 @@
             "ingredienti": [{ "nome": "Albumi sodi", "n": 2, "prodotto": "albume" }]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Uovo strapazzato con cetriolo",
@@ -920,7 +920,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Frittelle di avena e banana con albicocca",
@@ -967,7 +967,7 @@
             ]
           }
         ],
-        "bevanda": "Acqua (1/2 bicchiere)",
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
         "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
       }
     }

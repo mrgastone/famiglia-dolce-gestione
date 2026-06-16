@@ -17,7 +17,7 @@ export default function VideoColazione({ prep, colore, compact = false }) {
         href={url}
         target="_blank"
         rel="noreferrer"
-        className="inline-flex items-center gap-1 font-bold text-xs text-left"
+        className="inline-flex items-start gap-1 font-bold text-xs text-left max-w-full"
         style={{ color: colore }}
       >
         <MonitorPlay size={14} strokeWidth={2.4} className="shrink-0" />
@@ -31,7 +31,7 @@ export default function VideoColazione({ prep, colore, compact = false }) {
       href={url}
       target="_blank"
       rel="noreferrer"
-      className="inline-flex items-center gap-2 self-start rounded-xl px-3 py-2 font-bold text-sm border text-left active:scale-95 transition-transform"
+      className="inline-flex items-center gap-2 self-start max-w-full rounded-xl px-3 py-2 font-bold text-sm border text-left leading-snug active:scale-95 transition-transform"
       style={{ color: colore, borderColor: `${colore}55`, backgroundColor: `${colore}14` }}
     >
       <MonitorPlay size={18} strokeWidth={2.2} className="shrink-0" />

@@ -95,6 +95,14 @@ function RigaSpesa({ riga, conLink }) {
             Cerca su Amazon <ExternalLink size={13} />
           </a>
           <a
+            href={riga.amazonFresh}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-stone-100 text-stone-700 font-semibold text-xs px-2.5 py-1.5"
+          >
+            Cerca su Amazon Fresh <ExternalLink size={13} />
+          </a>
+          <a
             href={riga.esselunga}
             target="_blank"
             rel="noreferrer"
@@ -257,6 +265,11 @@ export default function Spesa() {
             </li>
           ))}
         </ul>
+        {raccomandazioniOnline.nota ? (
+          <p className="mt-3 font-bold bg-white/15 rounded-xl px-3 py-2 leading-snug">
+            {raccomandazioniOnline.nota}
+          </p>
+        ) : null}
       </div>
 
       {/* Le due liste della settimana selezionata */}
