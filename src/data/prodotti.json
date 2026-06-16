@@ -11,7 +11,7 @@
   "mandorle": { "nome": "Mandorle", "fornitore": "online", "confezione": 200, "unita": "g", "scadenza": "Dispensa · lunga conservazione", "ricerca": "mandorle naturali" },
   "noci": { "nome": "Noci", "fornitore": "online", "confezione": 200, "unita": "g", "scadenza": "Dispensa · lunga conservazione", "ricerca": "noci sgusciate" },
   "soia": { "nome": "Bevanda di soia non zuccherata", "fornitore": "online", "confezione": 1000, "unita": "ml", "scadenza": "Dispensa · lunga conservazione", "ricerca": "bevanda soia non zuccherata" },
-  "olio_evo": { "nome": "Olio extravergine d'oliva", "fornitore": "online", "confezione": 1000, "unita": "ml", "scadenza": "Dispensa · lunga conservazione", "ricerca": "olio extravergine oliva" },
+  "olio_evo": { "nome": "Olio extravergine d'oliva", "fornitore": "online", "confezione": 1000, "unita": "ml", "scadenza": "Già in cantina", "ricerca": "olio extravergine oliva", "giaDisponibile": true },
   "origano": { "nome": "Origano secco", "fornitore": "online", "confezione": 10, "unita": "g", "scadenza": "Dispensa · lunga conservazione", "ricerca": "origano secco" },
   "pane_integrale": { "nome": "Pane integrale", "fornitore": "mezza_rosetta", "confezione": 400, "unita": "g", "scadenza": "Fresco · 1–2 giorni", "ricerca": "pane integrale" },
   "fragole": { "nome": "Fragole", "fornitore": "montagnola", "confezione": 250, "unita": "g", "scadenza": "Fresco · 2–3 giorni", "ricerca": "fragole" },

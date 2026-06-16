@@ -6,8 +6,6 @@ import prodotti from '../data/prodotti.json'
 export const MARGINE_PERCENTO = 20
 
 // Si va al mercato il MARTEDÌ e il VENERDÌ. Ogni settimana → due liste della spesa.
-// - Spesa del Martedì: copre le colazioni di mercoledì, giovedì e venerdì.
-// - Spesa del Venerdì: copre le colazioni di sabato, domenica, lunedì e martedì.
 export const SPESE = ['martedi', 'venerdi']
 
 const INFO_SPESA = {
@@ -27,18 +25,10 @@ export function infoSpesa(spesaKey) {
   return INFO_SPESA[spesaKey]
 }
 
-// Ordine e intestazioni dei fornitori
 export const ORDINE_FORNITORI = ['montagnola', 'specialita_di_parma', 'mezza_rosetta', 'online']
 
-const ETICHETTA_FORNITORE = {
-  montagnola: '🥬 Mercato della Montagnola',
-  specialita_di_parma: '🥚 Specialità di Parma',
-  mezza_rosetta: '🥖 Forno Mezza Rosetta',
-  online: '🛍️ Online (Amazon Fresh / Esselunga)',
-}
-
 // Somma le quantità usate per prodotto, nei giorni indicati, per entrambi i profili.
-// Gli ingredienti contati a numero usano `n` (uova/albumi), gli altri i grammi `g`.
+// Gli ingredienti sono annidati dentro le preparazioni.
 function totaliPerGiorni(settimana, giorni) {
   const dati = colazioni[String(settimana)] ?? {}
   const somma = {}
@@ -46,11 +36,13 @@ function totaliPerGiorni(settimana, giorni) {
     const giorno = dati[g]
     if (!giorno) continue
     for (const profilo of Object.values(giorno)) {
-      for (const ing of profilo.ingredienti ?? []) {
-        if (!ing.prodotto) continue
-        const q = ing.g ?? ing.n
-        if (!q) continue
-        somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q
+      for (const prep of profilo.preparazioni ?? []) {
+        for (const ing of prep.ingredienti ?? []) {
+          if (!ing.prodotto) continue
+          const q = ing.g ?? ing.n
+          if (!q) continue
+          somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q
+        }
       }
     }
   }
@@ -68,8 +60,10 @@ function linkAmazon(query) {
   return `https://www.amazon.it/s?k=${encodeURIComponent(query)}`
 }
 
+// La ricerca interna di Esselunga rimanda a una pagina generica; per avere
+// risultati mirati al prodotto usiamo una ricerca sul loro sito via motore.
 function linkEsselunga(query) {
-  return `https://www.esselunga.it/it/cms/ricerca.html?q=${encodeURIComponent(query)}`
+  return `https://www.google.com/search?q=${encodeURIComponent(`${query} site:esselunga.it`)}`
 }
 
 // +20% con aritmetica intera (evita imprecisioni tipo 100*1.2 = 120.00000000000001)
@@ -86,6 +80,22 @@ function rigaProdotto(key, qUsata) {
     scadenza: '',
     ricerca: key,
   }
+
+  // Prodotti già disponibili (es. olio EVO in cantina): non si comprano.
+  if (p.giaDisponibile) {
+    return {
+      key,
+      nome: p.nome,
+      fornitore: p.fornitore,
+      scadenza: p.scadenza,
+      unita: p.unita,
+      quantita: 'Già in cantina',
+      giaDisponibile: true,
+      amazon: null,
+      esselunga: null,
+    }
+  }
+
   const qConMargine = conMargine(qUsata)
   const aNumero = p.unita === 'uova' || p.unita === 'pezzi'
 
@@ -108,14 +118,13 @@ function rigaProdotto(key, qUsata) {
     fornitore: p.fornitore,
     scadenza: p.scadenza,
     unita: p.unita,
-    aNumero,
     quantita,
+    giaDisponibile: false,
     amazon: linkAmazon(p.ricerca ?? p.nome),
     esselunga: linkEsselunga(p.ricerca ?? p.nome),
   }
 }
 
-// Righe della spesa per una settimana + un giro (martedì/venerdì), ordinate.
 export function listaSpesa(settimana, spesaKey) {
   const giorni = INFO_SPESA[spesaKey]?.giorni ?? []
   const somma = totaliPerGiorni(settimana, giorni)
@@ -124,7 +133,6 @@ export function listaSpesa(settimana, spesaKey) {
     .sort((a, b) => a.nome.localeCompare(b.nome, 'it'))
 }
 
-// Le stesse righe raggruppate per fornitore (nell'ordine ORDINE_FORNITORI).
 export function spesaRaggruppata(settimana, spesaKey) {
   const gruppi = { montagnola: [], specialita_di_parma: [], mezza_rosetta: [], online: [] }
   for (const riga of listaSpesa(settimana, spesaKey)) {
@@ -133,22 +141,12 @@ export function spesaRaggruppata(settimana, spesaKey) {
   return gruppi
 }
 
-// Testo pronto da copiare e inviare su WhatsApp alla persona del mercato.
-export function testoWhatsapp(settimana, spesaKey) {
+// Testo pronto per WhatsApp con la SOLA lista del mercato (Montagnola),
+// da inviare alla persona del mercato.
+export function testoMontagnola(settimana, spesaKey) {
   const info = INFO_SPESA[spesaKey]
-  const gruppi = spesaRaggruppata(settimana, spesaKey)
-  const righe = [
-    `🛒 Spesa di ${info.giorno} — Settimana ${settimana}`,
-    `(Serve per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)`,
-    '',
-  ]
-  for (const fornitore of ORDINE_FORNITORI) {
-    const items = gruppi[fornitore]
-    if (!items || items.length === 0) continue
-    righe.push(ETICHETTA_FORNITORE[fornitore])
-    for (const it of items) righe.push(`- ${it.nome}: ${it.quantita}`)
-    righe.push('')
-  }
-  righe.push('Grazie! 🙂')
-  return righe.join('\n')
+  const righe = spesaRaggruppata(settimana, spesaKey).montagnola
+  if (!righe.length) return ''
+  const lista = righe.map((r) => `- ${r.nome}: ${r.quantita}`).join('\n')
+  return `🥬 Mercato Montagnola — ${info.giorno} (Settimana ${settimana})\n(Frutta e verdura per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)\n\n${lista}\n\nGrazie! 🙂`
 }

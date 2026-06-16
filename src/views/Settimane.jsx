@@ -3,6 +3,7 @@ import { TriangleAlert } from 'lucide-react'
 import profili from '../data/profili.json'
 import colazioni from '../data/colazioni.json'
 import VideoColazione from '../components/VideoColazione.jsx'
+import { titoloPreparazione } from '../components/ProfiloColazione.jsx'
 import { ordineGiorni, nomeGiorno, settimanaDelCiclo, chiaveGiorno } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
@@ -88,11 +89,35 @@ export default function Settimane() {
                       {c ? (
                         <>
                           <p className="font-bold text-stone-800 leading-snug">{c.titolo}</p>
-                          <p className="text-stone-600 text-sm mt-0.5">
-                            {c.ingredienti
-                              .map((ing) => `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}`)
-                              .join(' · ')}
-                          </p>
+
+                          <div className="mt-1.5 space-y-1.5">
+                            {c.preparazioni.map((prep, pi) => (
+                              <div
+                                key={pi}
+                                className="rounded-lg border px-2 py-1.5"
+                                style={{
+                                  borderColor: `${p.colore}33`,
+                                  backgroundColor: `${p.colore}0a`,
+                                }}
+                              >
+                                {c.preparazioni.length > 1 ? (
+                                  <p className="text-[0.7rem] font-bold text-stone-600 mb-0.5">
+                                    {titoloPreparazione(prep.etichetta)}
+                                  </p>
+                                ) : null}
+                                <p className="text-stone-600 text-xs leading-snug">
+                                  {prep.ingredienti
+                                    .map(
+                                      (ing) =>
+                                        `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}`,
+                                    )
+                                    .join(' · ')}
+                                </p>
+                                <VideoColazione prep={prep} colore={p.colore} compact />
+                              </div>
+                            ))}
+                          </div>
+
                           <p className="text-stone-400 text-xs font-semibold mt-1.5">{c.bevanda}</p>
                           {c.sicurezza ? (
                             <p className="text-red-600 text-xs font-semibold mt-1 flex items-start gap-1">
@@ -100,7 +125,6 @@ export default function Settimane() {
                               <span>{c.sicurezza}</span>
                             </p>
                           ) : null}
-                          <VideoColazione preparazioni={c.preparazioni} colore={p.colore} compact />
                         </>
                       ) : (
                         <p className="text-stone-400 text-sm">—</p>

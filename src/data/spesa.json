@@ -5,7 +5,16 @@
     "tappe": [
       { "nome": "Mercato della Montagnola", "cosa": "Frutta e verdura di stagione" },
       { "nome": "Specialità di Parma", "cosa": "Uova fresche" },
-      { "nome": "Forno Mezza Rosetta", "cosa": "Pane integrale" }
+      { "nome": "Forno Mezza Rosetta", "cosa": "Pane integrale e ai cereali" }
+    ]
+  },
+  "raccomandazioniOnline": {
+    "titolo": "Consigli per la spesa online",
+    "descrizione": "Tempi di consegna medi: Amazon Fresh ~1 giorno, Esselunga ~2–3 giorni.",
+    "punti": [
+      "Ordina per primi i prodotti a scadenza più lunga (dispensa: avena, semi, crema di mandorle, frutta secca) così non mancano mai.",
+      "Lascia i prodotti freschi (yogurt, latte) a ridosso della consegna.",
+      "Se serve in fretta, scegli Amazon Fresh; per la spesa pianificata va bene Esselunga."
     ]
   },
   "montagnola": {
@@ -16,11 +25,20 @@
   "specialita_di_parma": {
     "nome": "Specialità di Parma",
     "tipo": "Uova fresche",
-    "modalita": "Di persona"
+    "modalita": "Di persona",
+    "fissi": [
+      "Latte Alta Qualità",
+      "Mozzarella di bufala (solo al bisogno)"
+    ]
   },
   "mezza_rosetta": {
     "nome": "Forno Mezza Rosetta",
     "tipo": "Pane",
-    "modalita": "Di persona"
+    "modalita": "Di persona",
+    "fissi": [
+      "1 filone di pane integrale",
+      "1 filone di pane ai cereali",
+      "1 pizzetta integrale rotonda (se disponibile)"
+    ]
   }
 }

@@ -47,28 +47,38 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 ## 🗂️ Modello dati (`src/data/`)
 
 ### `colazioni.json` — settimane `1..4`, giorni `lun..dom`, profili `flavio`/`david`
-Ogni colazione:
+Gli ingredienti sono **annidati dentro ogni preparazione** (così in UI ogni cosa da
+preparare ha il suo riquadro con il suo video):
 ```json
 {
-  "titolo": "Testo in ITALIANO (niente porridge/overnight/pancake/omelette)",
-  "ingredienti": [
-    { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
-    { "nome": "Albumi", "n": 3, "prodotto": "albume" }
-  ],
+  "titolo": "Titolo in ITALIANO",
   "preparazioni": [
-    { "etichetta": "gli albumi strapazzati", "plurale": true },
-    { "etichetta": "il porridge d'avena" }
+    {
+      "etichetta": "gli albumi strapazzati",
+      "plurale": true,
+      "ingredienti": [{ "nome": "Albumi", "n": 3, "prodotto": "albume" }]
+    },
+    {
+      "etichetta": "il porridge d'avena",
+      "ingredienti": [
+        { "nome": "Fiocchi d'avena", "g": 40, "prodotto": "avena" },
+        { "nome": "Fragole", "g": 100, "prodotto": "fragole" }
+      ]
+    }
   ],
-  "bevanda": "Acqua",
+  "bevanda": "Acqua (1 bicchiere)",
   "sicurezza": "(solo David, solo se ci sono cibi a rischio)"
 }
 ```
-Regole sugli ingredienti:
-- **Uova e albumi → a NUMERO** (`"n": 2`), NON in grammi. Tutto il resto **in grammi** (`"g"`).
-- `prodotto` deve essere una chiave di `prodotti.json` (serve per calcolare la spesa).
-- `preparazioni`: una voce per **ogni cosa da preparare** (es. frullato + albumi = 2 voci).
-  `etichetta` con articolo; `plurale: true` quando il soggetto è plurale (→ "si preparano").
-  Genera il link video "Guarda come si prepara/preparano {etichetta}".
+Regole:
+- **Ogni cosa da preparare = un oggetto in `preparazioni`** con i SUOI `ingredienti`
+  (frullato + albumi = 2 preparazioni → 2 riquadri → 2 video).
+- `etichetta` con articolo; `plurale: true` se plurale. Genera "Guarda come si
+  prepara/preparano {etichetta}" (un video **alla fine di ogni** preparazione, allineato a sinistra).
+- **Uova e albumi → a NUMERO** (`"n"`), NON in grammi. Tutto il resto **in grammi** (`"g"`).
+- `prodotto` = chiave di `prodotti.json` (serve per la spesa).
+- **Bevande/liquidi**: indica la quantità nel testo (es. `Acqua (1 bicchiere)`, David
+  `(1/2 bicchiere)`, `tè verde (1 tazza)`, `caffè d'orzo (1 tazzina)`).
 - Titoli e nomi **sempre in italiano**.
 
 ### `prodotti.json` — anagrafica prodotti (alimenta la spesa)
@@ -95,9 +105,21 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 - Si va al mercato **martedì e venerdì** → ogni settimana ha **2 liste**:
   - **Martedì** → copre le colazioni di **mercoledì, giovedì, venerdì**.
   - **Venerdì** → copre le colazioni di **sabato, domenica, lunedì, martedì**.
-- Ogni lista è raggruppata per fornitore, con **scadenze** e link "Cerca su Amazon/Esselunga"
-  (per i prodotti online). Pulsante **"Copia lista" → WhatsApp** per inviarla al mercato.
+- Ogni lista è raggruppata per fornitore, con **scadenze** e link "Cerca su Amazon/Esselunga".
 - **Albumi**: si comprano come **uova intere da Specialità di Parma** e si separano dal tuorlo.
+- **Regole FISSE** (in `spesa.json`, campo `fissi`, a prescindere dalle colazioni):
+  - **Forno Mezza Rosetta**: SEMPRE `1 filone di pane integrale` + `1 filone di pane ai cereali`
+    + `1 pizzetta integrale rotonda (se disponibile)`.
+  - **Specialità di Parma**: oltre alle uova, sempre `Latte Alta Qualità` e
+    `Mozzarella di bufala (solo al bisogno)`.
+- **Olio EVO**: NON si compra, è **già in cantina** (lo compriamo tutto l'anno) →
+  `giaDisponibile: true` in `prodotti.json`.
+- **Link prodotto**: Amazon `amazon.it/s?k=`; Esselunga via ricerca mirata
+  `google.com/search?q=… site:esselunga.it` (la ricerca interna di Esselunga porta a una pagina generica).
+- **Copia WhatsApp**: solo la lista del **mercato (Montagnola)**, posizionata **sotto** quella lista.
+  Online / Specialità di Parma / Mezza Rosetta NON hanno copia.
+- Riquadro **"Consigli per la spesa online"** (verde diverso) sotto il giro unico: tempi medi
+  (Amazon Fresh ~1 giorno, Esselunga ~2–3 giorni) → ordinare prima i prodotti a scadenza lunga.
 
 ---
 
