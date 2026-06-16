@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import spesa from '../data/spesa.json'
 import stagione from '../data/stagione.json'
+import EtichettaStagione from '../components/EtichettaStagione.jsx'
 import {
   SPESE,
   infoSpesa,
@@ -201,7 +202,10 @@ export default function Spesa() {
     <section className="space-y-5">
       {/* Selettore settimana */}
       <div>
-        <h2 className="font-display text-xl font-bold text-stone-700 mb-2">Spesa della settimana</h2>
+        <div className="flex items-center justify-between gap-2 flex-wrap mb-2">
+          <h2 className="font-display text-xl font-bold text-stone-700">Spesa della settimana</h2>
+          <EtichettaStagione />
+        </div>
         <div className="grid grid-cols-4 gap-2">
           {SETTIMANE.map((n) => (
             <button

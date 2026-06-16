@@ -149,16 +149,34 @@ Push su `main` → GitHub Actions compila e pubblica su Pages. Base path solo in
 
 ---
 
-## 🔁 Come rigenerare il piano il mese prossimo (checklist)
+## 🗓️ Quando rigenerare + 🗄️ Archivio storico
 
-1. **Aggiorna `stagione.json`**: `etichetta` (mese · Roma), `inizioCiclo` (un lunedì), `scadenza`,
-   e frutta/verdura **di stagione** di quel mese a Roma.
-2. **Ricalcola l'età di David** dalla data di nascita (2022-11-30), aggiorna `profili.json` `eta`,
-   e adatta porzioni/consistenze alla crescita.
-3. **Riscrivi `colazioni.json`** (4 settimane × 7 giorni × 2 profili) seguendo i principi sopra:
-   titoli in italiano, uova/albumi a numero, resto in grammi, `prodotto` valido, `preparazioni`
-   per ogni cosa da preparare, `sicurezza` per David solo nei giorni a rischio.
-   Niente ultra-processati, niente zuccheri aggiunti.
-4. **Aggiorna `prodotti.json`** se compaiono nuovi ingredienti (con fornitore e scadenza).
-5. `npm run build` per verificare, poi commit + push (deploy automatico).
-6. La **spesa** (liste Martedì/Venerdì, +20%, quantità) si aggiorna **da sola** dai dati.
+**QUANDO (regola fissa):** quando mancano **10 giorni** alla fine del mese (es. il **20 giugno** →
+si genera **luglio**), rigenerare TUTTO il mese successivo (colazioni; Settimane e Spesa si
+aggiornano da sole).
+
+**PRIMA di generare, CHIEDERE SEMPRE all'utente in quale CITTÀ saranno** per le colazioni del
+mese, così la frutta e la verdura sono **di stagione E di zona**. Usare quella città in `stagione.json`.
+
+**Etichetta "Mese Anno · Città"** (es. `Luglio 2026 · Roma`) va mostrata in **Oggi, Settimane, Spesa
+e Archivio** (componente `EtichettaStagione`, legge `stagione.etichetta`).
+
+### Archivio (`src/data/archivio.json`) — storico ultimi 6 mesi
+- Contiene SOLO i **mesi passati**, voci più recenti per prime:
+  `[{ "id": "2026-06", "etichetta": "Giugno 2026 · Roma", "citta": "Roma", "colazioni": { …4 settimane… } }]`
+- Il **mese in corso NON** sta qui (è in `colazioni.json`/`stagione.json`); la vista Archivio lo
+  mostra in cima come "· in corso".
+- **Tieni solo gli ultimi 6 mesi**: quando aggiungi un mese, elimina i più vecchi oltre i 6.
+
+### Checklist rigenerazione
+1. **Chiedi la città** all'utente (regola fissa).
+2. **Archivia il mese che finisce**: aggiungi in cima ad `archivio.json` una voce con l'attuale
+   `stagione.etichetta` e l'attuale contenuto di `colazioni.json`; poi taglia a 6 voci.
+3. **Aggiorna `stagione.json`**: `etichetta` ("Mese Anno · Città"), `mese`, `citta`, `inizioCiclo`
+   (un lunedì), `scadenza`, frutta/verdura di stagione di quel mese in quella città.
+4. **Ricalcola l'età di David** (nato 2022-11-30), aggiorna `profili.json` `eta`, adatta le porzioni.
+5. **Riscrivi `colazioni.json`** (4×7×2) coi principi: titoli in italiano, ingredienti annidati nelle
+   `preparazioni`, uova/albumi a numero, resto in grammi, `sicurezza` David solo nei giorni a rischio,
+   niente ultra-processati né zuccheri aggiunti, bevande con dosi (acqua **naturale**).
+6. **Aggiorna `prodotti.json`** se servono nuovi ingredienti.
+7. `npm run build`, poi commit + push (deploy automatico). Spesa e Settimane si aggiornano da sole.

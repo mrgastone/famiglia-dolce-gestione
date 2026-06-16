@@ -1,4 +1,4 @@
-import { Sun, CalendarDays, ShoppingBasket, Coffee, Wallet, Sparkles } from 'lucide-react'
+import { Sun, CalendarDays, ShoppingBasket, Archive, Coffee, Wallet, Sparkles } from 'lucide-react'
 
 // ───────────────────────────────────────────────────────────────────────────
 // Architettura modulare.
@@ -19,6 +19,7 @@ export const moduli = [
       { id: 'oggi', nome: 'Oggi', icona: Sun, path: '/' },
       { id: 'settimane', nome: 'Settimane', icona: CalendarDays, path: '/settimane' },
       { id: 'spesa', nome: 'Spesa', icona: ShoppingBasket, path: '/spesa' },
+      { id: 'archivio', nome: 'Archivio', icona: Archive, path: '/archivio' },
     ],
   },
   {

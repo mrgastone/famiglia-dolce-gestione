@@ -4,6 +4,7 @@ import BottomNav from './components/BottomNav.jsx'
 import Oggi from './views/Oggi.jsx'
 import Settimane from './views/Settimane.jsx'
 import Spesa from './views/Spesa.jsx'
+import Archivio from './views/Archivio.jsx'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<Oggi />} />
           <Route path="/settimane" element={<Settimane />} />
           <Route path="/spesa" element={<Spesa />} />
+          <Route path="/archivio" element={<Archivio />} />
           {/* Rotta di riserva: torna a "Oggi". Qui in futuro si aggiungeranno
               le rotte dei nuovi moduli (Cassa, Pulizie, ...). */}
           <Route path="*" element={<Navigate to="/" replace />} />
