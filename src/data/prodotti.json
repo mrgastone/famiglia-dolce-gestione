@@ -16,6 +16,8 @@
   "pane_integrale": { "nome": "Pane integrale", "fornitore": "mezza_rosetta", "confezione": 400, "unita": "g", "scadenza": "Fresco · 1–2 giorni", "ricerca": "pane integrale" },
   "fragole": { "nome": "Fragole", "fornitore": "montagnola", "confezione": 250, "unita": "g", "scadenza": "Fresco · 2–3 giorni", "ricerca": "fragole" },
   "lamponi": { "nome": "Lamponi", "fornitore": "montagnola", "confezione": 125, "unita": "g", "scadenza": "Fresco · 1–2 giorni", "ricerca": "lamponi" },
+  "mirtilli": { "nome": "Mirtilli", "fornitore": "montagnola", "confezione": 125, "unita": "g", "scadenza": "Fresco · 2–4 giorni", "ricerca": "mirtilli" },
+  "ribes": { "nome": "Ribes", "fornitore": "montagnola", "confezione": 125, "unita": "g", "scadenza": "Fresco · 2–3 giorni", "ricerca": "ribes" },
   "ciliegie": { "nome": "Ciliegie", "fornitore": "montagnola", "confezione": 500, "unita": "g", "scadenza": "Fresco · 2–4 giorni", "ricerca": "ciliegie" },
   "albicocche": { "nome": "Albicocche", "fornitore": "montagnola", "confezione": 500, "unita": "g", "scadenza": "Fresco · 3–4 giorni", "ricerca": "albicocche" },
   "pesche": { "nome": "Pesche", "fornitore": "montagnola", "confezione": 500, "unita": "g", "scadenza": "Fresco · 3–4 giorni", "ricerca": "pesche" },

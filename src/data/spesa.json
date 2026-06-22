@@ -1,11 +1,11 @@
 {
   "giroUnico": {
-    "titolo": "Giro unico — zona Montagnola",
-    "descrizione": "Con un'unica uscita a piedi prendi tutto il fresco: mercato per frutta e verdura, Specialità di Parma per le uova, forno Mezza Rosetta per il pane.",
+    "titolo": "Giro unico — vicino a Longostagno",
+    "descrizione": "I giri fissi (frutta e verdura, uova, pane) si fanno di persona nelle vicinanze di Longostagno: mercato e contadini locali per il fresco, una fattoria/maso o negozio per le uova, un panificio locale (Bäckerei) per il pane.",
     "tappe": [
-      { "nome": "Mercato della Montagnola", "cosa": "Frutta e verdura di stagione" },
-      { "nome": "Specialità di Parma", "cosa": "Uova fresche" },
-      { "nome": "Forno Mezza Rosetta", "cosa": "Pane integrale e ai cereali" }
+      { "nome": "Mercato e contadini locali", "cosa": "Frutta e verdura di stagione (zona Longostagno)" },
+      { "nome": "Fattoria / negozio locale", "cosa": "Uova fresche" },
+      { "nome": "Panificio locale (Bäckerei)", "cosa": "Pane integrale e ai cereali" }
     ]
   },
   "raccomandazioniOnline": {
@@ -19,27 +19,31 @@
     "nota": "Questa lista non contiene gli ingredienti per pranzo e cena."
   },
   "montagnola": {
-    "nome": "Mercato della Montagnola",
-    "tipo": "Frutta e verdura fresca",
-    "modalita": "Di persona o su messaggio"
+    "nome": "Mercato e contadini locali",
+    "tipo": "Frutta e verdura freschi (zona Longostagno)",
+    "modalita": "Di persona, vicino a Longostagno"
   },
   "specialita_di_parma": {
-    "nome": "Specialità di Parma",
-    "tipo": "Uova fresche",
-    "modalita": "Di persona",
+    "nome": "Uova — fattoria / negozio locale",
+    "tipo": "Uova (anche per gli albumi)",
+    "modalita": "Di persona, vicino a Longostagno",
     "fissi": [
-      "Latte Alta Qualità",
+      "Latte Alta Qualità (latte fieno locale)",
       "Mozzarella di bufala (solo al bisogno)"
     ]
   },
   "mezza_rosetta": {
-    "nome": "Forno Mezza Rosetta",
+    "nome": "Panificio locale (Bäckerei)",
     "tipo": "Pane",
-    "modalita": "Di persona",
+    "modalita": "Di persona, vicino a Longostagno",
     "fissi": [
       "1 filone di pane integrale",
       "1 filone di pane ai cereali",
       "1 pizzetta integrale rotonda (se disponibile)"
     ]
+  },
+  "online": {
+    "nome": "Online",
+    "tipo": "Amazon Fresh · Esselunga"
   }
 }

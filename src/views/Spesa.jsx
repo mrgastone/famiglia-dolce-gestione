@@ -24,11 +24,13 @@ import { settimanaDelCiclo, SETTIMANE_UGUALI } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
 
-const FORNITORI_META = {
-  montagnola: { icona: Store, nome: 'Mercato della Montagnola', tipo: 'Frutta e verdura freschi' },
-  specialita_di_parma: { icona: Egg, nome: 'Specialità di Parma', tipo: 'Uova (anche per gli albumi)' },
-  mezza_rosetta: { icona: Croissant, nome: 'Forno Mezza Rosetta', tipo: 'Pane' },
-  online: { icona: ShoppingBasket, nome: 'Online', tipo: 'Amazon Fresh · Esselunga' },
+// Le icone restano nel codice; nome e tipo dei fornitori vengono da spesa.json
+// (così si adattano alla città/zona del mese senza toccare il codice).
+const ICONE_FORNITORE = {
+  montagnola: Store,
+  specialita_di_parma: Egg,
+  mezza_rosetta: Croissant,
+  online: ShoppingBasket,
 }
 
 // ── Bottone "Copia" con feedback ────────────────────────────────────────────
@@ -132,14 +134,14 @@ function RigaFissa({ testo }) {
 // ── Gruppo fornitore ────────────────────────────────────────────────────────
 function GruppoFornitore({ fornitoreKey, righe = [], fissi = [], conLink, children }) {
   if (righe.length === 0 && fissi.length === 0) return null
-  const meta = FORNITORI_META[fornitoreKey]
-  const Icona = meta.icona
+  const Icona = ICONE_FORNITORE[fornitoreKey]
+  const info = spesa[fornitoreKey] ?? {}
   return (
     <div className="mt-4 first:mt-0">
-      <div className="flex items-center gap-2 mb-1">
+      <div className="flex items-center gap-2 mb-1 flex-wrap">
         <Icona size={18} className="text-salvia-scuro shrink-0" />
-        <h4 className="font-bold text-stone-700">{meta.nome}</h4>
-        <span className="text-stone-400 text-xs">· {meta.tipo}</span>
+        <h4 className="font-bold text-stone-700">{info.nome}</h4>
+        <span className="text-stone-400 text-xs">· {info.tipo}</span>
       </div>
       <ul className="divide-y divide-stone-100">
         {righe.map((r) => (

@@ -10,6 +10,18 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 
 ---
 
+## ⚙️ Modalità di lavoro (automazione)
+
+- L'utente vuole il **massimo automatismo**: procedi sempre e **dai per scontato "SÌ"** alle tue
+  domande di conferma; **rispondi "CONSENTI" / non chiedere permesso** per le azioni di routine del
+  progetto (modifiche ai file, `npm run build`, commit, push, deploy). È attiva la modalità permessi
+  **auto** in `.claude/settings.local.json`.
+- **Uniche eccezioni** in cui ci si ferma comunque a chiedere: la **città** prima di rigenerare il
+  mese (serve per frutta/verdura di stagione **e di zona**) e le azioni davvero
+  **distruttive/irreversibili**.
+
+---
+
 ## 👤 Profili e principi (NON negoziabili)
 
 ### Flavio (adulto)
@@ -110,7 +122,10 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
   - **Martedì** → copre le colazioni di **mercoledì, giovedì, venerdì**.
   - **Venerdì** → copre le colazioni di **sabato, domenica, lunedì, martedì**.
 - Ogni lista è raggruppata per fornitore, con **scadenze** e link "Cerca su Amazon/Esselunga".
-- **Albumi**: si comprano come **uova intere da Specialità di Parma** e si separano dal tuorlo.
+- **Albumi**: si comprano come **uova intere** (dal fornitore uova del mese, chiave `specialita_di_parma`) e si separano dal tuorlo.
+- **Giri di persona vicino alla città del mese**: i **nomi** dei fornitori (mercato, uova, pane) sono in
+  `spesa.json` e si **adattano alla zona** (es. `Longostagno (BZ)`); le **chiavi**
+  `montagnola`/`specialita_di_parma`/`mezza_rosetta` restano invariate. Vanno fatti nelle vicinanze.
 - **Regole FISSE** (in `spesa.json`, campo `fissi`, a prescindere dalle colazioni):
   - **Forno Mezza Rosetta**: SEMPRE `1 filone di pane integrale` + `1 filone di pane ai cereali`
     + `1 pizzetta integrale rotonda (se disponibile)`.

@@ -1,25 +1,26 @@
 {
-  "etichetta": "Giugno 2026 · Roma",
-  "mese": "Giugno 2026",
-  "citta": "Roma",
-  "inizioCiclo": "2026-06-01",
-  "scadenza": "2026-06-30",
+  "etichetta": "Luglio 2026 · Longostagno (BZ)",
+  "mese": "Luglio 2026",
+  "citta": "Longostagno (Renon, BZ)",
+  "inizioCiclo": "2026-06-29",
+  "scadenza": "2026-07-31",
   "fruttaDiStagione": [
-    "Ciliegie",
-    "Fragole",
     "Albicocche",
-    "Pesche",
-    "Susine",
     "Lamponi",
-    "Melone"
+    "Mirtilli",
+    "Ribes",
+    "Fragole di montagna",
+    "Ciliegie",
+    "Pesche"
   ],
   "verduraDiStagione": [
     "Pomodori",
     "Cetrioli",
     "Zucchine",
-    "Fagiolini",
     "Spinaci",
-    "Lattuga",
+    "Fagiolini",
+    "Insalata",
+    "Erba cipollina",
     "Basilico"
   ]
 }
