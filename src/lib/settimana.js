@@ -1,5 +1,9 @@
 import stagione from '../data/stagione.json'
 
+// Regola fissa: per semplificare preparazioni e spesa, le colazioni si ripetono a coppie.
+// Settimana 2 = Settimana 1, Settimana 4 = Settimana 3 (così ogni colazione si fa 2 volte).
+export const SETTIMANE_UGUALI = { 2: 1, 4: 3 }
+
 // Chiavi giorno usate nei dati (lun..dom), indicizzate per Date.getDay() (0 = domenica)
 const GIORNI_DA_GETDAY = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab']
 

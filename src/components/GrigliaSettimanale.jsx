@@ -3,7 +3,7 @@ import { TriangleAlert } from 'lucide-react'
 import profili from '../data/profili.json'
 import VideoColazione from './VideoColazione.jsx'
 import { titoloPreparazione } from './ProfiloColazione.jsx'
-import { ordineGiorni, nomeGiorno } from '../lib/settimana.js'
+import { ordineGiorni, nomeGiorno, SETTIMANE_UGUALI } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
 
@@ -43,6 +43,12 @@ export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null,
       {attiva === settimanaCorrente ? (
         <p className="text-center text-salvia-scuro font-semibold text-sm -mt-1">
           Questa è la settimana in corso
+        </p>
+      ) : null}
+
+      {SETTIMANE_UGUALI[attiva] ? (
+        <p className="text-center text-stone-400 font-semibold text-sm -mt-1">
+          ≡ Stesse colazioni della Settimana {SETTIMANE_UGUALI[attiva]}
         </p>
       ) : null}
 

@@ -20,7 +20,7 @@ import {
   testoMontagnola,
   MARGINE_PERCENTO,
 } from '../lib/spesaSettimanale.js'
-import { settimanaDelCiclo } from '../lib/settimana.js'
+import { settimanaDelCiclo, SETTIMANE_UGUALI } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
 
@@ -230,6 +230,12 @@ export default function Spesa() {
           due liste a settimana, con quantità <span className="font-semibold text-stone-500">+{MARGINE_PERCENTO}%</span>.
           Sono stati scelti tutti i prodotti di stagione in base al mese {stagione.etichetta}.
         </p>
+        {SETTIMANE_UGUALI[settimana] ? (
+          <p className="text-salvia-scuro text-sm font-semibold mt-1">
+            ≡ La spesa della Settimana {settimana} è uguale a quella della Settimana{' '}
+            {SETTIMANE_UGUALI[settimana]}.
+          </p>
+        ) : null}
       </div>
 
       {/* Giro unico in zona Montagnola */}

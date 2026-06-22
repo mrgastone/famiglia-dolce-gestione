@@ -71,6 +71,10 @@ preparare ha il suo riquadro con il suo video):
 }
 ```
 Regole:
+- **Settimane a coppie (FISSO, anche per i mesi futuri):** **Settimana 2 = Settimana 1** e
+  **Settimana 4 = Settimana 3**. Quindi si creano **2 menù distinti** (per le settimane 1 e 3) e si
+  **duplicano** (1→2, 3→4): ogni colazione si fa 2 volte → preparazioni e spesa più semplici.
+  La coppia è in `src/lib/settimana.js` → `SETTIMANE_UGUALI = { 2: 1, 4: 3 }`.
 - **Ogni cosa da preparare = un oggetto in `preparazioni`** con i SUOI `ingredienti`
   (frullato + albumi = 2 preparazioni → 2 riquadri → 2 video).
 - `etichetta` con articolo; `plurale: true` se plurale. Genera "Guarda come si
@@ -178,5 +182,6 @@ e Archivio** (componente `EtichettaStagione`, legge `stagione.etichetta`).
 5. **Riscrivi `colazioni.json`** (4×7×2) coi principi: titoli in italiano, ingredienti annidati nelle
    `preparazioni`, uova/albumi a numero, resto in grammi, `sicurezza` David solo nei giorni a rischio,
    niente ultra-processati né zuccheri aggiunti, bevande con dosi (acqua **naturale**).
+   **Genera solo 2 menù** (settimane 1 e 3) e **duplicali** (Sett. 2 = Sett. 1, Sett. 4 = Sett. 3).
 6. **Aggiorna `prodotti.json`** se servono nuovi ingredienti.
 7. `npm run build`, poi commit + push (deploy automatico). Spesa e Settimane si aggiornano da sole.
