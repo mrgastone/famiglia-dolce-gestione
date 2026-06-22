@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import { fileURLToPath } from 'node:url'
 
 // Base path:
 // - in produzione (build/preview) l'app è servita da
@@ -8,11 +9,25 @@ import { VitePWA } from 'vite-plugin-pwa'
 // - in sviluppo gira comodamente sulla root → base = '/'
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/famiglia-dolce-gestione/' : '/',
+  // Due app nello stesso repo: index.html (Colazioni) + cassa.html (Cassa)
+  build: {
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL('./index.html', import.meta.url)),
+        cassa: fileURLToPath(new URL('./cassa.html', import.meta.url)),
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons/apple-touch-icon.png'],
+      includeAssets: [
+        'favicon.svg',
+        'icons/apple-touch-icon.png',
+        'cassa-icon.svg',
+        'icons/cassa-touch-icon.png',
+      ],
       manifest: {
         name: 'Famiglia Dolce — Colazioni',
         short_name: 'Colazioni',

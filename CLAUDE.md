@@ -166,6 +166,14 @@ brand tipo `Youtube`; usare `MonitorPlay`). Tipografia self-hosted (`@fontsource
 Push su `main` → GitHub Actions compila e pubblica su Pages. Base path solo in produzione:
 `/famiglia-dolce-gestione/` (vedi `vite.config.js`). Verifica con `npm run build`.
 
+## 🧾 Seconda app nel repo: Cassa
+Stesso repo, **build multi-pagina** (`vite.config.js` → input `index.html` + `cassa.html`).
+- Colazioni → `…/famiglia-dolce-gestione/` ; Cassa → `…/famiglia-dolce-gestione/cassa.html`.
+- Codice in `src/cassa/`: gestione cassa contanti (saldo, entrate/uscite, **foto scontrini** in
+  IndexedDB, grafico a ciambella per categoria Cibo/Tintoria/Animali/Altro, persone
+  Natasha/Lena/Flavio). Dati **solo sul dispositivo** (localStorage + IndexedDB), niente sync.
+- Stessa grafica (Tailwind/`src/index.css`, font condivisi `src/fonts.js`). Icona app: portafoglio.
+
 ---
 
 ## 🗓️ Quando rigenerare + 🗄️ Archivio storico

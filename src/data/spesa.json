@@ -1,11 +1,11 @@
 {
   "giroUnico": {
-    "titolo": "Giro unico — vicino a Longostagno",
-    "descrizione": "I giri fissi (frutta e verdura, uova, pane) si fanno di persona nelle vicinanze di Longostagno: mercato e contadini locali per il fresco, una fattoria/maso o negozio per le uova, un panificio locale (Bäckerei) per il pane.",
+    "titolo": "Giro unico — zona Longostagno / Collalbo",
+    "descrizione": "I giri fissi si fanno di persona vicino a Longostagno. Collalbo (Klobenstein), il paese principale del Renon, è vicino e ben collegato in auto e con bus/trenino del Renon: lì ci sono panificio e supermercati e, nei dintorni, i masi (Hofladen) per uova e frutta/verdura.",
     "tappe": [
-      { "nome": "Mercato e contadini locali", "cosa": "Frutta e verdura di stagione (zona Longostagno)" },
-      { "nome": "Fattoria / negozio locale", "cosa": "Uova fresche" },
-      { "nome": "Panificio locale (Bäckerei)", "cosa": "Pane integrale e ai cereali" }
+      { "nome": "Frutta e verdura", "cosa": "masi/Hofladen del Renon o mercato contadino; in alternativa supermercato a Collalbo (es. MPreis/Despar)" },
+      { "nome": "Uova fresche", "cosa": "da un maso/Hofladen della zona (uova di fattoria) o al supermercato di Collalbo" },
+      { "nome": "Pane", "cosa": "panificio (Bäckerei) a Collalbo: filone integrale + ai cereali; in alternativa pane fresco al supermercato" }
     ]
   },
   "raccomandazioniOnline": {
@@ -14,28 +14,29 @@
     "punti": [
       "Ordina per primi i prodotti a scadenza più lunga (dispensa: avena, semi, crema di mandorle, frutta secca) così non mancano mai.",
       "Lascia i prodotti freschi (yogurt, latte) a ridosso della consegna.",
-      "Se serve in fretta, scegli Amazon Fresh; per la spesa pianificata va bene Esselunga."
+      "Se serve in fretta, scegli Amazon Fresh; per la spesa pianificata va bene Esselunga.",
+      "In zona Renon controlla la copertura della consegna: in caso, prendi i freschi al supermercato di Collalbo."
     ],
     "nota": "Questa lista non contiene gli ingredienti per pranzo e cena."
   },
   "montagnola": {
-    "nome": "Mercato e contadini locali",
-    "tipo": "Frutta e verdura freschi (zona Longostagno)",
-    "modalita": "Di persona, vicino a Longostagno"
+    "nome": "Frutta e verdura — masi / mercato locale",
+    "tipo": "Freschi (Renon · Collalbo)",
+    "modalita": "Di persona, zona Longostagno–Collalbo"
   },
   "specialita_di_parma": {
-    "nome": "Uova — fattoria / negozio locale",
+    "nome": "Uova — maso / negozio locale",
     "tipo": "Uova (anche per gli albumi)",
-    "modalita": "Di persona, vicino a Longostagno",
+    "modalita": "Di persona, zona Longostagno–Collalbo",
     "fissi": [
       "Latte Alta Qualità (latte fieno locale)",
       "Mozzarella di bufala (solo al bisogno)"
     ]
   },
   "mezza_rosetta": {
-    "nome": "Panificio locale (Bäckerei)",
+    "nome": "Pane — Panificio / Bäckerei (Collalbo)",
     "tipo": "Pane",
-    "modalita": "Di persona, vicino a Longostagno",
+    "modalita": "Di persona, a Collalbo",
     "fissi": [
       "1 filone di pane integrale",
       "1 filone di pane ai cereali",

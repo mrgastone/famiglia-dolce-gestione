@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#7C9A6B" />
+  <!-- banconota che sporge -->
+  <rect x="150" y="150" width="212" height="120" rx="16" fill="#C97B4A" />
+  <!-- corpo del portafoglio -->
+  <rect x="120" y="196" width="272" height="184" rx="28" fill="#FBF7F0" />
+  <!-- piega -->
+  <path d="M120 252 H392" stroke="#7C9A6B" stroke-width="10" stroke-linecap="round" />
+  <!-- bottone a pressione -->
+  <circle cx="352" cy="290" r="22" fill="#7C9A6B" />
+  <circle cx="352" cy="290" r="9" fill="#FBF7F0" />
+</svg>

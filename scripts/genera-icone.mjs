@@ -34,6 +34,24 @@ function svgIcona({ size, rx, scala }) {
   </svg>`
 }
 
+// Motivo a portafoglio per l'app Cassa
+function svgCassa({ size, rx, scala }) {
+  const cx = 256
+  const cy = 256
+  const portafoglio = `
+    <g transform="translate(${cx} ${cy}) scale(${scala}) translate(${-cx} ${-cy})">
+      <rect x="150" y="150" width="212" height="120" rx="16" fill="${TERRA}"/>
+      <rect x="120" y="196" width="272" height="184" rx="28" fill="${FG}"/>
+      <path d="M120 252 H392" stroke="${BG}" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="352" cy="290" r="22" fill="${BG}"/>
+      <circle cx="352" cy="290" r="9" fill="${FG}"/>
+    </g>`
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 512 512">
+    <rect width="512" height="512" rx="${rx}" fill="${BG}"/>
+    ${portafoglio}
+  </svg>`
+}
+
 const icone = [
   { file: 'icon-192.png', size: 192, rx: 96, scala: 0.78 },
   { file: 'icon-512.png', size: 512, rx: 96, scala: 0.78 },
@@ -41,12 +59,14 @@ const icone = [
   { file: 'icon-maskable-512.png', size: 512, rx: 0, scala: 0.66 },
   // apple-touch-icon: iOS arrotonda da sé, fondo a tutto campo
   { file: 'apple-touch-icon.png', size: 180, rx: 0, scala: 0.8 },
+  // icona dell'app Cassa
+  { file: 'cassa-touch-icon.png', size: 180, rx: 0, scala: 0.84, motivo: 'cassa' },
 ]
 
 await mkdir(outDir, { recursive: true })
 
 for (const i of icone) {
-  const svg = svgIcona(i)
+  const svg = (i.motivo === 'cassa' ? svgCassa : svgIcona)(i)
   await sharp(Buffer.from(svg)).png().toFile(resolve(outDir, i.file))
   console.log('✓', i.file)
 }

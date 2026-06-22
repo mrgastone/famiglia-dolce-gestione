@@ -24,9 +24,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Albicocche",
+                "nome": "Pesche",
                 "g": 100,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Mandorle",
@@ -39,7 +39,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con albicocca",
+        "titolo": "Crema d'avena nel latte con pesca",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -55,9 +55,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -68,25 +68,25 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato ai frutti di bosco e albumi sodi",
+        "titolo": "Frullato more-lamponi e albumi sodi",
         "preparazioni": [
           {
-            "etichetta": "il frullato ai frutti di bosco",
+            "etichetta": "il frullato di more e lamponi",
             "ingredienti": [
               {
-                "nome": "Lamponi",
+                "nome": "More",
                 "g": 70,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               },
               {
-                "nome": "Mirtilli",
+                "nome": "Lamponi",
                 "g": 60,
-                "prodotto": "mirtilli"
+                "prodotto": "lamponi"
               },
               {
                 "nome": "Yogurt greco",
@@ -149,7 +149,7 @@
     },
     "mer": {
       "flavio": {
-        "titolo": "Albumi con pomodoro e cetriolo",
+        "titolo": "Albumi con pomodoro e basilico",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -176,9 +176,9 @@
                 "prodotto": "olio_evo"
               },
               {
-                "nome": "Erba cipollina",
-                "g": 3,
-                "prodotto": "erba_cipollina"
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ]
           }
@@ -186,7 +186,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero con mirtilli",
+        "titolo": "Yogurt intero con more",
         "preparazioni": [
           {
             "etichetta": "lo yogurt con frutta e avena",
@@ -197,9 +197,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "More schiacciate",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               },
               {
                 "nome": "Fiocchi d'avena",
@@ -215,12 +215,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+        "sicurezza": "More schiacciate o tagliate, mai intere."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con lamponi e ribes",
+        "titolo": "Crema d'avena con susine",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -231,14 +231,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Lamponi",
-                "g": 60,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Ribes",
-                "g": 40,
-                "prodotto": "ribes"
+                "nome": "Susine",
+                "g": 100,
+                "prodotto": "susine"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -251,7 +246,7 @@
         "bevanda": "Soia non zuccherata (1 bicchiere)"
       },
       "david": {
-        "titolo": "Frullato di yogurt intero e frutta",
+        "titolo": "Frullato di yogurt intero e pesca",
         "preparazioni": [
           {
             "etichetta": "il frullato di yogurt e frutta",
@@ -262,9 +257,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Banana",
@@ -284,7 +279,7 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Yogurt greco con albicocche",
+        "titolo": "Yogurt greco con fichi e noci",
         "preparazioni": [
           {
             "etichetta": "lo yogurt greco con frutta e semi",
@@ -295,9 +290,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Albicocche",
+                "nome": "Fichi",
                 "g": 100,
-                "prodotto": "albicocche"
+                "prodotto": "fichi"
               },
               {
                 "nome": "Noci",
@@ -315,7 +310,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo strapazzato con pane",
+        "titolo": "Uovo strapazzato con fichi",
         "preparazioni": [
           {
             "etichetta": "l'uovo strapazzato",
@@ -331,19 +326,20 @@
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Lamponi schiacciati",
+                "nome": "Fichi",
                 "g": 60,
-                "prodotto": "lamponi"
+                "prodotto": "fichi"
               }
             ]
           }
         ],
-        "bevanda": "Latte intero (1 bicchiere)"
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Fichi a pezzetti piccoli."
       }
     },
     "sab": {
       "flavio": {
-        "titolo": "Insalata con albumi e mirtilli",
+        "titolo": "Insalata con albumi e uva",
         "preparazioni": [
           {
             "etichetta": "gli albumi sodi",
@@ -370,9 +366,9 @@
                 "prodotto": "cetriolo"
               },
               {
-                "nome": "Mirtilli",
-                "g": 70,
-                "prodotto": "mirtilli"
+                "nome": "Uva",
+                "g": 80,
+                "prodotto": "uva"
               }
             ]
           }
@@ -402,20 +398,20 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "More schiacciate",
                 "g": 50,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               }
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+        "sicurezza": "More schiacciate o tagliate, mai intere."
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con ciliegie",
+        "titolo": "Avena ammollata con uva",
         "preparazioni": [
           {
             "etichetta": "l'avena ammollata (overnight oats)",
@@ -431,9 +427,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Ciliegie snocciolate",
+                "nome": "Uva",
                 "g": 100,
-                "prodotto": "ciliegie"
+                "prodotto": "uva"
               }
             ]
           }
@@ -441,10 +437,10 @@
         "bevanda": "Frullato (1 bicchiere)"
       },
       "david": {
-        "titolo": "Yogurt intero con ciliegie",
+        "titolo": "Yogurt intero con uva e avena",
         "preparazioni": [
           {
-            "etichetta": "lo yogurt con ciliegie e avena",
+            "etichetta": "lo yogurt con frutta e avena",
             "ingredienti": [
               {
                 "nome": "Yogurt intero",
@@ -452,9 +448,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Ciliegie snocciolate e tagliate",
+                "nome": "Uva",
                 "g": 70,
-                "prodotto": "ciliegie"
+                "prodotto": "uva"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -470,7 +466,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Uva tagliata a metà nel senso della lunghezza (o in quattro), mai intera. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
@@ -499,9 +495,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Albicocche",
+                "nome": "Pesche",
                 "g": 100,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Mandorle",
@@ -514,7 +510,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con albicocca",
+        "titolo": "Crema d'avena nel latte con pesca",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -530,9 +526,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -543,25 +539,25 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato ai frutti di bosco e albumi sodi",
+        "titolo": "Frullato more-lamponi e albumi sodi",
         "preparazioni": [
           {
-            "etichetta": "il frullato ai frutti di bosco",
+            "etichetta": "il frullato di more e lamponi",
             "ingredienti": [
               {
-                "nome": "Lamponi",
+                "nome": "More",
                 "g": 70,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               },
               {
-                "nome": "Mirtilli",
+                "nome": "Lamponi",
                 "g": 60,
-                "prodotto": "mirtilli"
+                "prodotto": "lamponi"
               },
               {
                 "nome": "Yogurt greco",
@@ -624,7 +620,7 @@
     },
     "mer": {
       "flavio": {
-        "titolo": "Albumi con pomodoro e cetriolo",
+        "titolo": "Albumi con pomodoro e basilico",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -651,9 +647,9 @@
                 "prodotto": "olio_evo"
               },
               {
-                "nome": "Erba cipollina",
-                "g": 3,
-                "prodotto": "erba_cipollina"
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ]
           }
@@ -661,7 +657,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero con mirtilli",
+        "titolo": "Yogurt intero con more",
         "preparazioni": [
           {
             "etichetta": "lo yogurt con frutta e avena",
@@ -672,9 +668,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "More schiacciate",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               },
               {
                 "nome": "Fiocchi d'avena",
@@ -690,12 +686,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+        "sicurezza": "More schiacciate o tagliate, mai intere."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con lamponi e ribes",
+        "titolo": "Crema d'avena con susine",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -706,14 +702,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Lamponi",
-                "g": 60,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Ribes",
-                "g": 40,
-                "prodotto": "ribes"
+                "nome": "Susine",
+                "g": 100,
+                "prodotto": "susine"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -726,7 +717,7 @@
         "bevanda": "Soia non zuccherata (1 bicchiere)"
       },
       "david": {
-        "titolo": "Frullato di yogurt intero e frutta",
+        "titolo": "Frullato di yogurt intero e pesca",
         "preparazioni": [
           {
             "etichetta": "il frullato di yogurt e frutta",
@@ -737,9 +728,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Banana",
@@ -759,7 +750,7 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Yogurt greco con albicocche",
+        "titolo": "Yogurt greco con fichi e noci",
         "preparazioni": [
           {
             "etichetta": "lo yogurt greco con frutta e semi",
@@ -770,9 +761,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Albicocche",
+                "nome": "Fichi",
                 "g": 100,
-                "prodotto": "albicocche"
+                "prodotto": "fichi"
               },
               {
                 "nome": "Noci",
@@ -790,7 +781,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo strapazzato con pane",
+        "titolo": "Uovo strapazzato con fichi",
         "preparazioni": [
           {
             "etichetta": "l'uovo strapazzato",
@@ -806,19 +797,20 @@
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Lamponi schiacciati",
+                "nome": "Fichi",
                 "g": 60,
-                "prodotto": "lamponi"
+                "prodotto": "fichi"
               }
             ]
           }
         ],
-        "bevanda": "Latte intero (1 bicchiere)"
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Fichi a pezzetti piccoli."
       }
     },
     "sab": {
       "flavio": {
-        "titolo": "Insalata con albumi e mirtilli",
+        "titolo": "Insalata con albumi e uva",
         "preparazioni": [
           {
             "etichetta": "gli albumi sodi",
@@ -845,9 +837,9 @@
                 "prodotto": "cetriolo"
               },
               {
-                "nome": "Mirtilli",
-                "g": 70,
-                "prodotto": "mirtilli"
+                "nome": "Uva",
+                "g": 80,
+                "prodotto": "uva"
               }
             ]
           }
@@ -877,20 +869,20 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "More schiacciate",
                 "g": 50,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               }
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+        "sicurezza": "More schiacciate o tagliate, mai intere."
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con ciliegie",
+        "titolo": "Avena ammollata con uva",
         "preparazioni": [
           {
             "etichetta": "l'avena ammollata (overnight oats)",
@@ -906,9 +898,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Ciliegie snocciolate",
+                "nome": "Uva",
                 "g": 100,
-                "prodotto": "ciliegie"
+                "prodotto": "uva"
               }
             ]
           }
@@ -916,10 +908,10 @@
         "bevanda": "Frullato (1 bicchiere)"
       },
       "david": {
-        "titolo": "Yogurt intero con ciliegie",
+        "titolo": "Yogurt intero con uva e avena",
         "preparazioni": [
           {
-            "etichetta": "lo yogurt con ciliegie e avena",
+            "etichetta": "lo yogurt con frutta e avena",
             "ingredienti": [
               {
                 "nome": "Yogurt intero",
@@ -927,9 +919,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Ciliegie snocciolate e tagliate",
+                "nome": "Uva",
                 "g": 70,
-                "prodotto": "ciliegie"
+                "prodotto": "uva"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -945,7 +937,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Uva tagliata a metà nel senso della lunghezza (o in quattro), mai intera. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
@@ -978,9 +970,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Lamponi",
+                "nome": "More",
                 "g": 100,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               }
             ]
           }
@@ -988,7 +980,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con mirtilli",
+        "titolo": "Crema d'avena nel latte con pesca",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -1004,9 +996,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -1017,12 +1009,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
-        "titolo": "Yogurt greco con fragole",
+        "titolo": "Yogurt greco con susine",
         "preparazioni": [
           {
             "etichetta": "lo yogurt greco con frutta e semi",
@@ -1033,9 +1025,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Fragole di montagna",
+                "nome": "Susine",
                 "g": 100,
-                "prodotto": "fragole"
+                "prodotto": "susine"
               },
               {
                 "nome": "Mandorle",
@@ -1053,7 +1045,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con pesca",
+        "titolo": "Uovo intero strapazzato con susina",
         "preparazioni": [
           {
             "etichetta": "l'uovo strapazzato",
@@ -1069,20 +1061,20 @@
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Pesca",
+                "nome": "Susine",
                 "g": 70,
-                "prodotto": "pesche"
+                "prodotto": "susine"
               }
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Pesca a pezzetti piccoli."
+        "sicurezza": "Susine snocciolate e tagliate a pezzetti piccoli."
       }
     },
     "mer": {
       "flavio": {
-        "titolo": "Albumi con pomodoro e basilico",
+        "titolo": "Albumi con pomodoro e origano",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -1109,9 +1101,9 @@
                 "prodotto": "olio_evo"
               },
               {
-                "nome": "Basilico",
+                "nome": "Origano",
                 "g": 2,
-                "prodotto": "basilico"
+                "prodotto": "origano"
               }
             ]
           }
@@ -1119,7 +1111,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero con albicocca",
+        "titolo": "Yogurt intero con pesca",
         "preparazioni": [
           {
             "etichetta": "lo yogurt con frutta e avena",
@@ -1130,9 +1122,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Fiocchi d'avena",
@@ -1148,12 +1140,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Albicocca a pezzetti piccoli."
+        "sicurezza": "Pesca a pezzetti piccoli."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con pesche",
+        "titolo": "Crema d'avena con fichi",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -1164,9 +1156,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Pesche",
+                "nome": "Fichi",
                 "g": 100,
-                "prodotto": "pesche"
+                "prodotto": "fichi"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -1179,7 +1171,7 @@
         "bevanda": "Soia non zuccherata (1 bicchiere)"
       },
       "david": {
-        "titolo": "Frullato di yogurt intero e mirtilli",
+        "titolo": "Frullato di yogurt intero e more",
         "preparazioni": [
           {
             "etichetta": "il frullato di yogurt e frutta",
@@ -1190,9 +1182,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Mirtilli",
+                "nome": "More",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               },
               {
                 "nome": "Banana",
@@ -1212,20 +1204,20 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato albicocca-lamponi e albumi sodi",
+        "titolo": "Frullato pesca-uva e albumi sodi",
         "preparazioni": [
           {
-            "etichetta": "il frullato di albicocca e lamponi",
+            "etichetta": "il frullato di pesca e uva",
             "ingredienti": [
               {
-                "nome": "Albicocche",
+                "nome": "Pesche",
                 "g": 80,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
-                "nome": "Lamponi",
+                "nome": "Uva",
                 "g": 70,
-                "prodotto": "lamponi"
+                "prodotto": "uva"
               },
               {
                 "nome": "Yogurt greco",
@@ -1283,7 +1275,7 @@
     },
     "sab": {
       "flavio": {
-        "titolo": "Albumi strapazzati con ribes e noci",
+        "titolo": "Albumi strapazzati con lamponi e noci",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -1297,12 +1289,12 @@
             ]
           },
           {
-            "etichetta": "il piatto di ribes e noci",
+            "etichetta": "il piatto di lamponi e noci",
             "ingredienti": [
               {
-                "nome": "Ribes",
+                "nome": "Lamponi",
                 "g": 80,
-                "prodotto": "ribes"
+                "prodotto": "lamponi"
               },
               {
                 "nome": "Noci",
@@ -1337,14 +1329,15 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Fragole schiacciate",
+                "nome": "Mirtilli schiacciati",
                 "g": 50,
-                "prodotto": "fragole"
+                "prodotto": "mirtilli"
               }
             ]
           }
         ],
-        "bevanda": "Latte intero (1 bicchiere)"
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
       }
     },
     "dom": {
@@ -1386,9 +1379,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Lamponi schiacciati",
+                "nome": "More schiacciate",
                 "g": 35,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               },
               {
                 "nome": "Mirtilli schiacciati",
@@ -1409,7 +1402,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "More e mirtilli schiacciati o tagliati, mai interi. Crema di mandorle liscia, mai a pezzi."
       }
     }
   },
@@ -1442,9 +1435,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Lamponi",
+                "nome": "More",
                 "g": 100,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               }
             ]
           }
@@ -1452,7 +1445,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con mirtilli",
+        "titolo": "Crema d'avena nel latte con pesca",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -1468,9 +1461,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Mirtilli schiacciati",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Crema di mandorle liscia",
@@ -1481,12 +1474,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "Pesca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
       }
     },
     "mar": {
       "flavio": {
-        "titolo": "Yogurt greco con fragole",
+        "titolo": "Yogurt greco con susine",
         "preparazioni": [
           {
             "etichetta": "lo yogurt greco con frutta e semi",
@@ -1497,9 +1490,9 @@
                 "prodotto": "yogurt_greco"
               },
               {
-                "nome": "Fragole di montagna",
+                "nome": "Susine",
                 "g": 100,
-                "prodotto": "fragole"
+                "prodotto": "susine"
               },
               {
                 "nome": "Mandorle",
@@ -1517,7 +1510,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con pesca",
+        "titolo": "Uovo intero strapazzato con susina",
         "preparazioni": [
           {
             "etichetta": "l'uovo strapazzato",
@@ -1533,20 +1526,20 @@
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Pesca",
+                "nome": "Susine",
                 "g": 70,
-                "prodotto": "pesche"
+                "prodotto": "susine"
               }
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Pesca a pezzetti piccoli."
+        "sicurezza": "Susine snocciolate e tagliate a pezzetti piccoli."
       }
     },
     "mer": {
       "flavio": {
-        "titolo": "Albumi con pomodoro e basilico",
+        "titolo": "Albumi con pomodoro e origano",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -1573,9 +1566,9 @@
                 "prodotto": "olio_evo"
               },
               {
-                "nome": "Basilico",
+                "nome": "Origano",
                 "g": 2,
-                "prodotto": "basilico"
+                "prodotto": "origano"
               }
             ]
           }
@@ -1583,7 +1576,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero con albicocca",
+        "titolo": "Yogurt intero con pesca",
         "preparazioni": [
           {
             "etichetta": "lo yogurt con frutta e avena",
@@ -1594,9 +1587,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Albicocca",
+                "nome": "Pesca",
                 "g": 70,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Fiocchi d'avena",
@@ -1612,12 +1605,12 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Albicocca a pezzetti piccoli."
+        "sicurezza": "Pesca a pezzetti piccoli."
       }
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con pesche",
+        "titolo": "Crema d'avena con fichi",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -1628,9 +1621,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Pesche",
+                "nome": "Fichi",
                 "g": 100,
-                "prodotto": "pesche"
+                "prodotto": "fichi"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -1643,7 +1636,7 @@
         "bevanda": "Soia non zuccherata (1 bicchiere)"
       },
       "david": {
-        "titolo": "Frullato di yogurt intero e mirtilli",
+        "titolo": "Frullato di yogurt intero e more",
         "preparazioni": [
           {
             "etichetta": "il frullato di yogurt e frutta",
@@ -1654,9 +1647,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Mirtilli",
+                "nome": "More",
                 "g": 70,
-                "prodotto": "mirtilli"
+                "prodotto": "more"
               },
               {
                 "nome": "Banana",
@@ -1676,20 +1669,20 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato albicocca-lamponi e albumi sodi",
+        "titolo": "Frullato pesca-uva e albumi sodi",
         "preparazioni": [
           {
-            "etichetta": "il frullato di albicocca e lamponi",
+            "etichetta": "il frullato di pesca e uva",
             "ingredienti": [
               {
-                "nome": "Albicocche",
+                "nome": "Pesche",
                 "g": 80,
-                "prodotto": "albicocche"
+                "prodotto": "pesche"
               },
               {
-                "nome": "Lamponi",
+                "nome": "Uva",
                 "g": 70,
-                "prodotto": "lamponi"
+                "prodotto": "uva"
               },
               {
                 "nome": "Yogurt greco",
@@ -1747,7 +1740,7 @@
     },
     "sab": {
       "flavio": {
-        "titolo": "Albumi strapazzati con ribes e noci",
+        "titolo": "Albumi strapazzati con lamponi e noci",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -1761,12 +1754,12 @@
             ]
           },
           {
-            "etichetta": "il piatto di ribes e noci",
+            "etichetta": "il piatto di lamponi e noci",
             "ingredienti": [
               {
-                "nome": "Ribes",
+                "nome": "Lamponi",
                 "g": 80,
-                "prodotto": "ribes"
+                "prodotto": "lamponi"
               },
               {
                 "nome": "Noci",
@@ -1801,14 +1794,15 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Fragole schiacciate",
+                "nome": "Mirtilli schiacciati",
                 "g": 50,
-                "prodotto": "fragole"
+                "prodotto": "mirtilli"
               }
             ]
           }
         ],
-        "bevanda": "Latte intero (1 bicchiere)"
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
       }
     },
     "dom": {
@@ -1850,9 +1844,9 @@
                 "prodotto": "yogurt_intero"
               },
               {
-                "nome": "Lamponi schiacciati",
+                "nome": "More schiacciate",
                 "g": 35,
-                "prodotto": "lamponi"
+                "prodotto": "more"
               },
               {
                 "nome": "Mirtilli schiacciati",
@@ -1873,7 +1867,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+        "sicurezza": "More e mirtilli schiacciati o tagliati, mai interi. Crema di mandorle liscia, mai a pezzi."
       }
     }
   }

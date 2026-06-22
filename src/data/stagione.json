@@ -1,26 +1,26 @@
 {
-  "etichetta": "Luglio 2026 · Longostagno (BZ)",
-  "mese": "Luglio 2026",
+  "etichetta": "Agosto 2026 · Longostagno (BZ)",
+  "mese": "Agosto 2026",
   "citta": "Longostagno (Renon, BZ)",
-  "inizioCiclo": "2026-06-29",
-  "scadenza": "2026-07-31",
+  "inizioCiclo": "2026-07-27",
+  "scadenza": "2026-08-31",
   "fruttaDiStagione": [
-    "Albicocche",
+    "Susine",
+    "Pesche",
+    "Fichi",
+    "Uva",
+    "More",
     "Lamponi",
-    "Mirtilli",
-    "Ribes",
-    "Fragole di montagna",
-    "Ciliegie",
-    "Pesche"
+    "Mirtilli"
   ],
   "verduraDiStagione": [
     "Pomodori",
     "Cetrioli",
     "Zucchine",
-    "Spinaci",
     "Fagiolini",
+    "Peperoni",
+    "Spinaci",
     "Insalata",
-    "Erba cipollina",
     "Basilico"
   ]
 }

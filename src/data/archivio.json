@@ -1,5 +1,1890 @@
 [
   {
+    "id": "2026-07",
+    "etichetta": "Luglio 2026 · Longostagno (BZ)",
+    "citta": "Longostagno (Renon, BZ)",
+    "colazioni": {
+      "1": {
+        "lun": {
+          "flavio": {
+            "titolo": "Albumi strapazzati con avena",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (cotti in acqua)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Albicocche",
+                    "g": 100,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Mandorle",
+                    "g": 15,
+                    "prodotto": "mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+          },
+          "david": {
+            "titolo": "Crema d'avena nel latte con albicocca",
+            "preparazioni": [
+              {
+                "etichetta": "la crema d'avena nel latte",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 30,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Latte intero",
+                    "g": 130,
+                    "prodotto": "latte_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
+          }
+        },
+        "mar": {
+          "flavio": {
+            "titolo": "Frullato ai frutti di bosco e albumi sodi",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato ai frutti di bosco",
+                "ingredienti": [
+                  {
+                    "nome": "Lamponi",
+                    "g": 70,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 60,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              },
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 2,
+                    "prodotto": "albume"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo intero strapazzato con pane",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 30,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 25,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
+          }
+        },
+        "mer": {
+          "flavio": {
+            "titolo": "Albumi con pomodoro e cetriolo",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Olio extravergine d'oliva",
+                    "g": 10,
+                    "prodotto": "olio_evo"
+                  },
+                  {
+                    "nome": "Erba cipollina",
+                    "g": 3,
+                    "prodotto": "erba_cipollina"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero bianco",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Semi di lino",
+                    "g": 5,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+          }
+        },
+        "gio": {
+          "flavio": {
+            "titolo": "Crema d'avena con lamponi e ribes",
+            "preparazioni": [
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 60,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Ribes",
+                    "g": 40,
+                    "prodotto": "ribes"
+                  },
+                  {
+                    "nome": "Semi di lino macinati",
+                    "g": 10,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Soia non zuccherata (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frullato di yogurt intero e frutta",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di yogurt e frutta",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)"
+          }
+        },
+        "ven": {
+          "flavio": {
+            "titolo": "Yogurt greco con albicocche",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt greco con frutta e semi",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 150,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Albicocche",
+                    "g": 100,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Noci",
+                    "g": 20,
+                    "prodotto": "noci"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo strapazzato con pane",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  },
+                  {
+                    "nome": "Lamponi schiacciati",
+                    "g": 60,
+                    "prodotto": "lamponi"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)"
+          }
+        },
+        "sab": {
+          "flavio": {
+            "titolo": "Insalata con albumi e mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "l'insalata di pomodoro e cetriolo",
+                "ingredienti": [
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frittelle di avena e banana",
+            "preparazioni": [
+              {
+                "etichetta": "le frittelle di avena e banana",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 35,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 50,
+                    "prodotto": "mirtilli"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+          }
+        },
+        "dom": {
+          "flavio": {
+            "titolo": "Avena ammollata con ciliegie",
+            "preparazioni": [
+              {
+                "etichetta": "l'avena ammollata (overnight oats)",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (ammollati)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Ciliegie snocciolate",
+                    "g": 100,
+                    "prodotto": "ciliegie"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Frullato (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con ciliegie",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con ciliegie e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Ciliegie snocciolate e tagliate",
+                    "g": 70,
+                    "prodotto": "ciliegie"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
+          }
+        }
+      },
+      "2": {
+        "lun": {
+          "flavio": {
+            "titolo": "Albumi strapazzati con avena",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (cotti in acqua)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Albicocche",
+                    "g": 100,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Mandorle",
+                    "g": 15,
+                    "prodotto": "mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+          },
+          "david": {
+            "titolo": "Crema d'avena nel latte con albicocca",
+            "preparazioni": [
+              {
+                "etichetta": "la crema d'avena nel latte",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 30,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Latte intero",
+                    "g": 130,
+                    "prodotto": "latte_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Albicocca a pezzetti piccoli. Crema di mandorle liscia, mai a pezzi."
+          }
+        },
+        "mar": {
+          "flavio": {
+            "titolo": "Frullato ai frutti di bosco e albumi sodi",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato ai frutti di bosco",
+                "ingredienti": [
+                  {
+                    "nome": "Lamponi",
+                    "g": 70,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 60,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              },
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 2,
+                    "prodotto": "albume"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo intero strapazzato con pane",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 30,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 25,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
+          }
+        },
+        "mer": {
+          "flavio": {
+            "titolo": "Albumi con pomodoro e cetriolo",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Olio extravergine d'oliva",
+                    "g": 10,
+                    "prodotto": "olio_evo"
+                  },
+                  {
+                    "nome": "Erba cipollina",
+                    "g": 3,
+                    "prodotto": "erba_cipollina"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero bianco",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Semi di lino",
+                    "g": 5,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+          }
+        },
+        "gio": {
+          "flavio": {
+            "titolo": "Crema d'avena con lamponi e ribes",
+            "preparazioni": [
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 60,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Ribes",
+                    "g": 40,
+                    "prodotto": "ribes"
+                  },
+                  {
+                    "nome": "Semi di lino macinati",
+                    "g": 10,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Soia non zuccherata (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frullato di yogurt intero e frutta",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di yogurt e frutta",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)"
+          }
+        },
+        "ven": {
+          "flavio": {
+            "titolo": "Yogurt greco con albicocche",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt greco con frutta e semi",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 150,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Albicocche",
+                    "g": 100,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Noci",
+                    "g": 20,
+                    "prodotto": "noci"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo strapazzato con pane",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  },
+                  {
+                    "nome": "Lamponi schiacciati",
+                    "g": 60,
+                    "prodotto": "lamponi"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)"
+          }
+        },
+        "sab": {
+          "flavio": {
+            "titolo": "Insalata con albumi e mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "l'insalata di pomodoro e cetriolo",
+                "ingredienti": [
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frittelle di avena e banana",
+            "preparazioni": [
+              {
+                "etichetta": "le frittelle di avena e banana",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 35,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 50,
+                    "prodotto": "mirtilli"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi."
+          }
+        },
+        "dom": {
+          "flavio": {
+            "titolo": "Avena ammollata con ciliegie",
+            "preparazioni": [
+              {
+                "etichetta": "l'avena ammollata (overnight oats)",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (ammollati)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Ciliegie snocciolate",
+                    "g": 100,
+                    "prodotto": "ciliegie"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Frullato (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con ciliegie",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con ciliegie e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Ciliegie snocciolate e tagliate",
+                    "g": 70,
+                    "prodotto": "ciliegie"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Ciliegie snocciolate e tagliate. Crema di mandorle liscia, mai a pezzi."
+          }
+        }
+      },
+      "3": {
+        "lun": {
+          "flavio": {
+            "titolo": "Frittata di albumi con zucchine",
+            "preparazioni": [
+              {
+                "etichetta": "la frittata di albumi con zucchine",
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Zucchine",
+                    "g": 80,
+                    "prodotto": "zucchine"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (cotti in acqua)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 100,
+                    "prodotto": "lamponi"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+          },
+          "david": {
+            "titolo": "Crema d'avena nel latte con mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "la crema d'avena nel latte",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 30,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Latte intero",
+                    "g": 130,
+                    "prodotto": "latte_intero"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+          }
+        },
+        "mar": {
+          "flavio": {
+            "titolo": "Yogurt greco con fragole",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt greco con frutta e semi",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 150,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Fragole di montagna",
+                    "g": 100,
+                    "prodotto": "fragole"
+                  },
+                  {
+                    "nome": "Mandorle",
+                    "g": 15,
+                    "prodotto": "mandorle"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo intero strapazzato con pesca",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  },
+                  {
+                    "nome": "Pesca",
+                    "g": 70,
+                    "prodotto": "pesche"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pesca a pezzetti piccoli."
+          }
+        },
+        "mer": {
+          "flavio": {
+            "titolo": "Albumi con pomodoro e basilico",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Olio extravergine d'oliva",
+                    "g": 10,
+                    "prodotto": "olio_evo"
+                  },
+                  {
+                    "nome": "Basilico",
+                    "g": 2,
+                    "prodotto": "basilico"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con albicocca",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero bianco",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Semi di lino",
+                    "g": 5,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Albicocca a pezzetti piccoli."
+          }
+        },
+        "gio": {
+          "flavio": {
+            "titolo": "Crema d'avena con pesche",
+            "preparazioni": [
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Pesche",
+                    "g": 100,
+                    "prodotto": "pesche"
+                  },
+                  {
+                    "nome": "Semi di lino macinati",
+                    "g": 10,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Soia non zuccherata (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frullato di yogurt intero e mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di yogurt e frutta",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)"
+          }
+        },
+        "ven": {
+          "flavio": {
+            "titolo": "Frullato albicocca-lamponi e albumi sodi",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di albicocca e lamponi",
+                "ingredienti": [
+                  {
+                    "nome": "Albicocche",
+                    "g": 80,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 70,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              },
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 2,
+                    "prodotto": "albume"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo strapazzato con pomodoro",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 40,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pomodoro a cubetti piccoli."
+          }
+        },
+        "sab": {
+          "flavio": {
+            "titolo": "Albumi strapazzati con ribes e noci",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il piatto di ribes e noci",
+                "ingredienti": [
+                  {
+                    "nome": "Ribes",
+                    "g": 80,
+                    "prodotto": "ribes"
+                  },
+                  {
+                    "nome": "Noci",
+                    "g": 20,
+                    "prodotto": "noci"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frittelle di avena e banana",
+            "preparazioni": [
+              {
+                "etichetta": "le frittelle di avena e banana",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 35,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fragole schiacciate",
+                    "g": 50,
+                    "prodotto": "fragole"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)"
+          }
+        },
+        "dom": {
+          "flavio": {
+            "titolo": "Avena ammollata con pesche",
+            "preparazioni": [
+              {
+                "etichetta": "l'avena ammollata (overnight oats)",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (ammollati)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Pesche a fette",
+                    "g": 100,
+                    "prodotto": "pesche"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Frullato (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con frutti di bosco",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Lamponi schiacciati",
+                    "g": 35,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 35,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+          }
+        }
+      },
+      "4": {
+        "lun": {
+          "flavio": {
+            "titolo": "Frittata di albumi con zucchine",
+            "preparazioni": [
+              {
+                "etichetta": "la frittata di albumi con zucchine",
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Zucchine",
+                    "g": 80,
+                    "prodotto": "zucchine"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (cotti in acqua)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 100,
+                    "prodotto": "lamponi"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+          },
+          "david": {
+            "titolo": "Crema d'avena nel latte con mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "la crema d'avena nel latte",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 30,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Latte intero",
+                    "g": 130,
+                    "prodotto": "latte_intero"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+          }
+        },
+        "mar": {
+          "flavio": {
+            "titolo": "Yogurt greco con fragole",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt greco con frutta e semi",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 150,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Fragole di montagna",
+                    "g": 100,
+                    "prodotto": "fragole"
+                  },
+                  {
+                    "nome": "Mandorle",
+                    "g": 15,
+                    "prodotto": "mandorle"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo intero strapazzato con pesca",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  },
+                  {
+                    "nome": "Pesca",
+                    "g": 70,
+                    "prodotto": "pesche"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pesca a pezzetti piccoli."
+          }
+        },
+        "mer": {
+          "flavio": {
+            "titolo": "Albumi con pomodoro e basilico",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 100,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Cetriolo",
+                    "g": 80,
+                    "prodotto": "cetriolo"
+                  },
+                  {
+                    "nome": "Olio extravergine d'oliva",
+                    "g": 10,
+                    "prodotto": "olio_evo"
+                  },
+                  {
+                    "nome": "Basilico",
+                    "g": 2,
+                    "prodotto": "basilico"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con albicocca",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero bianco",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Albicocca",
+                    "g": 70,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Semi di lino",
+                    "g": 5,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Albicocca a pezzetti piccoli."
+          }
+        },
+        "gio": {
+          "flavio": {
+            "titolo": "Crema d'avena con pesche",
+            "preparazioni": [
+              {
+                "etichetta": "il porridge d'avena",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Pesche",
+                    "g": 100,
+                    "prodotto": "pesche"
+                  },
+                  {
+                    "nome": "Semi di lino macinati",
+                    "g": 10,
+                    "prodotto": "lino"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Soia non zuccherata (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frullato di yogurt intero e mirtilli",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di yogurt e frutta",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Mirtilli",
+                    "g": 70,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)"
+          }
+        },
+        "ven": {
+          "flavio": {
+            "titolo": "Frullato albicocca-lamponi e albumi sodi",
+            "preparazioni": [
+              {
+                "etichetta": "il frullato di albicocca e lamponi",
+                "ingredienti": [
+                  {
+                    "nome": "Albicocche",
+                    "g": 80,
+                    "prodotto": "albicocche"
+                  },
+                  {
+                    "nome": "Lamponi",
+                    "g": 70,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Semi di chia",
+                    "g": 10,
+                    "prodotto": "chia"
+                  }
+                ]
+              },
+              {
+                "etichetta": "gli albumi sodi",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi sodi",
+                    "n": 2,
+                    "prodotto": "albume"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Uovo strapazzato con pomodoro",
+            "preparazioni": [
+              {
+                "etichetta": "l'uovo strapazzato",
+                "ingredienti": [
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Pomodoro",
+                    "g": 40,
+                    "prodotto": "pomodoro"
+                  },
+                  {
+                    "nome": "Pane integrale",
+                    "g": 35,
+                    "prodotto": "pane_integrale"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)",
+            "sicurezza": "Pomodoro a cubetti piccoli."
+          }
+        },
+        "sab": {
+          "flavio": {
+            "titolo": "Albumi strapazzati con ribes e noci",
+            "preparazioni": [
+              {
+                "etichetta": "gli albumi strapazzati",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Albumi",
+                    "n": 3,
+                    "prodotto": "albume"
+                  }
+                ]
+              },
+              {
+                "etichetta": "il piatto di ribes e noci",
+                "ingredienti": [
+                  {
+                    "nome": "Ribes",
+                    "g": 80,
+                    "prodotto": "ribes"
+                  },
+                  {
+                    "nome": "Noci",
+                    "g": 20,
+                    "prodotto": "noci"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Frittelle di avena e banana",
+            "preparazioni": [
+              {
+                "etichetta": "le frittelle di avena e banana",
+                "plurale": true,
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 35,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Uovo intero",
+                    "n": 1,
+                    "prodotto": "uovo"
+                  },
+                  {
+                    "nome": "Banana",
+                    "g": 50,
+                    "prodotto": "banana"
+                  },
+                  {
+                    "nome": "Fragole schiacciate",
+                    "g": 50,
+                    "prodotto": "fragole"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Latte intero (1 bicchiere)"
+          }
+        },
+        "dom": {
+          "flavio": {
+            "titolo": "Avena ammollata con pesche",
+            "preparazioni": [
+              {
+                "etichetta": "l'avena ammollata (overnight oats)",
+                "ingredienti": [
+                  {
+                    "nome": "Fiocchi d'avena (ammollati)",
+                    "g": 40,
+                    "prodotto": "avena"
+                  },
+                  {
+                    "nome": "Yogurt greco",
+                    "g": 100,
+                    "prodotto": "yogurt_greco"
+                  },
+                  {
+                    "nome": "Pesche a fette",
+                    "g": 100,
+                    "prodotto": "pesche"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Frullato (1 bicchiere)"
+          },
+          "david": {
+            "titolo": "Yogurt intero con frutti di bosco",
+            "preparazioni": [
+              {
+                "etichetta": "lo yogurt con frutta e avena",
+                "ingredienti": [
+                  {
+                    "nome": "Yogurt intero",
+                    "g": 120,
+                    "prodotto": "yogurt_intero"
+                  },
+                  {
+                    "nome": "Lamponi schiacciati",
+                    "g": 35,
+                    "prodotto": "lamponi"
+                  },
+                  {
+                    "nome": "Mirtilli schiacciati",
+                    "g": 35,
+                    "prodotto": "mirtilli"
+                  },
+                  {
+                    "nome": "Crema di mandorle liscia",
+                    "g": 10,
+                    "prodotto": "crema_mandorle"
+                  },
+                  {
+                    "nome": "Fiocchi d'avena",
+                    "g": 15,
+                    "prodotto": "avena"
+                  }
+                ]
+              }
+            ],
+            "bevanda": "Acqua naturale (1/2 bicchiere)",
+            "sicurezza": "Mirtilli schiacciati o tagliati a metà, mai interi. Crema di mandorle liscia, mai a pezzi."
+          }
+        }
+      }
+    }
+  },
+  {
     "id": "2026-06",
     "etichetta": "Giugno 2026 · Roma",
     "citta": "Roma",
