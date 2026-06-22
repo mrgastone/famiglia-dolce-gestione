@@ -11,3 +11,15 @@ export const PERSONE = ['Natasha', 'Lena', 'Flavio']
 export function categoriaById(id) {
   return CATEGORIE.find((c) => c.id === id) ?? { id, nome: id, colore: '#A8A29E' }
 }
+
+// Mappa email → nome (per mostrare chi è loggato e proporre "chi ha pagato").
+export const UTENTI = {
+  'gastone@gmail.com': 'Flavio',
+  'kostiuchenko91@gmail.com': 'Lena',
+  'natasha@gmail.com': 'Natasha',
+}
+
+export function nomeUtente(email) {
+  if (!email) return null
+  return UTENTI[email.toLowerCase()] ?? email
+}

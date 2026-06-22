@@ -1,12 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Cassa from './Cassa.jsx'
+import { AuthProvider, GateLogin } from './Auth.jsx'
 import '../fonts.js'
 import '../index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Cassa />
+    <AuthProvider>
+      <GateLogin>
+        <Cassa />
+      </GateLogin>
+    </AuthProvider>
   </React.StrictMode>,
 )
 
