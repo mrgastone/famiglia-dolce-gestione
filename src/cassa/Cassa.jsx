@@ -1,5 +1,17 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import { Wallet, Plus, Minus, Camera, Trash2, X, Download, Receipt, Coffee, LogOut } from 'lucide-react'
+import {
+  Wallet,
+  Plus,
+  Minus,
+  Camera,
+  Trash2,
+  X,
+  Download,
+  Receipt,
+  Coffee,
+  LogOut,
+  Image as IconaGalleria,
+} from 'lucide-react'
 import { CATEGORIE, PERSONE, categoriaById, nomeUtente } from './costanti.js'
 import { parseEuroToCent, formattaEuro, meseCorrente, meseDi, dataLeggibile, oraLeggibile, nomeMese } from './lib/soldi.js'
 import { listaMovimenti, aggiungi, elimina, urlScontrino, pulisciVecchie, sottoscrivi, cloud } from './dati.js'
@@ -155,12 +167,23 @@ function ModaleSpesa({ onChiudi, onConferma, personaDefault }) {
               </label>
             </div>
           ) : (
-            <label className="flex flex-col items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-stone-300 bg-white py-8 cursor-pointer text-stone-500">
-              <Camera size={32} />
-              <span className="font-semibold">Scatta o scegli la foto</span>
-              <input type="file" accept="image/*" capture="environment" className="hidden" onChange={scegliFoto} />
-            </label>
+            <div className="grid grid-cols-2 gap-2">
+              {/* "capture=environment": su telefono/tablet apre la fotocamera (posteriore) */}
+              <label className="flex flex-col items-center justify-center gap-2 rounded-2xl border-2 border-salvia/40 bg-salvia-tenue py-6 cursor-pointer text-salvia-scuro font-bold">
+                <Camera size={30} strokeWidth={2.2} />
+                <span>Scatta foto</span>
+                <input type="file" accept="image/*" capture="environment" className="hidden" onChange={scegliFoto} />
+              </label>
+              <label className="flex flex-col items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-stone-300 bg-white py-6 cursor-pointer text-stone-500 font-semibold">
+                <IconaGalleria size={28} strokeWidth={2.2} />
+                <span>Dalla galleria</span>
+                <input type="file" accept="image/*" className="hidden" onChange={scegliFoto} />
+              </label>
+            </div>
           )}
+          <p className="text-stone-400 text-xs mt-1.5">
+            Su telefono e tablet, “Scatta foto” apre direttamente la fotocamera.
+          </p>
         </div>
 
         <button
