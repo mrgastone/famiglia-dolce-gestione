@@ -11,9 +11,12 @@ import {
   Coffee,
   LogOut,
   Image as IconaGalleria,
+  Archive,
+  ChevronLeft,
 } from 'lucide-react'
 import { CATEGORIE, PERSONE, categoriaById, nomeUtente } from './costanti.js'
 import { parseEuroToCent, formattaEuro, meseCorrente, meseDi, dataLeggibile, oraLeggibile, nomeMese } from './lib/soldi.js'
+import { riepilogoMesi } from './lib/riepilogo.js'
 import { listaMovimenti, aggiungi, elimina, urlScontrino, pulisciVecchie, sottoscrivi, cloud } from './dati.js'
 import { useAuth } from './Auth.jsx'
 import GraficoCategorie from './components/GraficoCategorie.jsx'
@@ -250,6 +253,59 @@ function RigaMovimento({ m, onScontrino, onElimina }) {
   )
 }
 
+function CardMeseArchivio({ r, onScontrino, onElimina }) {
+  return (
+    <div className="rounded-3xl bg-white shadow-card p-5">
+      <div className="flex items-baseline justify-between gap-2">
+        <h3 className="font-display text-xl font-bold text-stone-800 capitalize">{r.label}</h3>
+        <span className="text-terracotta font-bold">−{formattaEuro(r.speso)}</span>
+      </div>
+      <p className="text-stone-400 text-sm mb-3">
+        Aggiunto {formattaEuro(r.aggiunto)} · saldo a fine mese{' '}
+        <b className="text-salvia-scuro">{formattaEuro(r.saldoFine)}</b>
+      </p>
+      <GraficoCategorie dati={r.datiCategorie} totaleCent={r.speso} etichetta="Speso" />
+      <details className="mt-3">
+        <summary className="cursor-pointer text-stone-500 font-semibold text-sm select-none">
+          Vedi i {r.movimenti.length} movimenti
+        </summary>
+        <ul className="divide-y divide-stone-100 mt-1">
+          {r.movimenti.map((m) => (
+            <RigaMovimento key={m.id} m={m} onScontrino={onScontrino} onElimina={onElimina} />
+          ))}
+        </ul>
+      </details>
+    </div>
+  )
+}
+
+function ArchivioOverlay({ mesi, onChiudi, onScontrino, onElimina }) {
+  return (
+    <div className="fixed inset-0 z-30 bg-crema overflow-y-auto">
+      <header className="safe-top sticky top-0 bg-crema/90 backdrop-blur border-b border-stone-200/60 z-10">
+        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-2">
+          <button onClick={onChiudi} className="p-1 text-stone-500" aria-label="Chiudi archivio">
+            <ChevronLeft size={26} />
+          </button>
+          <h2 className="font-display text-xl font-bold text-stone-800">Archivio mesi</h2>
+        </div>
+      </header>
+      <div className="max-w-2xl mx-auto px-4 py-4 pb-10 space-y-4 safe-bottom">
+        {mesi.length === 0 ? (
+          <p className="text-stone-400 text-sm rounded-3xl bg-white shadow-card p-5">
+            Ancora nessun mese archiviato. I mesi passati appariranno qui con il totale speso e il
+            grafico per categoria.
+          </p>
+        ) : (
+          mesi.map((r) => (
+            <CardMeseArchivio key={r.mese} r={r} onScontrino={onScontrino} onElimina={onElimina} />
+          ))
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function Cassa() {
   const { user, pronto, signOut } = useAuth()
   const nomeLoggato = nomeUtente(user?.email)
@@ -257,6 +313,7 @@ export default function Cassa() {
   const [caricato, setCaricato] = useState(false)
   const [modale, setModale] = useState(null)
   const [scontrinoAperto, setScontrinoAperto] = useState(null)
+  const [archivioAperto, setArchivioAperto] = useState(false)
 
   const ricarica = useCallback(async () => {
     try {
@@ -297,6 +354,15 @@ export default function Cassa() {
     colore: c.colore,
     valore: usciteMese.filter((m) => m.categoria === c.id).reduce((s, m) => s + m.importoCent, 0),
   }))
+  const movimentiMese = useMemo(
+    () => movimenti.filter((m) => meseDi(m.data) === mese),
+    [movimenti, mese],
+  )
+  // mesi precedenti (archivio): tutto tranne il mese in corso
+  const mesiArchivio = useMemo(
+    () => riepilogoMesi(movimenti).filter((r) => r.mese !== mese),
+    [movimenti, mese],
+  )
 
   async function aggiungiEntrata(dati) {
     try {
@@ -413,7 +479,7 @@ export default function Cassa() {
 
         <div className="rounded-3xl bg-white shadow-card p-5">
           <div className="flex items-center justify-between mb-2">
-            <h2 className="font-display text-xl font-bold text-stone-700">Movimenti e scontrini</h2>
+            <h2 className="font-display text-xl font-bold text-stone-700">Movimenti del mese</h2>
             {movimenti.length ? (
               <button onClick={esporta} className="inline-flex items-center gap-1.5 text-stone-500 font-semibold text-sm">
                 <Download size={16} /> Esporta
@@ -422,16 +488,23 @@ export default function Cassa() {
           </div>
           {!caricato ? (
             <p className="text-stone-400 text-sm">Carico…</p>
-          ) : movimenti.length === 0 ? (
-            <p className="text-stone-400 text-sm">Ancora nessun movimento. Aggiungi soldi o registra una spesa.</p>
+          ) : movimentiMese.length === 0 ? (
+            <p className="text-stone-400 text-sm">Nessun movimento questo mese. Aggiungi soldi o registra una spesa.</p>
           ) : (
             <ul className="divide-y divide-stone-100">
-              {movimenti.map((m) => (
+              {movimentiMese.map((m) => (
                 <RigaMovimento key={m.id} m={m} onScontrino={apriScontrino} onElimina={rimuovi} />
               ))}
             </ul>
           )}
         </div>
+
+        <button
+          onClick={() => setArchivioAperto(true)}
+          className="w-full rounded-3xl bg-white shadow-card p-4 flex items-center justify-center gap-2 font-bold text-stone-600 active:scale-95 transition-transform"
+        >
+          <Archive size={20} className="text-salvia-scuro" /> Archivio mesi precedenti
+        </button>
 
         <p className="text-stone-400 text-xs text-center px-4 leading-relaxed">
           {cloud
@@ -445,6 +518,14 @@ export default function Cassa() {
       ) : null}
       {modale === 'spesa' ? (
         <ModaleSpesa onChiudi={() => setModale(null)} onConferma={aggiungiSpesa} personaDefault={nomeLoggato} />
+      ) : null}
+      {archivioAperto ? (
+        <ArchivioOverlay
+          mesi={mesiArchivio}
+          onChiudi={() => setArchivioAperto(false)}
+          onScontrino={apriScontrino}
+          onElimina={rimuovi}
+        />
       ) : null}
       {scontrinoAperto ? (
         <VisoreScontrino

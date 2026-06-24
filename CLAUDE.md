@@ -168,10 +168,17 @@ Push su `main` → GitHub Actions compila e pubblica su Pages. Base path solo in
 
 ## 🧾 Seconda app nel repo: Cassa
 Stesso repo, **build multi-pagina** (`vite.config.js` → input `index.html` + `cassa.html`).
-- Colazioni → `…/famiglia-dolce-gestione/` ; Cassa → `…/famiglia-dolce-gestione/cassa.html`.
-- Codice in `src/cassa/`: gestione cassa contanti (saldo, entrate/uscite, **foto scontrini** in
-  IndexedDB, grafico a ciambella per categoria Cibo/Tintoria/Animali/Altro, persone
-  Natasha/Lena/Flavio). Dati **solo sul dispositivo** (localStorage + IndexedDB), niente sync.
+- Colazioni → `…/famiglia-dolce-gestione/` (aperta) ; Cassa → `…/cassa.html` (**login** obbligatorio).
+- Codice in `src/cassa/`: cassa contanti (saldo running, entrate/uscite, **foto scontrini**,
+  grafico a ciambella per categoria Cibo/Tintoria/Animali/Altro, persone Natasha/Lena/Flavio).
+- **Backend Supabase** (progetto `hrwefkasikedipgpstzp`): tabella `movimenti` + Storage `scontrini`
+  (privato), RLS authenticated, login email/password. Config in `src/backendConfig.js` (publishable
+  key, pubblica). Data layer `src/cassa/dati.js`; auth `src/cassa/Auth.jsx`; client `src/supabase.js`.
+  In Supabase i **sign-up vanno disabilitati** (key pubblica → sicurezza su login).
+- **Archivio mesi** (`src/cassa/lib/riepilogo.js`): la home mostra il **mese in corso**; il tasto
+  "Archivio mesi" mostra i mesi passati con **totale speso + grafico + saldo a fine mese**. Il saldo
+  è continuo, quindi il **riporto** al mese successivo è automatico.
+- **Foto scontrini**: cancellate dopo ~90 giorni (`pulisciVecchie`); totale e grafico restano.
 - Stessa grafica (Tailwind/`src/index.css`, font condivisi `src/fonts.js`). Icona app: portafoglio.
 
 ---

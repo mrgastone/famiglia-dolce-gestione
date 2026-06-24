@@ -2,7 +2,7 @@ import { formattaEuro } from '../lib/soldi.js'
 
 // Grafico a ciambella delle spese del mese, diviso per categoria.
 // `dati`: [{ nome, colore, valore (in centesimi) }]
-export default function GraficoCategorie({ dati, totaleCent }) {
+export default function GraficoCategorie({ dati, totaleCent, etichetta = 'Spese del mese' }) {
   const totale = dati.reduce((s, d) => s + d.valore, 0)
   const R = 70
   const C = 2 * Math.PI * R
@@ -42,7 +42,7 @@ export default function GraficoCategorie({ dati, totaleCent }) {
           ))}
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <span className="text-stone-400 text-xs font-semibold">Spese del mese</span>
+          <span className="text-stone-400 text-xs font-semibold">{etichetta}</span>
           <span className="font-display font-bold text-2xl text-stone-800">
             {formattaEuro(totaleCent)}
           </span>
