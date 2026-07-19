@@ -1,0 +1,24 @@
+{
+  "name": "Famiglia Dolce — Cassa",
+  "short_name": "Cassa",
+  "description": "Cassa contanti della famiglia",
+  "lang": "it",
+  "dir": "ltr",
+  "start_url": "cassa.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FBF7F0",
+  "theme_color": "#7C9A6B",
+  "categories": ["finance", "lifestyle"],
+  "icons": [
+    { "src": "icons/cassa-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/cassa-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "icons/cassa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

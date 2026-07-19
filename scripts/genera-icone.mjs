@@ -59,8 +59,11 @@ const icone = [
   { file: 'icon-maskable-512.png', size: 512, rx: 0, scala: 0.66 },
   // apple-touch-icon: iOS arrotonda da sé, fondo a tutto campo
   { file: 'apple-touch-icon.png', size: 180, rx: 0, scala: 0.8 },
-  // icona dell'app Cassa
+  // icone dell'app Cassa
   { file: 'cassa-touch-icon.png', size: 180, rx: 0, scala: 0.84, motivo: 'cassa' },
+  { file: 'cassa-192.png', size: 192, rx: 96, scala: 0.78, motivo: 'cassa' },
+  { file: 'cassa-512.png', size: 512, rx: 96, scala: 0.78, motivo: 'cassa' },
+  { file: 'cassa-maskable-512.png', size: 512, rx: 0, scala: 0.66, motivo: 'cassa' },
 ]
 
 await mkdir(outDir, { recursive: true })

@@ -28,33 +28,15 @@ export default defineConfig(({ mode }) => ({
         'cassa-icon.svg',
         'icons/cassa-touch-icon.png',
       ],
-      manifest: {
-        name: 'Famiglia Dolce — Colazioni',
-        short_name: 'Colazioni',
-        description: 'Cruscotto per gestire le colazioni della famiglia',
-        lang: 'it',
-        dir: 'ltr',
-        // percorsi relativi: vengono risolti rispetto al base path del manifest
-        start_url: '.',
-        scope: '.',
-        display: 'standalone',
-        orientation: 'portrait',
-        background_color: '#FBF7F0',
-        theme_color: '#7C9A6B',
-        categories: ['food', 'lifestyle'],
-        icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          {
-            src: 'icons/icon-maskable-512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'maskable',
-          },
-        ],
-      },
+      // Le due app hanno DUE manifest distinti, scritti a mano in public/ e collegati
+      // esplicitamente in index.html e cassa.html:
+      //   public/manifest.webmanifest       → Colazioni (start_url ".")
+      //   public/cassa.webmanifest          → Cassa     (start_url "cassa.html")
+      // Qui il manifest automatico è disattivato: il plugin ne genererebbe uno solo,
+      // iniettato in ENTRAMBE le pagine, e su iOS l'icona della Cassa aprirebbe le Colazioni.
+      manifest: false,
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2,webmanifest}'],
       },
     }),
   ],

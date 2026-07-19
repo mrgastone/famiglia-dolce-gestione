@@ -13,6 +13,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Cassa" />
     <link rel="apple-touch-icon" href="%BASE_URL%icons/cassa-touch-icon.png" />
+    <!-- Manifest DEDICATO: su iOS "Aggiungi a schermata Home" usa lo start_url del manifest
+         e ignora l'indirizzo della pagina. Con quello delle Colazioni l'icona apriva l'app
+         sbagliata. Vedi public/cassa.webmanifest (start_url: cassa.html). -->
+    <link rel="manifest" href="%BASE_URL%cassa.webmanifest" />
 
     <title>Famiglia Dolce · Cassa</title>
   </head>
