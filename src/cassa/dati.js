@@ -97,6 +97,32 @@ export async function urlScontrino(mov) {
   return data.signedUrl
 }
 
+// Come urlScontrino ma per molti movimenti insieme (galleria "Controllo scontrini"):
+// una sola chiamata invece di N. Restituisce una Map id-movimento → url.
+export async function urlScontrini(movimenti) {
+  const conFoto = movimenti.filter((m) => m.scontrino)
+  const mappa = new Map()
+  if (!conFoto.length) return mappa
+
+  if (!backendPronto) {
+    for (const m of conFoto) {
+      const blob = await leggiFoto(m.scontrino).catch(() => null)
+      if (blob) mappa.set(m.id, URL.createObjectURL(blob))
+    }
+    return mappa
+  }
+
+  const { data, error } = await supabase.storage
+    .from(BUCKET)
+    .createSignedUrls(conFoto.map((m) => m.scontrino), 600)
+  if (error || !data) return mappa
+  // createSignedUrls risponde nello stesso ordine dei path richiesti
+  data.forEach((r, i) => {
+    if (r.signedUrl) mappa.set(conFoto[i].id, r.signedUrl)
+  })
+  return mappa
+}
+
 // Cancella le foto più vecchie di 3 mesi (mantiene il movimento, libera spazio).
 export async function pulisciVecchie() {
   if (!backendPronto) return

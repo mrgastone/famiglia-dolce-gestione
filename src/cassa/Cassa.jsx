@@ -13,11 +13,12 @@ import {
   Image as IconaGalleria,
   Archive,
   ChevronLeft,
+  ScanSearch,
 } from 'lucide-react'
-import { CATEGORIE, PERSONE, categoriaById, nomeUtente } from './costanti.js'
+import { CATEGORIE, PERSONE, categoriaById, nomeUtente, puoControllareScontrini } from './costanti.js'
 import { parseEuroToCent, formattaEuro, meseCorrente, meseDi, dataLeggibile, oraLeggibile, nomeMese } from './lib/soldi.js'
 import { riepilogoMesi } from './lib/riepilogo.js'
-import { listaMovimenti, aggiungi, elimina, urlScontrino, pulisciVecchie, sottoscrivi, cloud } from './dati.js'
+import { listaMovimenti, aggiungi, elimina, urlScontrino, urlScontrini, pulisciVecchie, sottoscrivi, cloud } from './dati.js'
 import { useAuth } from './Auth.jsx'
 import GraficoCategorie from './components/GraficoCategorie.jsx'
 
@@ -306,6 +307,100 @@ function ArchivioOverlay({ mesi, onChiudi, onScontrino, onElimina }) {
   )
 }
 
+// ── Controllo scontrini (solo per chi è abilitato in costanti.js) ───────────
+// Ogni foto è affiancata dall'importo DICHIARATO da chi ha fatto la spesa, così
+// basta un'occhiata per vedere se coincide con il totale stampato sullo scontrino.
+function SchedaControllo({ m, url, onIngrandisci }) {
+  const cat = categoriaById(m.categoria)
+  return (
+    <div className="rounded-2xl bg-white shadow-card overflow-hidden flex flex-col">
+      <button
+        onClick={() => onIngrandisci(url)}
+        disabled={!url}
+        className="bg-stone-100 aspect-[3/4] flex items-center justify-center"
+      >
+        {url ? (
+          <img src={url} alt={`scontrino ${formattaEuro(m.importoCent)}`} className="w-full h-full object-cover" />
+        ) : (
+          <span className="text-stone-400 text-xs font-semibold px-2 text-center">Foto non disponibile</span>
+        )}
+      </button>
+      <div className="p-3">
+        <p className="text-stone-400 font-semibold uppercase text-[10px] tracking-wide">Dichiarato</p>
+        <p className="font-display font-bold text-2xl text-terracotta leading-tight">
+          {formattaEuro(m.importoCent)}
+        </p>
+        <p className="text-stone-500 text-xs font-semibold mt-1 truncate">
+          {m.persona || '—'} · <span style={{ color: cat.colore }}>{cat.nome}</span>
+        </p>
+        <p className="text-stone-400 text-xs truncate">{dataLeggibile(m.data)}</p>
+        {m.nota ? <p className="text-stone-400 text-xs truncate">{m.nota}</p> : null}
+      </div>
+    </div>
+  )
+}
+
+function ControlloScontriniOverlay({ movimenti, onChiudi, onIngrandisci }) {
+  const [urls, setUrls] = useState(new Map())
+  const [caricato, setCaricato] = useState(false)
+
+  const conFoto = useMemo(() => movimenti.filter((m) => m.scontrino), [movimenti])
+
+  useEffect(() => {
+    let vivo = true
+    let creati = []
+    urlScontrini(conFoto)
+      .then((mappa) => {
+        if (!vivo) return
+        creati = [...mappa.values()].filter((u) => u.startsWith('blob:'))
+        setUrls(mappa)
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (vivo) setCaricato(true)
+      })
+    return () => {
+      vivo = false
+      creati.forEach((u) => URL.revokeObjectURL(u))
+    }
+  }, [conFoto])
+
+  const totale = conFoto.reduce((s, m) => s + m.importoCent, 0)
+
+  return (
+    <div className="fixed inset-0 z-30 bg-crema overflow-y-auto">
+      <header className="safe-top sticky top-0 bg-crema/90 backdrop-blur border-b border-stone-200/60 z-10">
+        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-2">
+          <button onClick={onChiudi} className="p-1 text-stone-500" aria-label="Chiudi controllo scontrini">
+            <ChevronLeft size={26} />
+          </button>
+          <h2 className="font-display text-xl font-bold text-stone-800">Controllo scontrini</h2>
+        </div>
+      </header>
+      <div className="max-w-2xl mx-auto px-4 py-4 pb-10 safe-bottom">
+        <p className="text-stone-500 text-sm mb-4">
+          {conFoto.length} {conFoto.length === 1 ? 'scontrino' : 'scontrini'} · totale dichiarato{' '}
+          <b className="text-terracotta">{formattaEuro(totale)}</b>. Tocca una foto per ingrandirla e
+          confrontarla con l’importo.
+        </p>
+        {!caricato ? (
+          <p className="text-stone-400 text-sm">Carico le foto…</p>
+        ) : conFoto.length === 0 ? (
+          <p className="text-stone-400 text-sm rounded-3xl bg-white shadow-card p-5">
+            Nessuno scontrino da controllare. Le foto si cancellano da sole dopo circa 3 mesi.
+          </p>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {conFoto.map((m) => (
+              <SchedaControllo key={m.id} m={m} url={urls.get(m.id)} onIngrandisci={onIngrandisci} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function Cassa() {
   const { user, pronto, signOut } = useAuth()
   const nomeLoggato = nomeUtente(user?.email)
@@ -314,6 +409,8 @@ export default function Cassa() {
   const [modale, setModale] = useState(null)
   const [scontrinoAperto, setScontrinoAperto] = useState(null)
   const [archivioAperto, setArchivioAperto] = useState(false)
+  const [controlloAperto, setControlloAperto] = useState(false)
+  const puoControllare = puoControllareScontrini(user?.email)
 
   const ricarica = useCallback(async () => {
     try {
@@ -391,9 +488,11 @@ export default function Cassa() {
       window.alert('Non riesco a eliminare: controlla la connessione.')
     }
   }
+  // { url, mio }: "mio" = l'URL blob è stato creato qui e va revocato alla chiusura.
+  // Gli URL che arrivano dalla galleria di controllo appartengono invece all'overlay.
   async function apriScontrino(m) {
     const url = await urlScontrino(m)
-    if (url) setScontrinoAperto(url)
+    if (url) setScontrinoAperto({ url, mio: true })
     else window.alert('Foto non disponibile (forse è stata cancellata dopo 3 mesi).')
   }
   function esporta() {
@@ -406,7 +505,10 @@ export default function Cassa() {
     a.click()
   }
 
-  const saldoBasso = saldoCent <= 0
+  // Soglia di riordino: sotto i 50 € si avvisa di chiedere altri soldi.
+  const SOGLIA_AVVISO_CENT = 50_00
+  const cassaVuota = saldoCent <= 0
+  const saldoBasso = saldoCent <= SOGLIA_AVVISO_CENT
 
   return (
     <div className="min-h-screen flex flex-col bg-crema">
@@ -450,8 +552,10 @@ export default function Cassa() {
           <p className="text-stone-500 text-sm mt-2">
             Spese di <span className="capitalize">{nomeMese(mese)}</span>: <span className="font-bold">{formattaEuro(speseMeseCent)}</span>
           </p>
-          {saldoBasso ? (
+          {cassaVuota ? (
             <p className="text-red-500 text-sm font-semibold mt-1">Attenzione: la cassa è a zero o in negativo.</p>
+          ) : saldoBasso ? (
+            <p className="text-red-500 text-sm font-semibold mt-1">Attenzione: chiedere soldi da aggiungere.</p>
           ) : null}
         </div>
 
@@ -499,6 +603,15 @@ export default function Cassa() {
           )}
         </div>
 
+        {puoControllare ? (
+          <button
+            onClick={() => setControlloAperto(true)}
+            className="w-full rounded-3xl bg-white shadow-card p-4 flex items-center justify-center gap-2 font-bold text-stone-600 active:scale-95 transition-transform"
+          >
+            <ScanSearch size={20} className="text-terracotta" /> Controllo scontrini
+          </button>
+        ) : null}
+
         <button
           onClick={() => setArchivioAperto(true)}
           className="w-full rounded-3xl bg-white shadow-card p-4 flex items-center justify-center gap-2 font-bold text-stone-600 active:scale-95 transition-transform"
@@ -527,11 +640,20 @@ export default function Cassa() {
           onElimina={rimuovi}
         />
       ) : null}
+      {controlloAperto && puoControllare ? (
+        <ControlloScontriniOverlay
+          movimenti={movimenti}
+          onChiudi={() => setControlloAperto(false)}
+          onIngrandisci={(url) => setScontrinoAperto({ url, mio: false })}
+        />
+      ) : null}
       {scontrinoAperto ? (
         <VisoreScontrino
-          url={scontrinoAperto}
+          url={scontrinoAperto.url}
           onChiudi={() => {
-            if (scontrinoAperto.startsWith('blob:')) URL.revokeObjectURL(scontrinoAperto)
+            if (scontrinoAperto.mio && scontrinoAperto.url.startsWith('blob:')) {
+              URL.revokeObjectURL(scontrinoAperto.url)
+            }
             setScontrinoAperto(null)
           }}
         />
