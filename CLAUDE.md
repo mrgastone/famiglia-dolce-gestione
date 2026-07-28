@@ -37,6 +37,16 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 - **Niente zuccheri aggiunti**, nessuna restrizione glicemica
 - Regola principale: **solo cibi sani per la normale crescita** di un bambino.
 
+### Lena (adulta) — condivide la colazione di David
+- **Lena mangia le STESSE identiche cose di David.** Non si crea un menu separato: si usa il campo
+  `condivisoCon` nel profilo `david` (`src/data/profili.json`). La card mostra **"David e Lena"**,
+  ogni ingrediente è marcato **×2** (stessa porzione per ciascuno) e la **spesa conta il doppio** delle
+  quantità di David (moltiplicatore `porzioniProfilo` in `src/lib/profilo.js`).
+- L'**avviso sicurezza anti-soffocamento resta solo per David** (Lena è adulta): non cambia.
+- **REGOLA GENERALE anche per i mesi futuri:** ogni volta che si generano le colazioni, il menu di
+  David vale automaticamente anche per Lena (finché `condivisoCon` la elenca). Se in futuro una
+  persona dovesse mangiare come un altro profilo, aggiungerla nello stesso modo in `condivisoCon`.
+
 ### Regole alimentari generali (per ENTRAMBI)
 - ❌ **MAI cibi ultra-processati.** Vanno **sempre eliminati**, a prescindere da tutto.
 - ❌ **MAI/quasi mai zuccheri aggiunti** (la dolcezza viene dalla frutta).
@@ -133,6 +143,8 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 
 - Quantità **calcolate** sommando i grammi/numeri delle colazioni per prodotto. **+20%** su ogni
   quantità (lo stesso cibo serve anche durante il giorno / altre preparazioni).
+- **Porzioni condivise:** le quantità di ogni profilo vengono moltiplicate per le sue **porzioni**
+  (`porzioniProfilo`): David è condiviso con Lena → le sue quantità contano **×2** nella spesa.
 - **Le chiavi fornitore restano stabili** (`montagnola` / `specialita_di_parma` / `mezza_rosetta` /
   `online`); cambiano solo **nome, tipo, accesso, mappa** in `spesa.json` per adattarsi alla zona del
   mese. **Ogni prodotto** è instradato al negozio dal campo `fornitore` in `prodotti.json`.
@@ -229,5 +241,7 @@ e Archivio** (componente `EtichettaStagione`, legge `stagione.etichetta`).
    `preparazioni`, uova/albumi a numero, resto in grammi, `sicurezza` David solo nei giorni a rischio,
    niente ultra-processati né zuccheri aggiunti, bevande con dosi (acqua **naturale**).
    **Genera solo 2 menù** (settimane 1 e 3) e **duplicali** (Sett. 2 = Sett. 1, Sett. 4 = Sett. 3).
+   **Solo i profili `flavio` e `david`**: il menu di David vale anche per Lena via `condivisoCon`
+   (non creare un profilo/menu separato per Lena).
 6. **Aggiorna `prodotti.json`** se servono nuovi ingredienti.
 7. `npm run build`, poi commit + push (deploy automatico). Spesa e Settimane si aggiornano da sole.

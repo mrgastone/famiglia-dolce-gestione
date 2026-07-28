@@ -4,6 +4,7 @@ import profili from '../data/profili.json'
 import VideoColazione from './VideoColazione.jsx'
 import { titoloPreparazione } from './ProfiloColazione.jsx'
 import { ordineGiorni, nomeGiorno, SETTIMANE_UGUALI } from '../lib/settimana.js'
+import { nomeProfilo, suffissoPorzioni } from '../lib/profilo.js'
 
 const SETTIMANE = [1, 2, 3, 4]
 
@@ -77,6 +78,7 @@ export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null,
               <div className="grid sm:grid-cols-2 gap-3">
                 {profili.map((p) => {
                   const c = giorno[p.id]
+                  const suffisso = suffissoPorzioni(p)
                   return (
                     <div
                       key={p.id}
@@ -89,7 +91,7 @@ export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null,
                           style={{ backgroundColor: p.colore }}
                         />
                         <span className="font-bold text-sm" style={{ color: p.colore }}>
-                          {p.nome}
+                          {nomeProfilo(p)}
                         </span>
                       </div>
                       {c ? (
@@ -115,7 +117,7 @@ export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null,
                                   {prep.ingredienti
                                     .map(
                                       (ing) =>
-                                        `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}`,
+                                        `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}${suffisso}`,
                                     )
                                     .join(' · ')}
                                 </p>

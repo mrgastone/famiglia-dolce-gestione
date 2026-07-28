@@ -1,5 +1,6 @@
-import { GlassWater, TriangleAlert, Baby, User } from 'lucide-react'
+import { GlassWater, TriangleAlert, Baby, User, Users } from 'lucide-react'
 import VideoColazione from './VideoColazione.jsx'
+import { nomeProfilo, sottotitoloProfilo, etichettaPorzioni, suffissoPorzioni } from '../lib/profilo.js'
 
 // "il frullato di fragole e lamponi" → "Frullato di fragole e lamponi"
 export function titoloPreparazione(etichetta) {
@@ -9,10 +10,13 @@ export function titoloPreparazione(etichetta) {
 
 // Card della colazione di un profilo (vista "Oggi").
 export default function ProfiloColazione({ profilo, colazione }) {
-  const Icona = profilo.tipo === 'Bambino' ? Baby : User
+  const condiviso = profilo.condivisoCon?.length > 0
+  const Icona = condiviso ? Users : profilo.tipo === 'Bambino' ? Baby : User
   const colore = profilo.colore
   const preparazioni = colazione?.preparazioni ?? []
   const piuPreparazioni = preparazioni.length > 1
+  const suffisso = suffissoPorzioni(profilo)
+  const badgePorzioni = etichettaPorzioni(profilo)
 
   return (
     <article className="rounded-3xl bg-white shadow-card overflow-hidden flex flex-col">
@@ -26,10 +30,18 @@ export default function ProfiloColazione({ profilo, colazione }) {
         </span>
         <div className="leading-tight">
           <h2 className="font-display text-2xl font-bold" style={{ color: colore }}>
-            {profilo.nome}
+            {nomeProfilo(profilo)}
           </h2>
-          <p className="text-stone-400 text-sm font-semibold">{profilo.eta}</p>
+          <p className="text-stone-400 text-sm font-semibold">{sottotitoloProfilo(profilo)}</p>
         </div>
+        {badgePorzioni ? (
+          <span
+            className="ml-auto shrink-0 text-[0.7rem] font-bold rounded-full px-2.5 py-1 self-start"
+            style={{ color: colore, backgroundColor: `${colore}1a` }}
+          >
+            {badgePorzioni}
+          </span>
+        ) : null}
       </header>
 
       <div className="px-5 pb-5 flex-1 flex flex-col gap-4">
@@ -71,6 +83,7 @@ export default function ProfiloColazione({ profilo, colazione }) {
                         </span>
                         <span className="text-stone-500 font-bold whitespace-nowrap pt-0.5">
                           {ing.n != null ? `N°${ing.n}` : `${ing.g} g`}
+                          {suffisso ? <span style={{ color: colore }}>{suffisso}</span> : null}
                         </span>
                       </li>
                     ))}

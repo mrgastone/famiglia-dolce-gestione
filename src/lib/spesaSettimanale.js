@@ -1,5 +1,11 @@
 import colazioni from '../data/colazioni.json'
 import prodotti from '../data/prodotti.json'
+import profili from '../data/profili.json'
+import { porzioniProfilo } from './profilo.js'
+
+// Quante porzioni preparare per ogni profilo (David è condiviso con Lena → 2).
+// La spesa conta le quantità di quel profilo moltiplicate per queste porzioni.
+const PORZIONI = Object.fromEntries(profili.map((p) => [p.id, porzioniProfilo(p)]))
 
 // Margine di sicurezza sulle quantità: +20%, perché lo stesso cibo viene usato
 // anche durante il giorno o per altre preparazioni.
@@ -31,13 +37,16 @@ function totaliPerGiorni(settimana, giorni) {
   for (const g of giorni) {
     const giorno = dati[g]
     if (!giorno) continue
-    for (const profilo of Object.values(giorno)) {
-      for (const prep of profilo.preparazioni ?? []) {
+    // Itera per chiave profilo (flavio/david) per applicare le porzioni: David è
+    // condiviso con Lena → le sue quantità contano doppio nella spesa.
+    for (const [pid, colazione] of Object.entries(giorno)) {
+      const porzioni = PORZIONI[pid] ?? 1
+      for (const prep of colazione.preparazioni ?? []) {
         for (const ing of prep.ingredienti ?? []) {
           if (!ing.prodotto) continue
           const q = ing.g ?? ing.n
           if (!q) continue
-          somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q
+          somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q * porzioni
         }
       }
     }
