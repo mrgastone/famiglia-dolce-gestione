@@ -38,10 +38,25 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 - Regola principale: **solo cibi sani per la normale crescita** di un bambino.
 
 ### Regole alimentari generali (per ENTRAMBI)
-- ❌ **MAI cibi ultra-processati.**
+- ❌ **MAI cibi ultra-processati.** Vanno **sempre eliminati**, a prescindere da tutto.
 - ❌ **MAI/quasi mai zuccheri aggiunti** (la dolcezza viene dalla frutta).
 - ✅ Usare **frutta e verdura di stagione** disponibili (vedi `stagione.json`).
 - ✅ Alimenti integrali, semi, frutta secca (per David solo in **crema liscia**).
+
+> ### 🚫 Regola FISSA zuccheri & ultra-processati (NON negoziabile, per OGNI colazione e preparazione)
+> Vale per **tutte** le colazioni e preparazioni, a ogni rigenerazione:
+> 1. **Cibi molto zuccherati e alimenti ultra-processati → sempre eliminati.** Nessuna eccezione.
+> 2. **Soglia zuccheri:** per ogni prodotto confezionato/lavorato — in particolare **frutta secca,
+>    frutta essiccata, creme, muesli, yogurt aromatizzati, bevande** — controllare gli **zuccheri per
+>    100 g**. Se **> 20 g di zuccheri per 100 g**, **NON usarlo**: cambiare ricetta o proporre
+>    un'alternativa a basso contenuto di zuccheri (es. frutta secca al naturale non zuccherata,
+>    crema 100%, yogurt bianco naturale).
+> 3. **Frutta secca a guscio** (mandorle, noci, ecc.): sceglierla **al naturale, non zuccherata né
+>    salata**; le versioni ricoperte/caramellate sono ultra-processate → vietate.
+> 4. **Frutta essiccata** (uvetta, datteri, albicocche secche…): ha spesso **>20 g zuccheri/100 g** →
+>    di norma **evitarla**; se serve dolcezza usare **frutta fresca di stagione**.
+> 5. In `prodotti.json` privilegiare varianti **"100%"/"senza zuccheri aggiunti"/"al naturale"**
+>    (già così per `crema_mandorle`, `mandorle`, `noci`, yogurt bianchi).
 
 ---
 

@@ -212,6 +212,9 @@ function CardFrutta({ settimana }) {
   )
 }
 
+// Giorno di oggi in italiano (per evidenziarlo nella tabella orari)
+const OGGI = new Date().toLocaleDateString('it-IT', { weekday: 'long' })
+
 // ── Card: Alimentari sotto casa (a piedi) ───────────────────────────────────
 function CardAlimentari({ settimana }) {
   const righe = spesaAlimentari(settimana)
@@ -224,6 +227,33 @@ function CardAlimentari({ settimana }) {
           <AlertTriangle size={16} className="shrink-0 mt-0.5" />
           <span>{info.orari}</span>
         </div>
+      ) : null}
+      {info.orariGiorni?.length ? (
+        <details className="mb-3">
+          <summary className="cursor-pointer text-salvia-scuro font-semibold text-sm select-none inline-flex items-center gap-1.5">
+            <Clock size={14} /> Orari di apertura
+          </summary>
+          <ul className="mt-2 rounded-2xl bg-crema/60 divide-y divide-stone-100 px-3">
+            {info.orariGiorni.map((r) => {
+              const oggi = r.g.toLowerCase() === OGGI
+              const chiuso = /chius/i.test(r.o)
+              return (
+                <li
+                  key={r.g}
+                  className={`flex items-baseline justify-between gap-3 py-1.5 ${oggi ? 'font-bold' : ''}`}
+                >
+                  <span className={oggi ? 'text-salvia-scuro' : 'text-stone-600'}>
+                    {r.g}
+                    {oggi ? ' · oggi' : ''}
+                  </span>
+                  <span className={chiuso ? 'text-red-400' : oggi ? 'text-salvia-scuro' : 'text-stone-500'}>
+                    {r.o}
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+        </details>
       ) : null}
       <ul className="divide-y divide-stone-100">
         {righe.map((r) => (

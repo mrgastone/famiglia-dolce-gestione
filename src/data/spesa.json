@@ -38,7 +38,16 @@
     "tipo": "Pane, latte, acqua · emergenze",
     "modalita": "A piedi · orari limitati",
     "accesso": "A piedi",
-    "orari": "Orari limitati — non sempre aperto. Controlla sulla mappa prima di uscire (spesso chiuso la sera e la domenica).",
+    "orari": "Domenica chiuso · giovedì e sabato solo mattina. Controlla gli orari prima di uscire.",
+    "orariGiorni": [
+      { "g": "Lunedì", "o": "07:30–12 · 15:30–18:30" },
+      { "g": "Martedì", "o": "07:30–12 · 15:30–18:30" },
+      { "g": "Mercoledì", "o": "07:30–12 · 15:30–18:30" },
+      { "g": "Giovedì", "o": "07:30–12" },
+      { "g": "Venerdì", "o": "07:30–12 · 15:30–18:30" },
+      { "g": "Sabato", "o": "07:30–12" },
+      { "g": "Domenica", "o": "Chiuso" }
+    ],
     "mappa": "https://maps.app.goo.gl/VsFeWvDscxgYiRwK9",
     "fissi": [
       "1 filone di pane integrale",
