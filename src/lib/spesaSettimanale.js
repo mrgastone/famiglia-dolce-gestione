@@ -5,27 +5,23 @@ import prodotti from '../data/prodotti.json'
 // anche durante il giorno o per altre preparazioni.
 export const MARGINE_PERCENTO = 20
 
-// Si va al mercato il MARTEDÌ e il VENERDÌ. Ogni settimana → due liste della spesa.
-export const SPESE = ['martedi', 'venerdi']
+// A Longostagno (agosto 2026) la spesa si fa in tre punti con ritmi diversi:
+//  - Supermercato MPREIS (Soprabolzano): UNA VOLTA a settimana → un'unica lista su 7 giorni.
+//  - Fruttivendolo Obst & Gemüse Prader (bus 165): frutta/verdura FRESCA → due giri (freschezza).
+//  - Alimentari sotto casa (a piedi): pane, latte, acqua ed emergenze → lista breve.
+// I prodotti sono instradati al negozio giusto dal campo "fornitore" in prodotti.json:
+//   montagnola = fruttivendolo · specialita_di_parma = supermercato · mezza_rosetta = alimentari.
+const TUTTI_GIORNI = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']
 
-const INFO_SPESA = {
-  martedi: {
-    giorno: 'Martedì',
-    giorni: ['mer', 'gio', 'ven'],
-    copre: 'mercoledì, giovedì e venerdì',
-  },
-  venerdi: {
-    giorno: 'Venerdì',
-    giorni: ['sab', 'dom', 'lun', 'mar'],
-    copre: 'sabato, domenica, lunedì e martedì',
-  },
+// La frutta è deperibile: due giri dal fruttivendolo (facile in bus 165) per non tenerla troppo.
+export const GIRI_FRUTTA = ['inizio', 'fine']
+const INFO_FRUTTA = {
+  inizio: { nome: 'Inizio settimana', giorni: ['lun', 'mar', 'mer', 'gio'], copre: 'lunedì → giovedì' },
+  fine: { nome: 'Fine settimana', giorni: ['ven', 'sab', 'dom'], copre: 'venerdì → domenica' },
 }
-
-export function infoSpesa(spesaKey) {
-  return INFO_SPESA[spesaKey]
+export function infoFrutta(giro) {
+  return INFO_FRUTTA[giro]
 }
-
-export const ORDINE_FORNITORI = ['montagnola', 'specialita_di_parma', 'mezza_rosetta', 'online']
 
 // Somma le quantità usate per prodotto, nei giorni indicati, per entrambi i profili.
 // Gli ingredienti sono annidati dentro le preparazioni.
@@ -60,17 +56,6 @@ function linkAmazon(query) {
   return `https://www.amazon.it/s?k=${encodeURIComponent(query)}`
 }
 
-// Ricerca limitata al reparto Amazon Fresh
-function linkAmazonFresh(query) {
-  return `https://www.amazon.it/s?k=${encodeURIComponent(query)}&i=amazonfresh`
-}
-
-// La ricerca interna di Esselunga rimanda a una pagina generica; per avere
-// risultati mirati al prodotto usiamo una ricerca sul loro sito via motore.
-function linkEsselunga(query) {
-  return `https://www.google.com/search?q=${encodeURIComponent(`${query} site:esselunga.it`)}`
-}
-
 // +20% con aritmetica intera (evita imprecisioni tipo 100*1.2 = 120.00000000000001)
 function conMargine(q) {
   return Math.ceil((q * (100 + MARGINE_PERCENTO)) / 100)
@@ -97,8 +82,6 @@ function rigaProdotto(key, qUsata) {
       quantita: 'Già in cantina',
       giaDisponibile: true,
       amazon: null,
-      amazonFresh: null,
-      esselunga: null,
     }
   }
 
@@ -109,7 +92,7 @@ function rigaProdotto(key, qUsata) {
   if (aNumero) {
     const confezioni = p.confezione ? Math.max(1, Math.ceil(qConMargine / p.confezione)) : null
     quantita = confezioni
-      ? `N°${qConMargine} · ${confezioni} confezione${confezioni > 1 ? 'i' : ''} da ${p.confezione}`
+      ? `N°${qConMargine} · ${confezioni} ${confezioni > 1 ? 'confezioni' : 'confezione'} da ${p.confezione}`
       : `N°${qConMargine}`
   } else if (p.confezione) {
     const confezioni = Math.max(1, Math.ceil(qConMargine / p.confezione))
@@ -127,33 +110,47 @@ function rigaProdotto(key, qUsata) {
     quantita,
     giaDisponibile: false,
     amazon: linkAmazon(p.ricerca ?? p.nome),
-    amazonFresh: linkAmazonFresh(p.ricerca ?? p.nome),
-    esselunga: linkEsselunga(p.ricerca ?? p.nome),
   }
 }
 
-export function listaSpesa(settimana, spesaKey) {
-  const giorni = INFO_SPESA[spesaKey]?.giorni ?? []
-  const somma = totaliPerGiorni(settimana, giorni)
+function righeDa(somma, filtro) {
   return Object.entries(somma)
     .map(([key, q]) => rigaProdotto(key, q))
+    .filter(filtro)
     .sort((a, b) => a.nome.localeCompare(b.nome, 'it'))
 }
 
-export function spesaRaggruppata(settimana, spesaKey) {
-  const gruppi = { montagnola: [], specialita_di_parma: [], mezza_rosetta: [], online: [] }
-  for (const riga of listaSpesa(settimana, spesaKey)) {
-    ;(gruppi[riga.fornitore] ??= []).push(riga)
-  }
-  return gruppi
+// Supermercato MPREIS (una volta a settimana): fornitore specialita_di_parma, su tutti i 7 giorni.
+export function spesaSupermercato(settimana) {
+  const somma = totaliPerGiorni(settimana, TUTTI_GIORNI)
+  return righeDa(somma, (r) => r.fornitore === 'specialita_di_parma')
 }
 
-// Testo pronto per WhatsApp con la SOLA lista del mercato (Montagnola),
-// da inviare alla persona del mercato.
-export function testoMontagnola(settimana, spesaKey) {
-  const info = INFO_SPESA[spesaKey]
-  const righe = spesaRaggruppata(settimana, spesaKey).montagnola
+// Prodotti difficili da reperire → Amazon: fornitore online, su tutti i 7 giorni.
+export function spesaOnline(settimana) {
+  const somma = totaliPerGiorni(settimana, TUTTI_GIORNI)
+  return righeDa(somma, (r) => r.fornitore === 'online')
+}
+
+// Alimentari sotto casa (a piedi): fornitore mezza_rosetta ESCLUSO il pane (regola fissa),
+// su tutti i 7 giorni → tipicamente il latte fresco.
+export function spesaAlimentari(settimana) {
+  const somma = totaliPerGiorni(settimana, TUTTI_GIORNI)
+  return righeDa(somma, (r) => r.fornitore === 'mezza_rosetta' && !r.key.startsWith('pane'))
+}
+
+// Frutta e verdura dal fruttivendolo (bus 165): fornitore montagnola, per giro (inizio/fine).
+export function spesaFrutta(settimana, giro) {
+  const giorni = INFO_FRUTTA[giro]?.giorni ?? []
+  const somma = totaliPerGiorni(settimana, giorni)
+  return righeDa(somma, (r) => r.fornitore === 'montagnola')
+}
+
+// Testo pronto per WhatsApp con la lista frutta/verdura di un giro, da inviare a chi ci va.
+export function testoFrutta(settimana, giro) {
+  const info = INFO_FRUTTA[giro]
+  const righe = spesaFrutta(settimana, giro)
   if (!righe.length) return ''
   const lista = righe.map((r) => `- ${r.nome}: ${r.quantita}`).join('\n')
-  return `🥬 Mercato Montagnola — ${info.giorno} (Settimana ${settimana})\n(Frutta e verdura per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)\n\n${lista}\n\nGrazie! 🙂`
+  return `🍑 Frutta e verdura — ${info.nome} (Settimana ${settimana})\n(Obst & Gemüse Prader, bus 165. Per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)\n\n${lista}\n\nGrazie! 🙂`
 }

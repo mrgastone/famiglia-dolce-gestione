@@ -1,50 +1,53 @@
 {
   "giroUnico": {
-    "titolo": "Giro unico — zona Longostagno / Collalbo",
-    "descrizione": "I giri fissi si fanno di persona vicino a Longostagno. Collalbo (Klobenstein), il paese principale del Renon, è vicino e ben collegato in auto e con bus/trenino del Renon: lì ci sono panificio e supermercati e, nei dintorni, i masi (Hofladen) per uova e frutta/verdura.",
+    "titolo": "Dove si fa la spesa a Longostagno",
+    "descrizione": "Tre punti, tre ritmi diversi: il supermercato una volta a settimana (è lontano), il fruttivendolo quando serve frutta fresca (bus 165) e l'alimentari sotto casa a piedi per pane, latte, acqua ed emergenze.",
     "tappe": [
-      { "nome": "Frutta e verdura", "cosa": "masi/Hofladen del Renon o mercato contadino; in alternativa supermercato a Collalbo (es. MPreis/Despar)" },
-      { "nome": "Uova fresche", "cosa": "da un maso/Hofladen della zona (uova di fattoria) o al supermercato di Collalbo" },
-      { "nome": "Pane", "cosa": "panificio (Bäckerei) a Collalbo: filone integrale + ai cereali; in alternativa pane fresco al supermercato" }
+      { "nome": "Frutta e verdura — Obst & Gemüse Prader", "cosa": "in bus (linea 165); frutta e verdura fresca, anche più volte a settimana" },
+      { "nome": "Supermercato — MPREIS Soprabolzano", "cosa": "una volta a settimana: uova, yogurt, avena, semi, frutta secca e dispensa" },
+      { "nome": "Alimentari sotto casa — Handlung / Generi Misti", "cosa": "a piedi, per pane, latte, acqua e generi semplici; comodo per le emergenze (orari limitati)" }
     ]
   },
   "raccomandazioniOnline": {
-    "titolo": "Consigli per la spesa online",
-    "descrizione": "Tempi di consegna medi: Amazon Fresh ~1 giorno, Esselunga ~2–3 giorni.",
+    "titolo": "Prodotti difficili da reperire",
+    "descrizione": "Alcuni prodotti possono non esserci in zona: qui trovi il link Amazon per ordinarli quando serve.",
     "punti": [
-      "Ordina per primi i prodotti a scadenza più lunga (dispensa: avena, semi, crema di mandorle, frutta secca) così non mancano mai.",
-      "Lascia i prodotti freschi (yogurt, latte) a ridosso della consegna.",
-      "Se serve in fretta, scegli Amazon Fresh; per la spesa pianificata va bene Esselunga.",
-      "In zona Renon controlla la copertura della consegna: in caso, prendi i freschi al supermercato di Collalbo."
+      "Ordina in anticipo i prodotti a lunga conservazione (crema di mandorle, semi) così non mancano mai.",
+      "Se un prodotto della lista supermercato non c'è sullo scaffale, usa il pulsante “Cerca su Amazon” della riga.",
+      "L'alimentari sotto casa ha orari limitati: controlla sulla mappa prima di uscire, soprattutto la sera e la domenica."
     ],
     "nota": "Questa lista non contiene gli ingredienti per pranzo e cena."
   },
   "montagnola": {
-    "nome": "Frutta e verdura — masi / mercato locale",
-    "tipo": "Freschi (Renon · Collalbo)",
-    "modalita": "Di persona, zona Longostagno–Collalbo"
+    "nome": "Frutta e verdura — Obst & Gemüse Prader",
+    "tipo": "Frutta e verdura fresca",
+    "modalita": "In bus · linea 165",
+    "accesso": "Bus 165",
+    "mappa": "https://maps.app.goo.gl/gV1mnjKQEKajiCqQ8"
   },
   "specialita_di_parma": {
-    "nome": "Uova — maso / negozio locale",
-    "tipo": "Uova (anche per gli albumi)",
-    "modalita": "Di persona, zona Longostagno–Collalbo",
-    "fissi": [
-      "Latte Alta Qualità (latte fieno locale)",
-      "Mozzarella di bufala (solo al bisogno)"
-    ]
+    "nome": "Supermercato — MPREIS Soprabolzano",
+    "tipo": "Spesa settimanale · uova, yogurt, dispensa",
+    "modalita": "Una volta a settimana",
+    "accesso": "1 volta a settimana",
+    "mappa": "https://maps.app.goo.gl/N56ZEtrd5pw1K3dU6",
+    "fissi": []
   },
   "mezza_rosetta": {
-    "nome": "Pane — Panificio / Bäckerei (Collalbo)",
-    "tipo": "Pane",
-    "modalita": "Di persona, a Collalbo",
+    "nome": "Alimentari sotto casa — Handlung / Generi Misti",
+    "tipo": "Pane, latte, acqua · emergenze",
+    "modalita": "A piedi · orari limitati",
+    "accesso": "A piedi",
+    "orari": "Orari limitati — non sempre aperto. Controlla sulla mappa prima di uscire (spesso chiuso la sera e la domenica).",
+    "mappa": "https://maps.app.goo.gl/VsFeWvDscxgYiRwK9",
     "fissi": [
       "1 filone di pane integrale",
-      "1 filone di pane ai cereali",
-      "1 pizzetta integrale rotonda (se disponibile)"
+      "1 filone di pane ai cereali (se disponibile)",
+      "Acqua naturale (secondo necessità)"
     ]
   },
   "online": {
-    "nome": "Online",
-    "tipo": "Amazon Fresh · Esselunga"
+    "nome": "Online — Amazon",
+    "tipo": "Prodotti difficili da reperire in zona"
   }
 }

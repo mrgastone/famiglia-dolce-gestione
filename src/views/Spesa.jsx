@@ -1,36 +1,41 @@
 import { useState } from 'react'
 import {
   Footprints,
+  Bus,
+  ShoppingCart,
   Store,
-  Egg,
-  Croissant,
-  ShoppingBasket,
+  Package,
+  MapPin,
   Copy,
   Check,
   ExternalLink,
   Clock,
+  AlertTriangle,
 } from 'lucide-react'
 import spesa from '../data/spesa.json'
 import stagione from '../data/stagione.json'
 import EtichettaStagione from '../components/EtichettaStagione.jsx'
 import {
-  SPESE,
-  infoSpesa,
-  spesaRaggruppata,
-  testoMontagnola,
+  GIRI_FRUTTA,
+  infoFrutta,
+  spesaSupermercato,
+  spesaFrutta,
+  spesaAlimentari,
+  spesaOnline,
+  testoFrutta,
   MARGINE_PERCENTO,
 } from '../lib/spesaSettimanale.js'
 import { settimanaDelCiclo, SETTIMANE_UGUALI } from '../lib/settimana.js'
 
 const SETTIMANE = [1, 2, 3, 4]
 
-// Le icone restano nel codice; nome e tipo dei fornitori vengono da spesa.json
-// (così si adattano alla città/zona del mese senza toccare il codice).
-const ICONE_FORNITORE = {
-  montagnola: Store,
-  specialita_di_parma: Egg,
-  mezza_rosetta: Croissant,
-  online: ShoppingBasket,
+// Icona + colore di accesso per ciascun negozio (le chiavi fornitore restano stabili;
+// nome/tipo/mappa arrivano da spesa.json e si adattano alla zona del mese).
+const NEGOZI = {
+  montagnola: { icona: Bus, accessoIcona: Bus },
+  specialita_di_parma: { icona: ShoppingCart, accessoIcona: ShoppingCart },
+  mezza_rosetta: { icona: Store, accessoIcona: Footprints },
+  online: { icona: Package, accessoIcona: Package },
 }
 
 // ── Bottone "Copia" con feedback ────────────────────────────────────────────
@@ -67,8 +72,42 @@ function BottoneCopia({ testo, etichetta }) {
   )
 }
 
+// ── Intestazione di un negozio (nome, tipo, accesso, link mappa) ────────────
+function IntestazioneNegozio({ fornitoreKey }) {
+  const info = spesa[fornitoreKey] ?? {}
+  const conf = NEGOZI[fornitoreKey] ?? {}
+  const Icona = conf.icona ?? Store
+  const AccessoIcona = conf.accessoIcona ?? MapPin
+  return (
+    <div className="mb-2">
+      <div className="flex items-center gap-2 flex-wrap">
+        <Icona size={20} className="text-salvia-scuro shrink-0" />
+        <h3 className="font-display text-lg font-bold text-stone-800">{info.nome}</h3>
+      </div>
+      <div className="flex items-center gap-2 flex-wrap mt-1">
+        {info.accesso ? (
+          <span className="inline-flex items-center gap-1 text-[0.7rem] font-bold text-salvia-scuro bg-salvia-tenue rounded-full px-2 py-0.5">
+            <AccessoIcona size={12} /> {info.accesso}
+          </span>
+        ) : null}
+        <span className="text-stone-400 text-xs">{info.tipo}</span>
+        {info.mappa ? (
+          <a
+            href={info.mappa}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-salvia-scuro"
+          >
+            <MapPin size={13} /> Apri mappa <ExternalLink size={11} />
+          </a>
+        ) : null}
+      </div>
+    </div>
+  )
+}
+
 // ── Riga prodotto calcolato ─────────────────────────────────────────────────
-function RigaSpesa({ riga, conLink }) {
+function RigaSpesa({ riga, conAmazon }) {
   return (
     <li className="py-2.5">
       <div className="flex items-baseline justify-between gap-3">
@@ -87,8 +126,8 @@ function RigaSpesa({ riga, conLink }) {
           <span>{riga.scadenza}</span>
         </div>
       ) : null}
-      {conLink && !riga.giaDisponibile ? (
-        <div className="flex flex-wrap gap-2 mt-1.5">
+      {conAmazon && !riga.giaDisponibile && riga.amazon ? (
+        <div className="mt-1.5">
           <a
             href={riga.amazon}
             target="_blank"
@@ -97,29 +136,13 @@ function RigaSpesa({ riga, conLink }) {
           >
             Cerca su Amazon <ExternalLink size={13} />
           </a>
-          <a
-            href={riga.amazonFresh}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-stone-100 text-stone-700 font-semibold text-xs px-2.5 py-1.5"
-          >
-            Cerca su Amazon Fresh <ExternalLink size={13} />
-          </a>
-          <a
-            href={riga.esselunga}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-xl bg-stone-100 text-stone-700 font-semibold text-xs px-2.5 py-1.5"
-          >
-            Cerca su Esselunga <ExternalLink size={13} />
-          </a>
         </div>
       ) : null}
     </li>
   )
 }
 
-// ── Riga fissa (regola fissa: pane, latte alta qualità, ecc.) ───────────────
+// ── Riga fissa (regola fissa: pane, acqua, ecc.) ────────────────────────────
 function RigaFissa({ testo }) {
   return (
     <li className="py-2.5 flex items-baseline justify-between gap-3">
@@ -131,67 +154,104 @@ function RigaFissa({ testo }) {
   )
 }
 
-// ── Gruppo fornitore ────────────────────────────────────────────────────────
-function GruppoFornitore({ fornitoreKey, righe = [], fissi = [], conLink, children }) {
-  if (righe.length === 0 && fissi.length === 0) return null
-  const Icona = ICONE_FORNITORE[fornitoreKey]
-  const info = spesa[fornitoreKey] ?? {}
+// ── Card: Supermercato (una volta a settimana) ──────────────────────────────
+function CardSupermercato({ settimana }) {
+  const righe = spesaSupermercato(settimana)
   return (
-    <div className="mt-4 first:mt-0">
-      <div className="flex items-center gap-2 mb-1 flex-wrap">
-        <Icona size={18} className="text-salvia-scuro shrink-0" />
-        <h4 className="font-bold text-stone-700">{info.nome}</h4>
-        <span className="text-stone-400 text-xs">· {info.tipo}</span>
-      </div>
-      <ul className="divide-y divide-stone-100">
-        {righe.map((r) => (
-          <RigaSpesa key={r.key} riga={r} conLink={conLink} />
-        ))}
-        {fissi.map((f, i) => (
-          <RigaFissa key={`f${i}`} testo={f} />
-        ))}
-      </ul>
-      {children ? <div className="mt-3">{children}</div> : null}
+    <div className="rounded-3xl bg-white shadow-card p-5">
+      <IntestazioneNegozio fornitoreKey="specialita_di_parma" />
+      <p className="text-stone-500 text-sm mb-1">
+        Un solo giro a settimana: prendi tutto insieme (uova, yogurt e dispensa).
+      </p>
+      {righe.length ? (
+        <ul className="divide-y divide-stone-100">
+          {righe.map((r) => (
+            <RigaSpesa key={r.key} riga={r} conAmazon />
+          ))}
+        </ul>
+      ) : (
+        <p className="text-stone-400 text-sm">Niente da prendere al supermercato questa settimana.</p>
+      )}
     </div>
   )
 }
 
-// ── Una lista della spesa (Martedì o Venerdì) ───────────────────────────────
-function ListaSpesa({ settimana, spesaKey }) {
-  const info = infoSpesa(spesaKey)
-  const gruppi = spesaRaggruppata(settimana, spesaKey)
+// ── Card: Frutta e verdura (fruttivendolo, due giri) ────────────────────────
+function CardFrutta({ settimana }) {
   return (
     <div className="rounded-3xl bg-white shadow-card p-5">
-      <div className="flex items-center gap-2">
-        <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-salvia text-white font-display font-bold shrink-0">
-          {info.giorno[0]}
-        </span>
-        <h3 className="font-display text-xl font-bold text-stone-800">Spesa di {info.giorno}</h3>
-      </div>
-      <p className="text-stone-500 text-sm mt-1">
-        Serve per le colazioni di <span className="font-semibold text-stone-600">{info.copre}</span>.
+      <IntestazioneNegozio fornitoreKey="montagnola" />
+      <p className="text-stone-500 text-sm mb-3">
+        Frutta fresca in <span className="font-semibold text-stone-600">due giri</span> per non tenerla
+        troppo a lungo. Facile in bus 165, anche più spesso se serve.
       </p>
+      <div className="space-y-4">
+        {GIRI_FRUTTA.map((giro) => {
+          const info = infoFrutta(giro)
+          const righe = spesaFrutta(settimana, giro)
+          if (!righe.length) return null
+          return (
+            <div key={giro} className="rounded-2xl bg-crema/60 p-4">
+              <div className="flex items-baseline gap-2 flex-wrap mb-1">
+                <h4 className="font-bold text-stone-700">{info.nome}</h4>
+                <span className="text-stone-400 text-xs">· colazioni di {info.copre}</span>
+              </div>
+              <ul className="divide-y divide-stone-100">
+                {righe.map((r) => (
+                  <RigaSpesa key={r.key} riga={r} />
+                ))}
+              </ul>
+              <div className="mt-3">
+                <BottoneCopia testo={testoFrutta(settimana, giro)} etichetta={`Copia lista · ${info.nome}`} />
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
 
-      {/* Mercato: con il pulsante "Copia" subito sotto (da inviare al mercato) */}
-      <GruppoFornitore fornitoreKey="montagnola" righe={gruppi.montagnola}>
-        <BottoneCopia
-          testo={testoMontagnola(settimana, spesaKey)}
-          etichetta={`Copia lista mercato di ${info.giorno}`}
-        />
-      </GruppoFornitore>
+// ── Card: Alimentari sotto casa (a piedi) ───────────────────────────────────
+function CardAlimentari({ settimana }) {
+  const righe = spesaAlimentari(settimana)
+  const info = spesa.mezza_rosetta
+  return (
+    <div className="rounded-3xl bg-white shadow-card p-5">
+      <IntestazioneNegozio fornitoreKey="mezza_rosetta" />
+      {info.orari ? (
+        <div className="flex items-start gap-2 text-amber-700 bg-amber-50 rounded-2xl px-3 py-2 mb-3 text-sm">
+          <AlertTriangle size={16} className="shrink-0 mt-0.5" />
+          <span>{info.orari}</span>
+        </div>
+      ) : null}
+      <ul className="divide-y divide-stone-100">
+        {righe.map((r) => (
+          <RigaSpesa key={r.key} riga={r} conAmazon />
+        ))}
+        {(info.fissi ?? []).map((f, i) => (
+          <RigaFissa key={`f${i}`} testo={f} />
+        ))}
+      </ul>
+    </div>
+  )
+}
 
-      {/* Specialità di Parma: uova calcolate + prodotti fissi */}
-      <GruppoFornitore
-        fornitoreKey="specialita_di_parma"
-        righe={gruppi.specialita_di_parma}
-        fissi={spesa.specialita_di_parma.fissi}
-      />
-
-      {/* Mezza Rosetta: regola fissa (pane integrale + ai cereali + pizzetta) */}
-      <GruppoFornitore fornitoreKey="mezza_rosetta" fissi={spesa.mezza_rosetta.fissi} />
-
-      {/* Online: con i link "Cerca su…" */}
-      <GruppoFornitore fornitoreKey="online" righe={gruppi.online} conLink />
+// ── Card: Online / Amazon (prodotti difficili) ──────────────────────────────
+function CardOnline({ settimana }) {
+  const righe = spesaOnline(settimana)
+  if (!righe.length) return null
+  return (
+    <div className="rounded-3xl bg-white shadow-card p-5">
+      <IntestazioneNegozio fornitoreKey="online" />
+      <p className="text-stone-500 text-sm mb-1">
+        Se non li trovi al supermercato di zona, ordinali online.
+      </p>
+      <ul className="divide-y divide-stone-100">
+        {righe.map((r) => (
+          <RigaSpesa key={r.key} riga={r} conAmazon />
+        ))}
+      </ul>
     </div>
   )
 }
@@ -228,9 +288,11 @@ export default function Spesa() {
           ))}
         </div>
         <p className="text-stone-400 text-sm mt-2">
-          Si va al mercato <span className="font-semibold text-stone-500">martedì e venerdì</span> →
-          due liste a settimana, con quantità <span className="font-semibold text-stone-500">+{MARGINE_PERCENTO}%</span>.
-          Sono stati scelti tutti i prodotti di stagione in base al mese {stagione.etichetta}.
+          Supermercato <span className="font-semibold text-stone-500">una volta a settimana</span>,
+          frutta fresca <span className="font-semibold text-stone-500">quando serve</span> (bus 165),
+          alimentari sotto casa <span className="font-semibold text-stone-500">a piedi</span> per le
+          emergenze. Quantità con <span className="font-semibold text-stone-500">+{MARGINE_PERCENTO}%</span>.
+          Prodotti di stagione per {stagione.etichetta}.
         </p>
         {SETTIMANE_UGUALI[settimana] ? (
           <p className="text-salvia-scuro text-sm font-semibold mt-1">
@@ -240,10 +302,10 @@ export default function Spesa() {
         ) : null}
       </div>
 
-      {/* Giro unico in zona Montagnola */}
+      {/* Come funziona la spesa in zona (i tre punti) */}
       <div className="rounded-3xl bg-salvia text-white shadow-card p-5 sm:p-6">
         <div className="flex items-center gap-2 mb-2">
-          <Footprints size={24} strokeWidth={2.3} />
+          <MapPin size={24} strokeWidth={2.3} />
           <h2 className="font-display text-2xl font-bold">{giroUnico.titolo}</h2>
         </div>
         <p className="text-white/90 leading-snug mb-4">{giroUnico.descrizione}</p>
@@ -262,10 +324,16 @@ export default function Spesa() {
         </ol>
       </div>
 
-      {/* Consigli per la spesa online (verde diverso) */}
+      {/* Le liste della settimana selezionata */}
+      <CardSupermercato settimana={settimana} />
+      <CardFrutta settimana={settimana} />
+      <CardAlimentari settimana={settimana} />
+      <CardOnline settimana={settimana} />
+
+      {/* Prodotti difficili da reperire (nota) */}
       <div className="rounded-3xl bg-salvia-scuro text-white shadow-card p-5 sm:p-6">
         <div className="flex items-center gap-2 mb-2">
-          <Clock size={24} strokeWidth={2.3} />
+          <Package size={24} strokeWidth={2.3} />
           <h2 className="font-display text-2xl font-bold">{raccomandazioniOnline.titolo}</h2>
         </div>
         <p className="text-white/90 leading-snug mb-3">{raccomandazioniOnline.descrizione}</p>
@@ -283,11 +351,6 @@ export default function Spesa() {
           </p>
         ) : null}
       </div>
-
-      {/* Le due liste della settimana selezionata */}
-      {SPESE.map((k) => (
-        <ListaSpesa key={k} settimana={settimana} spesaKey={k} />
-      ))}
     </section>
   )
 }

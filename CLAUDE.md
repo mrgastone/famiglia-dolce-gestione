@@ -116,33 +116,34 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 
 ## 🛒 Regole della spesa (`src/lib/spesaSettimanale.js`)
 
-- Quantità **calcolate** sommando i grammi/numeri delle colazioni per prodotto.
-- **+20%** su ogni quantità (lo stesso cibo serve anche durante il giorno / altre preparazioni).
-- Si va al mercato **martedì e venerdì** → ogni settimana ha **2 liste**:
-  - **Martedì** → copre le colazioni di **mercoledì, giovedì, venerdì**.
-  - **Venerdì** → copre le colazioni di **sabato, domenica, lunedì, martedì**.
-- Ogni lista è raggruppata per fornitore, con **scadenze** e link "Cerca su Amazon/Esselunga".
-- **Albumi**: si comprano come **uova intere** (dal fornitore uova del mese, chiave `specialita_di_parma`) e si separano dal tuorlo.
-- **Giri di persona vicino alla città del mese**: i **nomi** dei fornitori (mercato, uova, pane) sono in
-  `spesa.json` e si **adattano alla zona** (es. `Longostagno (BZ)`); le **chiavi**
-  `montagnola`/`specialita_di_parma`/`mezza_rosetta` restano invariate. Vanno fatti nelle vicinanze.
-- **Regole FISSE** (in `spesa.json`, campo `fissi`, a prescindere dalle colazioni):
-  - **Forno Mezza Rosetta**: SEMPRE `1 filone di pane integrale` + `1 filone di pane ai cereali`
-    + `1 pizzetta integrale rotonda (se disponibile)`.
-  - **Specialità di Parma**: oltre alle uova, sempre `Latte Alta Qualità` e
-    `Mozzarella di bufala (solo al bisogno)`.
-- **Olio EVO**: NON si compra, è **già in cantina** (lo compriamo tutto l'anno) →
-  `giaDisponibile: true` in `prodotti.json`.
-- **Link prodotto** (3 per ogni prodotto online): Amazon `amazon.it/s?k=`; Amazon Fresh
-  `amazon.it/s?k=…&i=amazonfresh`; Esselunga via ricerca mirata `google.com/search?q=… site:esselunga.it`
-  (la ricerca interna di Esselunga porta a una pagina generica).
-- **Copia WhatsApp**: solo la lista del **mercato (Montagnola)**, posizionata **sotto** quella lista.
-  Online / Specialità di Parma / Mezza Rosetta NON hanno copia.
-- Riquadro **"Consigli per la spesa online"** (verde diverso) sotto il giro unico: tempi medi
-  (Amazon Fresh ~1 giorno, Esselunga ~2–3 giorni) → ordinare prima i prodotti a scadenza lunga.
-  Include la nota fissa: «Questa lista non contiene gli ingredienti per pranzo e cena».
+- Quantità **calcolate** sommando i grammi/numeri delle colazioni per prodotto. **+20%** su ogni
+  quantità (lo stesso cibo serve anche durante il giorno / altre preparazioni).
+- **Le chiavi fornitore restano stabili** (`montagnola` / `specialita_di_parma` / `mezza_rosetta` /
+  `online`); cambiano solo **nome, tipo, accesso, mappa** in `spesa.json` per adattarsi alla zona del
+  mese. **Ogni prodotto** è instradato al negozio dal campo `fornitore` in `prodotti.json`.
+- **Ritmi di spesa (agosto 2026 · Longostagno):** ogni negozio ha una **card** con
+  intestazione (icona, nome, badge accesso, link **mappa**):
+  - `specialita_di_parma` = **Supermercato MPREIS (Soprabolzano)** — **UNA VOLTA a settimana**: una
+    sola lista calcolata su **tutti i 7 giorni** (uova, yogurt, avena, semi, frutta secca, dispensa).
+  - `montagnola` = **Fruttivendolo Obst & Gemüse Prader** — **bus 165**, frutta/verdura **fresca**:
+    **due giri** (`inizio` lun→gio, `fine` ven→dom) per non tenerla troppo. Ognuno ha la **copia
+    WhatsApp** (`testoFrutta`).
+  - `mezza_rosetta` = **Alimentari sotto casa (Handlung / Generi Misti)** — **a piedi, orari
+    limitati**: pane (regola **fissa**, campo `fissi`) + latte + acqua + emergenze. Mostra l'avviso
+    `orari` in giallo. Il pane resta `fisso`: i prodotti `pane*` sono **esclusi** dal calcolo.
+  - `online` = **Amazon**: solo prodotti **difficili da reperire** in zona (es. crema di mandorle 100%).
+- **Albumi**: si comprano come **uova intere** (chiave `specialita_di_parma`) e si separano dal tuorlo.
+- **Olio EVO**: NON si compra, è **già in cantina** → `giaDisponibile: true` in `prodotti.json`.
+- **Link prodotto**: **solo Amazon** (`amazon.it/s?k=`), mostrato su ogni riga calcolata come
+  ripiego se il prodotto manca sullo scaffale. (Amazon Fresh/Esselunga rimossi: non servono in zona.)
+- Riquadro **verde** in alto = i **tre punti** di spesa (`spesa.giroUnico`); riquadro **verde scuro**
+  in fondo = nota **"Prodotti difficili da reperire"** (`spesa.raccomandazioniOnline`), con la nota
+  fissa «Questa lista non contiene gli ingredienti per pranzo e cena».
 - **Tutte le pagine devono restare mobile-adaptive** (iPhone ~375px e iPad): niente overflow
   orizzontale, testi/bottoni che vanno a capo.
+
+> ℹ️ Gli **orari** dell'alimentari sotto casa non sono verificati: il campo `mezza_rosetta.orari` in
+> `spesa.json` invita a controllare sulla mappa. Se l'utente fornisce gli orari esatti, scriverli lì.
 
 ---
 
