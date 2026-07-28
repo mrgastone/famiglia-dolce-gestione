@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { createPortal } from 'react-dom'
 import {
   Footprints,
   Bus,
@@ -11,6 +12,7 @@ import {
   ExternalLink,
   Clock,
   AlertTriangle,
+  Printer,
 } from 'lucide-react'
 import spesa from '../data/spesa.json'
 import stagione from '../data/stagione.json'
@@ -286,6 +288,86 @@ function CardOnline({ settimana }) {
   )
 }
 
+// ── Lista stampabile (bianco/nero, con caselle da spuntare) ─────────────────
+// Nascosta a schermo (.area-stampa); compare solo in stampa (vedi index.css).
+// Stili inline: in stampa sono più affidabili delle classi con colori di sfondo.
+function SezioneStampa({ titolo, nota, voci }) {
+  if (!voci.length) return null
+  return (
+    <div style={{ marginBottom: '12px' }}>
+      <h2 style={{ fontSize: '14px', fontWeight: 700, borderBottom: '1.5px solid #000', paddingBottom: '2px', margin: '0 0 5px' }}>
+        {titolo}
+      </h2>
+      {nota ? <p style={{ fontSize: '10.5px', color: '#333', margin: '0 0 5px' }}>{nota}</p> : null}
+      <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+        {voci.map((v, i) => (
+          <li
+            key={i}
+            style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '12.5px', padding: '2.5px 0', breakInside: 'avoid' }}
+          >
+            <span style={{ display: 'inline-block', width: '12px', height: '12px', border: '1.2px solid #000', flexShrink: 0, marginTop: '2px' }} />
+            <span style={{ flex: 1 }}>{v.nome}</span>
+            {v.qta ? <span style={{ fontWeight: 600, whiteSpace: 'nowrap' }}>{v.qta}</span> : null}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+function ListaStampabile({ settimana }) {
+  const superm = spesaSupermercato(settimana).map((r) => ({ nome: r.nome, qta: r.quantita }))
+  const alimentari = [
+    ...spesaAlimentari(settimana).map((r) => ({ nome: r.nome, qta: r.quantita })),
+    ...(spesa.mezza_rosetta.fissi ?? []).map((f) => ({ nome: f, qta: '' })),
+  ]
+  const online = spesaOnline(settimana)
+    .filter((r) => !r.giaDisponibile)
+    .map((r) => ({ nome: r.nome, qta: r.quantita }))
+  const oggi = new Date().toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })
+
+  // Resa fuori da #root (portale su <body>) così in stampa basta nascondere #root.
+  return createPortal(
+    <div className="area-stampa" style={{ color: '#000', fontFamily: 'system-ui, sans-serif' }}>
+      <div style={{ borderBottom: '2px solid #000', paddingBottom: '6px', marginBottom: '12px' }}>
+        <h1 style={{ fontSize: '18px', fontWeight: 800, margin: 0 }}>Lista della spesa · Settimana {settimana}</h1>
+        <p style={{ fontSize: '12px', margin: '2px 0 0' }}>
+          {stagione.etichetta} — stampata il {oggi}
+        </p>
+      </div>
+
+      <SezioneStampa
+        titolo={`🛒 ${spesa.specialita_di_parma.nome}`}
+        nota="Una volta a settimana."
+        voci={superm}
+      />
+      {GIRI_FRUTTA.map((giro) => {
+        const info = infoFrutta(giro)
+        const voci = spesaFrutta(settimana, giro).map((r) => ({ nome: r.nome, qta: r.quantita }))
+        return (
+          <SezioneStampa
+            key={giro}
+            titolo={`🍑 Frutta e verdura · ${info.nome}`}
+            nota={`${spesa.montagnola.nome} (bus 165) — colazioni di ${info.copre}.`}
+            voci={voci}
+          />
+        )
+      })}
+      <SezioneStampa
+        titolo={`🏠 ${spesa.mezza_rosetta.nome}`}
+        nota={spesa.mezza_rosetta.orari}
+        voci={alimentari}
+      />
+      <SezioneStampa titolo="📦 Da ordinare online (Amazon)" voci={online} />
+
+      <p style={{ fontSize: '10.5px', color: '#333', marginTop: '14px', borderTop: '1px solid #999', paddingTop: '6px' }}>
+        Quantità con +{MARGINE_PERCENTO}%. Questa lista non contiene gli ingredienti per pranzo e cena.
+      </p>
+    </div>,
+    document.body,
+  )
+}
+
 export default function Spesa() {
   const [settimana, setSettimana] = useState(settimanaDelCiclo())
   const { giroUnico, raccomandazioniOnline } = spesa
@@ -359,6 +441,20 @@ export default function Spesa() {
       <CardFrutta settimana={settimana} />
       <CardAlimentari settimana={settimana} />
       <CardOnline settimana={settimana} />
+
+      {/* Pulsante stampa (in fondo alla lista settimanale) */}
+      <button
+        onClick={() => window.print()}
+        className="no-print w-full rounded-3xl bg-salvia text-white shadow-card p-4 flex items-center justify-center gap-2 font-bold text-lg active:scale-95 transition-transform"
+      >
+        <Printer size={22} /> Stampa la lista della Settimana {settimana}
+      </button>
+      <p className="no-print text-stone-400 text-xs text-center -mt-2">
+        Stampa solo la lista della settimana selezionata, in bianco e nero con le caselle da spuntare.
+      </p>
+
+      {/* Versione stampabile (nascosta a schermo, compare solo in stampa) */}
+      <ListaStampabile settimana={settimana} />
 
       {/* Prodotti difficili da reperire (nota) */}
       <div className="rounded-3xl bg-salvia-scuro text-white shadow-card p-5 sm:p-6">

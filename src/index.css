@@ -27,3 +27,24 @@
     padding-top: env(safe-area-inset-top);
   }
 }
+
+/* ── Stampa: mostra SOLO la lista della spesa pulita (.area-stampa) ──────────
+   La lista è resa fuori da #root (portale su <body>): in stampa nascondiamo
+   #root e mostriamo la sola lista. Niente pagine bianche, anche in PWA su iPad.
+   A schermo l'area resta nascosta. */
+.area-stampa {
+  display: none;
+}
+@media print {
+  body {
+    background: #fff;
+    overscroll-behavior-y: auto;
+  }
+  #root {
+    display: none !important;
+  }
+  .area-stampa {
+    display: block;
+    padding: 8mm;
+  }
+}
