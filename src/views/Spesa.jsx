@@ -195,9 +195,12 @@ function CardFrutta({ settimana }) {
           if (!righe.length) return null
           return (
             <div key={giro} className="rounded-2xl bg-crema/60 p-4">
-              <div className="flex items-baseline gap-2 flex-wrap mb-1">
-                <h4 className="font-bold text-stone-700">{info.nome}</h4>
-                <span className="text-stone-400 text-xs">· colazioni di {info.copre}</span>
+              <div className="flex items-center gap-2.5 rounded-xl bg-salvia text-white px-3.5 py-2.5 mb-3">
+                <CalendarDays size={22} strokeWidth={2.4} className="shrink-0" />
+                <div className="leading-tight">
+                  <p className="font-display font-bold text-xl uppercase tracking-wide">{info.nome}</p>
+                  <p className="text-white/85 text-xs">colazioni di {info.copre}</p>
+                </div>
               </div>
               <ul className="divide-y divide-stone-100">
                 {righe.map((r) => (
