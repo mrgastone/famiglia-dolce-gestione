@@ -3,6 +3,7 @@ import profili from '../data/profili.json'
 import colazioni from '../data/colazioni.json'
 import stagione from '../data/stagione.json'
 import ProfiloColazione from '../components/ProfiloColazione.jsx'
+import PromemoriaSpesa from '../components/PromemoriaSpesa.jsx'
 import { settimanaDelCiclo, chiaveGiorno, nomeGiorno, dataLeggibile } from '../lib/settimana.js'
 
 export default function Oggi() {
@@ -13,6 +14,9 @@ export default function Oggi() {
 
   return (
     <section className="space-y-5">
+      {/* Promemoria spesa nei giorni di martedì e venerdì */}
+      <PromemoriaSpesa />
+
       {/* Data odierna + settimana del ciclo */}
       <div className="rounded-3xl bg-white shadow-card p-5 sm:p-6">
         <p className="text-stone-500 font-semibold capitalize">{dataLeggibile(oggi)}</p>

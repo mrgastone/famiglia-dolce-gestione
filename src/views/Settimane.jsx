@@ -1,4 +1,5 @@
 import colazioni from '../data/colazioni.json'
+import stagione from '../data/stagione.json'
 import GrigliaSettimanale from '../components/GrigliaSettimanale.jsx'
 import EtichettaStagione from '../components/EtichettaStagione.jsx'
 import { settimanaDelCiclo, chiaveGiorno } from '../lib/settimana.js'
@@ -15,6 +16,7 @@ export default function Settimane() {
         datiMese={colazioni}
         settimanaCorrente={settimanaDelCiclo()}
         giornoCorrente={chiaveGiorno()}
+        inizioCiclo={stagione.inizioCiclo}
       />
     </section>
   )

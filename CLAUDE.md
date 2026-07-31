@@ -153,8 +153,9 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
   - `specialita_di_parma` = **Supermercato MPREIS (Soprabolzano)** — **UNA VOLTA a settimana**: una
     sola lista calcolata su **tutti i 7 giorni** (uova, yogurt, avena, semi, frutta secca, dispensa).
   - `montagnola` = **Fruttivendolo Obst & Gemüse Prader** — **bus 165**, frutta/verdura **fresca**:
-    **due giri** (`inizio` lun→gio, `fine` ven→dom) per non tenerla troppo. Ognuno ha la **copia
-    WhatsApp** (`testoFrutta`).
+    **due giri fissi** per non tenerla troppo — **Martedì** (`martedi`) per le colazioni di
+    **mercoledì, giovedì, venerdì**; **Venerdì** (`venerdi`) per le colazioni di **sabato, domenica,
+    lunedì**. Ognuno ha la **copia WhatsApp** (`testoFrutta`). Chiavi in `GIRI_FRUTTA`.
   - `mezza_rosetta` = **Alimentari sotto casa (Handlung / Generi Misti)** — **a piedi, orari
     limitati**: pane (regola **fissa**, campo `fissi`) + latte + acqua + emergenze. Mostra l'avviso
     `orari` in giallo. Il pane resta `fisso`: i prodotti `pane*` sono **esclusi** dal calcolo.

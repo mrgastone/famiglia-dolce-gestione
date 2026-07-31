@@ -20,10 +20,12 @@ export const MARGINE_PERCENTO = 20
 const TUTTI_GIORNI = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']
 
 // La frutta è deperibile: due giri dal fruttivendolo (facile in bus 165) per non tenerla troppo.
-export const GIRI_FRUTTA = ['inizio', 'fine']
+//  - MARTEDÌ  → colazioni di mercoledì, giovedì e venerdì
+//  - VENERDÌ  → colazioni di sabato, domenica e lunedì
+export const GIRI_FRUTTA = ['martedi', 'venerdi']
 const INFO_FRUTTA = {
-  inizio: { nome: 'Inizio settimana', giorni: ['lun', 'mar', 'mer', 'gio'], copre: 'lunedì → giovedì' },
-  fine: { nome: 'Fine settimana', giorni: ['ven', 'sab', 'dom'], copre: 'venerdì → domenica' },
+  martedi: { nome: 'Martedì', giorni: ['mer', 'gio', 'ven'], copre: 'mercoledì, giovedì e venerdì' },
+  venerdi: { nome: 'Venerdì', giorni: ['sab', 'dom', 'lun'], copre: 'sabato, domenica e lunedì' },
 }
 export function infoFrutta(giro) {
   return INFO_FRUTTA[giro]

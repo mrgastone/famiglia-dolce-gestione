@@ -13,6 +13,7 @@ import {
   Clock,
   AlertTriangle,
   Printer,
+  CalendarDays,
 } from 'lucide-react'
 import spesa from '../data/spesa.json'
 import stagione from '../data/stagione.json'
@@ -184,8 +185,8 @@ function CardFrutta({ settimana }) {
     <div className="rounded-3xl bg-white shadow-card p-5">
       <IntestazioneNegozio fornitoreKey="montagnola" />
       <p className="text-stone-500 text-sm mb-3">
-        Frutta fresca in <span className="font-semibold text-stone-600">due giri</span> per non tenerla
-        troppo a lungo. Facile in bus 165, anche più spesso se serve.
+        Frutta fresca in <span className="font-semibold text-stone-600">due giri, martedì e venerdì</span>,
+        per non tenerla troppo a lungo. Facile in bus 165, anche più spesso se serve.
       </p>
       <div className="space-y-4">
         {GIRI_FRUTTA.map((giro) => {
@@ -434,6 +435,32 @@ export default function Spesa() {
             </li>
           ))}
         </ol>
+
+        {/* Riquadro: giorni in cui fare la spesa fresca */}
+        <div className="mt-4 rounded-2xl bg-white/15 p-4">
+          <div className="flex items-center gap-2 font-bold mb-2">
+            <CalendarDays size={20} strokeWidth={2.3} />
+            <span>Giorni di spesa: Martedì e Venerdì</span>
+          </div>
+          <ul className="space-y-1.5">
+            {GIRI_FRUTTA.map((giro) => {
+              const info = infoFrutta(giro)
+              return (
+                <li key={giro} className="flex items-start gap-2 leading-snug">
+                  <span className="font-bold rounded-lg bg-white/25 px-2 py-0.5 text-sm shrink-0">
+                    {info.nome}
+                  </span>
+                  <span className="text-white/90 pt-0.5">
+                    per le colazioni di <span className="font-semibold">{info.copre}</span>
+                  </span>
+                </li>
+              )
+            })}
+          </ul>
+          <p className="text-white/75 text-xs mt-2 leading-snug">
+            Frutta e verdura fresca dal fruttivendolo. Il supermercato invece si fa una volta a settimana.
+          </p>
+        </div>
       </div>
 
       {/* Le liste della settimana selezionata */}

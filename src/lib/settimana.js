@@ -54,3 +54,22 @@ export function dataLeggibile(oggi = new Date()) {
     year: 'numeric',
   })
 }
+
+// Data di calendario di un giorno del ciclo, a partire da inizioCiclo (un lunedì).
+// Es. inizioCiclo 2026-07-27, settimana 1, "ven" → 31/07/2026.
+export function dataDelGiorno(inizioCiclo, settimana, chiave) {
+  if (!inizioCiclo) return null
+  const idx = ordineGiorni.indexOf(chiave)
+  if (idx < 0) return null
+  const [y, m, d] = String(inizioCiclo).split('-').map(Number)
+  // mezzanotte locale: evita sfasamenti di fuso rispetto a new Date("YYYY-MM-DD") (UTC)
+  const data = new Date(y, m - 1, d)
+  data.setDate(data.getDate() + (settimana - 1) * 7 + idx)
+  return data
+}
+
+// Data breve gg/mm/aaaa (es. "31/07/2026")
+export function dataBreve(data) {
+  if (!data) return ''
+  return data.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })
+}

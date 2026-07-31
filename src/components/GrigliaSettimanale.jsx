@@ -3,7 +3,7 @@ import { TriangleAlert } from 'lucide-react'
 import profili from '../data/profili.json'
 import VideoColazione from './VideoColazione.jsx'
 import { titoloPreparazione } from './ProfiloColazione.jsx'
-import { ordineGiorni, nomeGiorno, SETTIMANE_UGUALI } from '../lib/settimana.js'
+import { ordineGiorni, nomeGiorno, SETTIMANE_UGUALI, dataDelGiorno, dataBreve } from '../lib/settimana.js'
 import { nomeProfilo, suffissoPorzioni } from '../lib/profilo.js'
 
 const SETTIMANE = [1, 2, 3, 4]
@@ -11,7 +11,12 @@ const SETTIMANE = [1, 2, 3, 4]
 // Griglia delle 4 settimane × 7 giorni per un dato mese di colazioni.
 // `settimanaCorrente`/`giornoCorrente` servono solo a evidenziare "oggi"
 // (per l'archivio si passano null).
-export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null, giornoCorrente = null }) {
+export default function GrigliaSettimanale({
+  datiMese,
+  settimanaCorrente = null,
+  giornoCorrente = null,
+  inizioCiclo = null,
+}) {
   const [attiva, setAttiva] = useState(settimanaCorrente ?? 1)
   const datiSettimana = datiMese?.[String(attiva)] ?? {}
 
@@ -67,7 +72,14 @@ export default function GrigliaSettimanale({ datiMese, settimanaCorrente = null,
               ].join(' ')}
             >
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-display text-xl font-bold text-stone-700">{nomeGiorno(g)}</h3>
+                <h3 className="font-display text-xl font-bold text-stone-700">
+                  {nomeGiorno(g)}
+                  {inizioCiclo ? (
+                    <span className="text-stone-400 font-semibold text-sm ml-2">
+                      {dataBreve(dataDelGiorno(inizioCiclo, attiva, g))}
+                    </span>
+                  ) : null}
+                </h3>
                 {isOggi ? (
                   <span className="text-xs font-extrabold text-white bg-salvia rounded-full px-2.5 py-1 tracking-wide">
                     OGGI
