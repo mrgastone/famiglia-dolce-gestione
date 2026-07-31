@@ -21,11 +21,12 @@ const TUTTI_GIORNI = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']
 
 // La frutta è deperibile: due giri dal fruttivendolo (facile in bus 165) per non tenerla troppo.
 //  - MARTEDÌ  → colazioni di mercoledì, giovedì e venerdì
-//  - VENERDÌ  → colazioni di sabato, domenica e lunedì
+//  - VENERDÌ  → colazioni di sabato, domenica, lunedì E martedì (copre fino al giro successivo)
+// Insieme coprono tutti e 7 i giorni della settimana.
 export const GIRI_FRUTTA = ['martedi', 'venerdi']
 const INFO_FRUTTA = {
   martedi: { nome: 'Martedì', giorni: ['mer', 'gio', 'ven'], copre: 'mercoledì, giovedì e venerdì' },
-  venerdi: { nome: 'Venerdì', giorni: ['sab', 'dom', 'lun'], copre: 'sabato, domenica e lunedì' },
+  venerdi: { nome: 'Venerdì', giorni: ['sab', 'dom', 'lun', 'mar'], copre: 'sabato, domenica, lunedì e martedì' },
 }
 export function infoFrutta(giro) {
   return INFO_FRUTTA[giro]

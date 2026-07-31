@@ -155,7 +155,8 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
   - `montagnola` = **Fruttivendolo Obst & Gemüse Prader** — **bus 165**, frutta/verdura **fresca**:
     **due giri fissi** per non tenerla troppo — **Martedì** (`martedi`) per le colazioni di
     **mercoledì, giovedì, venerdì**; **Venerdì** (`venerdi`) per le colazioni di **sabato, domenica,
-    lunedì**. Ognuno ha la **copia WhatsApp** (`testoFrutta`). Chiavi in `GIRI_FRUTTA`.
+    lunedì e martedì** (copre fino al giro del martedì successivo). Insieme coprono tutti e 7 i
+    giorni. Ognuno ha la **copia WhatsApp** (`testoFrutta`). Chiavi in `GIRI_FRUTTA`.
   - `mezza_rosetta` = **Alimentari sotto casa (Handlung / Generi Misti)** — **a piedi, orari
     limitati**: pane (regola **fissa**, campo `fissi`) + latte + acqua + emergenze. Mostra l'avviso
     `orari` in giallo. Il pane resta `fisso`: i prodotti `pane*` sono **esclusi** dal calcolo.
