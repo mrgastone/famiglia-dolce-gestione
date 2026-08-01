@@ -26,7 +26,8 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 
 ### Flavio (adulto)
 - Basso indice glicemico
-- Proteine **dall'albume** (le uova si comprano intere e si separano)
+- Proteine **dall'albume** (le uova si comprano intere e si separano) — **massimo 2 albumi**
+  a colazione (mai 3), sia strapazzati sia sodi.
 - Pochi grassi
 
 ### David (bambino)
