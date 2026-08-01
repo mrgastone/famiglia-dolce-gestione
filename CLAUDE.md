@@ -116,8 +116,23 @@ Regole:
   (frullato + albumi = 2 preparazioni → 2 riquadri → 2 video).
 - `etichetta` con articolo; `plurale: true` se plurale. Genera "Guarda come si
   prepara/preparano {etichetta}" (un video **alla fine di ogni** preparazione, allineato a sinistra).
-- **Uova e albumi → a NUMERO** (`"n"`), NON in grammi. Tutto il resto **in grammi** (`"g"`).
+- **Uova e albumi → a NUMERO** (`"n"`); **liquidi → in `"ml"`** (latte, acqua, olio, bevande);
+  tutto il resto **in grammi** (`"g"`). Il rendering mostra `ml`/`N°`/`g` di conseguenza.
 - `prodotto` = chiave di `prodotti.json` (serve per la spesa).
+
+> ### 🥛 Regola FISSA: TUTTI gli ingredienti della preparazione (NON negoziabile)
+> Ogni preparazione deve elencare **tutto ciò che serve davvero per farla**, non solo gli
+> ingredienti "principali". In particolare i **liquidi e i grassi di preparazione**, che è facile
+> dimenticare:
+> - **Acqua/latte di cottura o ammollo** (porridge, creme d'avena, overnight oats) → indicare la
+>   quantità in **`ml`**.
+> - **Latte/acqua per legare o frullare** (frittelle, impasti, frullati) → in **`ml`**.
+> - **Olio (per cuocere o condire)** per uova/albumi/frittate strapazzate e insalate → in **`ml`**.
+> - **I liquidi si indicano SEMPRE in `ml`.**
+> - L'**acqua di rubinetto** (cottura/ammollo/bollitura) si elenca **senza** campo `prodotto`, così
+>   compare nella preparazione ma **non** nella lista della spesa. Il latte e l'olio invece hanno il
+>   loro `prodotto` (entrano nella spesa; l'olio è `giaDisponibile`).
+> Vale per **ogni** colazione e a **ogni** rigenerazione mensile.
 - **Bevande/liquidi**: indica la quantità nel testo (es. `Acqua naturale (1 bicchiere)`, David
   `(1/2 bicchiere)`, `tè verde (1 tazza)`, `caffè d'orzo (1 tazzina)`). L'acqua è **naturale**.
 - Titoli e nomi **sempre in italiano**.

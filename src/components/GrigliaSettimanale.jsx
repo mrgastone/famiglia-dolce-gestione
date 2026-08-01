@@ -129,7 +129,7 @@ export default function GrigliaSettimanale({
                                   {prep.ingredienti
                                     .map(
                                       (ing) =>
-                                        `${ing.nome} ${ing.n != null ? `N°${ing.n}` : `${ing.g} g`}${suffisso}`,
+                                        `${ing.nome} ${ing.ml != null ? `${ing.ml} ml` : ing.n != null ? `N°${ing.n}` : `${ing.g} g`}${suffisso}`,
                                     )
                                     .join(' · ')}
                                 </p>

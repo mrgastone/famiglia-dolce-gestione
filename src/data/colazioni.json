@@ -12,6 +12,11 @@
                 "nome": "Albumi",
                 "n": 3,
                 "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -32,6 +37,10 @@
                 "nome": "Mandorle",
                 "g": 15,
                 "prodotto": "mandorle"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -51,8 +60,8 @@
               },
               {
                 "nome": "Latte intero",
-                "g": 130,
-                "prodotto": "latte_intero"
+                "prodotto": "latte_intero",
+                "ml": 130
               },
               {
                 "nome": "Pesca",
@@ -97,6 +106,10 @@
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
               }
             ]
           },
@@ -139,6 +152,11 @@
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -172,8 +190,8 @@
               },
               {
                 "nome": "Olio extravergine d'oliva",
-                "g": 10,
-                "prodotto": "olio_evo"
+                "prodotto": "olio_evo",
+                "ml": 10
               },
               {
                 "nome": "Basilico",
@@ -239,6 +257,10 @@
                 "nome": "Semi di lino macinati",
                 "g": 10,
                 "prodotto": "lino"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -270,6 +292,11 @@
                 "nome": "Fiocchi d'avena",
                 "g": 15,
                 "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero (per frullare)",
+                "ml": 40,
+                "prodotto": "latte_intero"
               }
             ]
           }
@@ -329,6 +356,11 @@
                 "nome": "Fichi",
                 "g": 60,
                 "prodotto": "fichi"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -369,6 +401,11 @@
                 "nome": "Uva",
                 "g": 80,
                 "prodotto": "uva"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -401,6 +438,16 @@
                 "nome": "More schiacciate",
                 "g": 50,
                 "prodotto": "more"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 30,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -430,6 +477,10 @@
                 "nome": "Uva",
                 "g": 100,
                 "prodotto": "uva"
+              },
+              {
+                "nome": "Acqua (per ammollare l'avena)",
+                "ml": 80
               }
             ]
           }
@@ -483,6 +534,11 @@
                 "nome": "Albumi",
                 "n": 3,
                 "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -503,6 +559,10 @@
                 "nome": "Mandorle",
                 "g": 15,
                 "prodotto": "mandorle"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -522,8 +582,8 @@
               },
               {
                 "nome": "Latte intero",
-                "g": 130,
-                "prodotto": "latte_intero"
+                "prodotto": "latte_intero",
+                "ml": 130
               },
               {
                 "nome": "Pesca",
@@ -568,6 +628,10 @@
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
               }
             ]
           },
@@ -610,6 +674,11 @@
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -643,8 +712,8 @@
               },
               {
                 "nome": "Olio extravergine d'oliva",
-                "g": 10,
-                "prodotto": "olio_evo"
+                "prodotto": "olio_evo",
+                "ml": 10
               },
               {
                 "nome": "Basilico",
@@ -710,6 +779,10 @@
                 "nome": "Semi di lino macinati",
                 "g": 10,
                 "prodotto": "lino"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -741,6 +814,11 @@
                 "nome": "Fiocchi d'avena",
                 "g": 15,
                 "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero (per frullare)",
+                "ml": 40,
+                "prodotto": "latte_intero"
               }
             ]
           }
@@ -800,6 +878,11 @@
                 "nome": "Fichi",
                 "g": 60,
                 "prodotto": "fichi"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -840,6 +923,11 @@
                 "nome": "Uva",
                 "g": 80,
                 "prodotto": "uva"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -872,6 +960,16 @@
                 "nome": "More schiacciate",
                 "g": 50,
                 "prodotto": "more"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 30,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -901,6 +999,10 @@
                 "nome": "Uva",
                 "g": 100,
                 "prodotto": "uva"
+              },
+              {
+                "nome": "Acqua (per ammollare l'avena)",
+                "ml": 80
               }
             ]
           }
@@ -958,6 +1060,11 @@
                 "nome": "Zucchine",
                 "g": 80,
                 "prodotto": "zucchine"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -973,6 +1080,10 @@
                 "nome": "More",
                 "g": 100,
                 "prodotto": "more"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -992,8 +1103,8 @@
               },
               {
                 "nome": "Latte intero",
-                "g": 130,
-                "prodotto": "latte_intero"
+                "prodotto": "latte_intero",
+                "ml": 130
               },
               {
                 "nome": "Pesca",
@@ -1064,6 +1175,11 @@
                 "nome": "Susine",
                 "g": 70,
                 "prodotto": "susine"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1097,8 +1213,8 @@
               },
               {
                 "nome": "Olio extravergine d'oliva",
-                "g": 10,
-                "prodotto": "olio_evo"
+                "prodotto": "olio_evo",
+                "ml": 10
               },
               {
                 "nome": "Origano",
@@ -1164,6 +1280,10 @@
                 "nome": "Semi di lino macinati",
                 "g": 10,
                 "prodotto": "lino"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -1195,6 +1315,11 @@
                 "nome": "Fiocchi d'avena",
                 "g": 15,
                 "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero (per frullare)",
+                "ml": 40,
+                "prodotto": "latte_intero"
               }
             ]
           }
@@ -1228,6 +1353,10 @@
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
               }
             ]
           },
@@ -1265,6 +1394,11 @@
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1285,6 +1419,11 @@
                 "nome": "Albumi",
                 "n": 3,
                 "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -1332,6 +1471,16 @@
                 "nome": "Mirtilli schiacciati",
                 "g": 50,
                 "prodotto": "mirtilli"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 30,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1361,6 +1510,10 @@
                 "nome": "Pesche a fette",
                 "g": 100,
                 "prodotto": "pesche"
+              },
+              {
+                "nome": "Acqua (per ammollare l'avena)",
+                "ml": 80
               }
             ]
           }
@@ -1423,6 +1576,11 @@
                 "nome": "Zucchine",
                 "g": 80,
                 "prodotto": "zucchine"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -1438,6 +1596,10 @@
                 "nome": "More",
                 "g": 100,
                 "prodotto": "more"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -1457,8 +1619,8 @@
               },
               {
                 "nome": "Latte intero",
-                "g": 130,
-                "prodotto": "latte_intero"
+                "prodotto": "latte_intero",
+                "ml": 130
               },
               {
                 "nome": "Pesca",
@@ -1529,6 +1691,11 @@
                 "nome": "Susine",
                 "g": 70,
                 "prodotto": "susine"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1562,8 +1729,8 @@
               },
               {
                 "nome": "Olio extravergine d'oliva",
-                "g": 10,
-                "prodotto": "olio_evo"
+                "prodotto": "olio_evo",
+                "ml": 10
               },
               {
                 "nome": "Origano",
@@ -1629,6 +1796,10 @@
                 "nome": "Semi di lino macinati",
                 "g": 10,
                 "prodotto": "lino"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
               }
             ]
           }
@@ -1660,6 +1831,11 @@
                 "nome": "Fiocchi d'avena",
                 "g": 15,
                 "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero (per frullare)",
+                "ml": 40,
+                "prodotto": "latte_intero"
               }
             ]
           }
@@ -1693,6 +1869,10 @@
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
               }
             ]
           },
@@ -1730,6 +1910,11 @@
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1750,6 +1935,11 @@
                 "nome": "Albumi",
                 "n": 3,
                 "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           },
@@ -1797,6 +1987,16 @@
                 "nome": "Mirtilli schiacciati",
                 "g": 50,
                 "prodotto": "mirtilli"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 30,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
               }
             ]
           }
@@ -1826,6 +2026,10 @@
                 "nome": "Pesche a fette",
                 "g": 100,
                 "prodotto": "pesche"
+              },
+              {
+                "nome": "Acqua (per ammollare l'avena)",
+                "ml": 80
               }
             ]
           }

@@ -82,7 +82,7 @@ export default function ProfiloColazione({ profilo, colazione }) {
                           <span>{ing.nome}</span>
                         </span>
                         <span className="text-stone-500 font-bold whitespace-nowrap pt-0.5">
-                          {ing.n != null ? `N°${ing.n}` : `${ing.g} g`}
+                          {ing.ml != null ? `${ing.ml} ml` : ing.n != null ? `N°${ing.n}` : `${ing.g} g`}
                           {suffisso ? <span style={{ color: colore }}>{suffisso}</span> : null}
                         </span>
                       </li>

@@ -47,7 +47,9 @@ function totaliPerGiorni(settimana, giorni) {
       for (const prep of colazione.preparazioni ?? []) {
         for (const ing of prep.ingredienti ?? []) {
           if (!ing.prodotto) continue
-          const q = ing.g ?? ing.n
+          // Liquidi in ml, uova a numero, tutto il resto in grammi. L'acqua di
+          // cottura non ha `prodotto` (è di rubinetto) → non entra nella spesa.
+          const q = ing.g ?? ing.ml ?? ing.n
           if (!q) continue
           somma[ing.prodotto] = (somma[ing.prodotto] ?? 0) + q * porzioni
         }
