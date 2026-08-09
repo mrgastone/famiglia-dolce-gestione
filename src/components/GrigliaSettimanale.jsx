@@ -133,6 +133,18 @@ export default function GrigliaSettimanale({
                                     )
                                     .join(' · ')}
                                 </p>
+                                {prep.istruzioni?.length ? (
+                                  <details className="mt-1">
+                                    <summary className="text-[0.7rem] font-semibold text-stone-500 cursor-pointer select-none">
+                                      Come si prepara
+                                    </summary>
+                                    <ol className="mt-1 list-decimal list-inside text-stone-500 text-[0.7rem] leading-snug space-y-0.5">
+                                      {prep.istruzioni.map((s, i) => (
+                                        <li key={i}>{s}</li>
+                                      ))}
+                                    </ol>
+                                  </details>
+                                ) : null}
                                 <VideoColazione prep={prep} colore={p.colore} compact />
                               </div>
                             ))}

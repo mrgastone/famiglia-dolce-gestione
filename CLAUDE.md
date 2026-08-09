@@ -121,6 +121,22 @@ Regole:
   tutto il resto **in grammi** (`"g"`). Il rendering mostra `ml`/`N°`/`g` di conseguenza.
 - `prodotto` = chiave di `prodotti.json` (serve per la spesa).
 
+> ### 📋 Regole FISSE colazioni (NON negoziabili, valgono anche per i mesi futuri)
+> 1. **Yogurt greco → SEMPRE 0% (senza grassi):** nelle ricette il nome è "Yogurt greco 0%" e in
+>    `prodotti.json` il prodotto `yogurt_greco` è "Yogurt greco 0% (senza grassi)". (Lo usa solo
+>    Flavio; David usa `yogurt_intero`, che resta intero.)
+> 2. **Ogni preparazione ha istruzioni dettagliate** nel campo `istruzioni` (array di passi, ordinati):
+>    devono spiegare *come si fa ogni cosa*, passo per passo. Rese in "Oggi" (sempre) e in "Settimane"
+>    (a comparsa). Nessuna preparazione senza `istruzioni`.
+> 3. **"Frullato" mai generico:** se una colazione prevede un frullato dev'essere una **preparazione
+>    completa** — tipo di frullato, ingredienti (con `prodotto`, così entra nella **spesa**) e
+>    `istruzioni`. Vietato lasciarlo come semplice bevanda "Frullato" senza dettagli.
+> 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ:** pane integrale fresco +
+>    avocado + uovo (+ pomodoro). Sostituisce l'uovo strapazzato del martedì (così David non aumenta
+>    i giorni con uovo). Sicurezza David: avocado schiacciato/a fettine, uovo ben cotto, pane e
+>    pomodoro a pezzetti piccoli. **NON** per Flavio (principio "pochi grassi"). Prodotto `avocado`
+>    in `prodotti.json` (al supermercato, con ripiego Amazon).
+>
 > ### 🥛 Regola FISSA: TUTTI gli ingredienti della preparazione (NON negoziabile)
 > Ogni preparazione deve elencare **tutto ciò che serve davvero per farla**, non solo gli
 > ingredienti "principali". In particolare i **liquidi e i grassi di preparazione**, che è facile

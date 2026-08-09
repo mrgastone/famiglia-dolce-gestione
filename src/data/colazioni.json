@@ -18,6 +18,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
             ]
           },
           {
@@ -42,6 +47,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Pesche a pezzetti e Mandorle."
             ]
           }
         ],
@@ -73,6 +83,12 @@
                 "g": 10,
                 "prodotto": "crema_mandorle"
               }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco manteca con la crema di mandorle liscia.",
+              "Aggiungi Pesca a pezzetti piccoli."
             ]
           }
         ],
@@ -98,7 +114,7 @@
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -111,6 +127,11 @@
                 "nome": "Acqua (per frullare)",
                 "ml": 50
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Lamponi, lo yogurt, i semi di chia e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           },
           {
@@ -122,17 +143,31 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con pane",
+        "titolo": "Avocado toast con uovo e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "l'uovo strapazzato",
+            "etichetta": "il pane integrale con avocado, uovo e pomodoro",
             "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Avocado",
+                "g": 40,
+                "prodotto": "avocado"
+              },
               {
                 "nome": "Uovo intero",
                 "n": 1,
@@ -142,27 +177,19 @@
                 "nome": "Pomodoro",
                 "g": 30,
                 "prodotto": "pomodoro"
-              },
-              {
-                "nome": "Cetriolo",
-                "g": 25,
-                "prodotto": "cetriolo"
-              },
-              {
-                "nome": "Pane integrale",
-                "g": 35,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Cuoci l'uovo (sodo o in padella ben cotto) e adagialo sopra a fettine.",
+              "Completa con Pomodoro a fettine.",
+              "Per David: avocado ben schiacciato, uovo ben cotto, pane e pomodoro a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; uovo ben cotto; pomodoro e pane a pezzetti piccoli."
       }
     },
     "mer": {
@@ -198,6 +225,12 @@
                 "g": 2,
                 "prodotto": "basilico"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci."
             ]
           }
         ],
@@ -229,6 +262,11 @@
                 "g": 5,
                 "prodotto": "lino"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci More schiacciate a pezzetti piccoli, i fiocchi d'avena e Semi di lino.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -262,6 +300,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Susine a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -298,6 +341,11 @@
                 "ml": 40,
                 "prodotto": "latte_intero"
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesca e Banana, lo yogurt, e il latte.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
@@ -312,7 +360,7 @@
             "etichetta": "lo yogurt greco con frutta e semi",
             "ingredienti": [
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 150,
                 "prodotto": "yogurt_greco"
               },
@@ -331,6 +379,11 @@
                 "g": 10,
                 "prodotto": "chia"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Fichi e Noci e Semi di chia.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -362,6 +415,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Sbatti l'uovo intero in una ciotola.",
+              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
+              "Servi con Pane integrale e Fichi a pezzetti piccoli."
             ]
           }
         ],
@@ -382,6 +440,10 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           },
           {
@@ -407,6 +469,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Taglia Pomodoro e Cetriolo a pezzetti.",
+              "Aggiungi Uva.",
+              "Condisci con un filo d'olio extravergine."
             ]
           }
         ],
@@ -449,6 +516,12 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con More schiacciate schiacciate."
             ]
           }
         ],
@@ -469,7 +542,7 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -482,10 +555,44 @@
                 "nome": "Acqua (per ammollare l'avena)",
                 "ml": 80
               }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena, lo yogurt e l'acqua.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Uva a fette."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta",
+            "ingredienti": [
+              {
+                "nome": "Pesche",
+                "g": 80,
+                "prodotto": "pesche"
+              },
+              {
+                "nome": "Lamponi",
+                "g": 40,
+                "prodotto": "lamponi"
+              },
+              {
+                "nome": "Yogurt greco 0%",
+                "g": 60,
+                "prodotto": "yogurt_greco"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesche e Lamponi, lo yogurt, e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
-        "bevanda": "Frullato (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Yogurt intero con uva e avena",
@@ -513,6 +620,11 @@
                 "g": 15,
                 "prodotto": "avena"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Uva a pezzetti piccoli, i fiocchi d'avena e Crema di mandorle liscia.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -540,6 +652,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
             ]
           },
           {
@@ -564,6 +681,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Pesche a pezzetti e Mandorle."
             ]
           }
         ],
@@ -595,6 +717,12 @@
                 "g": 10,
                 "prodotto": "crema_mandorle"
               }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco manteca con la crema di mandorle liscia.",
+              "Aggiungi Pesca a pezzetti piccoli."
             ]
           }
         ],
@@ -620,7 +748,7 @@
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -633,6 +761,11 @@
                 "nome": "Acqua (per frullare)",
                 "ml": 50
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Lamponi, lo yogurt, i semi di chia e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           },
           {
@@ -644,17 +777,31 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con pane",
+        "titolo": "Avocado toast con uovo e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "l'uovo strapazzato",
+            "etichetta": "il pane integrale con avocado, uovo e pomodoro",
             "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Avocado",
+                "g": 40,
+                "prodotto": "avocado"
+              },
               {
                 "nome": "Uovo intero",
                 "n": 1,
@@ -664,27 +811,19 @@
                 "nome": "Pomodoro",
                 "g": 30,
                 "prodotto": "pomodoro"
-              },
-              {
-                "nome": "Cetriolo",
-                "g": 25,
-                "prodotto": "cetriolo"
-              },
-              {
-                "nome": "Pane integrale",
-                "g": 35,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Cuoci l'uovo (sodo o in padella ben cotto) e adagialo sopra a fettine.",
+              "Completa con Pomodoro a fettine.",
+              "Per David: avocado ben schiacciato, uovo ben cotto, pane e pomodoro a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Pomodoro e cetriolo a cubetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; uovo ben cotto; pomodoro e pane a pezzetti piccoli."
       }
     },
     "mer": {
@@ -720,6 +859,12 @@
                 "g": 2,
                 "prodotto": "basilico"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci."
             ]
           }
         ],
@@ -751,6 +896,11 @@
                 "g": 5,
                 "prodotto": "lino"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci More schiacciate a pezzetti piccoli, i fiocchi d'avena e Semi di lino.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -784,6 +934,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Susine a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -820,6 +975,11 @@
                 "ml": 40,
                 "prodotto": "latte_intero"
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesca e Banana, lo yogurt, e il latte.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
@@ -834,7 +994,7 @@
             "etichetta": "lo yogurt greco con frutta e semi",
             "ingredienti": [
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 150,
                 "prodotto": "yogurt_greco"
               },
@@ -853,6 +1013,11 @@
                 "g": 10,
                 "prodotto": "chia"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Fichi e Noci e Semi di chia.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -884,6 +1049,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Sbatti l'uovo intero in una ciotola.",
+              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
+              "Servi con Pane integrale e Fichi a pezzetti piccoli."
             ]
           }
         ],
@@ -904,6 +1074,10 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           },
           {
@@ -929,6 +1103,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Taglia Pomodoro e Cetriolo a pezzetti.",
+              "Aggiungi Uva.",
+              "Condisci con un filo d'olio extravergine."
             ]
           }
         ],
@@ -971,6 +1150,12 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con More schiacciate schiacciate."
             ]
           }
         ],
@@ -991,7 +1176,7 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -1004,10 +1189,44 @@
                 "nome": "Acqua (per ammollare l'avena)",
                 "ml": 80
               }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena, lo yogurt e l'acqua.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Uva a fette."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta",
+            "ingredienti": [
+              {
+                "nome": "Pesche",
+                "g": 80,
+                "prodotto": "pesche"
+              },
+              {
+                "nome": "Lamponi",
+                "g": 40,
+                "prodotto": "lamponi"
+              },
+              {
+                "nome": "Yogurt greco 0%",
+                "g": 60,
+                "prodotto": "yogurt_greco"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesche e Lamponi, lo yogurt, e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
-        "bevanda": "Frullato (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Yogurt intero con uva e avena",
@@ -1035,6 +1254,11 @@
                 "g": 15,
                 "prodotto": "avena"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Uva a pezzetti piccoli, i fiocchi d'avena e Crema di mandorle liscia.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -1066,6 +1290,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Affetta sottili le zucchine e falle appassire in padella con un filo d'olio.",
+              "Separa gli albumi e sbattili; versali sulle zucchine.",
+              "Cuoci la frittata a fuoco medio, poi girala e cuoci l'altro lato."
             ]
           },
           {
@@ -1085,6 +1314,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con More a pezzetti."
             ]
           }
         ],
@@ -1116,6 +1350,12 @@
                 "g": 10,
                 "prodotto": "crema_mandorle"
               }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco manteca con la crema di mandorle liscia.",
+              "Aggiungi Pesca a pezzetti piccoli."
             ]
           }
         ],
@@ -1131,7 +1371,7 @@
             "etichetta": "lo yogurt greco con frutta e semi",
             "ingredienti": [
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 150,
                 "prodotto": "yogurt_greco"
               },
@@ -1150,42 +1390,54 @@
                 "g": 10,
                 "prodotto": "chia"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Susine e Mandorle e Semi di chia.",
+              "Mescola e servi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con susina",
+        "titolo": "Avocado toast con uovo e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "l'uovo strapazzato",
+            "etichetta": "il pane integrale con avocado, uovo e pomodoro",
             "ingredienti": [
-              {
-                "nome": "Uovo intero",
-                "n": 1,
-                "prodotto": "uovo"
-              },
               {
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Susine",
-                "g": 70,
-                "prodotto": "susine"
+                "nome": "Avocado",
+                "g": 40,
+                "prodotto": "avocado"
               },
               {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 30,
+                "prodotto": "pomodoro"
               }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Cuoci l'uovo (sodo o in padella ben cotto) e adagialo sopra a fettine.",
+              "Completa con Pomodoro a fettine.",
+              "Per David: avocado ben schiacciato, uovo ben cotto, pane e pomodoro a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Susine snocciolate e tagliate a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; uovo ben cotto; pomodoro e pane a pezzetti piccoli."
       }
     },
     "mer": {
@@ -1221,6 +1473,12 @@
                 "g": 2,
                 "prodotto": "origano"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci."
             ]
           }
         ],
@@ -1252,6 +1510,11 @@
                 "g": 5,
                 "prodotto": "lino"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Pesca a pezzetti piccoli, i fiocchi d'avena e Semi di lino.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -1285,6 +1548,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Fichi a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -1321,6 +1589,11 @@
                 "ml": 40,
                 "prodotto": "latte_intero"
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Banana, lo yogurt, e il latte.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
@@ -1345,7 +1618,7 @@
                 "prodotto": "uva"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -1358,6 +1631,11 @@
                 "nome": "Acqua (per frullare)",
                 "ml": 50
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesche e Uva, lo yogurt, i semi di chia e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           },
           {
@@ -1369,6 +1647,10 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -1400,6 +1682,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Sbatti l'uovo intero in una ciotola.",
+              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
+              "Servi con Pomodoro e Pane integrale a pezzetti piccoli."
             ]
           }
         ],
@@ -1425,6 +1712,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
             ]
           },
           {
@@ -1440,6 +1732,10 @@
                 "g": 20,
                 "prodotto": "noci"
               }
+            ],
+            "istruzioni": [
+              "Disponi Lamponi in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
             ]
           }
         ],
@@ -1482,6 +1778,12 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Mirtilli schiacciati schiacciate."
             ]
           }
         ],
@@ -1502,7 +1804,7 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -1515,10 +1817,44 @@
                 "nome": "Acqua (per ammollare l'avena)",
                 "ml": 80
               }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena, lo yogurt e l'acqua.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Pesche a fette a fette."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta",
+            "ingredienti": [
+              {
+                "nome": "More",
+                "g": 60,
+                "prodotto": "more"
+              },
+              {
+                "nome": "Mirtilli",
+                "g": 40,
+                "prodotto": "mirtilli"
+              },
+              {
+                "nome": "Yogurt greco 0%",
+                "g": 60,
+                "prodotto": "yogurt_greco"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Mirtilli, lo yogurt, e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
-        "bevanda": "Frullato (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Yogurt intero con frutti di bosco",
@@ -1551,6 +1887,11 @@
                 "g": 15,
                 "prodotto": "avena"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci More schiacciate e Mirtilli schiacciati a pezzetti piccoli, i fiocchi d'avena e Crema di mandorle liscia.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -1582,6 +1923,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Affetta sottili le zucchine e falle appassire in padella con un filo d'olio.",
+              "Separa gli albumi e sbattili; versali sulle zucchine.",
+              "Cuoci la frittata a fuoco medio, poi girala e cuoci l'altro lato."
             ]
           },
           {
@@ -1601,6 +1947,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con More a pezzetti."
             ]
           }
         ],
@@ -1632,6 +1983,12 @@
                 "g": 10,
                 "prodotto": "crema_mandorle"
               }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco manteca con la crema di mandorle liscia.",
+              "Aggiungi Pesca a pezzetti piccoli."
             ]
           }
         ],
@@ -1647,7 +2004,7 @@
             "etichetta": "lo yogurt greco con frutta e semi",
             "ingredienti": [
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 150,
                 "prodotto": "yogurt_greco"
               },
@@ -1666,42 +2023,54 @@
                 "g": 10,
                 "prodotto": "chia"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Susine e Mandorle e Semi di chia.",
+              "Mescola e servi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Uovo intero strapazzato con susina",
+        "titolo": "Avocado toast con uovo e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "l'uovo strapazzato",
+            "etichetta": "il pane integrale con avocado, uovo e pomodoro",
             "ingredienti": [
-              {
-                "nome": "Uovo intero",
-                "n": 1,
-                "prodotto": "uovo"
-              },
               {
                 "nome": "Pane integrale",
                 "g": 35,
                 "prodotto": "pane_integrale"
               },
               {
-                "nome": "Susine",
-                "g": 70,
-                "prodotto": "susine"
+                "nome": "Avocado",
+                "g": 40,
+                "prodotto": "avocado"
               },
               {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 30,
+                "prodotto": "pomodoro"
               }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Cuoci l'uovo (sodo o in padella ben cotto) e adagialo sopra a fettine.",
+              "Completa con Pomodoro a fettine.",
+              "Per David: avocado ben schiacciato, uovo ben cotto, pane e pomodoro a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Susine snocciolate e tagliate a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; uovo ben cotto; pomodoro e pane a pezzetti piccoli."
       }
     },
     "mer": {
@@ -1737,6 +2106,12 @@
                 "g": 2,
                 "prodotto": "origano"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci."
             ]
           }
         ],
@@ -1768,6 +2143,11 @@
                 "g": 5,
                 "prodotto": "lino"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci Pesca a pezzetti piccoli, i fiocchi d'avena e Semi di lino.",
+              "Mescola e servi."
             ]
           }
         ],
@@ -1801,6 +2181,11 @@
                 "nome": "Acqua (per cuocere l'avena)",
                 "ml": 120
               }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a ottenere una crema.",
+              "Togli dal fuoco e completa con Fichi a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -1837,6 +2222,11 @@
                 "ml": 40,
                 "prodotto": "latte_intero"
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Banana, lo yogurt, e il latte.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
@@ -1861,7 +2251,7 @@
                 "prodotto": "uva"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -1874,6 +2264,11 @@
                 "nome": "Acqua (per frullare)",
                 "ml": 50
               }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Pesche e Uva, lo yogurt, i semi di chia e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           },
           {
@@ -1885,6 +2280,10 @@
                 "n": 2,
                 "prodotto": "albume"
               }
+            ],
+            "istruzioni": [
+              "Rassoda le uova in acqua bollente per circa 9 minuti.",
+              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -1916,6 +2315,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Sbatti l'uovo intero in una ciotola.",
+              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
+              "Servi con Pomodoro e Pane integrale a pezzetti piccoli."
             ]
           }
         ],
@@ -1941,6 +2345,11 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in una padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
             ]
           },
           {
@@ -1956,6 +2365,10 @@
                 "g": 20,
                 "prodotto": "noci"
               }
+            ],
+            "istruzioni": [
+              "Disponi Lamponi in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
             ]
           }
         ],
@@ -1998,6 +2411,12 @@
                 "ml": 5,
                 "prodotto": "olio_evo"
               }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Mirtilli schiacciati schiacciate."
             ]
           }
         ],
@@ -2018,7 +2437,7 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco",
+                "nome": "Yogurt greco 0%",
                 "g": 100,
                 "prodotto": "yogurt_greco"
               },
@@ -2031,10 +2450,44 @@
                 "nome": "Acqua (per ammollare l'avena)",
                 "ml": 80
               }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena, lo yogurt e l'acqua.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Pesche a fette a fette."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta",
+            "ingredienti": [
+              {
+                "nome": "More",
+                "g": 60,
+                "prodotto": "more"
+              },
+              {
+                "nome": "Mirtilli",
+                "g": 40,
+                "prodotto": "mirtilli"
+              },
+              {
+                "nome": "Yogurt greco 0%",
+                "g": 60,
+                "prodotto": "yogurt_greco"
+              },
+              {
+                "nome": "Acqua (per frullare)",
+                "ml": 50
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Mirtilli, lo yogurt, e l'acqua.",
+              "Frulla fino a ottenere una bevanda liscia e omogenea.",
+              "Versa nel bicchiere e servi subito."
             ]
           }
         ],
-        "bevanda": "Frullato (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
         "titolo": "Yogurt intero con frutti di bosco",
@@ -2067,6 +2520,11 @@
                 "g": 15,
                 "prodotto": "avena"
               }
+            ],
+            "istruzioni": [
+              "Versa lo yogurt in una ciotola.",
+              "Unisci More schiacciate e Mirtilli schiacciati a pezzetti piccoli, i fiocchi d'avena e Crema di mandorle liscia.",
+              "Mescola e servi."
             ]
           }
         ],

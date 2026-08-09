@@ -89,6 +89,22 @@ export default function ProfiloColazione({ profilo, colazione }) {
                     ))}
                   </ul>
 
+                  {/* Istruzioni dettagliate, passo per passo */}
+                  {prep.istruzioni?.length ? (
+                    <div className="mt-3">
+                      <p className="text-xs font-bold uppercase tracking-wide text-stone-400 mb-1">
+                        Come si prepara
+                      </p>
+                      <ol className="space-y-1 list-decimal list-inside text-stone-600 text-sm marker:font-bold marker:text-stone-400">
+                        {prep.istruzioni.map((s, i) => (
+                          <li key={i} className="leading-snug">
+                            {s}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  ) : null}
+
                   {/* Video alla fine della SUA preparazione */}
                   <div className="mt-3">
                     <VideoColazione prep={prep} colore={colore} />
