@@ -1,0 +1,51 @@
+{
+  "giroUnico": {
+    "titolo": "Dove si fa la spesa a Roma",
+    "descrizione": "Giro di persona in zona: il mercato per frutta e verdura, Specialità di Parma per uova, latte e latticini, il forno Mezza Rosetta per il pane. Frutta e verdura fresche due volte a settimana (martedì e venerdì).",
+    "tappe": [
+      { "nome": "Frutta e verdura — Mercato Montagnola", "cosa": "frutta e verdura fresca di stagione, due volte a settimana" },
+      { "nome": "Uova, latte e latticini — Specialità di Parma", "cosa": "uova, latte intero, ricotta, mozzarella di bufala (al bisogno)" },
+      { "nome": "Pane — Forno Mezza Rosetta", "cosa": "filone integrale + ai cereali; pizzetta integrale se disponibile" }
+    ]
+  },
+  "raccomandazioniOnline": {
+    "titolo": "Prodotti difficili da reperire",
+    "descrizione": "Per ciò che non si trova in zona: link Amazon (o Esselunga a Roma) per ordinarlo.",
+    "punti": [
+      "Ordina in anticipo i prodotti a lunga conservazione (burro di arachidi, crema di mandorle, semi).",
+      "Se un prodotto manca sullo scaffale, usa il pulsante “Cerca su Amazon” della riga.",
+      "A Roma per i freschi va bene anche Esselunga (consegna in 2–3 giorni)."
+    ],
+    "nota": "Questa lista non contiene gli ingredienti per pranzo e cena."
+  },
+  "montagnola": {
+    "nome": "Mercato Montagnola",
+    "tipo": "Frutta e verdura fresca",
+    "modalita": "In zona, di persona",
+    "accesso": "In zona"
+  },
+  "specialita_di_parma": {
+    "nome": "Specialità di Parma",
+    "tipo": "Uova, latte e latticini",
+    "modalita": "In zona, di persona",
+    "accesso": "In zona",
+    "fissi": [
+      "Mozzarella di bufala (solo al bisogno)"
+    ]
+  },
+  "mezza_rosetta": {
+    "nome": "Forno Mezza Rosetta",
+    "tipo": "Pane fresco",
+    "modalita": "In zona, di persona",
+    "accesso": "In zona",
+    "fissi": [
+      "1 filone di pane integrale",
+      "1 filone di pane ai cereali (se disponibile)",
+      "1 pizzetta integrale rotonda (se disponibile)"
+    ]
+  },
+  "online": {
+    "nome": "Online — Amazon · Esselunga",
+    "tipo": "Prodotti difficili da reperire in zona"
+  }
+}

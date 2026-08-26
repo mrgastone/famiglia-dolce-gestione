@@ -1,0 +1,26 @@
+{
+  "etichetta": "Settembre 2026 · Roma",
+  "mese": "Settembre 2026",
+  "citta": "Roma",
+  "inizioCiclo": "2026-09-07",
+  "scadenza": "2026-09-30",
+  "fruttaDiStagione": [
+    "Uva",
+    "Fichi",
+    "Pere",
+    "Mele",
+    "Pesche",
+    "Susine",
+    "More",
+    "Lamponi"
+  ],
+  "verduraDiStagione": [
+    "Pomodori",
+    "Zucchine",
+    "Spinaci",
+    "Melanzane",
+    "Peperoni",
+    "Insalata",
+    "Basilico"
+  ]
+}

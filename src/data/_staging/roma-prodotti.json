@@ -1,0 +1,315 @@
+{
+  "albume": {
+    "nome": "Uova per gli albumi (da separare)",
+    "fornitore": "specialita_di_parma",
+    "confezione": 6,
+    "unita": "uova",
+    "scadenza": "Frigo · ~3–4 settimane",
+    "ricerca": "uova fresche"
+  },
+  "uovo": {
+    "nome": "Uova intere",
+    "fornitore": "specialita_di_parma",
+    "confezione": 6,
+    "unita": "uova",
+    "scadenza": "Frigo · ~3–4 settimane",
+    "ricerca": "uova fresche"
+  },
+  "avena": {
+    "nome": "Fiocchi d'avena integrali",
+    "fornitore": "specialita_di_parma",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "fiocchi avena integrali"
+  },
+  "yogurt_greco": {
+    "nome": "Yogurt greco 0% (senza grassi)",
+    "fornitore": "specialita_di_parma",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Frigo · controlla la scadenza",
+    "ricerca": "yogurt greco 0% magro senza grassi"
+  },
+  "avocado": {
+    "nome": "Avocado",
+    "fornitore": "specialita_di_parma",
+    "confezione": 150,
+    "unita": "g",
+    "scadenza": "Fresco · matura in qualche giorno",
+    "ricerca": "avocado"
+  },
+  "yogurt_intero": {
+    "nome": "Yogurt bianco intero",
+    "fornitore": "specialita_di_parma",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Frigo · controlla la scadenza",
+    "ricerca": "yogurt bianco intero naturale"
+  },
+  "latte_intero": {
+    "nome": "Latte intero",
+    "fornitore": "specialita_di_parma",
+    "confezione": 1000,
+    "unita": "ml",
+    "scadenza": "Frigo · controlla la scadenza",
+    "ricerca": "latte intero"
+  },
+  "crema_mandorle": {
+    "nome": "Crema di mandorle 100% (liscia)",
+    "fornitore": "online",
+    "confezione": 350,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "crema mandorle 100% senza zucchero"
+  },
+  "crema_arachidi": {
+    "nome": "Burro di arachidi 100% (senza zucchero)",
+    "fornitore": "specialita_di_parma",
+    "confezione": 350,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "burro arachidi 100% senza zucchero"
+  },
+  "ricotta": {
+    "nome": "Ricotta fresca",
+    "fornitore": "specialita_di_parma",
+    "confezione": 250,
+    "unita": "g",
+    "scadenza": "Frigo · pochi giorni",
+    "ricerca": "ricotta fresca"
+  },
+  "pere": {
+    "nome": "Pere",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · una settimana",
+    "ricerca": "pere"
+  },
+  "chia": {
+    "nome": "Semi di chia",
+    "fornitore": "specialita_di_parma",
+    "confezione": 250,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "semi di chia"
+  },
+  "lino": {
+    "nome": "Semi di lino",
+    "fornitore": "specialita_di_parma",
+    "confezione": 250,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "semi di lino"
+  },
+  "mandorle": {
+    "nome": "Mandorle",
+    "fornitore": "specialita_di_parma",
+    "confezione": 200,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "mandorle naturali"
+  },
+  "noci": {
+    "nome": "Noci",
+    "fornitore": "specialita_di_parma",
+    "confezione": 200,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "noci sgusciate"
+  },
+  "soia": {
+    "nome": "Bevanda di soia non zuccherata",
+    "fornitore": "specialita_di_parma",
+    "confezione": 1000,
+    "unita": "ml",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "bevanda soia non zuccherata"
+  },
+  "olio_evo": {
+    "nome": "Olio extravergine d'oliva",
+    "fornitore": "online",
+    "confezione": 1000,
+    "unita": "ml",
+    "scadenza": "Già in cantina",
+    "ricerca": "olio extravergine oliva",
+    "giaDisponibile": true
+  },
+  "origano": {
+    "nome": "Origano secco",
+    "fornitore": "specialita_di_parma",
+    "confezione": 10,
+    "unita": "g",
+    "scadenza": "Dispensa · lunga conservazione",
+    "ricerca": "origano secco"
+  },
+  "pane_integrale": {
+    "nome": "Pane integrale",
+    "fornitore": "mezza_rosetta",
+    "confezione": 400,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 giorni",
+    "ricerca": "pane integrale"
+  },
+  "fragole": {
+    "nome": "Fragole",
+    "fornitore": "montagnola",
+    "confezione": 250,
+    "unita": "g",
+    "scadenza": "Fresco · 2–3 giorni",
+    "ricerca": "fragole"
+  },
+  "lamponi": {
+    "nome": "Lamponi",
+    "fornitore": "montagnola",
+    "confezione": 125,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 giorni",
+    "ricerca": "lamponi"
+  },
+  "mirtilli": {
+    "nome": "Mirtilli",
+    "fornitore": "montagnola",
+    "confezione": 125,
+    "unita": "g",
+    "scadenza": "Fresco · 2–4 giorni",
+    "ricerca": "mirtilli"
+  },
+  "ribes": {
+    "nome": "Ribes",
+    "fornitore": "montagnola",
+    "confezione": 125,
+    "unita": "g",
+    "scadenza": "Fresco · 2–3 giorni",
+    "ricerca": "ribes"
+  },
+  "ciliegie": {
+    "nome": "Ciliegie",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 2–4 giorni",
+    "ricerca": "ciliegie"
+  },
+  "albicocche": {
+    "nome": "Albicocche",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 3–4 giorni",
+    "ricerca": "albicocche"
+  },
+  "pesche": {
+    "nome": "Pesche",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 3–4 giorni",
+    "ricerca": "pesche"
+  },
+  "susine": {
+    "nome": "Susine",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 3–5 giorni",
+    "ricerca": "susine prugne"
+  },
+  "fichi": {
+    "nome": "Fichi",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 giorni",
+    "ricerca": "fichi freschi"
+  },
+  "uva": {
+    "nome": "Uva",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 4–6 giorni",
+    "ricerca": "uva"
+  },
+  "more": {
+    "nome": "More",
+    "fornitore": "montagnola",
+    "confezione": 125,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 giorni",
+    "ricerca": "more frutto di bosco"
+  },
+  "mele": {
+    "nome": "Mele",
+    "fornitore": "montagnola",
+    "confezione": 1000,
+    "unita": "g",
+    "scadenza": "Fresco · settimane",
+    "ricerca": "mele"
+  },
+  "melone": {
+    "nome": "Melone",
+    "fornitore": "montagnola",
+    "confezione": 1000,
+    "unita": "g",
+    "scadenza": "Fresco · 4–6 giorni (intero)",
+    "ricerca": "melone"
+  },
+  "banana": {
+    "nome": "Banane",
+    "fornitore": "montagnola",
+    "confezione": 150,
+    "unita": "g",
+    "scadenza": "Fresco · 4–6 giorni",
+    "ricerca": "banane"
+  },
+  "pomodoro": {
+    "nome": "Pomodori",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 4–6 giorni",
+    "ricerca": "pomodori"
+  },
+  "cetriolo": {
+    "nome": "Cetrioli",
+    "fornitore": "montagnola",
+    "confezione": 400,
+    "unita": "g",
+    "scadenza": "Fresco · 5–7 giorni",
+    "ricerca": "cetrioli"
+  },
+  "spinaci": {
+    "nome": "Spinaci",
+    "fornitore": "montagnola",
+    "confezione": 200,
+    "unita": "g",
+    "scadenza": "Fresco · 2–3 giorni",
+    "ricerca": "spinaci freschi"
+  },
+  "zucchine": {
+    "nome": "Zucchine",
+    "fornitore": "montagnola",
+    "confezione": 300,
+    "unita": "g",
+    "scadenza": "Fresco · 4–6 giorni",
+    "ricerca": "zucchine"
+  },
+  "erba_cipollina": {
+    "nome": "Erba cipollina",
+    "fornitore": "montagnola",
+    "confezione": 20,
+    "unita": "g",
+    "scadenza": "Fresco · 3–4 giorni",
+    "ricerca": "erba cipollina"
+  },
+  "basilico": {
+    "nome": "Basilico",
+    "fornitore": "montagnola",
+    "confezione": 20,
+    "unita": "g",
+    "scadenza": "Fresco · 3–4 giorni",
+    "ricerca": "basilico fresco"
+  }
+}

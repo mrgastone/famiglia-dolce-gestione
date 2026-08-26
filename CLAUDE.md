@@ -31,12 +31,21 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 - Pochi grassi
 
 ### David (bambino)
-- **Nato il 30 novembre 2022.** Calcola SEMPRE l'età attuale da questa data e adatta porzioni
-  e alimenti alla **crescita sana** del bambino (più proteine/energia man mano che cresce,
-  consistenze adatte all'età). Aggiorna anche il campo `eta` in `src/data/profili.json`.
-- Uovo **INTERO**, latte e yogurt **INTERI**
-- **Niente zuccheri aggiunti**, nessuna restrizione glicemica
+- **Nato il 30 novembre 2022.** Calcola SEMPRE l'età attuale da questa data (regola GENERALE, a
+  ogni rigenerazione) e **adatta le dosi alla crescita**: man mano che cresce, porzioni ed energia
+  aumentano gradualmente, con consistenze adatte all'età. Aggiorna il campo `eta` in
+  `src/data/profili.json`. (Ago 2026 ≈ 3 anni e 9 mesi.)
+- Uovo **INTERO**, latte e **yogurt INTERO** (`yogurt_intero`, mai il greco 0% degli adulti).
+- **Niente zuccheri aggiunti**, nessuna restrizione glicemica.
 - Regola principale: **solo cibi sani per la normale crescita** di un bambino.
+- **Yogurt max 2 volte a settimana** (era troppo pesante 3×). L'**avena nello yogurt va SEMPRE
+  ammollata overnight**, mai secca (risulta pesante). Almeno **una** delle 2 volte è uno **yogurt
+  intero con avena ammollata (overnight)**.
+- **Avocado toast: martedì, SENZA uovo** (l'uovo è già il venerdì): avocado + pomodoro insieme
+  bastano. Non mettere avocado e uovo lo stesso giorno — si dividono le fonti tra i giorni.
+- **Backup anti-scarto:** se una colazione rischia di non essere consumata (es. il frullato), il
+  giorno prevede anche un'**alternativa** semplice (es. giovedì: frullato **+** toast di ricotta e
+  frutta), così David mangia comunque ed è più completa.
 
 ### Lena (adulta) — condivide la colazione di David
 - **Lena mangia le STESSE identiche cose di David.** Non si crea un menu separato: si usa il campo
@@ -131,11 +140,14 @@ Regole:
 > 3. **"Frullato" mai generico:** se una colazione prevede un frullato dev'essere una **preparazione
 >    completa** — tipo di frullato, ingredienti (con `prodotto`, così entra nella **spesa**) e
 >    `istruzioni`. Vietato lasciarlo come semplice bevanda "Frullato" senza dettagli.
-> 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ:** pane integrale fresco +
->    avocado + uovo (+ pomodoro). Sostituisce l'uovo strapazzato del martedì (così David non aumenta
->    i giorni con uovo). Sicurezza David: avocado schiacciato/a fettine, uovo ben cotto, pane e
->    pomodoro a pezzetti piccoli. **NON** per Flavio (principio "pochi grassi"). Prodotto `avocado`
->    in `prodotti.json` (al supermercato, con ripiego Amazon).
+> 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ, SENZA uovo:** pane integrale
+>    fresco + avocado + pomodoro (l'uovo è il venerdì; avocado e uovo NON lo stesso giorno). Sicurezza
+>    David: avocado schiacciato/a fettine, pane e pomodoro a pezzetti piccoli. **NON** per Flavio.
+>    Prodotto `avocado` in `prodotti.json`.
+> 5. **Dolcezza solo sana, mai zuccheri aggiunti / ultra-processati:** per David usare **burro di
+>    arachidi 100%** (`crema_arachidi`), **crema di mandorle 100%**, **ricotta con frutta fresca**.
+>    **Vietati** biscotti, marmellata e simili (zuccheri aggiunti). Il cioccolato fondente ≥70% solo
+>    come **extra saltuario**, non fisso. Prodotti `crema_arachidi` e `ricotta` in `prodotti.json`.
 >
 > ### 🥛 Regola FISSA: TUTTI gli ingredienti della preparazione (NON negoziabile)
 > Ogni preparazione deve elencare **tutto ciò che serve davvero per farla**, non solo gli
@@ -263,6 +275,26 @@ e Archivio** (componente `EtichettaStagione`, legge `stagione.etichetta`).
 - Il **mese in corso NON** sta qui (è in `colazioni.json`/`stagione.json`); la vista Archivio lo
   mostra in cima come "· in corso".
 - **Tieni solo gli ultimi 6 mesi**: quando aggiungi un mese, elimina i più vecchi oltre i 6.
+
+### 🛒 Giorni di spesa (FISSO): sempre MARTEDÌ e VENERDÌ
+La spesa fresca si fa sempre **martedì e venerdì**, in **ogni città** (chiavi `GIRI_FRUTTA` in
+`spesaSettimanale.js`): martedì → colazioni di mer/gio/ven; venerdì → sab/dom/lun/mar. Non cambiare
+questi giorni salvo richiesta esplicita.
+
+### 🌍 Cambio città / due località in staging
+Quando si sa già la **prossima** città (es. rientro a Roma), si prepara il menù **in anticipo** senza
+toccare quello attivo:
+- I menù futuri stanno in **`src/data/_staging/<citta>-{colazioni,stagione,spesa,prodotti}.json`**
+  (non importati dall'app finché non attivati).
+- **Attivazione:** `node scripts/attiva-mese.mjs <prefix>` (es. `roma`) — archivia la città uscente,
+  ne salva lo snapshot in `_staging/`, e mette i file di staging come live. Poi `npm run build` +
+  commit + push.
+- ⚠️ **Il latte cambia negozio per città:** a Longostagno `latte_intero` → `mezza_rosetta`
+  (alimentari sotto casa); a Roma → `specialita_di_parma`. Il `prodotti.json` di staging tiene già
+  l'instradamento giusto della città.
+- Negozi per città (nomi in `spesa.json`, chiavi invariate): **Roma** = Mercato Montagnola /
+  Specialità di Parma / Forno Mezza Rosetta; **Longostagno** = Obst & Gemüse Prader (bus 165) /
+  MPREIS Soprabolzano / Alimentari sotto casa (Handlung).
 
 ### Checklist rigenerazione
 1. **Chiedi la città** all'utente (regola fissa).
