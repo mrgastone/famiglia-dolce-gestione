@@ -152,15 +152,20 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Avocado toast con pomodoro",
+        "titolo": "Avocado toast con ricotta e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "il pane integrale con avocado e pomodoro",
+            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
             "ingredienti": [
               {
                 "nome": "Pane integrale",
                 "g": 40,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
               },
               {
                 "nome": "Avocado",
@@ -175,14 +180,15 @@
             ],
             "istruzioni": [
               "Tosta leggermente le fette di pane integrale.",
-              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
               "Completa con il pomodoro a fettine sottili.",
-              "Per David: avocado ben schiacciato, pane e pomodoro a pezzetti piccoli."
+              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Avocado ben schiacciato o a fettine sottili; pane e pomodoro a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
       }
     },
     "mer": {
@@ -812,15 +818,20 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Avocado toast con pomodoro",
+        "titolo": "Avocado toast con ricotta e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "il pane integrale con avocado e pomodoro",
+            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
             "ingredienti": [
               {
                 "nome": "Pane integrale",
                 "g": 40,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
               },
               {
                 "nome": "Avocado",
@@ -835,14 +846,15 @@
             ],
             "istruzioni": [
               "Tosta leggermente le fette di pane integrale.",
-              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
               "Completa con il pomodoro a fettine sottili.",
-              "Per David: avocado ben schiacciato, pane e pomodoro a pezzetti piccoli."
+              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Avocado ben schiacciato o a fettine sottili; pane e pomodoro a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
       }
     },
     "mer": {
@@ -1472,15 +1484,20 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Avocado toast con pomodoro",
+        "titolo": "Avocado toast con ricotta e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "il pane integrale con avocado e pomodoro",
+            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
             "ingredienti": [
               {
                 "nome": "Pane integrale",
                 "g": 40,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
               },
               {
                 "nome": "Avocado",
@@ -1495,14 +1512,15 @@
             ],
             "istruzioni": [
               "Tosta leggermente le fette di pane integrale.",
-              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
               "Completa con il pomodoro a fettine sottili.",
-              "Per David: avocado ben schiacciato, pane e pomodoro a pezzetti piccoli."
+              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Avocado ben schiacciato o a fettine sottili; pane e pomodoro a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
       }
     },
     "mer": {
@@ -2132,15 +2150,20 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Avocado toast con pomodoro",
+        "titolo": "Avocado toast con ricotta e pomodoro",
         "preparazioni": [
           {
-            "etichetta": "il pane integrale con avocado e pomodoro",
+            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
             "ingredienti": [
               {
                 "nome": "Pane integrale",
                 "g": 40,
                 "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
               },
               {
                 "nome": "Avocado",
@@ -2155,14 +2178,15 @@
             ],
             "istruzioni": [
               "Tosta leggermente le fette di pane integrale.",
-              "Schiaccia l'avocado con una forchetta e spalmalo sul pane.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
               "Completa con il pomodoro a fettine sottili.",
-              "Per David: avocado ben schiacciato, pane e pomodoro a pezzetti piccoli."
+              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Avocado ben schiacciato o a fettine sottili; pane e pomodoro a pezzetti piccoli."
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
       }
     },
     "mer": {

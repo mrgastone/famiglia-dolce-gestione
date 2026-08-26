@@ -140,10 +140,12 @@ Regole:
 > 3. **"Frullato" mai generico:** se una colazione prevede un frullato dev'essere una **preparazione
 >    completa** — tipo di frullato, ingredienti (con `prodotto`, così entra nella **spesa**) e
 >    `istruzioni`. Vietato lasciarlo come semplice bevanda "Frullato" senza dettagli.
-> 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ, SENZA uovo:** pane integrale
->    fresco + avocado + pomodoro (l'uovo è il venerdì; avocado e uovo NON lo stesso giorno). Sicurezza
->    David: avocado schiacciato/a fettine, pane e pomodoro a pezzetti piccoli. **NON** per Flavio.
->    Prodotto `avocado` in `prodotti.json`.
+> 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ, con RICOTTA e SENZA uovo:**
+>    pane integrale fresco + **ricotta** (proteine) + avocado + pomodoro. 🔴 **MAI uovo e avocado
+>    insieme** — l'uovo è un altro giorno (venerdì). Ogni volta che c'è l'avocado toast, va **sempre**
+>    la ricotta (dà le proteine che senza uovo mancherebbero). Nelle istruzioni ricordare entrambe le
+>    cose. Sicurezza David: avocado schiacciato/a fettine, ricotta liscia, pane e pomodoro a pezzetti
+>    piccoli. **NON** per Flavio. Prodotti `avocado` e `ricotta` in `prodotti.json`.
 > 5. **Dolcezza solo sana, mai zuccheri aggiunti / ultra-processati:** per David usare **burro di
 >    arachidi 100%** (`crema_arachidi`), **crema di mandorle 100%**, **ricotta con frutta fresca**.
 >    **Vietati** biscotti, marmellata e simili (zuccheri aggiunti). Il cioccolato fondente ≥70% solo
