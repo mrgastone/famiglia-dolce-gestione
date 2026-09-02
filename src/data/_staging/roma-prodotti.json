@@ -79,6 +79,14 @@
     "scadenza": "Frigo · pochi giorni",
     "ricerca": "ricotta fresca"
   },
+  "hummus": {
+    "nome": "Hummus di ceci (100% ceci, senza additivi — o fatto in casa)",
+    "fornitore": "specialita_di_parma",
+    "confezione": 200,
+    "unita": "g",
+    "scadenza": "Frigo · pochi giorni",
+    "ricerca": "hummus ceci senza additivi"
+  },
   "pere": {
     "nome": "Pere",
     "fornitore": "montagnola",

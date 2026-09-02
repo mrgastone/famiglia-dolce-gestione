@@ -25,10 +25,21 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 ## 👤 Profili e principi (NON negoziabili)
 
 ### Flavio (adulto)
-- Basso indice glicemico
+- **Basso indice glicemico** (medio ammesso solo se non c'è alternativa, **mai alto**).
+- **Basso colesterolo, pochi grassi.** Mai cibi/ingredienti ultra-processati.
 - Proteine **dall'albume** (le uova si comprano intere e si separano) — **massimo 2 albumi**
-  a colazione (mai 3), sia strapazzati sia sodi.
-- Pochi grassi
+  a colazione (mai 3), sia strapazzati sia sodi — e **albumi al massimo 3 giorni a settimana**
+  (lun, mer, sab), non tutti i giorni.
+- 🔴 **NIENTE YOGURT (né latticini) per Flavio:** lo yogurt lo gonfia (probabile intolleranza).
+  Al suo posto, sempre **bevanda di soia non zuccherata** (`soia`: 100% soia, senza zuccheri, lista
+  ingredienti corta) nei frullati e negli overnight oats. Se anche la soia gonfiasse: **tofu
+  vellutato** nei frullati, **tofu strapazzato** come piatto. La ricotta NON è un'alternativa (latticino).
+- **Struttura fissa senza yogurt e senza uovo tutti i giorni:**
+  - **Martedì:** frullato di frutta **con soia** e semi di chia (niente albumi).
+  - **Venerdì:** **pane integrale con pomodoro e hummus di ceci** (hummus *opzionale*; 100% ceci,
+    senza additivi, o fatto in casa) — niente yogurt, niente uovo.
+  - **Domenica:** avena ammollata overnight **con soia e chia** + frullato di frutta **con soia**.
+  - Lun/Mer/Sab: albumi (2). Gio: porridge + soia.
 
 ### David (bambino)
 - **Nato il 30 novembre 2022.** Calcola SEMPRE l'età attuale da questa data (regola GENERALE, a

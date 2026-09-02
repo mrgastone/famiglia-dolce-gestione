@@ -98,54 +98,35 @@
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato more-lamponi e albumi sodi",
+        "titolo": "Frullato more-lamponi con soia",
         "preparazioni": [
           {
-            "etichetta": "il frullato di more e lamponi",
+            "etichetta": "il frullato di more e lamponi con soia",
             "ingredienti": [
               {
                 "nome": "More",
-                "g": 70,
+                "g": 80,
                 "prodotto": "more"
               },
               {
                 "nome": "Lamponi",
-                "g": 60,
+                "g": 70,
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
               },
               {
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore More e Lamponi, lo yogurt e l'acqua.",
+              "Metti nel frullatore More e Lamponi,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -374,58 +355,46 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato more-lamponi e albumi sodi",
+        "titolo": "Pane integrale con pomodoro e hummus",
         "preparazioni": [
           {
-            "etichetta": "il frullato di more e lamponi",
+            "etichetta": "il pane integrale con pomodoro e hummus",
             "ingredienti": [
               {
-                "nome": "More",
-                "g": 80,
-                "prodotto": "more"
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
               },
               {
-                "nome": "Lamponi",
-                "g": 70,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Yogurt greco 0%",
+                "nome": "Pomodoro",
                 "g": 100,
-                "prodotto": "yogurt_greco"
+                "prodotto": "pomodoro"
               },
               {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
               },
               {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore More e Lamponi, lo yogurt e l'acqua.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
+              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro e pane",
@@ -564,10 +533,10 @@
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con uva e frullato",
+        "titolo": "Avena overnight con soia e uva + frullato",
         "preparazioni": [
           {
-            "etichetta": "l'avena ammollata (overnight oats)",
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
             "ingredienti": [
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -575,13 +544,14 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
               },
               {
-                "nome": "Acqua (per ammollare l'avena)",
-                "ml": 80
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
               },
               {
                 "nome": "Uva",
@@ -590,13 +560,13 @@
               }
             ],
             "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt greco e un po' d'acqua.",
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
               "Al mattino mescola e completa con Uva a pezzetti."
             ]
           },
           {
-            "etichetta": "il frullato di frutta",
+            "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
                 "nome": "Uva",
@@ -609,17 +579,13 @@
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 60,
-                "prodotto": "yogurt_greco"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Uva e Lamponi, lo yogurt e l'acqua.",
+              "Metti nel frullatore Uva e Lamponi,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
@@ -764,54 +730,35 @@
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato pesche-uva e albumi sodi",
+        "titolo": "Frullato pesche-uva con soia",
         "preparazioni": [
           {
-            "etichetta": "il frullato di pesche e uva",
+            "etichetta": "il frullato di pesche e uva con soia",
             "ingredienti": [
               {
                 "nome": "Pesche",
-                "g": 70,
+                "g": 80,
                 "prodotto": "pesche"
               },
               {
                 "nome": "Uva",
-                "g": 60,
+                "g": 70,
                 "prodotto": "uva"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
               },
               {
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pesche e Uva, lo yogurt e l'acqua.",
+              "Metti nel frullatore Pesche e Uva,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -1040,58 +987,46 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato fichi-uva e albumi sodi",
+        "titolo": "Pane integrale con pomodoro e hummus",
         "preparazioni": [
           {
-            "etichetta": "il frullato di fichi e uva",
+            "etichetta": "il pane integrale con pomodoro e hummus",
             "ingredienti": [
               {
-                "nome": "Fichi",
-                "g": 80,
-                "prodotto": "fichi"
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
               },
               {
-                "nome": "Uva",
-                "g": 70,
-                "prodotto": "uva"
-              },
-              {
-                "nome": "Yogurt greco 0%",
+                "nome": "Pomodoro",
                 "g": 100,
-                "prodotto": "yogurt_greco"
+                "prodotto": "pomodoro"
               },
               {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
               },
               {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Fichi e Uva, lo yogurt e l'acqua.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
+              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro e pane",
@@ -1230,10 +1165,10 @@
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con pere e frullato",
+        "titolo": "Avena overnight con soia e pere + frullato",
         "preparazioni": [
           {
-            "etichetta": "l'avena ammollata (overnight oats)",
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
             "ingredienti": [
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -1241,13 +1176,14 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
               },
               {
-                "nome": "Acqua (per ammollare l'avena)",
-                "ml": 80
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
               },
               {
                 "nome": "Pere",
@@ -1256,13 +1192,13 @@
               }
             ],
             "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt greco e un po' d'acqua.",
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
               "Al mattino mescola e completa con Pere a pezzetti."
             ]
           },
           {
-            "etichetta": "il frullato di frutta",
+            "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
                 "nome": "Pere",
@@ -1275,17 +1211,13 @@
                 "prodotto": "more"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 60,
-                "prodotto": "yogurt_greco"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pere e More, lo yogurt e l'acqua.",
+              "Metti nel frullatore Pere e More,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
@@ -1430,54 +1362,35 @@
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato more-lamponi e albumi sodi",
+        "titolo": "Frullato more-lamponi con soia",
         "preparazioni": [
           {
-            "etichetta": "il frullato di more e lamponi",
+            "etichetta": "il frullato di more e lamponi con soia",
             "ingredienti": [
               {
                 "nome": "More",
-                "g": 70,
+                "g": 80,
                 "prodotto": "more"
               },
               {
                 "nome": "Lamponi",
-                "g": 60,
+                "g": 70,
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
               },
               {
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore More e Lamponi, lo yogurt e l'acqua.",
+              "Metti nel frullatore More e Lamponi,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -1706,58 +1619,46 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato more-lamponi e albumi sodi",
+        "titolo": "Pane integrale con pomodoro e hummus",
         "preparazioni": [
           {
-            "etichetta": "il frullato di more e lamponi",
+            "etichetta": "il pane integrale con pomodoro e hummus",
             "ingredienti": [
               {
-                "nome": "More",
-                "g": 80,
-                "prodotto": "more"
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
               },
               {
-                "nome": "Lamponi",
-                "g": 70,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Yogurt greco 0%",
+                "nome": "Pomodoro",
                 "g": 100,
-                "prodotto": "yogurt_greco"
+                "prodotto": "pomodoro"
               },
               {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
               },
               {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore More e Lamponi, lo yogurt e l'acqua.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
+              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro e pane",
@@ -1896,10 +1797,10 @@
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con uva e frullato",
+        "titolo": "Avena overnight con soia e uva + frullato",
         "preparazioni": [
           {
-            "etichetta": "l'avena ammollata (overnight oats)",
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
             "ingredienti": [
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -1907,13 +1808,14 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
               },
               {
-                "nome": "Acqua (per ammollare l'avena)",
-                "ml": 80
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
               },
               {
                 "nome": "Uva",
@@ -1922,13 +1824,13 @@
               }
             ],
             "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt greco e un po' d'acqua.",
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
               "Al mattino mescola e completa con Uva a pezzetti."
             ]
           },
           {
-            "etichetta": "il frullato di frutta",
+            "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
                 "nome": "Uva",
@@ -1941,17 +1843,13 @@
                 "prodotto": "lamponi"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 60,
-                "prodotto": "yogurt_greco"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Uva e Lamponi, lo yogurt e l'acqua.",
+              "Metti nel frullatore Uva e Lamponi,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
@@ -2096,54 +1994,35 @@
     },
     "mar": {
       "flavio": {
-        "titolo": "Frullato pesche-uva e albumi sodi",
+        "titolo": "Frullato pesche-uva con soia",
         "preparazioni": [
           {
-            "etichetta": "il frullato di pesche e uva",
+            "etichetta": "il frullato di pesche e uva con soia",
             "ingredienti": [
               {
                 "nome": "Pesche",
-                "g": 70,
+                "g": 80,
                 "prodotto": "pesche"
               },
               {
                 "nome": "Uva",
-                "g": 60,
+                "g": 70,
                 "prodotto": "uva"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
               },
               {
                 "nome": "Semi di chia",
                 "g": 10,
                 "prodotto": "chia"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pesche e Uva, lo yogurt e l'acqua.",
+              "Metti nel frullatore Pesche e Uva,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
             ]
           }
         ],
@@ -2372,58 +2251,46 @@
     },
     "ven": {
       "flavio": {
-        "titolo": "Frullato fichi-uva e albumi sodi",
+        "titolo": "Pane integrale con pomodoro e hummus",
         "preparazioni": [
           {
-            "etichetta": "il frullato di fichi e uva",
+            "etichetta": "il pane integrale con pomodoro e hummus",
             "ingredienti": [
               {
-                "nome": "Fichi",
-                "g": 80,
-                "prodotto": "fichi"
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
               },
               {
-                "nome": "Uva",
-                "g": 70,
-                "prodotto": "uva"
-              },
-              {
-                "nome": "Yogurt greco 0%",
+                "nome": "Pomodoro",
                 "g": 100,
-                "prodotto": "yogurt_greco"
+                "prodotto": "pomodoro"
               },
               {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
               },
               {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Fichi e Uva, lo yogurt e l'acqua.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "gli albumi sodi",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi sodi",
-                "n": 2,
-                "prodotto": "albume"
-              }
-            ],
-            "istruzioni": [
-              "Rassoda le uova in acqua bollente per circa 9 minuti.",
-              "Raffredda sotto acqua fredda, sguscia e tieni solo gli albumi."
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
+              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
         "titolo": "Uovo strapazzato con pomodoro e pane",
@@ -2562,10 +2429,10 @@
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena ammollata con pere e frullato",
+        "titolo": "Avena overnight con soia e pere + frullato",
         "preparazioni": [
           {
-            "etichetta": "l'avena ammollata (overnight oats)",
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
             "ingredienti": [
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -2573,13 +2440,14 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 100,
-                "prodotto": "yogurt_greco"
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
               },
               {
-                "nome": "Acqua (per ammollare l'avena)",
-                "ml": 80
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
               },
               {
                 "nome": "Pere",
@@ -2588,13 +2456,13 @@
               }
             ],
             "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt greco e un po' d'acqua.",
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
               "Al mattino mescola e completa con Pere a pezzetti."
             ]
           },
           {
-            "etichetta": "il frullato di frutta",
+            "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
                 "nome": "Pere",
@@ -2607,17 +2475,13 @@
                 "prodotto": "more"
               },
               {
-                "nome": "Yogurt greco 0%",
-                "g": 60,
-                "prodotto": "yogurt_greco"
-              },
-              {
-                "nome": "Acqua (per frullare)",
-                "ml": 50
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pere e More, lo yogurt e l'acqua.",
+              "Metti nel frullatore Pere e More,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
