@@ -164,7 +164,7 @@ function CardSupermercato({ settimana }) {
     <div className="rounded-3xl bg-white shadow-card p-5">
       <IntestazioneNegozio fornitoreKey="specialita_di_parma" />
       <p className="text-stone-500 text-sm mb-1">
-        Un solo giro a settimana: prendi tutto insieme (uova, yogurt e dispensa).
+        {spesa.specialita_di_parma.modalita}: prendi tutto insieme ({spesa.specialita_di_parma.tipo.toLowerCase()}).
       </p>
       {righe.length ? (
         <ul className="divide-y divide-stone-100">
@@ -173,7 +173,7 @@ function CardSupermercato({ settimana }) {
           ))}
         </ul>
       ) : (
-        <p className="text-stone-400 text-sm">Niente da prendere al supermercato questa settimana.</p>
+        <p className="text-stone-400 text-sm">Niente da prendere qui questa settimana.</p>
       )}
     </div>
   )
@@ -186,7 +186,7 @@ function CardFrutta({ settimana }) {
       <IntestazioneNegozio fornitoreKey="montagnola" />
       <p className="text-stone-500 text-sm mb-3">
         Frutta fresca in <span className="font-semibold text-stone-600">due giri, martedì e venerdì</span>,
-        per non tenerla troppo a lungo. Facile in bus 165, anche più spesso se serve.
+        per non tenerla troppo a lungo. {spesa.montagnola.modalita} — anche più spesso se serve.
       </p>
       <div className="space-y-4">
         {GIRI_FRUTTA.map((giro) => {
@@ -281,7 +281,7 @@ function CardOnline({ settimana }) {
     <div className="rounded-3xl bg-white shadow-card p-5">
       <IntestazioneNegozio fornitoreKey="online" />
       <p className="text-stone-500 text-sm mb-1">
-        Se non li trovi al supermercato di zona, ordinali online.
+        Se non li trovi in zona, ordinali online.
       </p>
       <ul className="divide-y divide-stone-100">
         {righe.map((r) => (
@@ -352,7 +352,7 @@ function ListaStampabile({ settimana }) {
           <SezioneStampa
             key={giro}
             titolo={`🍑 Frutta e verdura · ${info.nome}`}
-            nota={`${spesa.montagnola.nome} (bus 165) — colazioni di ${info.copre}.`}
+            nota={`${[spesa.montagnola.nome, spesa.montagnola.modalita].filter(Boolean).join(' · ')} — colazioni di ${info.copre}.`}
             voci={voci}
           />
         )
@@ -404,10 +404,11 @@ export default function Spesa() {
           ))}
         </div>
         <p className="text-stone-400 text-sm mt-2">
-          Supermercato <span className="font-semibold text-stone-500">una volta a settimana</span>,
-          frutta fresca <span className="font-semibold text-stone-500">quando serve</span> (bus 165),
-          alimentari sotto casa <span className="font-semibold text-stone-500">a piedi</span> per le
-          emergenze. Quantità con <span className="font-semibold text-stone-500">+{MARGINE_PERCENTO}%</span>.
+          Frutta e verdura fresca <span className="font-semibold text-stone-500">martedì e venerdì</span> da{' '}
+          {spesa.montagnola.nome}; {spesa.specialita_di_parma.nome}{' '}
+          <span className="font-semibold text-stone-500">{spesa.specialita_di_parma.modalita.toLowerCase()}</span>;
+          pane da {spesa.mezza_rosetta.nome}. Quantità con{' '}
+          <span className="font-semibold text-stone-500">+{MARGINE_PERCENTO}%</span>.
           Prodotti di stagione per {stagione.etichetta}.
         </p>
         {SETTIMANE_UGUALI[settimana] ? (
@@ -461,7 +462,8 @@ export default function Spesa() {
             })}
           </ul>
           <p className="text-white/75 text-xs mt-2 leading-snug">
-            Frutta e verdura fresca dal fruttivendolo. Il supermercato invece si fa una volta a settimana.
+            Frutta e verdura fresca da {spesa.montagnola.nome}. {spesa.specialita_di_parma.nome}:{' '}
+            {spesa.specialita_di_parma.modalita.toLowerCase()}.
           </p>
         </div>
       </div>

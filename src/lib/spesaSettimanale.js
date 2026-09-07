@@ -1,6 +1,7 @@
 import colazioni from '../data/colazioni.json'
 import prodotti from '../data/prodotti.json'
 import profili from '../data/profili.json'
+import spesa from '../data/spesa.json'
 import { porzioniProfilo } from './profilo.js'
 
 // Quante porzioni preparare per ogni profilo (David è condiviso con Lena → 2).
@@ -11,15 +12,14 @@ const PORZIONI = Object.fromEntries(profili.map((p) => [p.id, porzioniProfilo(p)
 // anche durante il giorno o per altre preparazioni.
 export const MARGINE_PERCENTO = 20
 
-// A Longostagno (agosto 2026) la spesa si fa in tre punti con ritmi diversi:
-//  - Supermercato MPREIS (Soprabolzano): UNA VOLTA a settimana → un'unica lista su 7 giorni.
-//  - Fruttivendolo Obst & Gemüse Prader (bus 165): frutta/verdura FRESCA → due giri (freschezza).
-//  - Alimentari sotto casa (a piedi): pane, latte, acqua ed emergenze → lista breve.
-// I prodotti sono instradati al negozio giusto dal campo "fornitore" in prodotti.json:
-//   montagnola = fruttivendolo · specialita_di_parma = supermercato · mezza_rosetta = alimentari.
+// La spesa si fa in tre punti con ritmi diversi (nomi e accesso per città in spesa.json):
+//  - specialita_di_parma: uova, latticini e dispensa → un'unica lista su tutti i 7 giorni.
+//  - montagnola: frutta/verdura FRESCA → due giri (freschezza).
+//  - mezza_rosetta: pane (+ latte/acqua dove previsto) → lista breve.
+// I prodotti sono instradati al negozio giusto dal campo "fornitore" in prodotti.json.
 const TUTTI_GIORNI = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']
 
-// La frutta è deperibile: due giri dal fruttivendolo (facile in bus 165) per non tenerla troppo.
+// La frutta è deperibile: due giri dal fruttivendolo per non tenerla troppo.
 //  - MARTEDÌ  → colazioni di mercoledì, giovedì e venerdì
 //  - VENERDÌ  → colazioni di sabato, domenica, lunedì E martedì (copre fino al giro successivo)
 // Insieme coprono tutti e 7 i giorni della settimana.
@@ -166,5 +166,6 @@ export function testoFrutta(settimana, giro) {
   const righe = spesaFrutta(settimana, giro)
   if (!righe.length) return ''
   const lista = righe.map((r) => `- ${r.nome}: ${r.quantita}`).join('\n')
-  return `🍑 Frutta e verdura — ${info.nome} (Settimana ${settimana})\n(Obst & Gemüse Prader, bus 165. Per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)\n\n${lista}\n\nGrazie! 🙂`
+  const negozio = [spesa.montagnola?.nome, spesa.montagnola?.modalita].filter(Boolean).join(' · ')
+  return `🍑 Frutta e verdura — ${info.nome} (Settimana ${settimana})\n(${negozio}. Per le colazioni di ${info.copre}. Quantità con +${MARGINE_PERCENTO}%.)\n\n${lista}\n\nGrazie! 🙂`
 }

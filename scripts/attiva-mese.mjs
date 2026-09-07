@@ -43,7 +43,12 @@ console.log(`Snapshot uscente salvato come _staging/${cittaVecchia}-*.json`)
 // 2) archivia il mese uscente
 const archivio = leggi(resolve(DATA, 'archivio.json'))
 const colVecchie = leggi(resolve(DATA, 'colazioni.json'))
-const id = (stagioneVecchia.scadenza || '').slice(0, 7) || cittaVecchia
+// id = anno-mese del MESE della stagione uscente (es. "Agosto 2026" → "2026-08"), non della scadenza
+const MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre']
+const mm = (stagioneVecchia.mese || '').toLowerCase().match(/^([a-zà]+)\s+(\d{4})/)
+const id = mm && MESI.includes(mm[1])
+  ? `${mm[2]}-${String(MESI.indexOf(mm[1]) + 1).padStart(2, '0')}`
+  : (stagioneVecchia.scadenza || '').slice(0, 7) || cittaVecchia
 if (!archivio.find((a) => a.id === id)) {
   archivio.unshift({
     id,

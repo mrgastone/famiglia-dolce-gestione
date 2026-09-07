@@ -58,7 +58,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con pere",
+        "titolo": "Crema d'avena nel latte con pesche",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -74,9 +74,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 60,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Burro di arachidi",
@@ -88,12 +88,12 @@
               "Scalda il latte in un pentolino senza farlo bollire.",
               "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
               "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
-              "Aggiungi Pere a pezzetti piccoli."
+              "Aggiungi Pesche a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
       }
     },
     "mar": {
@@ -217,7 +217,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero overnight con more",
+        "titolo": "Yogurt intero overnight con mirtilli",
         "preparazioni": [
           {
             "etichetta": "lo yogurt intero con avena ammollata (overnight)",
@@ -233,9 +233,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "More",
+                "nome": "Mirtilli",
                 "g": 60,
-                "prodotto": "more"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Burro di arachidi",
@@ -246,12 +246,12 @@
             "istruzioni": [
               "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
               "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con More a pezzetti piccoli e il burro di arachidi."
+              "Al mattino mescola e completa con Mirtilli a pezzetti piccoli e il burro di arachidi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "More schiacciate o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
       }
     },
     "gio": {
@@ -307,9 +307,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 80,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Latte intero",
@@ -319,7 +319,7 @@
             ],
             "istruzioni": [
               "Ammolla prima i fiocchi d'avena (se presenti) in un po' di latte.",
-              "Metti nel frullatore Pere, lo yogurt, i fiocchi d'avena ammollati e il latte.",
+              "Metti nel frullatore Pesche, lo yogurt, i fiocchi d'avena ammollati e il latte.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           },
@@ -350,7 +350,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; more schiacciate o tagliati, mai interi."
+        "sicurezza": "Pesche a pezzetti piccoli; more schiacciate o tagliati, mai interi."
       }
     },
     "ven": {
@@ -690,7 +690,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con pere",
+        "titolo": "Crema d'avena nel latte con pesche",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -706,9 +706,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 60,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Burro di arachidi",
@@ -720,12 +720,12 @@
               "Scalda il latte in un pentolino senza farlo bollire.",
               "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
               "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
-              "Aggiungi Pere a pezzetti piccoli."
+              "Aggiungi Pesche a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
       }
     },
     "mar": {
@@ -849,7 +849,7 @@
         "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
       },
       "david": {
-        "titolo": "Yogurt intero overnight con more",
+        "titolo": "Yogurt intero overnight con mirtilli",
         "preparazioni": [
           {
             "etichetta": "lo yogurt intero con avena ammollata (overnight)",
@@ -865,9 +865,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "More",
+                "nome": "Mirtilli",
                 "g": 60,
-                "prodotto": "more"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Burro di arachidi",
@@ -878,12 +878,12 @@
             "istruzioni": [
               "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
               "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con More a pezzetti piccoli e il burro di arachidi."
+              "Al mattino mescola e completa con Mirtilli a pezzetti piccoli e il burro di arachidi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "More schiacciate o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
       }
     },
     "gio": {
@@ -939,9 +939,9 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 80,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Latte intero",
@@ -951,7 +951,7 @@
             ],
             "istruzioni": [
               "Ammolla prima i fiocchi d'avena (se presenti) in un po' di latte.",
-              "Metti nel frullatore Pere, lo yogurt, i fiocchi d'avena ammollati e il latte.",
+              "Metti nel frullatore Pesche, lo yogurt, i fiocchi d'avena ammollati e il latte.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           },
@@ -982,7 +982,7 @@
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; more schiacciate o tagliati, mai interi."
+        "sicurezza": "Pesche a pezzetti piccoli; more schiacciate o tagliati, mai interi."
       }
     },
     "ven": {
@@ -1302,9 +1302,9 @@
                 "ml": 120
               },
               {
-                "nome": "Pere",
+                "nome": "More",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "more"
               },
               {
                 "nome": "Mandorle",
@@ -1315,14 +1315,14 @@
             "istruzioni": [
               "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
               "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Pere a pezzetti e Mandorle."
+              "Fuori dal fuoco completa con More a pezzetti e Mandorle."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con pesche",
+        "titolo": "Crema d'avena nel latte con more",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -1338,9 +1338,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Pesche",
+                "nome": "More",
                 "g": 60,
-                "prodotto": "pesche"
+                "prodotto": "more"
               },
               {
                 "nome": "Burro di arachidi",
@@ -1352,12 +1352,12 @@
               "Scalda il latte in un pentolino senza farlo bollire.",
               "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
               "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
-              "Aggiungi Pesche a pezzetti piccoli."
+              "Aggiungi More a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "More schiacciate o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
       }
     },
     "mar": {
@@ -1520,7 +1520,7 @@
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con pere",
+        "titolo": "Crema d'avena con susine",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -1535,9 +1535,9 @@
                 "ml": 120
               },
               {
-                "nome": "Pere",
+                "nome": "Susine",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "susine"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -1548,7 +1548,7 @@
             "istruzioni": [
               "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
               "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Pere a pezzetti e Semi di lino macinati."
+              "Fuori dal fuoco completa con Susine a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -1601,20 +1601,20 @@
                 "prodotto": "ricotta"
               },
               {
-                "nome": "Pere",
+                "nome": "Mirtilli",
                 "g": 40,
-                "prodotto": "pere"
+                "prodotto": "mirtilli"
               }
             ],
             "istruzioni": [
               "Tosta leggermente il pane integrale.",
               "Spalma la ricotta sul pane.",
-              "Completa con Pere schiacciate o a pezzetti piccoli."
+              "Completa con Mirtilli schiacciate o a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Fichi a pezzetti piccoli; pere a pezzetti piccoli."
+        "sicurezza": "Fichi a pezzetti piccoli; mirtilli schiacciati o tagliati, mai interi."
       }
     },
     "ven": {
@@ -1700,7 +1700,7 @@
     },
     "sab": {
       "flavio": {
-        "titolo": "Albumi strapazzati con more e noci",
+        "titolo": "Albumi strapazzati con mirtilli e noci",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -1724,12 +1724,12 @@
             ]
           },
           {
-            "etichetta": "il piatto di more e noci",
+            "etichetta": "il piatto di mirtilli e noci",
             "ingredienti": [
               {
-                "nome": "More",
+                "nome": "Mirtilli",
                 "g": 80,
-                "prodotto": "more"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Noci",
@@ -1738,7 +1738,7 @@
               }
             ],
             "istruzioni": [
-              "Disponi More in una ciotola.",
+              "Disponi Mirtilli in una ciotola.",
               "Completa con le noci tritate grossolanamente."
             ]
           }
@@ -1768,9 +1768,9 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Lamponi",
+                "nome": "Mirtilli",
                 "g": 50,
-                "prodotto": "lamponi"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Latte intero (per l'impasto)",
@@ -1787,17 +1787,17 @@
               "Schiaccia la banana con una forchetta in una ciotola.",
               "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
               "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
-              "Servi con Lamponi schiacciate."
+              "Servi con Mirtilli schiacciate."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Lamponi schiacciate o tagliati, mai interi."
+        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi."
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena overnight con soia e pere + frullato",
+        "titolo": "Avena overnight con soia e pesche + frullato",
         "preparazioni": [
           {
             "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
@@ -1818,24 +1818,24 @@
                 "prodotto": "chia"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               }
             ],
             "istruzioni": [
               "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con Pere a pezzetti."
+              "Al mattino mescola e completa con Pesche a pezzetti."
             ]
           },
           {
             "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 60,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "More",
@@ -1849,7 +1849,7 @@
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pere e More,  e la bevanda di soia.",
+              "Metti nel frullatore Pesche e More,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
@@ -1857,7 +1857,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pere e avena",
+        "titolo": "Ricotta con pesche e avena",
         "preparazioni": [
           {
             "etichetta": "la ricotta con frutta e avena ammollata",
@@ -1868,9 +1868,9 @@
                 "prodotto": "ricotta"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 70,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -1886,12 +1886,12 @@
             "istruzioni": [
               "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
               "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pere a pezzetti piccoli e un velo di burro di arachidi."
+              "Aggiungi Pesche a pezzetti piccoli e un velo di burro di arachidi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
       }
     }
   },
@@ -1934,9 +1934,9 @@
                 "ml": 120
               },
               {
-                "nome": "Pere",
+                "nome": "More",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "more"
               },
               {
                 "nome": "Mandorle",
@@ -1947,14 +1947,14 @@
             "istruzioni": [
               "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
               "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Pere a pezzetti e Mandorle."
+              "Fuori dal fuoco completa con More a pezzetti e Mandorle."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
       },
       "david": {
-        "titolo": "Crema d'avena nel latte con pesche",
+        "titolo": "Crema d'avena nel latte con more",
         "preparazioni": [
           {
             "etichetta": "la crema d'avena nel latte",
@@ -1970,9 +1970,9 @@
                 "prodotto": "latte_intero"
               },
               {
-                "nome": "Pesche",
+                "nome": "More",
                 "g": 60,
-                "prodotto": "pesche"
+                "prodotto": "more"
               },
               {
                 "nome": "Burro di arachidi",
@@ -1984,12 +1984,12 @@
               "Scalda il latte in un pentolino senza farlo bollire.",
               "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
               "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
-              "Aggiungi Pesche a pezzetti piccoli."
+              "Aggiungi More a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "More schiacciate o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
       }
     },
     "mar": {
@@ -2152,7 +2152,7 @@
     },
     "gio": {
       "flavio": {
-        "titolo": "Crema d'avena con pere",
+        "titolo": "Crema d'avena con susine",
         "preparazioni": [
           {
             "etichetta": "il porridge d'avena",
@@ -2167,9 +2167,9 @@
                 "ml": 120
               },
               {
-                "nome": "Pere",
+                "nome": "Susine",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "susine"
               },
               {
                 "nome": "Semi di lino macinati",
@@ -2180,7 +2180,7 @@
             "istruzioni": [
               "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
               "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Pere a pezzetti e Semi di lino macinati."
+              "Fuori dal fuoco completa con Susine a pezzetti e Semi di lino macinati."
             ]
           }
         ],
@@ -2233,20 +2233,20 @@
                 "prodotto": "ricotta"
               },
               {
-                "nome": "Pere",
+                "nome": "Mirtilli",
                 "g": 40,
-                "prodotto": "pere"
+                "prodotto": "mirtilli"
               }
             ],
             "istruzioni": [
               "Tosta leggermente il pane integrale.",
               "Spalma la ricotta sul pane.",
-              "Completa con Pere schiacciate o a pezzetti piccoli."
+              "Completa con Mirtilli schiacciate o a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Fichi a pezzetti piccoli; pere a pezzetti piccoli."
+        "sicurezza": "Fichi a pezzetti piccoli; mirtilli schiacciati o tagliati, mai interi."
       }
     },
     "ven": {
@@ -2332,7 +2332,7 @@
     },
     "sab": {
       "flavio": {
-        "titolo": "Albumi strapazzati con more e noci",
+        "titolo": "Albumi strapazzati con mirtilli e noci",
         "preparazioni": [
           {
             "etichetta": "gli albumi strapazzati",
@@ -2356,12 +2356,12 @@
             ]
           },
           {
-            "etichetta": "il piatto di more e noci",
+            "etichetta": "il piatto di mirtilli e noci",
             "ingredienti": [
               {
-                "nome": "More",
+                "nome": "Mirtilli",
                 "g": 80,
-                "prodotto": "more"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Noci",
@@ -2370,7 +2370,7 @@
               }
             ],
             "istruzioni": [
-              "Disponi More in una ciotola.",
+              "Disponi Mirtilli in una ciotola.",
               "Completa con le noci tritate grossolanamente."
             ]
           }
@@ -2400,9 +2400,9 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "Lamponi",
+                "nome": "Mirtilli",
                 "g": 50,
-                "prodotto": "lamponi"
+                "prodotto": "mirtilli"
               },
               {
                 "nome": "Latte intero (per l'impasto)",
@@ -2419,17 +2419,17 @@
               "Schiaccia la banana con una forchetta in una ciotola.",
               "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
               "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
-              "Servi con Lamponi schiacciate."
+              "Servi con Mirtilli schiacciate."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Lamponi schiacciate o tagliati, mai interi."
+        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi."
       }
     },
     "dom": {
       "flavio": {
-        "titolo": "Avena overnight con soia e pere + frullato",
+        "titolo": "Avena overnight con soia e pesche + frullato",
         "preparazioni": [
           {
             "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
@@ -2450,24 +2450,24 @@
                 "prodotto": "chia"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 100,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               }
             ],
             "istruzioni": [
               "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
               "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con Pere a pezzetti."
+              "Al mattino mescola e completa con Pesche a pezzetti."
             ]
           },
           {
             "etichetta": "il frullato di frutta con soia",
             "ingredienti": [
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 60,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "More",
@@ -2481,7 +2481,7 @@
               }
             ],
             "istruzioni": [
-              "Metti nel frullatore Pere e More,  e la bevanda di soia.",
+              "Metti nel frullatore Pesche e More,  e la bevanda di soia.",
               "Frulla fino a una bevanda liscia e omogenea; servi subito."
             ]
           }
@@ -2489,7 +2489,7 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pere e avena",
+        "titolo": "Ricotta con pesche e avena",
         "preparazioni": [
           {
             "etichetta": "la ricotta con frutta e avena ammollata",
@@ -2500,9 +2500,9 @@
                 "prodotto": "ricotta"
               },
               {
-                "nome": "Pere",
+                "nome": "Pesche",
                 "g": 70,
-                "prodotto": "pere"
+                "prodotto": "pesche"
               },
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -2518,12 +2518,12 @@
             "istruzioni": [
               "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
               "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pere a pezzetti piccoli e un velo di burro di arachidi."
+              "Aggiungi Pesche a pezzetti piccoli e un velo di burro di arachidi."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
       }
     }
   }

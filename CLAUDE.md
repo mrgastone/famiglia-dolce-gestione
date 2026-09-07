@@ -205,7 +205,11 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 - **Le chiavi fornitore restano stabili** (`montagnola` / `specialita_di_parma` / `mezza_rosetta` /
   `online`); cambiano solo **nome, tipo, accesso, mappa** in `spesa.json` per adattarsi alla zona del
   mese. **Ogni prodotto** è instradato al negozio dal campo `fornitore` in `prodotti.json`.
-- **Ritmi di spesa (agosto 2026 · Longostagno):** ogni negozio ha una **card** con
+- **Città corrente: ROMA dal 07/09/2026** (prima Longostagno, ago 2026, archiviato). I testi
+  dell'app sono data-driven da `spesa.json` (`nome`, `modalita`, `tipo`, `accesso`, `mappa`):
+  cambiando città si cambia solo quel file, mai il codice. L'elenco qui sotto è l'esempio
+  Longostagno; i negozi di Roma stanno in «Cambio città».
+- **Ritmi di spesa** (ogni negozio ha una **card** con
   intestazione (icona, nome, badge accesso, link **mappa**):
   - `specialita_di_parma` = **Supermercato MPREIS (Soprabolzano)** — **UNA VOLTA a settimana**: una
     sola lista calcolata su **tutti i 7 giorni** (uova, yogurt, avena, semi, frutta secca, dispensa).

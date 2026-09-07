@@ -1,62 +1,60 @@
 {
   "giroUnico": {
-    "titolo": "Dove si fa la spesa a Longostagno",
-    "descrizione": "Tre punti, tre ritmi diversi: il supermercato una volta a settimana (è lontano), il fruttivendolo quando serve frutta fresca (bus 165) e l'alimentari sotto casa a piedi per pane, latte, acqua ed emergenze.",
+    "titolo": "Dove si fa la spesa a Roma",
+    "descrizione": "Giro di persona in zona: il mercato per frutta e verdura, Specialità di Parma per uova, latte e latticini, il forno Mezza Rosetta per il pane. Frutta e verdura fresche due volte a settimana (martedì e venerdì).",
     "tappe": [
-      { "nome": "Frutta e verdura — Obst & Gemüse Prader", "cosa": "in bus (linea 165); frutta e verdura fresca, anche più volte a settimana" },
-      { "nome": "Supermercato — MPREIS Soprabolzano", "cosa": "una volta a settimana: uova, yogurt, avena, semi, frutta secca e dispensa" },
-      { "nome": "Alimentari sotto casa — Handlung / Generi Misti", "cosa": "a piedi, per pane, latte, acqua e generi semplici; comodo per le emergenze (orari limitati)" }
+      {
+        "nome": "Frutta e verdura — Mercato Montagnola",
+        "cosa": "frutta e verdura fresca di stagione, due volte a settimana"
+      },
+      {
+        "nome": "Uova, latte e latticini — Specialità di Parma",
+        "cosa": "uova, latte intero, ricotta, mozzarella di bufala (al bisogno)"
+      },
+      {
+        "nome": "Pane — Forno Mezza Rosetta",
+        "cosa": "filone integrale + ai cereali; pizzetta integrale se disponibile"
+      }
     ]
   },
   "raccomandazioniOnline": {
     "titolo": "Prodotti difficili da reperire",
-    "descrizione": "Alcuni prodotti possono non esserci in zona: qui trovi il link Amazon per ordinarli quando serve.",
+    "descrizione": "Per ciò che non si trova in zona: link Amazon (o Esselunga a Roma) per ordinarlo.",
     "punti": [
-      "Ordina in anticipo i prodotti a lunga conservazione (crema di mandorle, semi) così non mancano mai.",
-      "Se un prodotto della lista supermercato non c'è sullo scaffale, usa il pulsante “Cerca su Amazon” della riga.",
-      "L'alimentari sotto casa ha orari limitati: controlla sulla mappa prima di uscire, soprattutto la sera e la domenica."
+      "Ordina in anticipo i prodotti a lunga conservazione (burro di arachidi, crema di mandorle, semi).",
+      "Se un prodotto manca sullo scaffale, usa il pulsante “Cerca su Amazon” della riga.",
+      "A Roma per i freschi va bene anche Esselunga (consegna in 2–3 giorni)."
     ],
     "nota": "Questa lista non contiene gli ingredienti per pranzo e cena."
   },
   "montagnola": {
-    "nome": "Frutta e verdura — Obst & Gemüse Prader",
+    "nome": "Mercato Montagnola",
     "tipo": "Frutta e verdura fresca",
-    "modalita": "In bus · linea 165",
-    "accesso": "Bus 165",
-    "mappa": "https://maps.app.goo.gl/gV1mnjKQEKajiCqQ8"
+    "modalita": "In zona, di persona",
+    "accesso": "In zona"
   },
   "specialita_di_parma": {
-    "nome": "Supermercato — MPREIS Soprabolzano",
-    "tipo": "Spesa settimanale · uova, yogurt, dispensa",
-    "modalita": "Una volta a settimana",
-    "accesso": "1 volta a settimana",
-    "mappa": "https://maps.app.goo.gl/N56ZEtrd5pw1K3dU6",
-    "fissi": []
+    "nome": "Specialità di Parma",
+    "tipo": "Uova, latte e latticini",
+    "modalita": "In zona, di persona",
+    "accesso": "In zona",
+    "fissi": [
+      "Mozzarella di bufala (solo al bisogno)"
+    ]
   },
   "mezza_rosetta": {
-    "nome": "Alimentari sotto casa — Handlung / Generi Misti",
-    "tipo": "Pane, latte, acqua · emergenze",
-    "modalita": "A piedi · orari limitati",
-    "accesso": "A piedi",
-    "orari": "Domenica chiuso · giovedì e sabato solo mattina. Controlla gli orari prima di uscire.",
-    "orariGiorni": [
-      { "g": "Lunedì", "o": "07:30–12 · 15:30–18:30" },
-      { "g": "Martedì", "o": "07:30–12 · 15:30–18:30" },
-      { "g": "Mercoledì", "o": "07:30–12 · 15:30–18:30" },
-      { "g": "Giovedì", "o": "07:30–12" },
-      { "g": "Venerdì", "o": "07:30–12 · 15:30–18:30" },
-      { "g": "Sabato", "o": "07:30–12" },
-      { "g": "Domenica", "o": "Chiuso" }
-    ],
-    "mappa": "https://maps.app.goo.gl/VsFeWvDscxgYiRwK9",
+    "nome": "Forno Mezza Rosetta",
+    "tipo": "Pane fresco",
+    "modalita": "In zona, di persona",
+    "accesso": "In zona",
     "fissi": [
       "1 filone di pane integrale",
       "1 filone di pane ai cereali (se disponibile)",
-      "Acqua naturale (secondo necessità)"
+      "1 pizzetta integrale rotonda (se disponibile)"
     ]
   },
   "online": {
-    "nome": "Online — Amazon",
+    "nome": "Online — Amazon · Esselunga",
     "tipo": "Prodotti difficili da reperire in zona"
   }
 }

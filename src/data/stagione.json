@@ -1,25 +1,25 @@
 {
-  "etichetta": "Agosto 2026 · Longostagno (BZ)",
-  "mese": "Agosto 2026",
-  "citta": "Longostagno (Renon, BZ)",
-  "inizioCiclo": "2026-07-27",
-  "scadenza": "2026-09-07",
+  "etichetta": "Settembre 2026 · Roma",
+  "mese": "Settembre 2026",
+  "citta": "Roma",
+  "inizioCiclo": "2026-09-07",
+  "scadenza": "2026-09-30",
   "fruttaDiStagione": [
+    "Uva",
+    "Fichi",
+    "Pere",
+    "Mele",
     "Pesche",
     "Susine",
-    "Fichi",
-    "Uva",
     "More",
-    "Lamponi",
-    "Mirtilli"
+    "Lamponi"
   ],
   "verduraDiStagione": [
     "Pomodori",
-    "Cetrioli",
     "Zucchine",
-    "Fagiolini",
-    "Peperoni",
     "Spinaci",
+    "Melanzane",
+    "Peperoni",
     "Insalata",
     "Basilico"
   ]

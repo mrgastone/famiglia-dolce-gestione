@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ShoppingBasket, X } from 'lucide-react'
+import spesa from '../data/spesa.json'
 import { chiaveGiorno } from '../lib/settimana.js'
 import { infoFrutta } from '../lib/spesaSettimanale.js'
 
@@ -21,7 +22,7 @@ export default function PromemoriaSpesa() {
       <div className="flex-1 leading-snug">
         <p className="font-bold">Oggi è {info.nome.toLowerCase()}: giorno di spesa!</p>
         <p className="text-white/90 text-sm mt-0.5">
-          Prendi frutta e verdura fresca (Obst &amp; Gemüse Prader, bus 165) per le colazioni di{' '}
+          Prendi frutta e verdura fresca ({[spesa.montagnola?.nome, spesa.montagnola?.modalita].filter(Boolean).join(' · ')}) per le colazioni di{' '}
           {info.copre}.
         </p>
       </div>
