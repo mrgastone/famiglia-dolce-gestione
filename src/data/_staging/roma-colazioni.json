@@ -593,41 +593,43 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con uva e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Uva",
-                "g": 70,
+                "g": 50,
                 "prodotto": "uva"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Uva a pezzetti piccoli e un velo di burro di arachidi."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Uva a lato (acini tagliati a metà).",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi liscio, mai a pezzi."
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   },
@@ -1225,41 +1227,43 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pere e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Pere",
-                "g": 70,
+                "g": 50,
                 "prodotto": "pere"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pere a pezzetti piccoli e un velo di burro di arachidi."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Pere a lato a pezzetti piccoli.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   },
@@ -1857,41 +1861,43 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con uva e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Uva",
-                "g": 70,
+                "g": 50,
                 "prodotto": "uva"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Uva a pezzetti piccoli e un velo di burro di arachidi."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Uva a lato (acini tagliati a metà).",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi liscio, mai a pezzi."
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   },
@@ -2489,41 +2495,43 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pere e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Pere",
-                "g": 70,
+                "g": 50,
                 "prodotto": "pere"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pere a pezzetti piccoli e un velo di burro di arachidi."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Pere a lato a pezzetti piccoli.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   }

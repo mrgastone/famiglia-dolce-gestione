@@ -593,542 +593,20 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con uva e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
-              },
-              {
-                "nome": "Uva",
-                "g": 70,
-                "prodotto": "uva"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
-              }
-            ],
-            "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Uva a pezzetti piccoli e un velo di burro di arachidi."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi liscio, mai a pezzi."
-      }
-    }
-  },
-  "2": {
-    "lun": {
-      "flavio": {
-        "titolo": "Albumi strapazzati e porridge d'avena",
-        "preparazioni": [
-          {
-            "etichetta": "gli albumi strapazzati",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi",
-                "n": 2,
-                "prodotto": "albume"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
-              }
-            ],
-            "istruzioni": [
-              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
-              "Scalda un filo d'olio in padella antiaderente.",
-              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
-            ]
-          },
-          {
-            "etichetta": "il porridge d'avena",
-            "ingredienti": [
-              {
-                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "nome": "Pane integrale",
                 "g": 40,
-                "prodotto": "avena"
+                "prodotto": "pane_integrale"
               },
               {
-                "nome": "Acqua (per cuocere l'avena)",
-                "ml": 120
-              },
-              {
-                "nome": "Susine",
-                "g": 100,
-                "prodotto": "susine"
-              },
-              {
-                "nome": "Mandorle",
+                "nome": "Burro di arachidi 100%",
                 "g": 15,
-                "prodotto": "mandorle"
-              }
-            ],
-            "istruzioni": [
-              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
-              "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Susine a pezzetti e Mandorle."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
-      },
-      "david": {
-        "titolo": "Crema d'avena nel latte con pesche",
-        "preparazioni": [
-          {
-            "etichetta": "la crema d'avena nel latte",
-            "ingredienti": [
-              {
-                "nome": "Fiocchi d'avena",
-                "g": 35,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Latte intero",
-                "ml": 140,
-                "prodotto": "latte_intero"
-              },
-              {
-                "nome": "Pesche",
-                "g": 60,
-                "prodotto": "pesche"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 10,
                 "prodotto": "crema_arachidi"
-              }
-            ],
-            "istruzioni": [
-              "Scalda il latte in un pentolino senza farlo bollire.",
-              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
-              "Aggiungi Pesche a pezzetti piccoli."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
-      }
-    },
-    "mar": {
-      "flavio": {
-        "titolo": "Frullato more-lamponi con soia",
-        "preparazioni": [
-          {
-            "etichetta": "il frullato di more e lamponi con soia",
-            "ingredienti": [
-              {
-                "nome": "More",
-                "g": 80,
-                "prodotto": "more"
-              },
-              {
-                "nome": "Lamponi",
-                "g": 70,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Bevanda di soia non zuccherata",
-                "ml": 150,
-                "prodotto": "soia"
-              },
-              {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
-              }
-            ],
-            "istruzioni": [
-              "Metti nel frullatore More e Lamponi,  e la bevanda di soia.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
-      },
-      "david": {
-        "titolo": "Avocado toast con ricotta e pomodoro",
-        "preparazioni": [
-          {
-            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
-            "ingredienti": [
-              {
-                "nome": "Pane integrale",
-                "g": 40,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Ricotta",
-                "g": 40,
-                "prodotto": "ricotta"
-              },
-              {
-                "nome": "Avocado",
-                "g": 45,
-                "prodotto": "avocado"
-              },
-              {
-                "nome": "Pomodoro",
-                "g": 30,
-                "prodotto": "pomodoro"
-              }
-            ],
-            "istruzioni": [
-              "Tosta leggermente le fette di pane integrale.",
-              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
-              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
-              "Completa con il pomodoro a fettine sottili.",
-              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
-            ]
-          }
-        ],
-        "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
-      }
-    },
-    "mer": {
-      "flavio": {
-        "titolo": "Albumi con pomodoro e basilico",
-        "preparazioni": [
-          {
-            "etichetta": "gli albumi strapazzati",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi",
-                "n": 2,
-                "prodotto": "albume"
-              },
-              {
-                "nome": "Pomodoro",
-                "g": 100,
-                "prodotto": "pomodoro"
-              },
-              {
-                "nome": "Cetriolo",
-                "g": 80,
-                "prodotto": "cetriolo"
-              },
-              {
-                "nome": "Olio extravergine d'oliva",
-                "ml": 10,
-                "prodotto": "olio_evo"
-              },
-              {
-                "nome": "Basilico",
-                "g": 2,
-                "prodotto": "basilico"
-              }
-            ],
-            "istruzioni": [
-              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
-              "Scalda un filo d'olio in padella antiaderente.",
-              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
-              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci con basilico/origano."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
-      },
-      "david": {
-        "titolo": "Yogurt intero overnight con mirtilli",
-        "preparazioni": [
-          {
-            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
-            "ingredienti": [
-              {
-                "nome": "Yogurt intero",
-                "g": 130,
-                "prodotto": "yogurt_intero"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 25,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Mirtilli",
-                "g": 60,
-                "prodotto": "mirtilli"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 10,
-                "prodotto": "crema_arachidi"
-              }
-            ],
-            "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
-              "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con Mirtilli a pezzetti piccoli e il burro di arachidi."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
-      }
-    },
-    "gio": {
-      "flavio": {
-        "titolo": "Crema d'avena con fichi",
-        "preparazioni": [
-          {
-            "etichetta": "il porridge d'avena",
-            "ingredienti": [
-              {
-                "nome": "Fiocchi d'avena",
-                "g": 40,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Acqua (per cuocere l'avena)",
-                "ml": 120
-              },
-              {
-                "nome": "Fichi",
-                "g": 100,
-                "prodotto": "fichi"
-              },
-              {
-                "nome": "Semi di lino macinati",
-                "g": 10,
-                "prodotto": "lino"
-              }
-            ],
-            "istruzioni": [
-              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
-              "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
-              "Fuori dal fuoco completa con Fichi a pezzetti e Semi di lino macinati."
-            ]
-          }
-        ],
-        "bevanda": "Soia non zuccherata (1 bicchiere)"
-      },
-      "david": {
-        "titolo": "Frullato di yogurt e avena + toast di ricotta",
-        "preparazioni": [
-          {
-            "etichetta": "il frullato di yogurt e avena",
-            "ingredienti": [
-              {
-                "nome": "Yogurt intero",
-                "g": 120,
-                "prodotto": "yogurt_intero"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Pesche",
-                "g": 80,
-                "prodotto": "pesche"
-              },
-              {
-                "nome": "Latte intero",
-                "ml": 40,
-                "prodotto": "latte_intero"
-              }
-            ],
-            "istruzioni": [
-              "Ammolla prima i fiocchi d'avena (se presenti) in un po' di latte.",
-              "Metti nel frullatore Pesche, lo yogurt, i fiocchi d'avena ammollati e il latte.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          },
-          {
-            "etichetta": "il toast di ricotta e frutta",
-            "ingredienti": [
-              {
-                "nome": "Pane integrale",
-                "g": 30,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Ricotta",
-                "g": 40,
-                "prodotto": "ricotta"
-              },
-              {
-                "nome": "More",
-                "g": 40,
-                "prodotto": "more"
-              }
-            ],
-            "istruzioni": [
-              "Tosta leggermente il pane integrale.",
-              "Spalma la ricotta sul pane.",
-              "Completa con More schiacciate o a pezzetti piccoli."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; more schiacciate o tagliati, mai interi."
-      }
-    },
-    "ven": {
-      "flavio": {
-        "titolo": "Pane integrale con pomodoro e hummus",
-        "preparazioni": [
-          {
-            "etichetta": "il pane integrale con pomodoro e hummus",
-            "ingredienti": [
-              {
-                "nome": "Pane integrale",
-                "g": 60,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Pomodoro",
-                "g": 100,
-                "prodotto": "pomodoro"
-              },
-              {
-                "nome": "Hummus di ceci (opzionale)",
-                "g": 40,
-                "prodotto": "hummus"
-              },
-              {
-                "nome": "Olio extravergine d'oliva",
-                "ml": 5,
-                "prodotto": "olio_evo"
-              },
-              {
-                "nome": "Basilico",
-                "g": 2,
-                "prodotto": "basilico"
-              }
-            ],
-            "istruzioni": [
-              "Tosta leggermente il pane integrale.",
-              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
-              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
-              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
-      },
-      "david": {
-        "titolo": "Uovo strapazzato con pomodoro e pane",
-        "preparazioni": [
-          {
-            "etichetta": "l'uovo strapazzato",
-            "ingredienti": [
-              {
-                "nome": "Uovo intero",
-                "n": 1,
-                "prodotto": "uovo"
-              },
-              {
-                "nome": "Pomodoro",
-                "g": 40,
-                "prodotto": "pomodoro"
-              },
-              {
-                "nome": "Pane integrale",
-                "g": 35,
-                "prodotto": "pane_integrale"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
-              }
-            ],
-            "istruzioni": [
-              "Sbatti l'uovo intero in una ciotola.",
-              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
-              "Servi con Pomodoro e Pane integrale a pezzetti piccoli."
-            ]
-          }
-        ],
-        "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "Pomodoro e pane a pezzetti piccoli."
-      }
-    },
-    "sab": {
-      "flavio": {
-        "titolo": "Albumi strapazzati con lamponi e noci",
-        "preparazioni": [
-          {
-            "etichetta": "gli albumi strapazzati",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Albumi",
-                "n": 2,
-                "prodotto": "albume"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
-              }
-            ],
-            "istruzioni": [
-              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
-              "Scalda un filo d'olio in padella antiaderente.",
-              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
-            ]
-          },
-          {
-            "etichetta": "il piatto di lamponi e noci",
-            "ingredienti": [
-              {
-                "nome": "Lamponi",
-                "g": 80,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Noci",
-                "g": 20,
-                "prodotto": "noci"
-              }
-            ],
-            "istruzioni": [
-              "Disponi Lamponi in una ciotola.",
-              "Completa con le noci tritate grossolanamente."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
-      },
-      "david": {
-        "titolo": "Frittelle di avena e banana",
-        "preparazioni": [
-          {
-            "etichetta": "le frittelle di avena e banana",
-            "plurale": true,
-            "ingredienti": [
-              {
-                "nome": "Fiocchi d'avena",
-                "g": 35,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Uovo intero",
-                "n": 1,
-                "prodotto": "uovo"
               },
               {
                 "nome": "Banana",
@@ -1136,130 +614,22 @@
                 "prodotto": "banana"
               },
               {
-                "nome": "More",
+                "nome": "Uva",
                 "g": 50,
-                "prodotto": "more"
-              },
-              {
-                "nome": "Latte intero (per l'impasto)",
-                "ml": 30,
-                "prodotto": "latte_intero"
-              },
-              {
-                "nome": "Olio extravergine d'oliva (per cuocere)",
-                "ml": 5,
-                "prodotto": "olio_evo"
+                "prodotto": "uva"
               }
             ],
             "istruzioni": [
-              "Schiaccia la banana con una forchetta in una ciotola.",
-              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
-              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
-              "Servi con More schiacciate."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Uva a lato (acini tagliati a metà).",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
         "bevanda": "Latte intero (1 bicchiere)",
-        "sicurezza": "More schiacciate o tagliati, mai interi."
-      }
-    },
-    "dom": {
-      "flavio": {
-        "titolo": "Avena overnight con soia e uva + frullato",
-        "preparazioni": [
-          {
-            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
-            "ingredienti": [
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 40,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Bevanda di soia non zuccherata (per ammollare)",
-                "ml": 120,
-                "prodotto": "soia"
-              },
-              {
-                "nome": "Semi di chia",
-                "g": 10,
-                "prodotto": "chia"
-              },
-              {
-                "nome": "Uva",
-                "g": 100,
-                "prodotto": "uva"
-              }
-            ],
-            "istruzioni": [
-              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
-              "Chiudi e lascia in frigorifero tutta la notte.",
-              "Al mattino mescola e completa con Uva a pezzetti."
-            ]
-          },
-          {
-            "etichetta": "il frullato di frutta con soia",
-            "ingredienti": [
-              {
-                "nome": "Uva",
-                "g": 60,
-                "prodotto": "uva"
-              },
-              {
-                "nome": "Lamponi",
-                "g": 40,
-                "prodotto": "lamponi"
-              },
-              {
-                "nome": "Bevanda di soia non zuccherata",
-                "ml": 100,
-                "prodotto": "soia"
-              }
-            ],
-            "istruzioni": [
-              "Metti nel frullatore Uva e Lamponi,  e la bevanda di soia.",
-              "Frulla fino a una bevanda liscia e omogenea; servi subito."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1 bicchiere)"
-      },
-      "david": {
-        "titolo": "Ricotta con uva e avena",
-        "preparazioni": [
-          {
-            "etichetta": "la ricotta con frutta e avena ammollata",
-            "ingredienti": [
-              {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
-              },
-              {
-                "nome": "Uva",
-                "g": 70,
-                "prodotto": "uva"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
-              }
-            ],
-            "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Uva a pezzetti piccoli e un velo di burro di arachidi."
-            ]
-          }
-        ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   },
@@ -1857,20 +1227,347 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pesche e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Pesche",
-                "g": 70,
+                "g": 50,
                 "prodotto": "pesche"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Pesche a lato a pezzetti piccoli.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
+      }
+    }
+  },
+  "2": {
+    "lun": {
+      "flavio": {
+        "titolo": "Albumi strapazzati e porridge d'avena",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Susine",
+                "g": 100,
+                "prodotto": "susine"
+              },
+              {
+                "nome": "Mandorle",
+                "g": 15,
+                "prodotto": "mandorle"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco completa con Susine a pezzetti e Mandorle."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+      },
+      "david": {
+        "titolo": "Crema d'avena nel latte con pesche",
+        "preparazioni": [
+          {
+            "etichetta": "la crema d'avena nel latte",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 140,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Pesche",
+                "g": 60,
+                "prodotto": "pesche"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena e cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco manteca con la crema/burro di frutta secca.",
+              "Aggiungi Pesche a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "mar": {
+      "flavio": {
+        "titolo": "Frullato more-lamponi con soia",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di more e lamponi con soia",
+            "ingredienti": [
+              {
+                "nome": "More",
+                "g": 80,
+                "prodotto": "more"
+              },
+              {
+                "nome": "Lamponi",
+                "g": 70,
+                "prodotto": "lamponi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore More e Lamponi,  e la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Avocado toast con ricotta e pomodoro",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con avocado, ricotta e pomodoro",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Avocado",
+                "g": 45,
+                "prodotto": "avocado"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 30,
+                "prodotto": "pomodoro"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
+              "Completa con il pomodoro a fettine sottili.",
+              "Per David: avocado ben schiacciato, ricotta liscia, pane e pomodoro a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."
+      }
+    },
+    "mer": {
+      "flavio": {
+        "titolo": "Albumi con pomodoro e basilico",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 100,
+                "prodotto": "pomodoro"
+              },
+              {
+                "nome": "Cetriolo",
+                "g": 80,
+                "prodotto": "cetriolo"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 10,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci Pomodoro e Cetriolo a pezzetti e insaporisci con basilico/origano."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Yogurt intero overnight con mirtilli",
+        "preparazioni": [
+          {
+            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 130,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 25,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Mirtilli",
+                "g": 60,
+                "prodotto": "mirtilli"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Mirtilli a pezzetti piccoli e il burro di arachidi."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Mirtilli schiacciati o tagliati, mai interi; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "gio": {
+      "flavio": {
+        "titolo": "Crema d'avena con fichi",
+        "preparazioni": [
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Fichi",
+                "g": 100,
+                "prodotto": "fichi"
+              },
+              {
+                "nome": "Semi di lino macinati",
+                "g": 10,
+                "prodotto": "lino"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando fino a crema.",
+              "Fuori dal fuoco completa con Fichi a pezzetti e Semi di lino macinati."
+            ]
+          }
+        ],
+        "bevanda": "Soia non zuccherata (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frullato di yogurt e avena + toast di ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di yogurt e avena",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 120,
+                "prodotto": "yogurt_intero"
               },
               {
                 "nome": "Fiocchi d'avena (ammollati)",
@@ -1878,20 +1575,329 @@
                 "prodotto": "avena"
               },
               {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
+                "nome": "Pesche",
+                "g": 80,
+                "prodotto": "pesche"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 40,
+                "prodotto": "latte_intero"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pesche a pezzetti piccoli e un velo di burro di arachidi."
+              "Ammolla prima i fiocchi d'avena (se presenti) in un po' di latte.",
+              "Metti nel frullatore Pesche, lo yogurt, i fiocchi d'avena ammollati e il latte.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          },
+          {
+            "etichetta": "il toast di ricotta e frutta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 30,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "More",
+                "g": 40,
+                "prodotto": "more"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma la ricotta sul pane.",
+              "Completa con More schiacciate o a pezzetti piccoli."
             ]
           }
         ],
         "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "sicurezza": "Pesche a pezzetti piccoli; more schiacciate o tagliati, mai interi."
+      }
+    },
+    "ven": {
+      "flavio": {
+        "titolo": "Pane integrale con pomodoro e hummus",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con pomodoro e hummus",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 100,
+                "prodotto": "pomodoro"
+              },
+              {
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              },
+              {
+                "nome": "Basilico",
+                "g": 2,
+                "prodotto": "basilico"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se non c'è, va bene anche solo pomodoro e olio).",
+              "Aggiungi il pomodoro a fette, un filo d'olio extravergine e il basilico spezzettato.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Uovo strapazzato con pomodoro e pane",
+        "preparazioni": [
+          {
+            "etichetta": "l'uovo strapazzato",
+            "ingredienti": [
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Pomodoro",
+                "g": 40,
+                "prodotto": "pomodoro"
+              },
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Sbatti l'uovo intero in una ciotola.",
+              "Scalda un filo d'olio in padella e versa l'uovo, mescolando a fuoco medio fino a cremoso.",
+              "Servi con Pomodoro e Pane integrale a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Pomodoro e pane a pezzetti piccoli."
+      }
+    },
+    "sab": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con lamponi e noci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il piatto di lamponi e noci",
+            "ingredienti": [
+              {
+                "nome": "Lamponi",
+                "g": 80,
+                "prodotto": "lamponi"
+              },
+              {
+                "nome": "Noci",
+                "g": 20,
+                "prodotto": "noci"
+              }
+            ],
+            "istruzioni": [
+              "Disponi Lamponi in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frittelle di avena e banana",
+        "preparazioni": [
+          {
+            "etichetta": "le frittelle di avena e banana",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "More",
+                "g": 50,
+                "prodotto": "more"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 30,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con More schiacciate."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "More schiacciate o tagliati, mai interi."
+      }
+    },
+    "dom": {
+      "flavio": {
+        "titolo": "Avena overnight con soia e uva + frullato",
+        "preparazioni": [
+          {
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              },
+              {
+                "nome": "Uva",
+                "g": 100,
+                "prodotto": "uva"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia.",
+              "Chiudi e lascia in frigorifero tutta la notte.",
+              "Al mattino mescola e completa con Uva a pezzetti."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta con soia",
+            "ingredienti": [
+              {
+                "nome": "Uva",
+                "g": 60,
+                "prodotto": "uva"
+              },
+              {
+                "nome": "Lamponi",
+                "g": 40,
+                "prodotto": "lamponi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              }
+            ],
+            "istruzioni": [
+              "Metti nel frullatore Uva e Lamponi,  e la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Toast con burro di arachidi e banana",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con burro di arachidi e banana",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Uva",
+                "g": 50,
+                "prodotto": "uva"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Uva a lato (acini tagliati a metà).",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Uva tagliata a metà (o in quattro), mai intera; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   },
@@ -2489,41 +2495,43 @@
         "bevanda": "Acqua naturale (1 bicchiere)"
       },
       "david": {
-        "titolo": "Ricotta con pesche e avena",
+        "titolo": "Toast con burro di arachidi e banana",
         "preparazioni": [
           {
-            "etichetta": "la ricotta con frutta e avena ammollata",
+            "etichetta": "il toast con burro di arachidi e banana",
             "ingredienti": [
               {
-                "nome": "Ricotta",
-                "g": 80,
-                "prodotto": "ricotta"
+                "nome": "Pane integrale",
+                "g": 40,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 60,
+                "prodotto": "banana"
               },
               {
                 "nome": "Pesche",
-                "g": 70,
+                "g": 50,
                 "prodotto": "pesche"
-              },
-              {
-                "nome": "Fiocchi d'avena (ammollati)",
-                "g": 20,
-                "prodotto": "avena"
-              },
-              {
-                "nome": "Burro di arachidi",
-                "g": 5,
-                "prodotto": "crema_arachidi"
               }
             ],
             "istruzioni": [
-              "La sera prima ammolla i fiocchi d'avena in un po' d'acqua o latte, in frigo.",
-              "Al mattino metti la ricotta in una ciotola e mescolala con l'avena ammollata.",
-              "Aggiungi Pesche a pezzetti piccoli e un velo di burro di arachidi."
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Pesche a lato a pezzetti piccoli.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
             ]
           }
         ],
-        "bevanda": "Acqua naturale (1/2 bicchiere)",
-        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Pesche a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
       }
     }
   }

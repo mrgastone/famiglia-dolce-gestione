@@ -141,6 +141,26 @@ Regole:
   tutto il resto **in grammi** (`"g"`). Il rendering mostra `ml`/`N°`/`g` di conseguenza.
 - `prodotto` = chiave di `prodotti.json` (serve per la spesa).
 
+> ### 📖 Regola FISSA: SOLO ricette vere e riconosciute — MAI inventate (NON negoziabile)
+> Ogni preparazione deve corrispondere a una **ricetta consolidata e documentata** (siti di ricette,
+> cuochi, nutrizionisti) con un **nome riconoscibile**: porridge, overnight oats, avocado toast,
+> pancake/frittelle di avena e banana, uovo strapazzato, frullato, toast burro di arachidi e banana,
+> ricotta toast con frutta, hummus toast, albumi strapazzati… **Mai assemblare combinazioni partendo
+> dagli ingredienti** disponibili. Prima di inserire una colazione nuova: **verificare su fonti reali**
+> (ricerca web) che esista e che dosi, tempi e sequenza siano quelli standard; le `istruzioni` devono
+> seguire quel metodo, non essere dedotte. Se una combinazione non ha riscontro, **non si usa**: si
+> sceglie una ricetta vera che rispetti gli stessi vincoli. Nel report all'utente citare le fonti.
+> Verificato il 12/09/2026: gli **overnight oats si ammollano nel latte O in bevanda vegetale**
+> (soia, avena, mandorla), rapporto avena:liquido ~1:2–1:3, ≥8 h in frigo — la versione con soia è
+> standard (Misya, GialloZafferano, Melarossa, OK Salute); lo yogurt è un'aggiunta, non il liquido.
+> «Ricotta con uva e avena ammollata» **non aveva riscontro** → sostituita.
+>
+> **Struttura settimanale di David (ricette tutte riconosciute):** lun porridge/crema d'avena nel
+> latte · mar avocado toast con ricotta e pomodoro · mer overnight oats nello yogurt intero · gio
+> frullato di yogurt e avena + ricotta toast con frutta · ven uovo strapazzato con pomodoro e pane ·
+> sab frittelle di avena e banana · **dom toast con burro di arachidi e banana** + frutta di stagione
+> a lato (sicurezza: burro spalmato sottile, mai a cucchiaiate).
+>
 > ### 📋 Regole FISSE colazioni (NON negoziabili, valgono anche per i mesi futuri)
 > 1. **Yogurt greco → SEMPRE 0% (senza grassi):** nelle ricette il nome è "Yogurt greco 0%" e in
 >    `prodotti.json` il prodotto `yogurt_greco` è "Yogurt greco 0% (senza grassi)". (Lo usa solo
