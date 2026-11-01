@@ -319,5 +319,29 @@
     "unita": "g",
     "scadenza": "Fresco · 3–4 giorni",
     "ricerca": "basilico fresco"
+  },
+  "kiwi": {
+    "nome": "Kiwi",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 settimane (matura a temperatura ambiente)",
+    "ricerca": "kiwi"
+  },
+  "cachi": {
+    "nome": "Cachi",
+    "fornitore": "montagnola",
+    "confezione": 500,
+    "unita": "g",
+    "scadenza": "Fresco · consumare quando ben maturo",
+    "ricerca": "cachi"
+  },
+  "clementine": {
+    "nome": "Clementine",
+    "fornitore": "montagnola",
+    "confezione": 1000,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 settimane",
+    "ricerca": "clementine"
   }
 }

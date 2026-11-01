@@ -1,26 +1,30 @@
 {
-  "etichetta": "Settembre 2026 · Roma",
-  "mese": "Settembre 2026",
+  "etichetta": "Novembre 2026 · Roma",
+  "mese": "Novembre 2026",
   "citta": "Roma",
-  "inizioCiclo": "2026-09-07",
-  "scadenza": "2026-09-30",
+  "inizioCiclo": "2026-10-26",
+  "scadenza": "2026-11-30",
   "fruttaDiStagione": [
-    "Uva",
-    "Fichi",
-    "Pere",
     "Mele",
-    "Pesche",
-    "Susine",
-    "More",
-    "Lamponi"
+    "Pere",
+    "Kiwi",
+    "Cachi",
+    "Clementine",
+    "Mandarini",
+    "Arance",
+    "Melagrana",
+    "Castagne"
   ],
   "verduraDiStagione": [
-    "Pomodori",
-    "Zucchine",
     "Spinaci",
-    "Melanzane",
-    "Peperoni",
-    "Insalata",
-    "Basilico"
+    "Broccoli",
+    "Cavolfiore",
+    "Cavolo nero",
+    "Zucca",
+    "Finocchi",
+    "Carciofi",
+    "Radicchio",
+    "Bietole",
+    "Rucola"
   ]
 }

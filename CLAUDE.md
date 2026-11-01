@@ -36,8 +36,12 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
   vellutato** nei frullati, **tofu strapazzato** come piatto. La ricotta NON è un'alternativa (latticino).
 - **Struttura fissa senza yogurt e senza uovo tutti i giorni:**
   - **Martedì:** frullato di frutta **con soia** e semi di chia (niente albumi).
-  - **Venerdì:** **pane integrale con pomodoro e hummus di ceci** (hummus *opzionale*; 100% ceci,
-    senza additivi, o fatto in casa) — niente yogurt, niente uovo.
+  - **Venerdì:** **toast con hummus di ceci** + verdura di stagione — estate: pomodoro e basilico;
+    autunno/inverno: **spinaci novelli** (hummus *opzionale*; 100% ceci, senza additivi, o fatto in
+    casa) — niente yogurt, niente uovo. Mercoledì gli albumi seguono la stessa logica (estate pomodoro
+    e basilico, autunno/inverno **albumi strapazzati con spinaci**).
+  - **Niente banana per Flavio** (IG medio): nei suoi frullati e porridge usare frutta a IG basso
+    (mela, pera, kiwi, frutti di bosco, agrumi).
   - **Domenica:** avena ammollata overnight **con soia e chia** + frullato di frutta **con soia**.
   - Lun/Mer/Sab: albumi (2). Gio: porridge + soia.
 
@@ -156,10 +160,25 @@ Regole:
 > «Ricotta con uva e avena ammollata» **non aveva riscontro** → sostituita.
 >
 > **Struttura settimanale di David (ricette tutte riconosciute):** lun porridge/crema d'avena nel
-> latte · mar avocado toast con ricotta e pomodoro · mer overnight oats nello yogurt intero · gio
-> frullato di yogurt e avena + ricotta toast con frutta · ven uovo strapazzato con pomodoro e pane ·
-> sab frittelle di avena e banana · **dom toast con burro di arachidi e banana** + frutta di stagione
-> a lato (sicurezza: burro spalmato sottile, mai a cucchiaiate).
+> latte · mar avocado toast con ricotta (+ pomodoro solo d'estate) · mer overnight oats nello yogurt
+> intero · gio frullato di yogurt e avena + ricotta toast con frutta · ven uovo strapazzato con verdura
+> di stagione (estate pomodoro, autunno/inverno **spinaci** ben cotti e tritati) e pane · sab frittelle
+> di avena e banana · **dom toast con burro di arachidi e banana** + frutta di stagione a lato
+> (sicurezza: burro spalmato sottile, mai a cucchiaiate). **Mela per David: sempre grattugiata o
+> cotta, mai a pezzi crudi** (anti-soffocamento); cachi ben maturo a cucchiaio.
+>
+> 🛠️ **Generatore:** `scripts/genera-colazioni.py` (`python scripts/genera-colazioni.py`). Ogni mese
+> si aggiunge una voce in `MENU` (città, `stagione` estate/autunno, frutta per giorno) e si imposta
+> `LIVE`; scrive `colazioni.json` + snapshot in `_staging/` e stampa i controlli delle regole (yogurt
+> David ≤2, niente yogurt né banana per Flavio, albumi ≤3 giorni e ≤2 a pasto, niente uovo+avocado,
+> istruzioni presenti, sett. 2=1 e 4=3). Le combinazioni nuove vanno **verificate sul web prima**.
+> Verificate il 05/10/2026 (ottobre Roma): porridge alla mela grattugiata e alle pere, overnight oats
+> mela e pere, frullato kiwi-mela con soia, toast ricotta e pere, avocado toast con ricotta, uova e
+> albumi strapazzati con spinaci, toast hummus e spinaci. Scartati: overnight oats ai cachi (nessun
+> riscontro solido). Verificate l'01/11/2026 (novembre Roma): porridge con kiwi; stagionalità di
+> novembre (mele, pere, kiwi, cachi, clementine/mandarini, arance, melagrana, castagne; uva esclusa).
+> Scartato: frullato kiwi-arancia con soia (nessun riscontro esatto). **Clementine/mandarini per
+> David: pelati a vivo, senza semi né pellicine, a pezzetti piccoli — mai spicchi interi.**
 >
 > ### 📋 Regole FISSE colazioni (NON negoziabili, valgono anche per i mesi futuri)
 > 1. **Yogurt greco → SEMPRE 0% (senza grassi):** nelle ricette il nome è "Yogurt greco 0%" e in
@@ -172,7 +191,8 @@ Regole:
 >    completa** — tipo di frullato, ingredienti (con `prodotto`, così entra nella **spesa**) e
 >    `istruzioni`. Vietato lasciarlo come semplice bevanda "Frullato" senza dettagli.
 > 4. **Avocado toast (David + Lena), una volta a settimana — MARTEDÌ, con RICOTTA e SENZA uovo:**
->    pane integrale fresco + **ricotta** (proteine) + avocado + pomodoro. 🔴 **MAI uovo e avocado
+>    pane integrale fresco + **ricotta** (proteine) + avocado (+ pomodoro **solo in estate**, quando è
+>    di stagione; da ottobre a maggio avocado toast con sola ricotta). 🔴 **MAI uovo e avocado
 >    insieme** — l'uovo è un altro giorno (venerdì). Ogni volta che c'è l'avocado toast, va **sempre**
 >    la ricotta (dà le proteine che senza uovo mancherebbero). Nelle istruzioni ricordare entrambe le
 >    cose. Sicurezza David: avocado schiacciato/a fettine, ricotta liscia, pane e pomodoro a pezzetti
@@ -225,7 +245,15 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 - **Le chiavi fornitore restano stabili** (`montagnola` / `specialita_di_parma` / `mezza_rosetta` /
   `online`); cambiano solo **nome, tipo, accesso, mappa** in `spesa.json` per adattarsi alla zona del
   mese. **Ogni prodotto** è instradato al negozio dal campo `fornitore` in `prodotti.json`.
-- **Città corrente: ROMA dal 07/09/2026** (prima Longostagno, ago 2026, archiviato). I testi
+- **Città corrente: ROMA dal 07/09/2026** (prima Longostagno, ago 2026, archiviato). Menù attivo:
+  **Novembre 2026 · Roma, fino al 30/11** (ciclo dal lunedì 26/10: Sett.1 = 26/10–01/11, Sett.2 = 02–08/11, Sett.3 = 09–15/11, Sett.4 = 16–22/11, poi Sett.1 dal 23/11). 🔔 **Prossima
+  rigenerazione: ~21/11/2026** per **dicembre** — chiedere conferma della città.
+  ⚠️ **Incidente ottobre 2026:** il menù di ottobre fu generato il 05/10 ma la sessione si interruppe
+  prima di commit e push → per tutto ottobre l'app mostrò ancora settembre (frutta estiva). Ottobre non
+  è mai andato online e non è archiviato (in archivio `2026-09` è ciò che si è visto in set–ott).
+  🔴 **Regola:** una rigenerazione è finita solo quando **commit + push + deploy riuscito + sito
+  pubblicato verificato** (il bundle online contiene il titolo del nuovo menù). Mai chiudere prima.
+  I testi
   dell'app sono data-driven da `spesa.json` (`nome`, `modalita`, `tipo`, `accesso`, `mappa`):
   cambiando città si cambia solo quel file, mai il codice. L'elenco qui sotto è l'esempio
   Longostagno; i negozi di Roma stanno in «Cambio città».
