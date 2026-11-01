@@ -285,6 +285,15 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 
 ---
 
+## 📣 Avviso a tempo (pop-up all'apertura)
+
+`src/components/AvvisoAggiornamento.jsx`, montato in `App.jsx` (solo app Colazioni). Testi e date in
+**`src/data/avviso.json`**: si mostra solo tra `dal` e `fino` (date locali, estremi inclusi), una volta
+al giorno per dispositivo (chiuso con un bottone, ricompare il giorno dopo se ancora nel periodo).
+Bottoni: «Vedi la lista della spesa» (apre Spesa) e «Ho capito». Per un nuovo avviso: cambiare `id`,
+date e testi; per spegnerlo `"attivo": false`. Uso tipico: dopo ogni rigenerazione del mese, 2–3
+giorni di avviso «controllate colazioni e spesa». Primo uso: 01–03/11/2026 (menù di novembre).
+
 ## 🎬 Video
 
 - Per ogni preparazione un link "**Guarda come si prepara …**" che apre la **ricerca YouTube**

@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import BottomNav from './components/BottomNav.jsx'
+import AvvisoAggiornamento from './components/AvvisoAggiornamento.jsx'
 import Oggi from './views/Oggi.jsx'
 import Settimane from './views/Settimane.jsx'
 import Spesa from './views/Spesa.jsx'
@@ -24,6 +25,9 @@ export default function App() {
       </main>
 
       <BottomNav />
+
+      {/* Avviso a tempo (date e testi in src/data/avviso.json) */}
+      <AvvisoAggiornamento />
     </div>
   )
 }
