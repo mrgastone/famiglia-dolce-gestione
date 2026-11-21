@@ -48,8 +48,13 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
 ### David (bambino)
 - **Nato il 30 novembre 2022.** Calcola SEMPRE l'età attuale da questa data (regola GENERALE, a
   ogni rigenerazione) e **adatta le dosi alla crescita**: man mano che cresce, porzioni ed energia
-  aumentano gradualmente, con consistenze adatte all'età. Aggiorna il campo `eta` in
-  `src/data/profili.json`. (Ago 2026 ≈ 3 anni e 9 mesi.)
+  aumentano gradualmente, con consistenze adatte all'età. L'età mostrata nell'app è **calcolata da
+  sola** da `dataNascita` (`etaDa` in `src/lib/profilo.js`); il campo `eta` di `profili.json` è solo
+  un ripiego. Le dosi stanno in `DOSI_DAVID` nel generatore: **`'3anni'`** fino a novembre 2026,
+  **`'4anni'`** da dicembre 2026 (~+10%, dentro le forbici 4–6 anni: avena 30–40 g, pane 40–50 g,
+  latte 100–200 ml — AUSL Bologna, DORS). Prossimo scalino da valutare a 5 anni (nov 2027).
+  ℹ️ Plasmon indica il latte parzialmente scremato dai 4 anni: **l'utente ha scelto il latte intero
+  per tutti**, non cambiarlo senza richiesta.
 - Uovo **INTERO**, latte e **yogurt INTERO** (`yogurt_intero`, mai il greco 0% degli adulti).
 - **Niente zuccheri aggiunti**, nessuna restrizione glicemica.
 - Regola principale: **solo cibi sani per la normale crescita** di un bambino.
@@ -168,10 +173,17 @@ Regole:
 > cotta, mai a pezzi crudi** (anti-soffocamento); cachi ben maturo a cucchiaio.
 >
 > 🛠️ **Generatore:** `scripts/genera-colazioni.py` (`python scripts/genera-colazioni.py`). Ogni mese
-> si aggiunge una voce in `MENU` (città, `stagione` estate/autunno, frutta per giorno) e si imposta
-> `LIVE`; scrive `colazioni.json` + snapshot in `_staging/` e stampa i controlli delle regole (yogurt
-> David ≤2, niente yogurt né banana per Flavio, albumi ≤3 giorni e ≤2 a pasto, niente uovo+avocado,
-> istruzioni presenti, sett. 2=1 e 4=3). Le combinazioni nuove vanno **verificate sul web prima**.
+> si aggiunge una voce in `MENU` (città, `stagione` estate/autunno/inverno, `dosiDavid`, frutta per
+> giorno) e si impostano **`LIVE`** (mese in corso → `colazioni.json` + snapshot `_staging/`) e
+> **`PROSSIMO`** (mese dopo → `src/data/prossimo/colazioni.json`, vedi «Passaggio automatico»).
+> Alla fine lancia da solo il **verificatore** `scripts/controlla-colazioni.py` (usabile anche da
+> solo, `--elenco` per la lista delle colazioni): 19 controlli su menù in corso E mese dopo —
+> struttura, sett. 2=1 e 4=3, istruzioni passo per passo, misure (liquidi ml, uova N°), prodotti
+> esistenti, niente zuccheri/ultra-processati, yogurt David intero ≤2/sett. e avena ammollata, latte
+> intero, avocado martedì con ricotta e mai con l'uovo, struttura dei giorni di David e Flavio,
+> avvisi anti-soffocamento, Flavio senza latticini/banana con albumi ≤2 solo lun/mer/sab e frutta a
+> IG basso, frutta/verdura di stagione (`stagione.json`). Esce con errore se una regola salta.
+> Le combinazioni nuove vanno **verificate sul web prima**.
 > Verificate il 05/10/2026 (ottobre Roma): porridge alla mela grattugiata e alle pere, overnight oats
 > mela e pere, frullato kiwi-mela con soia, toast ricotta e pere, avocado toast con ricotta, uova e
 > albumi strapazzati con spinaci, toast hummus e spinaci. Scartati: overnight oats ai cachi (nessun
@@ -179,6 +191,13 @@ Regole:
 > novembre (mele, pere, kiwi, cachi, clementine/mandarini, arance, melagrana, castagne; uva esclusa).
 > Scartato: frullato kiwi-arancia con soia (nessun riscontro esatto). **Clementine/mandarini per
 > David: pelati a vivo, senza semi né pellicine, a pezzetti piccoli — mai spicchi interi.**
+> Verificate il 21/11/2026 (dicembre Roma): stagionalità (Cookist, Wisesociety, Viversano, Il
+> Giornale del Cibo, dica33: agrumi protagonisti, kiwi, mele, pere; cachi ancora presenti ma molto
+> zuccherini → non usati); **porridge all'arancia** per Flavio (GialloZafferano «Bilancia e
+> Bilancieri»: avena + bevanda di soia + acqua + scorza in cottura, succo a fuoco spento, spicchi
+> sopra; Ricettasprint). Scartato: frullato kiwi-pera con soia (nessun riscontro esatto). **Arance
+> per David: come le clementine** (pelate a vivo, senza semi né pellicine, a pezzetti), solo come
+> frutta a lato.
 >
 > ### 📋 Regole FISSE colazioni (NON negoziabili, valgono anche per i mesi futuri)
 > 1. **Yogurt greco → SEMPRE 0% (senza grassi):** nelle ricette il nome è "Yogurt greco 0%" e in
@@ -245,9 +264,12 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 - **Le chiavi fornitore restano stabili** (`montagnola` / `specialita_di_parma` / `mezza_rosetta` /
   `online`); cambiano solo **nome, tipo, accesso, mappa** in `spesa.json` per adattarsi alla zona del
   mese. **Ogni prodotto** è instradato al negozio dal campo `fornitore` in `prodotti.json`.
-- **Città corrente: ROMA dal 07/09/2026** (prima Longostagno, ago 2026, archiviato). Menù attivo:
-  **Novembre 2026 · Roma, fino al 30/11** (ciclo dal lunedì 26/10: Sett.1 = 26/10–01/11, Sett.2 = 02–08/11, Sett.3 = 09–15/11, Sett.4 = 16–22/11, poi Sett.1 dal 23/11). 🔔 **Prossima
-  rigenerazione: ~21/11/2026** per **dicembre** — chiedere conferma della città.
+- **Città corrente: ROMA dal 07/09/2026** (prima Longostagno, ago 2026, archiviato). Menù in corso:
+  **Novembre 2026 · Roma fino a domenica 29/11** (ciclo dal lunedì 26/10; Sett.1 di nuovo dal 23/11).
+  **Dicembre 2026 · Roma già pronto in `src/data/prossimo/`, parte DA SOLO lunedì 30/11** (pubblicato
+  il 21/11): Sett.1 = 30/11–06/12, Sett.2 = 07–13/12, Sett.3 = 14–20/12, Sett.4 = 21–27/12, poi
+  Sett.1 dal 28/12 al 03/01. 🔔 **Prossima rigenerazione: ~21/12/2026** per **gennaio 2027** (ciclo
+  da lunedì 04/01/2027) — chiedere conferma della città, poi seguire «Passaggio automatico».
   ⚠️ **Incidente ottobre 2026:** il menù di ottobre fu generato il 05/10 ma la sessione si interruppe
   prima di commit e push → per tutto ottobre l'app mostrò ancora settembre (frutta estiva). Ottobre non
   è mai andato online e non è archiviato (in archivio `2026-09` è ciò che si è visto in set–ott).
@@ -266,6 +288,11 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
     **mercoledì, giovedì, venerdì**; **Venerdì** (`venerdi`) per le colazioni di **sabato, domenica,
     lunedì e martedì** (copre fino al giro del martedì successivo). Insieme coprono tutti e 7 i
     giorni. Ognuno ha la **copia WhatsApp** (`testoFrutta`). Chiavi in `GIRI_FRUTTA`.
+    ⚠️ Lunedì e martedì del giro del venerdì sono quelli della **settimana DOPO**
+    (`giorniSettimanaDopo`): per la settimana in corso si guarda il **calendario** (può essere già
+    il mese dopo: venerdì 27/11 compra per lunedì 30/11 col menù di dicembre), per le altre la
+    settimana successiva del ciclo (4→1). Fino al 21/11/2026 si usavano per errore lunedì/martedì
+    della stessa settimana (sbagliato ai passaggi 2→3 e 4→1).
   - `mezza_rosetta` = **Alimentari sotto casa (Handlung / Generi Misti)** — **a piedi, orari
     limitati**: pane (regola **fissa**, campo `fissi`) + latte + acqua + emergenze. Mostra l'avviso
     `orari` in giallo. Il pane resta `fisso`: i prodotti `pane*` sono **esclusi** dal calcolo.
@@ -292,7 +319,9 @@ Solo testo del "giro unico" e nomi dei fornitori. **Le quantità sono CALCOLATE*
 al giorno per dispositivo (chiuso con un bottone, ricompare il giorno dopo se ancora nel periodo).
 Bottoni: «Vedi la lista della spesa» (apre Spesa) e «Ho capito». Per un nuovo avviso: cambiare `id`,
 date e testi; per spegnerlo `"attivo": false`. Uso tipico: dopo ogni rigenerazione del mese, 2–3
-giorni di avviso «controllate colazioni e spesa». Primo uso: 01–03/11/2026 (menù di novembre).
+giorni di avviso «controllate colazioni e spesa». Primo uso: 01–03/11/2026 (menù di novembre);
+secondo: 30/11–02/12/2026 (menù di dicembre, preparato in anticipo: le date coincidono con
+l'`inizioCiclo` del mese dopo, così l'avviso compare il giorno stesso del passaggio automatico).
 
 ## 🎬 Video
 
@@ -343,6 +372,30 @@ mese, così la frutta e la verdura sono **di stagione E di zona**. Usare quella 
 **Etichetta "Mese Anno · Città"** (es. `Luglio 2026 · Roma`) va mostrata in **Oggi, Settimane, Spesa
 e Archivio** (componente `EtichettaStagione`, legge `stagione.etichetta`).
 
+### 🔁 Passaggio automatico al mese dopo (`src/data/prossimo/`) — dal 21/11/2026
+Il mese successivo si prepara **in anticipo** e parte **da solo** il lunedì del suo `inizioCiclo`,
+senza dover pubblicare nulla quel giorno (l'app è già nel bundle e nella cache PWA):
+- **Due slot:** `colazioni.json` + `stagione.json` = mese **in corso**; `prossimo/colazioni.json` +
+  `prossimo/stagione.json` = mese **dopo** (`{}` quando non c'è).
+- **Unico punto di lettura:** `menuAttivo()` in `src/lib/menuAttivo.js` (scelta pura in
+  `src/lib/sceltaMenu.js`). 🔴 Le viste **non** importano più direttamente `data/colazioni.json` /
+  `data/stagione.json`. Da `inizioCiclo` del prossimo (mezzanotte locale) Oggi, Settimane, Spesa ed
+  etichetta passano al mese dopo e la settimana riparte da 1.
+- **Prima del passaggio** «Settimane» mostra le schede «Mese in corso / Mese dopo · dal gg/mm» con
+  l'**anteprima**; **dopo**, «Archivio» mostra il mese appena finito come mese passato (finché non
+  viene archiviato davvero).
+- **Test:** `node scripts/test-passaggio-mese.mjs` (cambio di mese, mezzanotte, settimane fino al
+  03/01, giro del venerdì, età di David). Per provarlo nel browser: spostare temporaneamente
+  `prossimo/stagione.json` → `inizioCiclo` al lunedì di questa settimana, poi **rimetterlo**.
+- **Al giro dopo (~21/12/2026, gennaio):**
+  1. `node scripts/promuovi-prossimo.mjs` — archivia il mese in corso (novembre) in `archivio.json`,
+     il mese dopo (dicembre) diventa in corso, `prossimo/` torna `{}`. Rifiuta se il mese dopo non è
+     ancora partito (provarlo su una copia: `--dati <cartella> --forza`).
+  2. Nel generatore: `LIVE = 'roma-dicembre'`, nuova voce `MENU` per gennaio, `PROSSIMO = 'roma-gennaio'`.
+  3. Scrivere a mano `prossimo/stagione.json` (etichetta, mese, città, `inizioCiclo` = lunedì,
+     frutta/verdura di stagione) e un nuovo `avviso.json` con `dal` = quell'`inizioCiclo`.
+  4. `python scripts/genera-colazioni.py` (0 errori), build, commit, push, verifica online.
+
 ### Archivio (`src/data/archivio.json`) — storico ultimi 6 mesi
 - Contiene SOLO i **mesi passati**, voci più recenti per prime:
   `[{ "id": "2026-06", "etichetta": "Giugno 2026 · Roma", "citta": "Roma", "colazioni": { …4 settimane… } }]`
@@ -371,17 +424,23 @@ toccare quello attivo:
   MPREIS Soprabolzano / Alimentari sotto casa (Handlung).
 
 ### Checklist rigenerazione
+> Dal 21/11/2026 il mese nuovo si scrive in **`src/data/prossimo/`** e parte da solo: vedi
+> «Passaggio automatico al mese dopo» (passi 2–3 qui sotto = `promuovi-prossimo.mjs` + il nuovo
+> `prossimo/stagione.json`).
 1. **Chiedi la città** all'utente (regola fissa).
 2. **Archivia il mese che finisce**: aggiungi in cima ad `archivio.json` una voce con l'attuale
    `stagione.etichetta` e l'attuale contenuto di `colazioni.json`; poi taglia a 6 voci.
 3. **Aggiorna `stagione.json`**: `etichetta` ("Mese Anno · Città"), `mese`, `citta`, `inizioCiclo`
    (un lunedì), `scadenza`, frutta/verdura di stagione di quel mese in quella città.
-4. **Ricalcola l'età di David** (nato 2022-11-30), aggiorna `profili.json` `eta`, adatta le porzioni.
+4. **Ricalcola l'età di David** (nato 2022-11-30) e adatta le porzioni (`DOSI_DAVID`); l'età
+   mostrata si aggiorna da sola.
 5. **Riscrivi `colazioni.json`** (4×7×2) coi principi: titoli in italiano, ingredienti annidati nelle
    `preparazioni`, uova/albumi a numero, resto in grammi, `sicurezza` David solo nei giorni a rischio,
    niente ultra-processati né zuccheri aggiunti, bevande con dosi (acqua **naturale**).
    **Genera solo 2 menù** (settimane 1 e 3) e **duplicali** (Sett. 2 = Sett. 1, Sett. 4 = Sett. 3).
    **Solo i profili `flavio` e `david`**: il menu di David vale anche per Lena via `condivisoCon`
    (non creare un profilo/menu separato per Lena).
-6. **Aggiorna `prodotti.json`** se servono nuovi ingredienti.
-7. `npm run build`, poi commit + push (deploy automatico). Spesa e Settimane si aggiornano da sole.
+6. **Aggiorna `prodotti.json`** se servono nuovi ingredienti (anche `_staging/<città>-prodotti.json`).
+7. **`python scripts/controlla-colazioni.py`** → 0 errori (lo lancia già il generatore).
+8. `npm run build`, poi commit + push (deploy automatico), `gh run watch`, e verifica che il bundle
+   online contenga l'etichetta del nuovo mese. Spesa e Settimane si aggiornano da sole.

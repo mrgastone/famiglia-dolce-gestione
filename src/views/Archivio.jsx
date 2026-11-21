@@ -1,20 +1,26 @@
 import { useState } from 'react'
 import { Archive } from 'lucide-react'
 import archivio from '../data/archivio.json'
-import colazioniCorrenti from '../data/colazioni.json'
-import stagione from '../data/stagione.json'
 import GrigliaSettimanale from '../components/GrigliaSettimanale.jsx'
+import { menuAttivo } from '../lib/menuAttivo.js'
 
 // Archivio storico: mese in corso + mesi precedenti (ultimi 6), consultabili.
 // `archivio.json` contiene le voci passate: { id, etichetta, citta, colazioni }.
+// Dopo il passaggio automatico al mese dopo, il mese appena finito (ancora in
+// colazioni.json finché non lo si archivia) compare qui come mese passato.
 export default function Archivio() {
+  const { colazioni, stagione, precedente } = menuAttivo()
   const corrente = {
     id: 'corrente',
     etichetta: stagione.etichetta,
-    colazioni: colazioniCorrenti,
+    colazioni,
     inCorso: true,
   }
-  const mesi = [corrente, ...archivio]
+  const appenaFinito =
+    precedente && !archivio.some((a) => a.etichetta === precedente.stagione.etichetta)
+      ? [{ id: 'precedente', etichetta: precedente.stagione.etichetta, colazioni: precedente.colazioni }]
+      : []
+  const mesi = [corrente, ...appenaFinito, ...archivio].slice(0, 7)
   const [selId, setSelId] = useState('corrente')
   const sel = mesi.find((m) => m.id === selId) ?? corrente
 
@@ -50,7 +56,7 @@ export default function Archivio() {
         })}
       </div>
 
-      {archivio.length === 0 ? (
+      {mesi.length === 1 ? (
         <p className="text-stone-400 text-sm rounded-2xl bg-white shadow-card p-4">
           Ancora nessun mese archiviato. Il mese in corso ({stagione.etichetta}) entrerà
           nell'archivio quando genereremo il mese successivo. Verranno conservati gli ultimi 6 mesi.

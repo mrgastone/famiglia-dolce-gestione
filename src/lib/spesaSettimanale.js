@@ -1,8 +1,10 @@
-import colazioni from '../data/colazioni.json'
 import prodotti from '../data/prodotti.json'
 import profili from '../data/profili.json'
 import spesa from '../data/spesa.json'
 import { porzioniProfilo } from './profilo.js'
+import { menuAttivo } from './menuAttivo.js'
+import { prossimoLunedi } from './sceltaMenu.js'
+import { settimanaDelCiclo } from './settimana.js'
 
 // Quante porzioni preparare per ogni profilo (David è condiviso con Lena → 2).
 // La spesa conta le quantità di quel profilo moltiplicate per queste porzioni.
@@ -24,19 +26,48 @@ const TUTTI_GIORNI = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab', 'dom']
 //  - VENERDÌ  → colazioni di sabato, domenica, lunedì E martedì (copre fino al giro successivo)
 // Insieme coprono tutti e 7 i giorni della settimana.
 export const GIRI_FRUTTA = ['martedi', 'venerdi']
+// Il venerdì compra per sabato e domenica di QUESTA settimana e per lunedì e martedì
+// della settimana DOPO (`giorniSettimanaDopo`).
 const INFO_FRUTTA = {
   martedi: { nome: 'Martedì', giorni: ['mer', 'gio', 'ven'], copre: 'mercoledì, giovedì e venerdì' },
-  venerdi: { nome: 'Venerdì', giorni: ['sab', 'dom', 'lun', 'mar'], copre: 'sabato, domenica, lunedì e martedì' },
+  venerdi: {
+    nome: 'Venerdì',
+    giorni: ['sab', 'dom'],
+    giorniSettimanaDopo: ['lun', 'mar'],
+    copre: 'sabato, domenica, lunedì e martedì',
+  },
 }
 export function infoFrutta(giro) {
   return INFO_FRUTTA[giro]
 }
 
-// Somma le quantità usate per prodotto, nei giorni indicati, per entrambi i profili.
-// Gli ingredienti sono annidati dentro le preparazioni.
-function totaliPerGiorni(settimana, giorni) {
-  const dati = colazioni[String(settimana)] ?? {}
+// Da quale menù e settimana prendere lunedì/martedì del giro del venerdì.
+//  - Settimana mostrata = quella in corso → si guarda il calendario: la settimana dopo può
+//    essere già il MESE DOPO (es. venerdì 27/11 compra per lunedì 30/11 col menù di dicembre).
+//  - Altra settimana → la successiva del ciclo (1→2, 2→3, 3→4, 4→1) nello stesso menù.
+function settimanaDopo(settimana, oggi) {
+  if (settimana === settimanaDelCiclo(oggi)) {
+    const lunedi = prossimoLunedi(oggi)
+    return { colazioni: menuAttivo(lunedi).colazioni, settimana: settimanaDelCiclo(lunedi) }
+  }
+  return { colazioni: menuAttivo(oggi).colazioni, settimana: (settimana % 4) + 1 }
+}
+
+// Somma le quantità usate per prodotto, per entrambi i profili, su una lista di fonti
+// [{ colazioni, settimana, giorni }]. Gli ingredienti sono annidati dentro le preparazioni.
+function totali(fonti) {
   const somma = {}
+  for (const { colazioni, settimana, giorni } of fonti) {
+    aggiungi(somma, colazioni?.[String(settimana)] ?? {}, giorni)
+  }
+  return somma
+}
+
+function totaliPerGiorni(settimana, giorni, oggi = new Date()) {
+  return totali([{ colazioni: menuAttivo(oggi).colazioni, settimana, giorni }])
+}
+
+function aggiungi(somma, dati, giorni) {
   for (const g of giorni) {
     const giorno = dati[g]
     if (!giorno) continue
@@ -56,7 +87,6 @@ function totaliPerGiorni(settimana, giorni) {
       }
     }
   }
-  return somma
 }
 
 function formattaMisura(valore, unita) {
@@ -154,10 +184,14 @@ export function spesaAlimentari(settimana) {
 }
 
 // Frutta e verdura dal fruttivendolo (bus 165): fornitore montagnola, per giro (inizio/fine).
-export function spesaFrutta(settimana, giro) {
-  const giorni = INFO_FRUTTA[giro]?.giorni ?? []
-  const somma = totaliPerGiorni(settimana, giorni)
-  return righeDa(somma, (r) => r.fornitore === 'montagnola')
+export function spesaFrutta(settimana, giro, oggi = new Date()) {
+  const info = INFO_FRUTTA[giro]
+  if (!info) return []
+  const fonti = [{ colazioni: menuAttivo(oggi).colazioni, settimana, giorni: info.giorni }]
+  if (info.giorniSettimanaDopo) {
+    fonti.push({ ...settimanaDopo(settimana, oggi), giorni: info.giorniSettimanaDopo })
+  }
+  return righeDa(totali(fonti), (r) => r.fornitore === 'montagnola')
 }
 
 // Testo pronto per WhatsApp con la lista frutta/verdura di un giro, da inviare a chi ci va.

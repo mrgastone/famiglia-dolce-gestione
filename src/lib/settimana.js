@@ -1,4 +1,5 @@
-import stagione from '../data/stagione.json'
+import { menuAttivo } from './menuAttivo.js'
+import { dataLocale } from './sceltaMenu.js'
 
 // Regola fissa: per semplificare preparazioni e spesa, le colazioni si ripetono a coppie.
 // Settimana 2 = Settimana 1, Settimana 4 = Settimana 3 (così ogni colazione si fa 2 volte).
@@ -24,9 +25,10 @@ function aMezzanotte(data) {
   return new Date(data.getFullYear(), data.getMonth(), data.getDate())
 }
 
-// Numero di settimana del ciclo (1..4), a rotazione a partire da stagione.inizioCiclo.
+// Numero di settimana del ciclo (1..4), a rotazione a partire dall'inizioCiclo del menù
+// attivo in quella data (dal lunedì del cambio mese riparte da 1 col menù nuovo).
 export function settimanaDelCiclo(oggi = new Date()) {
-  const inizio = aMezzanotte(new Date(stagione.inizioCiclo))
+  const inizio = dataLocale(menuAttivo(oggi).stagione.inizioCiclo)
   const giorno = aMezzanotte(oggi)
   const giorniTrascorsi = Math.floor((giorno - inizio) / 86400000)
   const settimaneTrascorse = Math.floor(giorniTrascorsi / 7)

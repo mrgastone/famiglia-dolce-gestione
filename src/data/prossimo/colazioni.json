@@ -1,0 +1,2484 @@
+{
+  "1": {
+    "lun": {
+      "flavio": {
+        "titolo": "Albumi strapazzati e porridge con mele",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Mandorle",
+                "g": 15,
+                "prodotto": "mandorle"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Grattugia la mela e uniscila all'avena, così cuoce insieme.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Mandorle."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+      },
+      "david": {
+        "titolo": "Crema d'avena nel latte con mele",
+        "preparazioni": [
+          {
+            "etichetta": "la crema d'avena nel latte",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 150,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena.",
+              "Grattugia la mela e uniscila all'avena, così cuoce insieme.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con il burro di arachidi (mescolato, liscio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Mela grattugiata o cotta, mai a pezzi crudi; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "mar": {
+      "flavio": {
+        "titolo": "Frullato kiwi-mele con soia",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di kiwi e mele con soia",
+            "ingredienti": [
+              {
+                "nome": "Kiwi",
+                "g": 80,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Kiwi e Mele.",
+              "Mettili nel frullatore con la bevanda di soia e i semi di chia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Avocado toast con ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con avocado e ricotta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 45,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Avocado",
+                "g": 50,
+                "prodotto": "avocado"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
+              "Per David: avocado ben schiacciato, ricotta liscia, pane a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane a pezzetti piccoli. Mai uovo e avocado insieme."
+      }
+    },
+    "mer": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati con spinaci",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 100,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 10,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci, falli appassire in padella 2–3 minuti, strizzali e tritali.",
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda l'olio in padella antiaderente, versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci gli spinaci, mescola e servi caldo."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Yogurt intero overnight con pere",
+        "preparazioni": [
+          {
+            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 140,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 30,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Pere",
+                "g": 70,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e completa con Pere a pezzetti piccoli e il burro di arachidi."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "gio": {
+      "flavio": {
+        "titolo": "Porridge all'arancia",
+        "preparazioni": [
+          {
+            "etichetta": "il porridge all'arancia",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 100
+              },
+              {
+                "nome": "Arancia non trattata (scorza, succo e spicchi)",
+                "g": 200,
+                "prodotto": "arance"
+              },
+              {
+                "nome": "Semi di lino macinati",
+                "g": 10,
+                "prodotto": "lino"
+              }
+            ],
+            "istruzioni": [
+              "Lava bene l'arancia (non trattata) e grattugia la scorza, solo la parte arancione.",
+              "Nel pentolino metti i fiocchi d'avena con la bevanda di soia, l'acqua e metà della scorza.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "A fuoco spento unisci il succo di mezza arancia (circa 50 ml) e mescola.",
+              "Pela a vivo l'altra metà, tagliala a spicchi e mettila sopra con la scorza rimasta e i semi di lino."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Frullato di yogurt e avena + toast di ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di yogurt e avena",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 120,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 25,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 90,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 40,
+                "prodotto": "latte_intero"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima ammolla i fiocchi d'avena in un po' di latte, in frigo.",
+              "Al mattino sbuccia e taglia a pezzi Kiwi; mettili nel frullatore con i fiocchi ammollati, lo yogurt e il latte.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          },
+          {
+            "etichetta": "il toast di ricotta e frutta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Pere",
+                "g": 50,
+                "prodotto": "pere"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma la ricotta sul pane.",
+              "Completa con Pere a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; pere a pezzetti piccoli."
+      }
+    },
+    "ven": {
+      "flavio": {
+        "titolo": "Toast con hummus e spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con hummus e spinaci",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
+              },
+              {
+                "nome": "Spinaci novelli (crudi)",
+                "g": 30,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se manca, va bene anche solo la verdura con un filo d'olio).",
+              "Lava e asciuga gli spinaci novelli e disponili crudi sull'hummus; completa con un filo d'olio extravergine.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Uovo strapazzato con spinaci e pane",
+        "preparazioni": [
+          {
+            "etichetta": "l'uovo strapazzato con spinaci",
+            "ingredienti": [
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 35,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci e falli appassire 2–3 minuti in padella con il filo d'olio, poi tritali finemente.",
+              "Sbatti l'uovo intero in una ciotola e versalo sugli spinaci.",
+              "Mescola a fuoco medio fino a ottenere un uovo cremoso e ben cotto.",
+              "Servi con il pane integrale a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Spinaci ben cotti e tritati finemente; uovo ben cotto; pane a pezzetti piccoli."
+      }
+    },
+    "sab": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con clementine e noci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il piatto di clementine e noci",
+            "ingredienti": [
+              {
+                "nome": "Clementine",
+                "g": 80,
+                "prodotto": "clementine"
+              },
+              {
+                "nome": "Noci",
+                "g": 20,
+                "prodotto": "noci"
+              }
+            ],
+            "istruzioni": [
+              "Disponi Clementine a spicchi in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frittelle di avena e banana",
+        "preparazioni": [
+          {
+            "etichetta": "le frittelle di avena e banana",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Clementine",
+                "g": 60,
+                "prodotto": "clementine"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 35,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Clementine pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Clementine pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi)."
+      }
+    },
+    "dom": {
+      "flavio": {
+        "titolo": "Avena overnight con soia e mele + frullato",
+        "preparazioni": [
+          {
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e servi."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta con soia",
+            "ingredienti": [
+              {
+                "nome": "Mele",
+                "g": 60,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 40,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Mele e Kiwi.",
+              "Mettili nel frullatore con la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Toast con burro di arachidi e banana",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con burro di arachidi e banana",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 60,
+                "prodotto": "kiwi"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Kiwi a pezzetti piccoli a lato.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
+      }
+    }
+  },
+  "2": {
+    "lun": {
+      "flavio": {
+        "titolo": "Albumi strapazzati e porridge con mele",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Mandorle",
+                "g": 15,
+                "prodotto": "mandorle"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Grattugia la mela e uniscila all'avena, così cuoce insieme.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Mandorle."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+      },
+      "david": {
+        "titolo": "Crema d'avena nel latte con mele",
+        "preparazioni": [
+          {
+            "etichetta": "la crema d'avena nel latte",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 150,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena.",
+              "Grattugia la mela e uniscila all'avena, così cuoce insieme.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con il burro di arachidi (mescolato, liscio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Mela grattugiata o cotta, mai a pezzi crudi; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "mar": {
+      "flavio": {
+        "titolo": "Frullato kiwi-mele con soia",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di kiwi e mele con soia",
+            "ingredienti": [
+              {
+                "nome": "Kiwi",
+                "g": 80,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Kiwi e Mele.",
+              "Mettili nel frullatore con la bevanda di soia e i semi di chia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Avocado toast con ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con avocado e ricotta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 45,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Avocado",
+                "g": 50,
+                "prodotto": "avocado"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
+              "Per David: avocado ben schiacciato, ricotta liscia, pane a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane a pezzetti piccoli. Mai uovo e avocado insieme."
+      }
+    },
+    "mer": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati con spinaci",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 100,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 10,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci, falli appassire in padella 2–3 minuti, strizzali e tritali.",
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda l'olio in padella antiaderente, versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci gli spinaci, mescola e servi caldo."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Yogurt intero overnight con pere",
+        "preparazioni": [
+          {
+            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 140,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 30,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Pere",
+                "g": 70,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e completa con Pere a pezzetti piccoli e il burro di arachidi."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "gio": {
+      "flavio": {
+        "titolo": "Porridge all'arancia",
+        "preparazioni": [
+          {
+            "etichetta": "il porridge all'arancia",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 100
+              },
+              {
+                "nome": "Arancia non trattata (scorza, succo e spicchi)",
+                "g": 200,
+                "prodotto": "arance"
+              },
+              {
+                "nome": "Semi di lino macinati",
+                "g": 10,
+                "prodotto": "lino"
+              }
+            ],
+            "istruzioni": [
+              "Lava bene l'arancia (non trattata) e grattugia la scorza, solo la parte arancione.",
+              "Nel pentolino metti i fiocchi d'avena con la bevanda di soia, l'acqua e metà della scorza.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "A fuoco spento unisci il succo di mezza arancia (circa 50 ml) e mescola.",
+              "Pela a vivo l'altra metà, tagliala a spicchi e mettila sopra con la scorza rimasta e i semi di lino."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Frullato di yogurt e avena + toast di ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di yogurt e avena",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 120,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 25,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 90,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 40,
+                "prodotto": "latte_intero"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima ammolla i fiocchi d'avena in un po' di latte, in frigo.",
+              "Al mattino sbuccia e taglia a pezzi Kiwi; mettili nel frullatore con i fiocchi ammollati, lo yogurt e il latte.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          },
+          {
+            "etichetta": "il toast di ricotta e frutta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Pere",
+                "g": 50,
+                "prodotto": "pere"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma la ricotta sul pane.",
+              "Completa con Pere a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; pere a pezzetti piccoli."
+      }
+    },
+    "ven": {
+      "flavio": {
+        "titolo": "Toast con hummus e spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con hummus e spinaci",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
+              },
+              {
+                "nome": "Spinaci novelli (crudi)",
+                "g": 30,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se manca, va bene anche solo la verdura con un filo d'olio).",
+              "Lava e asciuga gli spinaci novelli e disponili crudi sull'hummus; completa con un filo d'olio extravergine.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Uovo strapazzato con spinaci e pane",
+        "preparazioni": [
+          {
+            "etichetta": "l'uovo strapazzato con spinaci",
+            "ingredienti": [
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 35,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci e falli appassire 2–3 minuti in padella con il filo d'olio, poi tritali finemente.",
+              "Sbatti l'uovo intero in una ciotola e versalo sugli spinaci.",
+              "Mescola a fuoco medio fino a ottenere un uovo cremoso e ben cotto.",
+              "Servi con il pane integrale a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Spinaci ben cotti e tritati finemente; uovo ben cotto; pane a pezzetti piccoli."
+      }
+    },
+    "sab": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con clementine e noci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il piatto di clementine e noci",
+            "ingredienti": [
+              {
+                "nome": "Clementine",
+                "g": 80,
+                "prodotto": "clementine"
+              },
+              {
+                "nome": "Noci",
+                "g": 20,
+                "prodotto": "noci"
+              }
+            ],
+            "istruzioni": [
+              "Disponi Clementine a spicchi in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frittelle di avena e banana",
+        "preparazioni": [
+          {
+            "etichetta": "le frittelle di avena e banana",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Clementine",
+                "g": 60,
+                "prodotto": "clementine"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 35,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Clementine pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Clementine pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi)."
+      }
+    },
+    "dom": {
+      "flavio": {
+        "titolo": "Avena overnight con soia e mele + frullato",
+        "preparazioni": [
+          {
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e servi."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta con soia",
+            "ingredienti": [
+              {
+                "nome": "Mele",
+                "g": 60,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 40,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Mele e Kiwi.",
+              "Mettili nel frullatore con la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Toast con burro di arachidi e banana",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con burro di arachidi e banana",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 60,
+                "prodotto": "kiwi"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Kiwi a pezzetti piccoli a lato.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
+      }
+    }
+  },
+  "3": {
+    "lun": {
+      "flavio": {
+        "titolo": "Albumi strapazzati e porridge con pere",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Pere",
+                "g": 100,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Mandorle",
+                "g": 15,
+                "prodotto": "mandorle"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Pere a fettine sottili e Mandorle."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+      },
+      "david": {
+        "titolo": "Crema d'avena nel latte con pere",
+        "preparazioni": [
+          {
+            "etichetta": "la crema d'avena nel latte",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 150,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Pere",
+                "g": 70,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Pere a pezzetti piccoli e il burro di arachidi (mescolato, liscio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "mar": {
+      "flavio": {
+        "titolo": "Frullato kiwi-mele con soia",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di kiwi e mele con soia",
+            "ingredienti": [
+              {
+                "nome": "Kiwi",
+                "g": 80,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Kiwi e Mele.",
+              "Mettili nel frullatore con la bevanda di soia e i semi di chia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Avocado toast con ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con avocado e ricotta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 45,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Avocado",
+                "g": 50,
+                "prodotto": "avocado"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
+              "Per David: avocado ben schiacciato, ricotta liscia, pane a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane a pezzetti piccoli. Mai uovo e avocado insieme."
+      }
+    },
+    "mer": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati con spinaci",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 100,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 10,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci, falli appassire in padella 2–3 minuti, strizzali e tritali.",
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda l'olio in padella antiaderente, versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci gli spinaci, mescola e servi caldo."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Yogurt intero overnight con mele",
+        "preparazioni": [
+          {
+            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 140,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 30,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e completa con il burro di arachidi."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Mela grattugiata o cotta, mai a pezzi crudi; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "gio": {
+      "flavio": {
+        "titolo": "Porridge d'avena con kiwi",
+        "preparazioni": [
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Kiwi",
+                "g": 100,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Semi di lino macinati",
+                "g": 10,
+                "prodotto": "lino"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Kiwi a pezzetti e Semi di lino macinati."
+            ]
+          }
+        ],
+        "bevanda": "Soia non zuccherata (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frullato di yogurt e avena + toast di ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di yogurt e avena",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 120,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 25,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 90,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 40,
+                "prodotto": "latte_intero"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima ammolla i fiocchi d'avena in un po' di latte, in frigo.",
+              "Al mattino sbuccia e taglia a pezzi Kiwi; mettili nel frullatore con i fiocchi ammollati, lo yogurt e il latte.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          },
+          {
+            "etichetta": "il toast di ricotta e frutta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Pere",
+                "g": 50,
+                "prodotto": "pere"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma la ricotta sul pane.",
+              "Completa con Pere a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; pere a pezzetti piccoli."
+      }
+    },
+    "ven": {
+      "flavio": {
+        "titolo": "Toast con hummus e spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con hummus e spinaci",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
+              },
+              {
+                "nome": "Spinaci novelli (crudi)",
+                "g": 30,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se manca, va bene anche solo la verdura con un filo d'olio).",
+              "Lava e asciuga gli spinaci novelli e disponili crudi sull'hummus; completa con un filo d'olio extravergine.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Uovo strapazzato con spinaci e pane",
+        "preparazioni": [
+          {
+            "etichetta": "l'uovo strapazzato con spinaci",
+            "ingredienti": [
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 35,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci e falli appassire 2–3 minuti in padella con il filo d'olio, poi tritali finemente.",
+              "Sbatti l'uovo intero in una ciotola e versalo sugli spinaci.",
+              "Mescola a fuoco medio fino a ottenere un uovo cremoso e ben cotto.",
+              "Servi con il pane integrale a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Spinaci ben cotti e tritati finemente; uovo ben cotto; pane a pezzetti piccoli."
+      }
+    },
+    "sab": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con pere e noci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il piatto di pere e noci",
+            "ingredienti": [
+              {
+                "nome": "Pere",
+                "g": 80,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Noci",
+                "g": 20,
+                "prodotto": "noci"
+              }
+            ],
+            "istruzioni": [
+              "Disponi Pere a fettine sottili in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frittelle di avena e banana",
+        "preparazioni": [
+          {
+            "etichetta": "le frittelle di avena e banana",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 60,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 35,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Kiwi a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli."
+      }
+    },
+    "dom": {
+      "flavio": {
+        "titolo": "Avena overnight con soia e mele + frullato",
+        "preparazioni": [
+          {
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e servi."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta con soia",
+            "ingredienti": [
+              {
+                "nome": "Mele",
+                "g": 60,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 40,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Mele e Kiwi.",
+              "Mettili nel frullatore con la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Toast con burro di arachidi e banana",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con burro di arachidi e banana",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Arance",
+                "g": 60,
+                "prodotto": "arance"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Arance pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli a lato.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Arance pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi); burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
+      }
+    }
+  },
+  "4": {
+    "lun": {
+      "flavio": {
+        "titolo": "Albumi strapazzati e porridge con pere",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (cotti in acqua)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Pere",
+                "g": 100,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Mandorle",
+                "g": 15,
+                "prodotto": "mandorle"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Pere a fettine sottili e Mandorle."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · caffè d'orzo (1 tazzina)"
+      },
+      "david": {
+        "titolo": "Crema d'avena nel latte con pere",
+        "preparazioni": [
+          {
+            "etichetta": "la crema d'avena nel latte",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 35,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 150,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Pere",
+                "g": 70,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "Scalda il latte in un pentolino senza farlo bollire.",
+              "Unisci i fiocchi d'avena.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Pere a pezzetti piccoli e il burro di arachidi (mescolato, liscio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Pere a pezzetti piccoli; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "mar": {
+      "flavio": {
+        "titolo": "Frullato kiwi-mele con soia",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di kiwi e mele con soia",
+            "ingredienti": [
+              {
+                "nome": "Kiwi",
+                "g": 80,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 150,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Kiwi e Mele.",
+              "Mettili nel frullatore con la bevanda di soia e i semi di chia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Avocado toast con ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il pane integrale con avocado e ricotta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 45,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Avocado",
+                "g": 50,
+                "prodotto": "avocado"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale.",
+              "Spalma la ricotta sul pane (dà le proteine, visto che qui non c'è l'uovo).",
+              "Schiaccia l'avocado con una forchetta e distribuiscilo sopra la ricotta.",
+              "Per David: avocado ben schiacciato, ricotta liscia, pane a pezzetti piccoli. NON mettere MAI uovo e avocado insieme (l'uovo è un altro giorno)."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane a pezzetti piccoli. Mai uovo e avocado insieme."
+      }
+    },
+    "mer": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati con spinaci",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 100,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 10,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci, falli appassire in padella 2–3 minuti, strizzali e tritali.",
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda l'olio in padella antiaderente, versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi.",
+              "Unisci gli spinaci, mescola e servi caldo."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Yogurt intero overnight con mele",
+        "preparazioni": [
+          {
+            "etichetta": "lo yogurt intero con avena ammollata (overnight)",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 140,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 30,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Mele",
+                "g": 70,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Burro di arachidi",
+                "g": 10,
+                "prodotto": "crema_arachidi"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con lo yogurt intero e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e completa con il burro di arachidi."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Mela grattugiata o cotta, mai a pezzi crudi; burro di arachidi liscio, mai a pezzi."
+      }
+    },
+    "gio": {
+      "flavio": {
+        "titolo": "Porridge d'avena con kiwi",
+        "preparazioni": [
+          {
+            "etichetta": "il porridge d'avena",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Acqua (per cuocere l'avena)",
+                "ml": 120
+              },
+              {
+                "nome": "Kiwi",
+                "g": 100,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Semi di lino macinati",
+                "g": 10,
+                "prodotto": "lino"
+              }
+            ],
+            "istruzioni": [
+              "Versa i fiocchi d'avena nel pentolino con l'acqua indicata.",
+              "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+              "Fuori dal fuoco completa con Kiwi a pezzetti e Semi di lino macinati."
+            ]
+          }
+        ],
+        "bevanda": "Soia non zuccherata (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frullato di yogurt e avena + toast di ricotta",
+        "preparazioni": [
+          {
+            "etichetta": "il frullato di yogurt e avena",
+            "ingredienti": [
+              {
+                "nome": "Yogurt intero",
+                "g": 120,
+                "prodotto": "yogurt_intero"
+              },
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 25,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 90,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero",
+                "ml": 40,
+                "prodotto": "latte_intero"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima ammolla i fiocchi d'avena in un po' di latte, in frigo.",
+              "Al mattino sbuccia e taglia a pezzi Kiwi; mettili nel frullatore con i fiocchi ammollati, lo yogurt e il latte.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          },
+          {
+            "etichetta": "il toast di ricotta e frutta",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 35,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Ricotta",
+                "g": 40,
+                "prodotto": "ricotta"
+              },
+              {
+                "nome": "Pere",
+                "g": 50,
+                "prodotto": "pere"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma la ricotta sul pane.",
+              "Completa con Pere a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1/2 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli; pere a pezzetti piccoli."
+      }
+    },
+    "ven": {
+      "flavio": {
+        "titolo": "Toast con hummus e spinaci",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con hummus e spinaci",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 60,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Hummus di ceci (opzionale)",
+                "g": 40,
+                "prodotto": "hummus"
+              },
+              {
+                "nome": "Spinaci novelli (crudi)",
+                "g": 30,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Olio extravergine d'oliva",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente il pane integrale.",
+              "Spalma l'hummus di ceci sul pane (opzionale: se manca, va bene anche solo la verdura con un filo d'olio).",
+              "Lava e asciuga gli spinaci novelli e disponili crudi sull'hummus; completa con un filo d'olio extravergine.",
+              "Hummus 100% ceci senza additivi, o fatto in casa (ceci lessati frullati con limone e un filo d'olio)."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"
+      },
+      "david": {
+        "titolo": "Uovo strapazzato con spinaci e pane",
+        "preparazioni": [
+          {
+            "etichetta": "l'uovo strapazzato con spinaci",
+            "ingredienti": [
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Spinaci",
+                "g": 35,
+                "prodotto": "spinaci"
+              },
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Lava gli spinaci e falli appassire 2–3 minuti in padella con il filo d'olio, poi tritali finemente.",
+              "Sbatti l'uovo intero in una ciotola e versalo sugli spinaci.",
+              "Mescola a fuoco medio fino a ottenere un uovo cremoso e ben cotto.",
+              "Servi con il pane integrale a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Spinaci ben cotti e tritati finemente; uovo ben cotto; pane a pezzetti piccoli."
+      }
+    },
+    "sab": {
+      "flavio": {
+        "titolo": "Albumi strapazzati con pere e noci",
+        "preparazioni": [
+          {
+            "etichetta": "gli albumi strapazzati",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Albumi",
+                "n": 2,
+                "prodotto": "albume"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Separa gli albumi dai tuorli (tieni solo gli albumi).",
+              "Scalda un filo d'olio in padella antiaderente.",
+              "Versa gli albumi e mescola a fuoco medio finché rappresi ma morbidi."
+            ]
+          },
+          {
+            "etichetta": "il piatto di pere e noci",
+            "ingredienti": [
+              {
+                "nome": "Pere",
+                "g": 80,
+                "prodotto": "pere"
+              },
+              {
+                "nome": "Noci",
+                "g": 20,
+                "prodotto": "noci"
+              }
+            ],
+            "istruzioni": [
+              "Disponi Pere a fettine sottili in una ciotola.",
+              "Completa con le noci tritate grossolanamente."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Frittelle di avena e banana",
+        "preparazioni": [
+          {
+            "etichetta": "le frittelle di avena e banana",
+            "plurale": true,
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Uovo intero",
+                "n": 1,
+                "prodotto": "uovo"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 60,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Latte intero (per l'impasto)",
+                "ml": 35,
+                "prodotto": "latte_intero"
+              },
+              {
+                "nome": "Olio extravergine d'oliva (per cuocere)",
+                "ml": 5,
+                "prodotto": "olio_evo"
+              }
+            ],
+            "istruzioni": [
+              "Schiaccia la banana con una forchetta in una ciotola.",
+              "Unisci l'uovo, i fiocchi d'avena e il latte; mescola fino a un impasto morbido.",
+              "Scalda un filo d'olio in padella antiaderente e cuoci piccole frittelle, 1–2 minuti per lato.",
+              "Servi con Kiwi a pezzetti piccoli."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Kiwi a pezzetti piccoli."
+      }
+    },
+    "dom": {
+      "flavio": {
+        "titolo": "Avena overnight con soia e mele + frullato",
+        "preparazioni": [
+          {
+            "etichetta": "l'avena ammollata con soia e chia (overnight oats)",
+            "ingredienti": [
+              {
+                "nome": "Fiocchi d'avena (ammollati)",
+                "g": 40,
+                "prodotto": "avena"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata (per ammollare)",
+                "ml": 120,
+                "prodotto": "soia"
+              },
+              {
+                "nome": "Semi di chia",
+                "g": 10,
+                "prodotto": "chia"
+              },
+              {
+                "nome": "Mele",
+                "g": 100,
+                "prodotto": "mele"
+              }
+            ],
+            "istruzioni": [
+              "La sera prima: in un barattolo mescola i fiocchi d'avena con la bevanda di soia e i semi di chia e la mela grattugiata.",
+              "Chiudi e lascia in frigorifero tutta la notte (almeno 8 ore).",
+              "Al mattino mescola e servi."
+            ]
+          },
+          {
+            "etichetta": "il frullato di frutta con soia",
+            "ingredienti": [
+              {
+                "nome": "Mele",
+                "g": 60,
+                "prodotto": "mele"
+              },
+              {
+                "nome": "Kiwi",
+                "g": 40,
+                "prodotto": "kiwi"
+              },
+              {
+                "nome": "Bevanda di soia non zuccherata",
+                "ml": 100,
+                "prodotto": "soia"
+              }
+            ],
+            "istruzioni": [
+              "Sbuccia e taglia a pezzi Mele e Kiwi.",
+              "Mettili nel frullatore con la bevanda di soia.",
+              "Frulla fino a una bevanda liscia e omogenea; servi subito."
+            ]
+          }
+        ],
+        "bevanda": "Acqua naturale (1 bicchiere)"
+      },
+      "david": {
+        "titolo": "Toast con burro di arachidi e banana",
+        "preparazioni": [
+          {
+            "etichetta": "il toast con burro di arachidi e banana",
+            "ingredienti": [
+              {
+                "nome": "Pane integrale",
+                "g": 45,
+                "prodotto": "pane_integrale"
+              },
+              {
+                "nome": "Burro di arachidi 100%",
+                "g": 15,
+                "prodotto": "crema_arachidi"
+              },
+              {
+                "nome": "Banana",
+                "g": 70,
+                "prodotto": "banana"
+              },
+              {
+                "nome": "Arance",
+                "g": 60,
+                "prodotto": "arance"
+              }
+            ],
+            "istruzioni": [
+              "Tosta leggermente le fette di pane integrale (tostapane, padella o forno).",
+              "Spalma il burro di arachidi 100% sul pane in uno strato sottile.",
+              "Taglia la banana a rondelle e disponile sopra il burro di arachidi.",
+              "Servi con Arance pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli a lato.",
+              "Per David: burro di arachidi spalmato sottile, mai a cucchiaiate; banana a fettine sottili."
+            ]
+          }
+        ],
+        "bevanda": "Latte intero (1 bicchiere)",
+        "sicurezza": "Arance pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi); burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili."
+      }
+    }
+  }
+}

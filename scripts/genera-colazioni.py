@@ -26,8 +26,9 @@ def ig(nome, prodotto, g=None, n=None, ml=None):
 FRUTTO_NOME = {
     'pesche': 'Pesche', 'susine': 'Susine', 'more': 'More', 'uva': 'Uva', 'fichi': 'Fichi',
     'lamponi': 'Lamponi', 'mirtilli': 'Mirtilli', 'banana': 'Banana', 'mele': 'Mele', 'pere': 'Pere',
-    'kiwi': 'Kiwi', 'cachi': 'Cachi', 'clementine': 'Clementine',
+    'kiwi': 'Kiwi', 'cachi': 'Cachi', 'clementine': 'Clementine', 'arance': 'Arance',
 }
+AGRUMI = ('clementine', 'arance')
 BACCHE = ('more', 'mirtilli', 'lamponi')
 
 def fr(k, g):
@@ -41,7 +42,7 @@ def sicurezza_david(frutti, note_extra=None):
         elif f in BACCHE: parti.append(f"{FRUTTO_NOME[f].lower()} schiacciat" + ('e' if f != 'mirtilli' else 'i') + " o tagliati, mai interi")
         elif f == 'mele': parti.append("mela grattugiata o cotta, mai a pezzi crudi")
         elif f == 'cachi': parti.append("cachi ben maturo, a cucchiaio o a pezzetti piccoli")
-        elif f == 'clementine': parti.append("clementine pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi)")
+        elif f in AGRUMI: parti.append(f"{FRUTTO_NOME[f].lower()} pelate a vivo, senza semi né pellicine, a pezzetti piccoli (mai spicchi interi)")
         elif f in ('pesche', 'susine', 'fichi', 'pere', 'kiwi'): parti.append(f"{FRUTTO_NOME[f].lower()} a pezzetti piccoli")
     if note_extra: parti.append(note_extra)
     seen = set(); out = []
@@ -68,7 +69,7 @@ def taglio(i, child):
     if k in BACCHE: return f"{n} schiacciate" if child else n
     if k == 'mele': return f"{n} grattugiata"
     if k == 'cachi': return f"{n} ben maturo, a cucchiaio" if child else f"{n} a pezzetti"
-    if k == 'clementine': return f"{n} pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli" if child else f"{n} a spicchi"
+    if k in AGRUMI: return f"{n} pelate a vivo (senza semi né pellicine) e tagliate a pezzetti piccoli" if child else f"{n} a spicchi"
     if k == 'pere': return f"{n} a fettine sottili" if not child else f"{n} a pezzetti piccoli"
     return f"{n} a pezzetti piccoli" if child else f"{n} a pezzetti"
 
@@ -134,6 +135,14 @@ def istr(profilo, et, ings):
         if ha('crema_arachidi'): fin.append("il burro di arachidi")
         s.append("Al mattino mescola" + (f" e completa con {join_it(fin)}." if fin else " e servi."))
         return s
+    if 'porridge' in et and 'arancia' in et:
+        # Metodo GialloZafferano (Bilancia e Bilancieri): avena cotta in soia + acqua con la
+        # scorza; succo a fuoco spento; spicchi sopra.
+        return ["Lava bene l'arancia (non trattata) e grattugia la scorza, solo la parte arancione.",
+                "Nel pentolino metti i fiocchi d'avena con la bevanda di soia, l'acqua e metà della scorza.",
+                "Cuoci a fuoco basso 4–5 minuti mescolando, fino a una crema.",
+                "A fuoco spento unisci il succo di mezza arancia (circa 50 ml) e mescola.",
+                "Pela a vivo l'altra metà, tagliala a spicchi e mettila sopra con la scorza rimasta e i semi di lino."]
     if 'porridge' in et or ('crema' in et and 'latte' in et):
         latte = 'crema' in et and 'latte' in et
         mele = [i for i in fr_ if i['prodotto'] == 'mele']
@@ -188,43 +197,58 @@ def prep(et, ings, plurale=False):
     return p
 
 # ==================== DAVID (dosi per la crescita) ====================
-def david_giorno(day, f, stagione):
+# Dosi per fascia d'età (grammi / ml). David compie 4 anni il 30/11/2026 → '4anni' da dicembre.
+# Riferimenti 4–6 anni: AUSL Bologna (avena 30 g, latte 100 ml), DORS / Soc. Svizzera di
+# Nutrizione (pane 50 g, fiocchi 40 g, latte 1 dl). Aumento graduale (~+10%), dentro le forbici.
+DOSI_DAVID = {
+    '3anni': dict(lun_avena=35, lun_latte=140, lun_frutto=60, mar_pane=40, mar_ricotta=40, mar_avocado=45, mar_pomodoro=30,
+                  mer_yogurt=130, mer_avena=25, mer_frutto=60, gio_yogurt=120, gio_avena=20, gio_frutto=80, gio_latte=40,
+                  gio_pane=30, gio_ricotta=40, gio_frutto2=40, ven_pomodoro=40, ven_spinaci=30, ven_pane=35,
+                  sab_avena=35, sab_banana=60, sab_frutto=50, sab_latte=30, dom_pane=40, dom_banana=60, dom_frutto=50),
+    '4anni': dict(lun_avena=35, lun_latte=150, lun_frutto=70, mar_pane=45, mar_ricotta=45, mar_avocado=50, mar_pomodoro=35,
+                  mer_yogurt=140, mer_avena=30, mer_frutto=70, gio_yogurt=120, gio_avena=25, gio_frutto=90, gio_latte=40,
+                  gio_pane=35, gio_ricotta=40, gio_frutto2=50, ven_pomodoro=45, ven_spinaci=35, ven_pane=45,
+                  sab_avena=40, sab_banana=70, sab_frutto=60, sab_latte=35, dom_pane=45, dom_banana=70, dom_frutto=60),
+}
+
+def david_giorno(day, f, stagione, dosi='3anni'):
+    D = DOSI_DAVID[dosi]
     if day == 'lun':
-        c = prep("la crema d'avena nel latte", [ig("Fiocchi d'avena", "avena", g=35), ig("Latte intero", "latte_intero", ml=140), fr(f['lun'], 60), ig("Burro di arachidi", "crema_arachidi", g=10)])
+        c = prep("la crema d'avena nel latte", [ig("Fiocchi d'avena", "avena", g=D['lun_avena']), ig("Latte intero", "latte_intero", ml=D['lun_latte']), fr(f['lun'], D['lun_frutto']), ig("Burro di arachidi", "crema_arachidi", g=10)])
         return {"titolo": f"Crema d'avena nel latte con {FRUTTO_NOME[f['lun']].lower()}", "preparazioni": [c],
                 "bevanda": "Acqua naturale (1/2 bicchiere)", "sicurezza": sicurezza_david([f['lun']], "burro di arachidi liscio, mai a pezzi")}
     if day == 'mar':
         if stagione == 'estate':
-            c = prep("il pane integrale con avocado, ricotta e pomodoro", [ig("Pane integrale", "pane_integrale", g=40), ig("Ricotta", "ricotta", g=40), ig("Avocado", "avocado", g=45), ig("Pomodoro", "pomodoro", g=30)])
+            c = prep("il pane integrale con avocado, ricotta e pomodoro", [ig("Pane integrale", "pane_integrale", g=D['mar_pane']), ig("Ricotta", "ricotta", g=D['mar_ricotta']), ig("Avocado", "avocado", g=D['mar_avocado']), ig("Pomodoro", "pomodoro", g=D['mar_pomodoro'])])
             return {"titolo": "Avocado toast con ricotta e pomodoro", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                     "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane e pomodoro a pezzetti piccoli. Mai uovo e avocado insieme."}
-        c = prep("il pane integrale con avocado e ricotta", [ig("Pane integrale", "pane_integrale", g=40), ig("Ricotta", "ricotta", g=40), ig("Avocado", "avocado", g=45)])
+        c = prep("il pane integrale con avocado e ricotta", [ig("Pane integrale", "pane_integrale", g=D['mar_pane']), ig("Ricotta", "ricotta", g=D['mar_ricotta']), ig("Avocado", "avocado", g=D['mar_avocado'])])
         return {"titolo": "Avocado toast con ricotta", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                 "sicurezza": "Avocado ben schiacciato o a fettine sottili; ricotta liscia; pane a pezzetti piccoli. Mai uovo e avocado insieme."}
     if day == 'mer':
-        c = prep("lo yogurt intero con avena ammollata (overnight)", [ig("Yogurt intero", "yogurt_intero", g=130), ig("Fiocchi d'avena (ammollati)", "avena", g=25), fr(f['mer'], 60), ig("Burro di arachidi", "crema_arachidi", g=10)])
+        c = prep("lo yogurt intero con avena ammollata (overnight)", [ig("Yogurt intero", "yogurt_intero", g=D['mer_yogurt']), ig("Fiocchi d'avena (ammollati)", "avena", g=D['mer_avena']), fr(f['mer'], D['mer_frutto']), ig("Burro di arachidi", "crema_arachidi", g=10)])
         return {"titolo": f"Yogurt intero overnight con {FRUTTO_NOME[f['mer']].lower()}", "preparazioni": [c],
                 "bevanda": "Acqua naturale (1/2 bicchiere)", "sicurezza": sicurezza_david([f['mer']], "burro di arachidi liscio, mai a pezzi")}
     if day == 'gio':
         a, b = f['gio']
-        c1 = prep("il frullato di yogurt e avena", [ig("Yogurt intero", "yogurt_intero", g=120), ig("Fiocchi d'avena (ammollati)", "avena", g=20), fr(a, 80), ig("Latte intero", "latte_intero", ml=40)])
-        c2 = prep("il toast di ricotta e frutta", [ig("Pane integrale", "pane_integrale", g=30), ig("Ricotta", "ricotta", g=40), fr(b, 40)])
+        c1 = prep("il frullato di yogurt e avena", [ig("Yogurt intero", "yogurt_intero", g=D['gio_yogurt']), ig("Fiocchi d'avena (ammollati)", "avena", g=D['gio_avena']), fr(a, D['gio_frutto']), ig("Latte intero", "latte_intero", ml=D['gio_latte'])])
+        c2 = prep("il toast di ricotta e frutta", [ig("Pane integrale", "pane_integrale", g=D['gio_pane']), ig("Ricotta", "ricotta", g=D['gio_ricotta']), fr(b, D['gio_frutto2'])])
         return {"titolo": "Frullato di yogurt e avena + toast di ricotta", "preparazioni": [c1, c2],
                 "bevanda": "Acqua naturale (1/2 bicchiere)", "sicurezza": sicurezza_david([a, b])}
     if day == 'ven':
         if stagione == 'estate':
-            c = prep("l'uovo strapazzato", [ig("Uovo intero", "uovo", n=1), ig("Pomodoro", "pomodoro", g=40), ig("Pane integrale", "pane_integrale", g=35), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)])
+            c = prep("l'uovo strapazzato", [ig("Uovo intero", "uovo", n=1), ig("Pomodoro", "pomodoro", g=D['ven_pomodoro']), ig("Pane integrale", "pane_integrale", g=D['ven_pane']), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)])
             return {"titolo": "Uovo strapazzato con pomodoro e pane", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                     "sicurezza": "Pomodoro e pane a pezzetti piccoli."}
-        c = prep("l'uovo strapazzato con spinaci", [ig("Uovo intero", "uovo", n=1), ig("Spinaci", "spinaci", g=30), ig("Pane integrale", "pane_integrale", g=35), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)])
+        c = prep("l'uovo strapazzato con spinaci", [ig("Uovo intero", "uovo", n=1), ig("Spinaci", "spinaci", g=D['ven_spinaci']), ig("Pane integrale", "pane_integrale", g=D['ven_pane']), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)])
         return {"titolo": "Uovo strapazzato con spinaci e pane", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                 "sicurezza": "Spinaci ben cotti e tritati finemente; uovo ben cotto; pane a pezzetti piccoli."}
     if day == 'sab':
-        c = prep("le frittelle di avena e banana", [ig("Fiocchi d'avena", "avena", g=35), ig("Uovo intero", "uovo", n=1), ig("Banana", "banana", g=60), fr(f['sab'], 50), ig("Latte intero (per l'impasto)", "latte_intero", ml=30), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)], plurale=True)
+        c = prep("le frittelle di avena e banana", [ig("Fiocchi d'avena", "avena", g=D['sab_avena']), ig("Uovo intero", "uovo", n=1), ig("Banana", "banana", g=D['sab_banana']), fr(f['sab'], D['sab_frutto']), ig("Latte intero (per l'impasto)", "latte_intero", ml=D['sab_latte']), ig("Olio extravergine d'oliva (per cuocere)", "olio_evo", ml=5)], plurale=True)
         return {"titolo": "Frittelle di avena e banana", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                 "sicurezza": sicurezza_david([f['sab']])}
     if day == 'dom':
-        c = prep("il toast con burro di arachidi e banana", [ig("Pane integrale", "pane_integrale", g=40), ig("Burro di arachidi 100%", "crema_arachidi", g=15), ig("Banana", "banana", g=60), fr(f['dom'], 50)])
+        c = prep("il toast con burro di arachidi e banana", [ig("Pane integrale", "pane_integrale", g=D['dom_pane']), ig("Burro di arachidi 100%", "crema_arachidi", g=15), ig("Banana", "banana", g=D['dom_banana']), fr(f['dom'], D['dom_frutto'])])
         return {"titolo": "Toast con burro di arachidi e banana", "preparazioni": [c], "bevanda": "Latte intero (1 bicchiere)",
                 "sicurezza": sicurezza_david([f['dom']], "burro di arachidi spalmato in strato sottile (mai a cucchiaiate); banana a fettine sottili")}
 
@@ -245,6 +269,10 @@ def flavio_giorno(day, f, stagione):
         c = prep("gli albumi strapazzati con spinaci", [ig("Albumi", "albume", n=2), ig("Spinaci", "spinaci", g=100), ig("Olio extravergine d'oliva", "olio_evo", ml=10)], plurale=True)
         return {"titolo": "Albumi strapazzati con spinaci", "preparazioni": [c], "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"}
     if day == 'gio':
+        if a == 'arance':
+            # Porridge all'arancia (GialloZafferano / Ricettasprint): la soia è già nella cottura.
+            c = prep("il porridge all'arancia", [ig("Fiocchi d'avena", "avena", g=40), ig("Bevanda di soia non zuccherata", "soia", ml=100), ig("Acqua (per cuocere l'avena)", None, ml=100), ig("Arancia non trattata (scorza, succo e spicchi)", "arance", g=200), ig("Semi di lino macinati", "lino", g=10)])
+            return {"titolo": "Porridge all'arancia", "preparazioni": [c], "bevanda": "Acqua naturale (1 bicchiere) · tè verde (1 tazza)"}
         c = prep("il porridge d'avena", [ig("Fiocchi d'avena", "avena", g=40), ig("Acqua (per cuocere l'avena)", None, ml=120), fr(a, 100), ig("Semi di lino macinati", "lino", g=10)])
         return {"titolo": f"Porridge d'avena con {FRUTTO_NOME[a].lower()}", "preparazioni": [c], "bevanda": "Soia non zuccherata (1 bicchiere)"}
     if day == 'ven':
@@ -297,12 +325,28 @@ MENU = {
                   '3': {'lun': 'pere', 'mer': 'mele', 'gio': ('kiwi', 'pere'), 'sab': 'clementine', 'dom': 'cachi'}},
         'flavio': {'1': {'lun': ('mele', None), 'mar': ('kiwi', 'mele'), 'gio': ('kiwi', None), 'sab': ('pere', None), 'dom': ('mele', 'kiwi')},
                    '3': {'lun': ('pere', None), 'mar': ('kiwi', 'mele'), 'gio': ('mele', None), 'sab': ('clementine', None), 'dom': ('mele', 'kiwi')}}},
+    # Dicembre 2026 (ciclo da lunedì 30/11, parte da solo da src/data/prossimo/) — stagionalità
+    # verificata il 21/11/2026 (Cookist, Wisesociety, Viversano, Il Giornale del Cibo, dica33):
+    # agrumi protagonisti (arance, clementine, mandarini), kiwi, mele, pere; cachi ancora presenti
+    # ma molto zuccherini → non usati. Verdura: spinaci (+ cavoli, finocchi, radicchio…).
+    # Ricetta nuova verificata: porridge all'arancia (GialloZafferano «Bilancia e Bilancieri»,
+    # avena + soia + acqua + scorza, succo a fuoco spento; Ricettasprint). Scartato: frullato
+    # kiwi-pera con soia (nessun riscontro esatto). Arance a David solo come frutta a lato,
+    # pelate a vivo e a pezzetti. David compie 4 anni il 30/11 → dosi '4anni'.
+    # Lunedì/martedì della Sett. 1 come novembre (mele; kiwi-mela) → il giro frutta di venerdì
+    # 27/11 resta quasi identico al solito.
+    'roma-dicembre': {'stagione': 'inverno', 'dosiDavid': '4anni',
+        'david': {'1': {'lun': 'mele', 'mer': 'pere', 'gio': ('kiwi', 'pere'), 'sab': 'clementine', 'dom': 'kiwi'},
+                  '3': {'lun': 'pere', 'mer': 'mele', 'gio': ('kiwi', 'pere'), 'sab': 'kiwi', 'dom': 'arance'}},
+        'flavio': {'1': {'lun': ('mele', None), 'mar': ('kiwi', 'mele'), 'gio': ('arance', None), 'sab': ('clementine', None), 'dom': ('mele', 'kiwi')},
+                   '3': {'lun': ('pere', None), 'mar': ('kiwi', 'mele'), 'gio': ('kiwi', None), 'sab': ('pere', None), 'dom': ('mele', 'kiwi')}}},
 }
 
 def build_week(chiave, variant):
     cfg = MENU[chiave]
+    dosi = cfg.get('dosiDavid', '3anni')
     return {day: {'flavio': flavio_giorno(day, cfg['flavio'][variant], cfg['stagione']),
-                  'david': david_giorno(day, cfg['david'][variant], cfg['stagione'])} for day in GIORNI}
+                  'david': david_giorno(day, cfg['david'][variant], cfg['stagione'], dosi)} for day in GIORNI}
 
 def genera_mese(chiave):
     m = {'1': build_week(chiave, '1'), '3': build_week(chiave, '3')}
@@ -319,22 +363,21 @@ def scrivi(path, obj):
     with open(path, 'w', encoding='utf-8') as fh:
         json.dump(obj, fh, ensure_ascii=False, indent=2)
 
-LIVE = 'roma-novembre'         # menu attivo
+LIVE = 'roma-novembre'         # menu in corso → src/data/colazioni.json
+PROSSIMO = 'roma-dicembre'     # mese dopo, parte da solo dal suo inizioCiclo → src/data/prossimo/
+                               # (None se non c'è; stagione.json del prossimo si scrive a mano)
 if __name__ == '__main__':
     os.makedirs(BASE + '_staging', exist_ok=True)
     live = genera_mese(LIVE)
     scrivi(BASE + 'colazioni.json', live)
     scrivi(BASE + '_staging/roma-colazioni.json', live)
     scrivi(BASE + '_staging/longostagno-renon-bz-colazioni.json', genera_mese('longostagno'))
+    if PROSSIMO:
+        os.makedirs(BASE + 'prossimo', exist_ok=True)
+        scrivi(BASE + 'prossimo/colazioni.json', genera_mese(PROSSIMO))
+    print(f"Scritti: colazioni.json ({LIVE})" + (f" + prossimo/colazioni.json ({PROSSIMO})" if PROSSIMO else ""), flush=True)
 
-    # ---- controlli delle regole ----
-    w1 = live['1']
-    yog = sum(1 for d in GIORNI if any(any(i.get('prodotto') in ('yogurt_intero', 'yogurt_greco') for i in p['ingredienti']) for p in w1[d]['david']['preparazioni']))
-    flav_yog = any(i.get('prodotto', '').startswith('yogurt') for w in live.values() for d in w.values() for p in d['flavio']['preparazioni'] for i in p['ingredienti'])
-    alb = sum(1 for d in GIORNI if any(any(i.get('prodotto') == 'albume' for i in p['ingredienti']) for p in w1[d]['flavio']['preparazioni']))
-    alb_max = max(i['n'] for w in live.values() for d in w.values() for p in d['flavio']['preparazioni'] for i in p['ingredienti'] if i.get('prodotto') == 'albume')
-    mar_uovo = any(i.get('prodotto') == 'uovo' for i in w1['mar']['david']['preparazioni'][0]['ingredienti'])
-    no_istr = sum(1 for w in live.values() for d in w.values() for prof in d.values() for p in prof['preparazioni'] if not p.get('istruzioni'))
-    banana_flavio = any(i.get('prodotto') == 'banana' for w in live.values() for d in w.values() for p in d['flavio']['preparazioni'] for i in p['ingredienti'])
-    print(f"[{LIVE}] David yogurt giorni/sett: {yog} (max 2) | Flavio yogurt: {flav_yog} | albumi giorni: {alb} (max 3), max per pasto: {alb_max}")
-    print(f"[{LIVE}] avocado+uovo martedi: {mar_uovo} | prep senza istruzioni: {no_istr} | banana per Flavio: {banana_flavio} | 2==1 {live['2']==live['1']} 4==3 {live['4']==live['3']}")
+    # ---- controlli di TUTTE le regole (stesso script usabile da solo) ----
+    import subprocess, sys
+    esito = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'controlla-colazioni.py')])
+    sys.exit(esito.returncode)

@@ -1,13 +1,13 @@
 import { CalendarDays } from 'lucide-react'
 import profili from '../data/profili.json'
-import colazioni from '../data/colazioni.json'
-import stagione from '../data/stagione.json'
 import ProfiloColazione from '../components/ProfiloColazione.jsx'
 import PromemoriaSpesa from '../components/PromemoriaSpesa.jsx'
 import { settimanaDelCiclo, chiaveGiorno, nomeGiorno, dataLeggibile } from '../lib/settimana.js'
+import { menuAttivo } from '../lib/menuAttivo.js'
 
 export default function Oggi() {
   const oggi = new Date()
+  const { colazioni, stagione } = menuAttivo(oggi)
   const settimana = settimanaDelCiclo(oggi)
   const giorno = chiaveGiorno(oggi)
   const colazioniOggi = colazioni[String(settimana)]?.[giorno] ?? {}

@@ -1,10 +1,10 @@
 {
-  "id": "aggiornamento-stagione-2026-11",
+  "id": "aggiornamento-stagione-2026-12",
   "attivo": true,
-  "dal": "2026-11-01",
-  "fino": "2026-11-03",
-  "titolo": "Colazioni e spesa aggiornate",
-  "testo": "Da questa settimana colazioni e lista della spesa usano solo frutta e verdura di novembre: mele, pere, kiwi, cachi, clementine e spinaci. Alcune ricette e alcuni ingredienti sono cambiati.",
+  "dal": "2026-11-30",
+  "fino": "2026-12-02",
+  "titolo": "Colazioni di dicembre",
+  "testo": "Da lunedì 30 novembre colazioni e lista della spesa usano il menù di dicembre: arance, clementine, kiwi, mele, pere e spinaci. Novità: porridge all'arancia per Flavio. David compie 4 anni: le sue porzioni sono un po' più grandi.",
   "invito": "Prima di cucinare e di andare a fare la spesa, controlla bene la colazione del giorno e la lista della spesa.",
   "bottoneSpesa": "Vedi la lista della spesa",
   "bottoneOk": "Ho capito"

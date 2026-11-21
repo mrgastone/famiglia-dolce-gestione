@@ -343,5 +343,13 @@
     "unita": "g",
     "scadenza": "Fresco · 1–2 settimane",
     "ricerca": "clementine"
+  },
+  "arance": {
+    "nome": "Arance",
+    "fornitore": "montagnola",
+    "confezione": 1000,
+    "unita": "g",
+    "scadenza": "Fresco · 1–2 settimane (non trattate se serve la scorza)",
+    "ricerca": "arance non trattate"
   }
 }

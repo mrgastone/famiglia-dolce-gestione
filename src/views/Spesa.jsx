@@ -16,8 +16,8 @@ import {
   CalendarDays,
 } from 'lucide-react'
 import spesa from '../data/spesa.json'
-import stagione from '../data/stagione.json'
 import EtichettaStagione from '../components/EtichettaStagione.jsx'
+import { menuAttivo } from '../lib/menuAttivo.js'
 import {
   GIRI_FRUTTA,
   infoFrutta,
@@ -329,6 +329,7 @@ function ListaStampabile({ settimana }) {
     .filter((r) => !r.giaDisponibile)
     .map((r) => ({ nome: r.nome, qta: r.quantita }))
   const oggi = new Date().toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })
+  const { stagione } = menuAttivo()
 
   // Resa fuori da #root (portale su <body>) così in stampa basta nascondere #root.
   return createPortal(
@@ -375,6 +376,7 @@ function ListaStampabile({ settimana }) {
 export default function Spesa() {
   const [settimana, setSettimana] = useState(settimanaDelCiclo())
   const { giroUnico, raccomandazioniOnline } = spesa
+  const { stagione } = menuAttivo()
 
   return (
     <section className="space-y-5">

@@ -1,0 +1,32 @@
+{
+  "etichetta": "Dicembre 2026 · Roma",
+  "mese": "Dicembre 2026",
+  "citta": "Roma",
+  "inizioCiclo": "2026-11-30",
+  "scadenza": "2027-01-03",
+  "fruttaDiStagione": [
+    "Arance",
+    "Clementine",
+    "Mandarini",
+    "Kiwi",
+    "Mele",
+    "Pere",
+    "Cachi",
+    "Melagrana",
+    "Limoni"
+  ],
+  "verduraDiStagione": [
+    "Spinaci",
+    "Broccoli",
+    "Cavolfiore",
+    "Cavolo nero",
+    "Verza",
+    "Cime di rapa",
+    "Finocchi",
+    "Radicchio",
+    "Carciofi",
+    "Zucca",
+    "Bietole",
+    "Topinambur"
+  ]
+}
