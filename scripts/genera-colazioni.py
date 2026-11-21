@@ -200,6 +200,8 @@ def prep(et, ings, plurale=False):
 # Dosi per fascia d'età (grammi / ml). David compie 4 anni il 30/11/2026 → '4anni' da dicembre.
 # Riferimenti 4–6 anni: AUSL Bologna (avena 30 g, latte 100 ml), DORS / Soc. Svizzera di
 # Nutrizione (pane 50 g, fiocchi 40 g, latte 1 dl). Aumento graduale (~+10%), dentro le forbici.
+# Latte SEMPRE intero (scelta dell'utente, 21/11/2026). Lo scremato non prima dei 5 anni
+# (30/11/2027): a dicembre 2027 chiedere all'utente se cambiare tipo di latte (vedi CLAUDE.md).
 DOSI_DAVID = {
     '3anni': dict(lun_avena=35, lun_latte=140, lun_frutto=60, mar_pane=40, mar_ricotta=40, mar_avocado=45, mar_pomodoro=30,
                   mer_yogurt=130, mer_avena=25, mer_frutto=60, gio_yogurt=120, gio_avena=20, gio_frutto=80, gio_latte=40,

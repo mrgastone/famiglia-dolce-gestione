@@ -53,8 +53,24 @@ ottimizzata per iPad/iPhone in cucina (la usa anche la governante). Live su GitH
   un ripiego. Le dosi stanno in `DOSI_DAVID` nel generatore: **`'3anni'`** fino a novembre 2026,
   **`'4anni'`** da dicembre 2026 (~+10%, dentro le forbici 4–6 anni: avena 30–40 g, pane 40–50 g,
   latte 100–200 ml — AUSL Bologna, DORS). Prossimo scalino da valutare a 5 anni (nov 2027).
-  ℹ️ Plasmon indica il latte parzialmente scremato dai 4 anni: **l'utente ha scelto il latte intero
-  per tutti**, non cambiarlo senza richiesta.
+  🥛 **Latte di David — verificato il 21/11/2026 (ricerca su più fonti), decisione dell'utente: resta
+  INTERO** (latte e yogurt). Dopo i 2–3 anni intero e parzialmente scremato sono entrambi accettabili
+  (NHS/Galles 2024, Canada, pediatri italiani; Bambino Gesù: intero, max 400 ml/giorno); le linee
+  guida USA 2025–2030 (gen 2026) tornano ai latticini interi; meta-analisi Vanderhout 2020: nessun
+  vantaggio di peso col latte magro. Non cambiarlo senza richiesta.
+  🔔 **NOTA 5 ANNI (30/11/2027):** il latte **scremato** è sconsigliato **prima dei 5 anni** (NHS,
+  Canada) → solo da lì diventa un'opzione. Alla rigenerazione di **dicembre 2027** ricordarlo
+  all'utente e chiedere se vuole cambiare tipo di latte (il parzialmente scremato è già ammesso).
+  Totale latte + yogurt indicativo 400–500 ml/giorno.
+  📊 **Energia della colazione — verificato il 21/11/2026:** riferimento 15–20% dell'energia del
+  giorno (linee di indirizzo ristorazione scolastica) ≈ 200–300 kcal a 4 anni (LARN ~1.300–1.470
+  kcal/giorno). Stima colazioni David: novembre ~360 kcal, dicembre (dosi `'4anni'`) ~390, sabato
+  ~500; proteine ~17 g (LARN ~19 g/giorno a 4–6 anni). Proposto di tornare alle dosi `'3anni'` con
+  ½ bicchiere di latte: **l'utente ha scelto di lasciare le dosi di dicembre** — non riproporlo a
+  ogni rigenerazione; rivalutare solo se cambia qualcosa (es. indicazioni del pediatra).
+  🔒 Anti-soffocamento (Ministero della Salute 2017): frutta secca intera e arachidi **non prima di
+  4–5 anni** (solo creme lisce o tritate finissime), uva in quarti, creme spalmate sottili — regole
+  dell'app già allineate, non allentarle prima dei 5 anni.
 - Uovo **INTERO**, latte e **yogurt INTERO** (`yogurt_intero`, mai il greco 0% degli adulti).
 - **Niente zuccheri aggiunti**, nessuna restrizione glicemica.
 - Regola principale: **solo cibi sani per la normale crescita** di un bambino.
